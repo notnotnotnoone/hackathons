@@ -12,12 +12,12 @@
 
 | Item | Current position |
 |---|---|
-| Latest inject | **Inject 3 — claimed Google sign-in alert; evidence, timeline, and response reviewed** |
+| Latest inject | **Inject 4 — community outage posts and public advice; evidence desk reviewed** |
 | Investigation | **Active. Blackout cause and unauthorized activity remain unconfirmed.** |
-| Latest published analyst updates reviewed | Evidence desk through 11:03 PDT; timeline through 11:03 PDT; response through 11:05 PDT, October 15, 2026 |
+| Latest published analyst updates reviewed | Evidence desk through 11:18 PDT; timeline handoff through 11:08 PDT; response through 11:05 PDT, October 15, 2026 |
 | Lead reconciliation | October 15, 2026, 10:34 PDT; reviewed all four existing repository files and the seven commits after initialization. The 10:40 PDT response handoff is linked and not yet folded into the numbered assessment. |
-| Drive coverage | Six files: Injects 1–3, Instructions, Schedule, Mission Overview. Response chat rechecked at 11:05 PDT. |
-| Review coverage | This lead chat reconciled committed analyses; it has not independently inspected the inject images. Instructions and Mission Overview text were checked directly. |
+| Drive coverage | Ten files: seven inject screenshots across Injects 1–4, Instructions, Schedule, and Mission Overview. Inject 4 checked at 11:17 PDT. |
+| Review coverage | Evidence desk visually reviewed Injects 1–4; the lead chat has not independently inspected their images. Instructions and Mission Overview text were checked directly. |
 | Remaining intake gaps | Official event date/time zone and explicit deadline, rubric, presentation limits, AI/sharing rules; schedule visual review is complete |
 | Submission | Draft outline updated with an Inject 3 addendum at 11:05 PDT. Not approved and not submitted |
 | Participant presence | User of the evidence chat confirms presence at 10:41 PDT; name/roster mapping not supplied. See human-status.txt. |
@@ -222,3 +222,24 @@ Timeline support downloaded and visually reviewed I-003/E-003. The alert message
 ## Kevin response handoff — Inject 3
 
 Response support reviewed the same screenshot at 11:05 PDT. Life safety and the public paragraph stay as written. R-11 asks the contractor contact, out of band, whether `maxwafoone@gmail.com` and the Mount Crumpit sign-in are theirs. Do not click the button in the screenshot and do not reset that Google account from this image. [Response note](kevin-response.md#i-003-response--2026-10-15-1105-pdt). [Presentation addendum](presentation-outline.md#inject-3-addendum--2026-10-15-1105-pdt).
+
+
+## Gretzky evidence update — Inject 4 — 2026-10-15 11:18 PDT (UTC-07:00)
+
+**Sources:** Four Drive screenshots, grouped as I-004 / E-004a–d: [Reddit thread](https://drive.google.com/file/d/1CUNuPYSCE9y9prf1uCUYhjlMU9K1_WAm/view), [Mayor-branded X post](https://drive.google.com/file/d/1XN9CpCFTRhB8AuFq9e_RgGDRfUK5cAIL/view), [Facebook advice post](https://drive.google.com/file/d/1a2gAJlOUtpwflgsO99Zex6_nqia_a_CA/view), and [X post](https://drive.google.com/file/d/1fAsOH6POqtOg9kaey9DQqxxYqrmyYScE/view). See the [full evidence analysis](codex-evidence-analyst.md#i-004--e-004--community-outage-posts-and-public-advice).
+
+- The Reddit comments mention outage/heating problems in East Valley, West Ridge, and Riverdale; the post itself asks where else power is out. Its time is relative (“1h”) and the screenshot status bar reads 11:34.
+- The Mayor-branded X screenshot says the poster is cold and asks if power is out; it displays Dec 25, 2026, 9:01 AM. A reply mentions using a neighbor’s generator.
+- Another X post says “nothing turns on,” displayed Dec 25, 2026, 8:47 AM. Neither X screenshot shows a time zone or permalink.
+- A Facebook post uses urgent survival language and advises, among other things, burying food in snow and running to a store for water. The displayed time is relative (“23m”); identity, source, and accuracy are unknown. Do not repeat its advice as official guidance without checking an authoritative source.
+- These are social-media claims, not independent feeder measurements. They do not establish exact outage scope, prove a cyberattack, or connect public posts to the SCADA activity. Preserve provenance, time-zone, account-identity, and location uncertainty.
+
+**Suspicious activity:** No screenshot shows a login, utility command, malicious link, or direct cyber action. The urgent advice is a public-safety/misinformation lead, not proof of coordinated manipulation or malicious intent.
+
+**Missing information:** Original post links/platform records, absolute times and zones, account and location authentication, independent outage confirmation, and the advice source.
+
+**Message for Team Leader:**
+
+> Inject 4 contains four social-media screenshots reporting power/heating problems in Central Whoville, East Valley, West Ridge, and Riverdale; two X screenshots display Dec 25, 2026 at 8:47 and 9:01 AM, while Reddit/Facebook times are relative. They are public claims, not independent feeder measurements, and their time zones and account identities are unverified. One Facebook post gives urgent household advice, including burying food in snow and going to a store for water; please check any response against official safety guidance before repeating it. The posts do not establish a cyberattack or explain the blackout.
+
+**Assessment boundary:** This evidence-desk handoff updates the Inject 4 source findings. The lead’s six-part incident assessment was last reconciled separately; cyberattack, actor identity, and blackout causation remain unconfirmed.
