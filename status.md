@@ -166,3 +166,7 @@ Gretzky directly confirmed their name in this evidence chat, mapping the previou
 - Calendar caveat: Dec 24, 2026 was Thursday, not the displayed Wednesday. Preserve raw dates; do not assume alignment or infer another year.
 - Status: evidence through Inject 3 reviewed. Six files were listed in Drive around 11:01 PDT. Open questions are tracked for later injects; Gretzky does not need to obtain inaccessible records.
 - Proposed handoff: timeline to preserve clock/year uncertainty; leader to consider this account-access lead in the presentation. No email link was opened and no account or utility action taken.
+
+## Kherion timeline follow-up — 2026-10-15 11:03 PDT
+
+Inject 3 downloaded and visually reviewed. Six Drive files now saved locally; manifest refreshed. Combined timeline and six-part handoff updated in [team3.md](team3.md#inject-3-update--2026-10-15-1101-pdt). New Google-labelled alert supplies a displayed message timestamp and a Mount Crumpit sign-in claim; year/zone, exact sign-in time, authenticity, owner and SCADA linkage are unknown. Weekday/scenario-year mismatch explicitly flagged. Earlier findings retained. Next: original email/security events and ownership/clock verification.
