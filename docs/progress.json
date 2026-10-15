@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-15T11:01:31-07:00",
-  "updatedBy": "Leader / coordination chat",
+  "updatedAt": "2026-10-15T11:03:00-07:00",
+  "updatedBy": "Gretzky / evidence",
   "latestInject": {
     "id": "I-003",
-    "title": "Inject 3",
-    "state": "Working on Inject 3",
-    "checkedAt": "2026-10-15T11:01:31-07:00",
-    "note": "Inject 3 is now listed in Drive (six files). Review is in progress; no Inject 3 conclusions have been recorded by the lead.",
-    "sourceUrl": "https://drive.google.com/file/d/1iQa1Y2u0vdNfuVin0ejEClH4pdJv0KUL/view?usp=drivesdk"
+    "title": "Claimed Google sign-in alert",
+    "state": "Inject 3 reviewed by evidence desk",
+    "checkedAt": "2026-10-15T11:01:00-07:00",
+    "note": "Six files listed by evidence desk. Inject 3 visually reviewed at original resolution. Possible account/location connections are hypotheses; alert authenticity and clock alignment unverified.",
+    "sourceUrl": "https://drive.google.com/file/d/1iQa1Y2u0vdNfuVin0ejEClH4pdJv0KUL/view"
   },
   "assessment": [
     {
@@ -56,12 +56,12 @@
     {
       "id": "evidence",
       "name": "Gretzky — Evidence desk",
-      "status": "Waiting for evidence",
-      "updatedAt": "2026-10-15T10:50:00-07:00",
-      "completed": "Gretzky directly confirmed Member 2 identity and presence. AI-assisted Inject 1/2, schedule review and source reread are published.",
-      "next": "Collect full logs and authorization context through the team; brief the leader and review the next inject.",
-      "blocker": "Original text logs, account baselines, audit linkage, physical readings.",
-      "source": "codex-evidence-analyst.md"
+      "status": "Inject 3 reviewed",
+      "updatedAt": "2026-10-15T11:03:00-07:00",
+      "completed": "Inject 3 sign-in alert analyzed; candidate links to max.contr.maint and FDR-15/Mount Crumpit recorded, with weekday/year caveat.",
+      "next": "Brief leader and compare later injects; track alert authenticity, account mapping and clock questions.",
+      "blocker": "Details not provided yet: email headers, sign-in IP/device, owner recognition, account mapping and source clocks.",
+      "source": "codex-evidence-analyst.md#i-003--e-003--google-sign-in-alert-screenshot"
     },
     {
       "id": "timeline",
