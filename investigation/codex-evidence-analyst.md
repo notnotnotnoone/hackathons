@@ -424,3 +424,73 @@ Original ZIP contents, browser download origins, full filenames and hashes, mach
 > Inject 7 shows **Desktop > Tomodachi Life FREE** containing an **82 KB application with a credential-related filename** and **setup.exe (2 KB)**. Both display Aug 12, 2026, 10:39 AM **file-modification times**, not proven incident or execution times. The folder title aligns with the Inject 5 ZIP and Inject 6 page. That strengthens the hypothesis of unsafe game-related software, but origin, execution, account compromise, utility access and blackout cause are still unproven. See the original E-007 image for the visually ambiguous first filename.
 
 **Conclusion:** Evidence desk reviewed through I-007. Keep the source screenshot and treat all causal links as unconfirmed.
+
+
+## I-008 / E-008 — Final grid-operations map
+
+**Reviewed:** 2026-10-15 about 13:02 PDT (team work time). **Original:** [Inject 8 PNG](https://drive.google.com/file/d/1-gc6iqIzCkryqRweTdYDUH0TLYf4cuM5/view). The shared folder contained **15 items** at the last check: 11 inject screenshots (I-001–I-008, with four for I-004), Presentation Criteria.jpg and three PDFs. **Displayed scenario time:** **DEC 25, 2026 8:43 AM (PDT)**. This is a screenshot labelled **"SIMULATED OPERATIONAL VIEW — NOT AN ENGINEERING SINGLE-LINE"**. It is not an authenticated breaker-event record, relay capture, or live independent field verification.
+
+### Evidence Summary
+
+Hydro Siber's Whoville Regional Distribution Network dashboard displays **1,240 MW total demand** (**down 18% versus forecast**), **92,430 customers without power** (**up 14%, comparison period not shown**), and **System Operations: Degraded Conditions**. Its left-side **Feeder Status** summary reads **12 Online / 5 Degraded / 6 Offline / 3 Telemetry Unverified** (sum **26**). These counts cannot automatically be compared to I-001's **18-row FDR table** or its contradictory 14/4-versus-17/1 counts without common asset definitions.
+
+**Critical infrastructure as displayed:** Whoville General Hospital **Partial Power**, **Backup Generators Active**; Emergency Services **Online**; Water Treatment Plant **Offline**; Transit Network **Partial Power**; Municipal Facilities **Some Disruptions**. The map also names **Whoville Transit Hub: Partial Power** and **Water Treatment Plant: Offline**. Priority is safety and independently verifying hospital/water service, not assuming SCADA telemetry is true.
+
+**Generating stations:** North West Hills shows **820 MW** and **Online**; Crumpit shows **640 MW** and **Online**. The MW labels may describe plant ratings/capacity, not proven current output. An apparent total of 1,460 MW must NOT be interpreted as independently verified generation meeting the displayed 1,240 MW demand.
+
+### Important Findings
+
+| Finding | Exact displayed source / time | Why it matters | Observation or interpretation |
+|---|---|---|---|
+| Impact overview | E-008 header, Dec 25 2026 **08:43 AM PDT** | 92,430 out, 1,240 MW demand, degraded conditions | Screenshot readings; accuracy and live provenance not independently verified |
+| Aggregate feeder status | E-008 left panel, 12 online, 5 degraded, 6 offline, 3 unverified | Categories total 26; differs in definition and size from I-001 FDR data | Visible count, not directly equivalent to 18 feeders in I-001 |
+| Hospital and water | E-008 left panel/map at 08:43, hospital partial with backups; water treatment offline | Immediate patient safety, drinking-water/service continuity priorities | Displayed claims; require field/utility confirmation |
+| SUB-01 North Heights | E-008 map/table, SCADA **Degraded**, field **Degraded**, **210 MW**, **23,500 customers**, voltage fluctuations | Shows continued load alongside degradation | Source observation; load/customers do not establish who lost service |
+| SUB-02 East Valley | E-008 map, SCADA **Degraded**, field **Degraded** | Additional geographically distinct degraded substation | Source observation |
+| SUB-03 Central | E-008 map/table, SCADA **Online**, field **Unconfirmed**, **0 MW**, **28,600 customers** | Important monitoring-versus-field uncertainty; alert also reports loss of output | Observed statuses. Table notes contradict status field by saying **"SCADA shows offline"**; resolve, do not erase |
+| SUB-04 Lakeview / SUB-06 West Ridge | E-008 map, SCADA and field **Online** for both | Some parts of the grid shown energized | Displayed statuses, not independent measurements or equivalence to I-001 FDR-04/FDR-06 |
+| SUB-05 Hillsdale Park | E-008 map/table, SCADA **Offline**, field **Offline**, **0 MW**, **17,200 customers** | Potentially acute disconnection | Source observation; alert history at 07:32 says mismatch and may reflect an earlier state |
+| SUB-07 Riverdale | E-008 table/map, SCADA **Unverified**, field **Unverified**, **84 MW**, **12,600 customers**, "Telemetry loss since 06:31" | Uncertain telemetry should not be treated as a confirmed physical loss; 84 MW may be stale | Source observation and caution |
+| Selected assets list versus map status | E-008 bottom table SUB-03: SCADA Online, Field Unconfirmed; note says **"SCADA shows offline"** | Direct internal contradiction in one screenshot | Confirmed text mismatch; no safe resolution |
+| SUB-05 historical status | E-008 alert at **07:32**: "SCADA/Field status mismatch"; SUB-05 at 08:43 both Offline | Could be state change, bad history or display inconsistency | Apparent difference, not necessarily simultaneous contradiction |
+
+### Active Alerts — source-local labels (date/zone not individually shown)
+
+1. **07:32** — SUB-05: SCADA/Field status mismatch.
+2. **07:41** — SUB-03: Loss of output → Industrial Zone.
+3. **07:57** — Water Treatment Plant: Offline.
+4. **08:12** — Voltage anomalies → North Heights.
+5. **08:36** — (Telemetry): SUB-07 → Unverified.
+6. **08:41** — Customer reports → Central District.
+
+The dashboard header has **PDT**, but each alert row only displays a clock time; do not infer a separately authenticated event-date/zone or corroborated onset from the UI.
+
+### Cross-inject patterns, tensions and non-links
+
+- **I-001 vs I-008:** Earlier FDR-04/FDR-08 read OFFLINE with nonzero power, and its 18-row counts disagreed with the footer. I-008 depicts substations **SUB-01–SUB-07** plus a 26-category feeder summary. **FDR IDs are not SUB IDs**; do not equate SUB-04 online to FDR-04 offline or claim a recovered feeder without mapping and clock alignment. I-001 and I-008 share approximately **08:43 on Dec 25 2026** but have **PST versus PDT** labels in analysts' earlier I-001 reading and I-008 header respectively. Zone reconciliation is required. A December PDT label is itself unusual in a jurisdiction following Pacific daylight/standard seasonal time.
+- **I-004 vs I-008:** Residents' mentions of **East Valley, West Ridge, Riverdale and Central** resemble mapped place names. These are **place-name correlations**, not confirmation that posts and displayed substations refer to the same verified outages. E-008 displays water-treatment outage, hospital partial backup power and an affected transit hub, which are higher-priority safety leads.
+- **I-002 vs I-008:** SSH/sudo/logging events from the recovered screenshot are not connected to any validated breaker command, operator session, relay measurement, substation control action, or transmission-line change. **No cyber causation established.**
+- **I-003 vs I-008:** Mount Crumpit appears in I-003's claimed Google sign-in location and in E-008 as a mountain/generating station; this geographic/name overlap **does not identify the person or system**. I-003 email displayed a weekday/year anomaly and lacks account-to-SCADA linkage.
+- **I-005–I-007 vs I-008:** The game-site/ZIP/folder/executable trail is a security investigation lead, but no file execution, infected host, stolen credentials or network link to SCADA is verified. None of these screenshots explains the pattern of physical/service disruption in E-008.
+- **Internal contradictions:** E-008's SUB-03 map/table status **Online** conflicts with the note claiming "SCADA shows offline"; SUB-05's 07:32 mismatch alert differs from 08:43 both-Offline statuses and could simply be historical. Counts and scopes between I-001 and I-008 cannot be compared as equivalent. Avoid multiplying or summing asset/customer counts as if they were additive outage totals.
+
+### Suspicious Activity, competing explanations and missing information
+
+**Suspicious/uncertain:** SUB-03 contradictory monitoring data, SUB-07 unverified telemetry, inconsistent I-001 readings, and I-002 access/logging events. Potential explanations include genuine equipment failure, communications/telemetry loss, display synchronization problems, authorized maintenance, user error, or unauthorized activity. The screenshot does not attribute any event to an actor or show malware, credentials, exfiltration or control commands. Evidence is **strongest for an operational disruption and insufficient to determine cause**.
+
+**Missing:** authenticated SCADA/field source timestamps, asset inventory and FDR-to-SUB topology, breaker/switch change logs, independent measurements, feeder/customer impact definitions, alert history/acknowledgments, physical crew reports, Medical District/hospital generator runtime and water-service status, regional clock/PST-PDT rules, host and account mappings across I-002–I-007, and any malware execution-to-control evidence.
+
+### Message for Team Leader
+
+> **Final Inject 8** shows Hydro Siber's simulated grid operations screen at **Dec 25, 2026 8:43 AM (PDT)**, reporting **92,430 customers without power**, **1,240 MW demand** (18% below forecast), and **12 online / 5 degraded / 6 offline / 3 telemetry-unverified** feeder categories. **Hospital is on partial power with backups; water treatment is offline; transit is partially powered.** SUB-03 shows **SCADA Online / Field Unconfirmed** despite a contradictory note saying SCADA offline, and SUB-07 is unverified; do not treat these as physical ground truth. Six alerts range from **07:32 to 08:41**. Compared with I-001, FDR assets and SUB assets are not directly interchangeable, and source time zones/count bases need reconciliation. The alleged game-download path and SCADA authentication logs still lack a demonstrated link to utility control or blackout cause. **Recommend prioritizing verified hospital/water and physical-state checks, preserving evidence, and presenting cyberattack only as a hypothesis.** Full table and cross-inject analysis: [I-008 evidence report](../investigation/codex-evidence-analyst.md#i-008--e-008--final-grid-operations-map).
+
+### Six-part handoff
+
+1. **Situation:** Broadly disrupted simulated regional grid, including hospital/water/transit impacts.
+2. **New findings:** E-008 operational map, six alerts, monitoring-vs-field mismatches, categories of feeder status, 92,430 reported without power.
+3. **Leading hypotheses:** Physical failures, telemetry/display faults, authorized activity and cyber misuse remain open. No verified root cause.
+4. **Contradictions:** SUB-03 Online vs "offline" table note; SUB-05 earlier mismatch vs now both offline; I-001 18 FDR rows vs E-008 status categories totaling 26; possible PST/PDT mismatch.
+5. **Recommended action:** Verify welfare-critical services and equipment status through independent channels; retain logs; do not take unapproved utility action, issue unsupported cause statements or change other teams' status.
+6. **Critical unknowns:** Actual outage onset/cause, confirmed field switch states, exact feeder map/customer counts, clock basis, cyber/host attribution, and judge/submission requirements.
+
+**Evidence desk:** Reviewed through I-008, the final labelled inject currently in Drive. This **does not** imply full validation of an attack chain, an exact outage cause, presentation approval or submission. No control action, external message or competition submission.
