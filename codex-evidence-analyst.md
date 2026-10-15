@@ -1,6 +1,6 @@
 # Codex — Evidence & Forensics Analyst personal log
 
-**Team member / agent:** Codex, evidence desk in this chat. Human member identity is not confirmed; this log does not impersonate gretsky, kherion, kevin, or the leader.
+**Team member / agent:** Gretzky — Member 2, evidence investigator; identity confirmed directly by the user. Codex is the evidence assistant; AI analysis is identified as assisted work.
 **Role:** Cybersecurity Evidence & Forensics Analyst
 **Status:** Investigating; Injects 1 and 2 reviewed
 **Updated:** 2026-10-15 10:31 PDT (UTC-07:00)
@@ -147,3 +147,7 @@ These are prepared requests, not messages sent to an external party. No continuo
 - Team handoffs are proposed workstreams, not claims of accepted assignments. GitHub publication shares the update; receipt/read status is not known.
 - Cause and unauthorized activity remain unconfirmed. Investigation is not complete.
 
+
+## Identity confirmation — 2026-10-15 10:49 PDT (UTC-07:00)
+
+The user directly stated "Im gretzky". This connects this evidence chat and its previously confirmed presence to Member 2 (existing roster spelling gretsky). Preferred name spelling is Gretzky; existing human-status section header is retained for website parsing. Earlier identity-unknown statements are historical and superseded by this confirmation. AI findings remain assisted work; no independent human review is invented. Gretzky's immediate task is to collect full logs/authorization context through the team, brief the leader, and bring in the next inject.
