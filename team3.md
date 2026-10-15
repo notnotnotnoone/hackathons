@@ -2,9 +2,11 @@
 
 **Owner:** Kherion — Member 3, with Codex timeline support  
 **Status:** Investigating  
-**Updated:** 2026-10-15 10:50 PDT (UTC−07:00)
+**Updated:** 2026-10-15 11:01 PDT (UTC−07:00)
 
 ## Sources and scope
+
+- **I-003 / E-003:** [Inject 3](https://drive.google.com/file/d/1iQa1Y2u0vdNfuVin0ejEClH4pdJv0KUL/view), Google security-alert screenshot. Downloaded and visually reviewed by timeline support. Folder checked October 15, 2026, about 11:01 PDT: six files. File size 800299 bytes; SHA-256 622F3056F02E2F11DA17BA7787E4391758B5B63B93824B79130ECE26C4081F26. Work/collection dates are not incident dates.
 
 - **I-001 / E-001:** [Inject 1](https://drive.google.com/file/d/1AHluXwG8ne_K1KfKtUmcuQq0oamum46p/view), distribution dashboard, reviewed visually.
 - **I-002:** [Inject 2](https://drive.google.com/file/d/1MCgSzKr_hXeddiMRyeHfcDiRR4_k9u51/view), PNG screenshot of _logsrecovered.txt, reviewed visually. Shared evidence-register ID remains to be assigned to avoid collisions.
@@ -22,6 +24,7 @@
 | Dec 24, 17:30:38 | Root cron invokes opt/backup/scada/dump.sh (literal screenshot spelling; corrected, see history); command execution outcome is not shown. | I-002 / cron[2163] | High: visible text |
 | Dec 24, 17:46:00 | Remote session closed for sally.admin.cpc. | I-002 / sshd[2123] | High: visible text |
 | Dec 24, 17:58:20 | Remote session closed for hoovey.admin.cpc. | I-002 / sshd[2189] (corrected, see history) | High: visible text |
+| Wed, Dec 24, 10:12 PM (22:12); year/zone unstated | Security-alert email displayed at this time, claiming a new Google sign-in for maxwafoone@gmail.com from Mount Crumpit. This is the message display time, not a proven sign-in time; placement against other sources is conditional. | I-003 / E-003, message header and body | High: visible content; authenticity unverified |
 | Dec 24, 23:59:02 | Failed password for max.contr.maint from 89.46.57.27, port 22. | I-002 / sshd[2204] | High: visible text |
 | Dec 25, 00:00:36 | Accepted password for max.contr.maint from the same IP, port 22. | I-002 / sshd[2296] | High: visible text |
 | Dec 25, 00:01:51 | su PAM authentication failure. | I-002 / su[2599] | High: visible text |
@@ -109,3 +112,52 @@
 - Inject 2's shared source ID is E-002, as adopted by the lead.
 - Next suggested human action: Kherion asks the leader/evidence desk for the complete recovered log text, source year/time zone, recovery timestamp provenance, and session-linking records. No external request has been sent by Codex.
 - Next handoff: one concise presentation timeline distinguishing confirmed displayed records, uncertain session links, and actual outage onset (still unknown). Maintain I-001's explicit PST separately from I-002's unstated zone; do not calculate an exact cross-source interval.
+
+## Inject 3 update — 2026-10-15 11:01 PDT
+
+### Updated Timeline
+
+| Time | Event | Source | Confidence |
+|---|---|---|---|
+| Wed, Dec 24, 10:12 PM; year and zone unstated | Message titled Security alert, visually labelled Google <no-reply@accounts.google.com>, displayed with this timestamp. Body reports a new sign-in for maxwafoone@gmail.com from Mount Crumpit. | I-003 / E-003, header, account and body | High for visible content; authenticity unverified |
+| Actual sign-in time unknown | The sign-in is described in the email, but no separate event timestamp, IP, device or session ID is shown. | I-003 / E-003, body | Source claim; exact timing unknown |
+
+### New Connections
+
+- The Gmail account's “max” name and I-002's max.contr.maint are candidate identity correlations only. No ownership, account linkage, credential reuse, or common session is established.
+- Mount Crumpit appears in I-003's sign-in location claim and I-001's FDR-15 service area (OFFLINE, 0.0 MW/0.0 kV; row update Dec 25 08:42:40 PST). This is a shared place name, not proof that the login originated from an affected electrical asset or that it caused an outage.
+- If calendar dates, year, and zones align, the displayed 22:12 email precedes the 23:59:02 failed SSH login and 00:00:36 accepted login. Do not treat that conditional sequence as established cross-source timing or causation.
+- A new-sign-in alert alone does not establish unauthorized access. Legitimate owner activity, an unfamiliar device, account compromise, or an unauthenticated/spoofed screenshot remain alternatives; none is resolved here.
+
+### Contradictions
+
+- I-003 says **Wed, Dec 24** while I-001 explicitly says **Dec 25, 2026**. December 24, 2026 is Thursday. This is a calendar consistency problem if both artifacts are assumed to describe the same year's incident. I-003 omits the year; retain that uncertainty rather than silently assigning 2026.
+- Earlier notes did not contain a Google-account or sign-in-location lead. I-003 adds these leads; it does not confirm a relationship to the SCADA account.
+- I-001's monitoring contradictions and I-002's 11:00/11:03:15 recovery/start ambiguity remain unresolved.
+
+### Unanswered Questions
+
+1. What year, time zone, and exact Google sign-in event time apply? Does the weekday reflect a different year or scenario formatting error?
+2. Obtain the original email and full headers plus account security-event records through the challenge evidence; is the sender authenticated?
+3. Who owns maxwafoone@gmail.com, and is there documented linkage to max.contr.maint or Hydro Siber?
+4. What source IP, device, session, and location basis produced the Mount Crumpit label? Does it correlate with 89.46.57.27?
+5. Was the sign-in recognized by the owner, and were there subsequent recovery, MFA, password, token, or forwarding changes?
+6. What independent SCADA/physical evidence connects any account event to the service failure?
+
+### Six-part assessment for leader review
+
+1. **Situation:** Six files now listed; I-003 adds a Google security-alert screenshot to the dashboard and recovered-log evidence.
+2. **New findings:** Message display time Wed Dec 24 22:12; account maxwafoone@gmail.com; claimed sign-in location Mount Crumpit. No separate sign-in timestamp or IP shown.
+3. **Leading hypotheses:** A possible account relationship is worth testing, but similarity of names/location is weak linkage evidence. Legitimate activity and unrelated events remain viable.
+4. **Contradictions:** Weekday/date alignment differs if 2026 is assumed; source zones and exact event times are unknown. Existing grid and recovery-time contradictions persist.
+5. **Recommended action:** Evidence desk/leader seek original email, account ownership/security events and clock context; response analyst can evaluate account-protection proposals once authorization and scope are known. No account actions performed.
+6. **Critical unknowns:** Authenticity, year/zone, exact event time, authorized activity, Gmail-to-SCADA identity linkage, source IP/device, and physical blackout causation.
+
+### Message for Team Leader
+
+> Inject 3 shows a Google-labelled alert for maxwafoone@gmail.com, displayed Wed Dec 24 at 10:12 PM, reporting a new sign-in from Mount Crumpit. Possible links to max.contr.maint and the Mount Crumpit feeder are unconfirmed. The alert omits year/zone and its weekday conflicts with Dec 24, 2026 if that year is assumed. Obtain original email/security events and account ownership evidence before linking it to the SCADA activity. Cause and outage onset remain unknown.
+
+### Change history
+
+- I-003/E-003 added with one message timestamp and an explicitly untimed sign-in claim. Earlier I-001/I-002 findings retained.
+- Earlier “five files” and “Inject 2 latest” notes describe prior checks; six files and Inject 3 are current as of this review.
