@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-15T12:41:00-07:00",
-  "updatedBy": "Gretzky — evidence desk coordination",
+  "updatedAt": "2026-10-15T12:49:23-07:00",
+  "updatedBy": "Kherion — timeline support",
   "latestInject": {
-    "id": "I-006",
-    "title": "FreeGameDownloads page",
-    "state": "Inject 6 reviewed by response, timeline and evidence desk",
-    "checkedAt": "2026-10-15T12:33:00-07:00",
-    "note": "Response, timeline and evidence desk reviewed Inject 6; 13 items at the last Drive check. The page visibly shows a Not secure label, FreeGameDownloads, Tomodachi Life artwork, a Download area and address text 5freeedownloads.com/tomodachi/free/c (three e letters after fr in enlarged-source reread; another analyst transcribed two). Source URL completion, browser/host attribution, visit timestamp, file origin, execution and SCADA linkage are unknown. Presentation Criteria.jpg has six 5-point categories but telecom/university examples may not apply to the Whoville utility scenario.",
-    "sourceUrl": "https://drive.google.com/drive/folders/1tpag2T6jptGhCC7E2tKtuZbTXLQ9B-Mj"
+    "id": "I-007",
+    "title": "Desktop game folder screenshot",
+    "state": "Inject 7 reviewed by timeline",
+    "checkedAt": "2026-10-15T12:49:23-07:00",
+    "note": "Fourteen Drive items confirmed. The screenshot shows two applications in a named desktop folder; detailed analysis, times, source limits and links are in investigation/team3.md. No execution or outage cause confirmed.",
+    "sourceUrl": "https://drive.google.com/file/d/1swqAROKb7An3qeNk3noP8o9pOQ00C63C/view"
   },
   "assessment": [
     {
@@ -66,11 +66,11 @@
     {
       "id": "timeline",
       "name": "Timeline support — Kherion + Codex",
-      "status": "Injects 5–6 reviewed and published",
-      "updatedAt": "2026-10-15T12:40:02-07:00",
-      "completed": "Published sourced, confidence-labelled Inject 5 download history and Inject 6 game-download webpage findings in investigation/team3.md; connected them cautiously and preserved Injects 1–4 and corrections.",
-      "next": "Seek device identity, original browser visit/download times, referrer, hashes, execution evidence and independent SCADA/physical-grid correlation as later injects arrive.",
-      "blocker": "Screenshot-only file and webpage evidence: exact time, owner, original download/referrer, execution, and causation unverified.",
+      "status": "Inject 7 reviewed and published",
+      "updatedAt": "2026-10-15T12:49:23-07:00",
+      "completed": "Completed source review of Inject 7 and added the chronology and six-part assessment to investigation/team3.md.",
+      "next": "Correlate newly described folder contents with earlier browser records and independently verified system events.",
+      "blocker": "Source screenshots lack device ownership, original file evidence and execution records.",
       "source": "investigation/team3.md#inject-6--game-download-webpage-i-006"
     },
     {
