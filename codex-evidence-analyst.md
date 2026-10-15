@@ -2,8 +2,8 @@
 
 **Team member / agent:** Gretzky — Member 2, evidence investigator; identity confirmed directly by the user. Codex is the evidence assistant; AI analysis is identified as assisted work.
 **Role:** Cybersecurity Evidence & Forensics Analyst
-**Status:** Investigating; Injects 1 and 2 reviewed
-**Updated:** 2026-10-15 10:31 PDT (UTC-07:00)
+**Status:** Investigating; Injects 1, 2 and 3 reviewed
+**Updated:** 2026-10-15 11:02 PDT (UTC-07:00)
 **Shared status:** [status.md](status.md)
 
 ## Work completed
@@ -151,3 +151,60 @@ These are prepared requests, not messages sent to an external party. No continuo
 ## Identity confirmation — 2026-10-15 10:49 PDT (UTC-07:00)
 
 The user directly stated "Im gretzky". This connects this evidence chat and its previously confirmed presence to Member 2 (existing roster spelling gretsky). Preferred name spelling is Gretzky; existing human-status section header is retained for website parsing. Earlier identity-unknown statements are historical and superseded by this confirmation. AI findings remain assisted work; no independent human review is invented. Gretzky's immediate task is to collect full logs/authorization context through the team, brief the leader, and bring in the next inject.
+
+## I-003 / E-003 — Google sign-in alert screenshot
+
+**Analyst:** Gretzky with Codex evidence assistance  
+**Reviewed:** 2026-10-15 11:02 PDT (UTC-07:00)  
+**Source:** [Inject 3 PNG](https://drive.google.com/file/d/1iQa1Y2u0vdNfuVin0ejEClH4pdJv0KUL/view)  
+**Discovery:** Evidence desk listed six Drive files around 11:01 PDT: Injects 1–3 plus Instructions, Schedule, Mission Overview. File creation 2026-10-15T18:00:17.020Z and modification 18:00:24.933Z are upload metadata, not incident times. Image visually inspected at original resolution, 4096 x 1691. Original email/header data not provided.
+
+### Evidence Summary
+
+Screenshot of an email titled "Security alert", displaying Google <no-reply@accounts.google.com>, addressed "to me". The message claims a new Google Account sign-in from Mount Crumpit for maxwafoone@gmail.com. Screenshot content is evidence of the claim, not authentication of the email or proof the sign-in was unauthorized.
+
+### Important Findings
+
+| Finding | Exact source or timestamp | Why it matters | Confirmed fact or hypothesis |
+|---|---|---|---|
+| Email subject is Security alert; displayed sender is Google <no-reply@accounts.google.com> | Upper-left subject and sender | Looks like a security notification; sender text alone cannot authenticate a message | Confirmed visible text; authenticity unknown |
+| Header reads Wed, Dec 24, 10:12 PM; no year or zone | Upper-right email header | Candidate timeline point; this is displayed email time, not proven exact sign-in time | Confirmed visible time; clock/year unknown |
+| Alert names maxwafoone@gmail.com | Center account line | New account identifier to correlate with later evidence | Confirmed identifier in source claim |
+| Message claims A new sign-in from Mount Crumpit | Center heading and body | Possible unfamiliar account access; no IP, device, browser or authorization is shown | Confirmed alert claim; unauthorized access is a hypothesis |
+| Check activity button and visible https://myaccount.google.com/notifications text | Lower-center message | Button's underlying URL cannot be inspected in a screenshot; visible URL text alone does not prove destination or legitimacy | Confirmed visible text; actual targets unknown |
+| max in the Gmail identifier resembles max.contr.maint from I-002 | E-003 account line vs E-002 Dec 25 00:00:36 SSH entry | Potential account/credential investigation connection | Hypothesis only; shared substring is not identity proof |
+| Mount Crumpit is also I-001 FDR-15 service area | E-003 alert vs E-001 FDR-15: Ridge Station, OFFLINE, 0.0 MW / 0.0 kV, update 08:42:40 PST | Geographic label appears in two sources; it may guide correlation | Confirmed shared label; causal or actor connection unproven |
+| Email weekday conflicts with a 2026 interpretation | E-003 Wed, Dec 24 vs E-001 Dec 25, 2026 | Calendar check using .NET date arithmetic confirms Dec 24, 2026 was Thursday | Confirmed calendar mismatch if 2026 is assumed; screenshot year is unstated |
+
+### Suspicious Activity
+
+If the alert is genuine and the account owner did not recognize the sign-in, unauthorized account access becomes a stronger hypothesis. The screenshot does not say the owner denied the sign-in. A new-location alert can also reflect authorized access, VPN/geolocation effects, or exercise formatting. Phishing is possible but not established: no malicious destination, attachment, credential submission, or failed email-authentication result is visible.
+
+Candidate correlation leads: maxwafoone@gmail.com; Mount Crumpit. Neither is a confirmed malicious IOC. The displayed Google sender/domain and visible account URL are not classified as malicious. No link or button was opened and no account was accessed.
+
+### Connections and timeline limits
+
+- I-002: max.contr.maint has a failed SSH password at Dec 24 23:59:02 then an accepted password at Dec 25 00:00:36 from 89.46.57.27. I-003 supplies no IP that matches it.
+- If date/year/zones align and the email time represents the relevant alert, Dec 24 22:12 precedes the failed SSH entry by 1h47m02s and the accepted entry by 1h48m36s. These are conditional calculations, not proof of causation or a single account owner.
+- I-001: Mount Crumpit is FDR-15's service area, displayed OFFLINE with zero flow/voltage. This does not locate an attacker, prove physical presence, or establish that a Google sign-in caused the outage.
+- Do not infer a real-world year from the weekday, assume attacker identity from the profile illustration, or rewrite the raw Wednesday label. The weekday mismatch could be source/template error or different-year evidence; unresolved.
+- Existing I-001 dashboard discrepancies and I-002 access/privilege/logging findings remain valid as source observations. Account compromise, stolen credentials, phishing, attacker attribution, and blackout cause remain unconfirmed.
+
+### Missing Information — questions for later injects
+
+Actual email headers/authentication results and button URLs; Google security-event details including exact timestamp/year/zone, IP/device and session; whether the owner recognized the sign-in; whether maxwafoone@gmail.com and max.contr.maint belong to the same person or share recovery/credentials; reliable clock alignment; relationship between Mount Crumpit location and utility assets. These are open questions for later injects, not tasks requiring Gretzky to obtain inaccessible records.
+
+### Message for Team Leader
+
+> Inject 3 shows a claimed Google sign-in alert for maxwafoone@gmail.com from Mount Crumpit, displayed Wed Dec 24 at 10:12 PM (year/zone absent). Possible connections: max.contr.maint in Inject 2 and Mount Crumpit/FDR-15 in Inject 1. Neither proves identity, unauthorized access, or blackout causation. Email authenticity is unverified. Wednesday Dec 24 conflicts with a 2026 interpretation (Thursday); preserve raw time and flag alignment.
+
+### Six-part handoff
+
+1. **Situation:** I-003 adds a claimed cloud-account sign-in to the dashboard and SCADA host-log evidence.
+2. **New findings:** Email/account/location/time transcribed above; two potential cross-inject links.
+3. **Leading hypotheses:** Authorized sign-in, account compromise, or fabricated/phishing alert remain possible. No ranking as blackout cause is justified.
+4. **Contradictions:** Email Wednesday label versus 2026 Thursday; no IP or direct owner mapping to bridge the sources.
+5. **Recommended action:** Timeline to preserve year/zone caveat; leader to integrate cautious account-access lead into presentation; evidence desk to compare later injects.
+6. **Critical unknowns:** Alert authenticity, owner recognition, account mapping, exact event clock and relationship to operational effects.
+
+**Current status:** Available evidence through Inject 3 reviewed; ready for the next inject. No automatic monitoring or account/utility actions performed.
