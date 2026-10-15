@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-15T12:39:00-07:00",
-  "updatedBy": "Gretzky — Evidence desk",
+  "updatedAt": "2026-10-15T12:40:02-07:00",
+  "updatedBy": "Kherion — timeline support (AI-assisted)",
   "latestInject": {
     "id": "I-006",
     "title": "FreeGameDownloads page",
-    "state": "Inject 6 reviewed by response and evidence desk; timeline review not yet recorded",
+    "state": "Inject 6 reviewed by response and timeline",
     "checkedAt": "2026-10-15T12:33:00-07:00",
-    "note": "13 Drive items checked at about 12:33 PDT: I-006 browser page and Presentation Criteria image were new. E-006 displays FreeGameDownloads, a Not secure indicator and 5freeedownloads.com/tomodachi/free/c (three e's after fr); game branding correlates with the I-005 ZIP, but no click, file origin/execution, host identity or SCADA link is shown. Evidence desk and response reviewed; timeline review not recorded. Criteria image has six 5-point headings but telecom/university examples may not apply to Whoville.",
+    "note": "Response and timeline reviewed the Inject 6 browser-page screenshot. Visible partial 5freedownloads.com address, Tomodachi Life Download button and Not secure label. Possible link to the Inject 5 archive remains unverified; no visit time, download, execution or SCADA link shown. Prior Drive check at the recorded checkedAt; not continuously monitored.",
     "sourceUrl": "https://drive.google.com/drive/folders/1tpag2T6jptGhCC7E2tKtuZbTXLQ9B-Mj"
   },
   "assessment": [
@@ -66,12 +66,12 @@
     {
       "id": "timeline",
       "name": "Timeline support — Kherion + Codex",
-      "status": "Inject 4 reviewed and published",
-      "updatedAt": "2026-10-15T11:39:00-07:00",
-      "completed": "Reviewed all four Inject 4 images, added dated and untimed resident reports, neighbourhood correlations, source confidence and six-part briefing to investigation/team3.md; preserved Injects 1–3.",
-      "next": "Confirm affected feeder mapping, actual outage onset, post timing and independent field/Medical District conditions with later evidence.",
-      "blocker": "Community posts unauthenticated, relative clocks unresolved, no independently confirmed feeder status or cyber causation.",
-      "source": "investigation/team3.md"
+      "status": "Injects 5–6 reviewed and published",
+      "updatedAt": "2026-10-15T12:40:02-07:00",
+      "completed": "Published sourced, confidence-labelled Inject 5 download history and Inject 6 game-download webpage findings in investigation/team3.md; connected them cautiously and preserved Injects 1–4 and corrections.",
+      "next": "Seek device identity, original browser visit/download times, referrer, hashes, execution evidence and independent SCADA/physical-grid correlation as later injects arrive.",
+      "blocker": "Screenshot-only file and webpage evidence: exact time, owner, original download/referrer, execution, and causation unverified.",
+      "source": "investigation/team3.md#inject-6--game-download-webpage-i-006"
     },
     {
       "id": "response",
@@ -151,13 +151,13 @@
     },
     {
       "label": "Inject 5",
-      "status": "Reviewed by response",
-      "note": "Evidence and response reviewed the download history. No execution or host name shown. Timeline review is not yet recorded."
+      "status": "Reviewed by evidence, response and timeline",
+      "note": "Timeline appended four Dec 24 Chrome download entries with no exact times or verified execution/host; source details and causation remain unknown."
     },
     {
       "label": "Inject 6",
-      "status": "Reviewed by response",
-      "note": "Download page with a truncated Not secure address and a Download button. No click shown. Evidence and timeline reviews not yet recorded."
+      "status": "Reviewed by response and timeline",
+      "note": "Timeline appended undated FreeGameDownloads webpage; possible archive source, no proven referrer, transfer, malware or outage link."
     },
     {
       "label": "Judging criteria",
