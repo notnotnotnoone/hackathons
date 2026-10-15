@@ -36,14 +36,17 @@ Updated at (date, time, zone): Not reported
 
 ============================================================
 GRETSKY - MEMBER 2
+Name: Gretzky (user-confirmed spelling; existing section header retained for website compatibility)
 Suggested role: Evidence investigator
-Role confirmed: Not reported
-Status: Not reported
-Working on: Not reported
-Finished / handoff link: Not reported
-Next step: Not reported
-Need help with: Not reported
-Updated at (date, time, zone): Not reported
+Role confirmed: Evidence collection / investigation role established in this chat; name confirmed directly as Gretzky.
+Presence: Confirmed directly by Gretzky in the evidence chat.
+Status: Working
+Working on: Collecting evidence and coordinating AI-assisted evidence analysis.
+Finished / handoff link: AI-assisted Inject 1/2 findings, schedule review and log reread in codex-evidence-analyst.md. Independent human verification is not claimed.
+Next step: Obtain full logs and maintenance/access approvals through the team; collect the next inject and brief the leader.
+Need help with: Full source logs, authorized-account/IP baselines, audit linkage, independent equipment readings, official requirements.
+Updated at (date, time, zone): 2026-10-15 10:49 PDT (UTC-07:00)
+Recorded by: Codex evidence assistant from Gretzky's direct identity confirmation and earlier authorized status updates.
 
 ============================================================
 KHERION - MEMBER 3
@@ -93,7 +96,7 @@ Recorded by: Codex, at participant request. No other person's status changed.
 
 ============================================================
 PRESENT PARTICIPANT - USER OF THE EVIDENCE CHAT
-Name / roster mapping: Not yet supplied; do not assume this is the leader, gretsky, kherion, or kevin.
+Name / roster mapping: Gretzky, confirmed directly in the evidence chat; maps to GRETSKY - MEMBER 2 above. This is the same participant, not another team member.
 Presence: Confirmed by the participant's direct request to record presence in GitHub.
 Status: Working
 Working on: Evidence collection and team coordination with the Codex evidence assistant.
@@ -101,5 +104,5 @@ Finished / handoff link: AI-assisted Inject 1/2 analysis and schedule review are
 Next step: Share the team update; collect the next inject and clarify the open evidence/competition requirements.
 Need help with: Full original logs, authorization/maintenance records, independent equipment readings, official deadline/time zone and rubric.
 Updated at (date, time, zone): 2026-10-15 10:41 PDT (UTC-07:00)
-Recorded by: Codex evidence assistant, at the participant's explicit request. Presence is confirmed; name and roster mapping remain unresolved.
+Recorded by: Codex evidence assistant, at the participant's explicit request. Presence and roster mapping are now confirmed as Gretzky / Member 2; see the 10:49 PDT update above.
 Attribution note: Chat-specific presence records may refer to the same person. Do not count them as distinct people without roster confirmation.
