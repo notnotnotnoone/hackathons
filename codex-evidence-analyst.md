@@ -208,3 +208,49 @@ Actual email headers/authentication results and button URLs; Google security-eve
 6. **Critical unknowns:** Alert authenticity, owner recognition, account mapping, exact event clock and relationship to operational effects.
 
 **Current status:** Available evidence through Inject 3 reviewed; ready for the next inject. No automatic monitoring or account/utility actions performed.
+
+
+## I-004 / E-004 — Community outage posts and public advice
+
+**Reviewed:** 2026-10-15 11:17 PDT (UTC-07:00). The shared Drive folder now contains four separate PNG files titled “Inject 4”; they are treated as four exhibits under I-004, with source links below. The screenshots are social-media captures, not platform exports or independently authenticated posts. They report community experiences and public messaging; they do not identify the blackout cause.
+
+### Evidence Summary
+
+- [E-004a — Reddit screenshot](https://drive.google.com/file/d/1CUNuPYSCE9y9prf1uCUYhjlMU9K1_WAm/view): A post in r/Whoville titled “Where else is the power out???” shows a relative “1h” label and asks where else power is out. Comments mention East Valley, West Ridge, and Riverdale; one Riverdale commenter says their heater is not working. The device status bar shows 11:34. No absolute post date, zone, or permalink appears.
+- [E-004b — Mayor-branded X screenshot](https://drive.google.com/file/d/1XN9CpCFTRhB8AuFq9e_RgGDRfUK5cAIL/view): A post displayed under the name Ned Mcdodd / @notyourmayor_, with a verification badge, asks whether electricity is out and says the poster is freezing at home. The screenshot displays Dec 25, 2026, 9:01 AM, “Twitter for Android.” A reply says the commenter is using a neighbor’s generator. No time zone or permalink is shown; the badge and account identity are only as displayed in the screenshot.
+- [E-004c — Facebook screenshot](https://drive.google.com/file/d/1a2gAJlOUtpwflgsO99Zex6_nqia_a_CA/view): A public-looking post under “LouLouWho,” with a verification badge and a relative “23m” label, addresses Whoville residents whose power is out. It says “the clock is ticking” and offers household advice, including burying food in snow and running to a store to stock up on water. No absolute date/time, zone, permalink, or source for the advice is visible. Treat the advice as unverified; some recommendations may create safety or food-safety risks and should not be amplified as official guidance without checking authoritative instructions.
+- [E-004d — X screenshot](https://drive.google.com/file/d/1fAsOH6POqtOg9kaey9DQqxxYqrmyYScE/view): @pilot_ozzy2323 says “i was hoping for a snow day but now nothing turns on lmaoo.” The screenshot displays Dec 25, 2026, 8:47 AM, “Twitter for Android.” No time zone, location, verification, or permalink appears.
+
+### Important Findings
+
+| Finding | Exact source/time | Why it matters | Fact or hypothesis |
+|---|---|---|---|
+| The Reddit thread and its comments report loss of power/heating in Central Whoville, East Valley, West Ridge, and Riverdale | E-004a post and visible comments; post marked “1h,” screenshot status bar 11:34 | Provides several community reports consistent with a widespread outage narrative; the comments are not independent utility measurements | Confirmed text shown in screenshot; locations and outage conditions are unverified claims |
+| The Mayor-branded account asks about an outage and reports being cold at home; reply mentions a neighbor’s generator | E-004b, displayed Dec 25, 2026, 9:01 AM | Shows public concern and a claimed household workaround | Confirmed screenshot content/time label; account identity and claims are not independently authenticated |
+| A separate account also says nothing is turning on | E-004d, displayed Dec 25, 2026, 8:47 AM | Adds another public outage claim near the Inject 1 dashboard display time, if clocks align | Confirmed screenshot content/time label; actual location, account identity, and zone are unknown |
+| The Facebook post uses urgent survival language and gives household instructions, including burying food in snow and going to a store for water | E-004c, relative “23m” label | Could confuse people during a cold-weather outage; authority and accuracy are unknown | Confirmed visible text; harmful impact, intent, coordination, and reach are unproven |
+| The screenshot set is broadly consistent with the scenario’s outage claims and earlier dashboard picture | E-004a–d versus I-001 / E-001, Dec 25, 2026, dashboard displayed 08:43:12 AM with feeder rows around 08:42 PST | Supports that the outage was being discussed publicly, but social posts do not verify the feeder count, voltage/flow readings, or grid cause | Correlation only; timestamp zones and source reliability are not established |
+
+### Suspicious Activity
+
+No screenshot shows a login, system access, malicious link, operational command, or direct cyber action. The Facebook post’s alarmist wording and unverified advice are a public-safety concern and a possible misinformation lead. The screenshots alone do not show deliberate deception, a coordinated campaign, account compromise, or connection to the earlier SCADA activity. No actor attribution or blackout cause is supported.
+
+### Missing Information
+
+Original post URLs/permalinks and platform records; reliable account identity and verification; absolute timestamps and time zones for relative-time captures; poster locations and firsthand basis; independent utility or emergency-service confirmation of outage extent; source and review of the Facebook advice; whether the post was corrected or widely acted upon. These are open evidence gaps for later injects; Gretzky need not pursue unavailable records.
+
+### Message for Team Leader
+
+> Inject 4 contains four social-media screenshots reporting power/heating problems in Central Whoville, East Valley, West Ridge, and Riverdale; two X screenshots display Dec 25, 2026 at 8:47 and 9:01 AM, while Reddit/Facebook times are relative. They are public claims, not independent feeder measurements, and their time zones and account identities are unverified. One Facebook post gives urgent household advice, including burying food in snow and going to a store for water; please check any response against official safety guidance before repeating it. The posts do not establish a cyberattack or explain the blackout.
+
+### Six-part evidence handoff
+
+1. **Situation:** I-004 adds public discussion and claimed household impacts to the dashboard, SCADA, and claimed sign-in evidence.
+2. **New findings:** Four screenshot exhibits report local power/heating problems and show an urgent public advice post; two screenshots display Dec 25, 2026 times.
+3. **Leading hypotheses:** The posts may reflect genuine outage experiences, rumor, or a mix; no finding about cyber activity follows from them.
+4. **Contradictions:** Social post times have absent or relative zones; place mentions do not map to specific feeders in the supplied evidence.
+5. **Recommended action:** Preserve the screenshots and time labels; use only verified official safety guidance in any public communication. Do not present comments as grid measurements.
+6. **Critical unknowns:** Post authenticity, precise time/location, outage scope, advice accuracy/source, and any link to operational events.
+
+**Current status:** Injects 1–4 reviewed by the evidence desk. Blackout cause, cyberattack, actor identity, and the authenticity/accuracy of social-media claims remain unconfirmed. No links/buttons or utility systems were accessed, and no external message or competition submission was made.
+
