@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-15T12:02:00-07:00",
-  "updatedBy": "Kevin",
+  "updatedAt": "2026-10-15T12:06:00-07:00",
+  "updatedBy": "Gretzky — Evidence desk",
   "latestInject": {
     "id": "I-005",
     "title": "Chrome download history",
-    "state": "Inject 5 reviewed by response",
+    "state": "Inject 5 reviewed by evidence desk and response",
     "checkedAt": "2026-10-15T12:02:00-07:00",
-    "note": "Response chat listed eleven Drive files at 12:02 PDT. Inject 5 is a managed-browser download history. December 24, 2026 lists an executable and a zip among other files. No user, host, or execution is shown. Other desks have not yet recorded a review.",
+    "note": "Response and evidence desk reviewed the single Inject 5 Chrome download-history screenshot, with 11 Drive items present at the 12:02 PDT check. Four downloads are grouped under Dec 24, 2026, including ryujinxx.exe. Exact download times, user, host, source, contents, execution and SCADA link are unverified. Timeline review has not been confirmed.",
     "sourceUrl": "https://drive.google.com/drive/folders/1tpag2T6jptGhCC7E2tKtuZbTXLQ9B-Mj"
   },
   "assessment": [
@@ -56,12 +56,12 @@
     {
       "id": "evidence",
       "name": "Gretzky — Evidence desk",
-      "status": "Inject 4 reviewed",
-      "updatedAt": "2026-10-15T11:18:11-07:00",
-      "completed": "Reviewed four Inject 4 social-media screenshots; documented reported outage locations, displayed timestamps, public-safety concern, and source limitations.",
-      "next": "Correlate any later injects with I-001–I-004; preserve account, time-zone, location, and provenance uncertainty.",
-      "blocker": "No absolute time/zone or independent authentication for the posts; extent and source of household advice are unknown.",
-      "source": "investigation/codex-evidence-analyst.md#i-004--e-004--community-outage-posts-and-public-advice"
+      "status": "Inject 5 reviewed",
+      "updatedAt": "2026-10-15T12:06:00-07:00",
+      "completed": "Visually reviewed I-005/E-005 Chrome download history and compared its filenames/date with I-001–I-004; documented suspicious executable spelling, attribution gaps and lack of execution or cyber-causation proof in the evidence log and Gretzky handoff.",
+      "next": "Compare any later injects for host/user identification, exact download timestamps, source URLs, file hashes, security alerts and execution evidence; keep cause hypotheses conditional.",
+      "blocker": "No file bytes, exact download times/time zone, source URLs, device/user attribution or process evidence; I-002/I-003 source clocks remain unresolved.",
+      "source": "investigation/codex-evidence-analyst.md#i-005--e-005--chrome-download-history-screenshot"
     },
     {
       "id": "timeline",
