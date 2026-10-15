@@ -2,6 +2,9 @@ TEAM MEMBER STATUS
 Young Defenders - Whoville investigation
 
 This file is for people's progress updates.
+Progress website: https://notnotnotnoone.github.io/hackathons/
+Agents: read AGENTS.md and update docs/progress.json after your source log.
+The website reads this plaintext file automatically; keep the section headers and field labels.
 Detailed evidence and AI analyst notes stay in the linked files in README.md.
 Created October 15, 2026. No personal progress has been assumed.
 
