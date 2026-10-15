@@ -25,20 +25,20 @@ docs/              GitHub Pages website and progress data
 
 | Item | Current position |
 |---|---|
-| Latest inject | **Inject 8 — simulated grid map. Evidence desk around 13:02 PDT; response at 13:12 PDT** |
+| Latest inject | **Inject 8 — grid operations map: 92,430 customers out, hospital on backup generators, water treatment offline. Reviewed by the evidence desk (about 13:02 PDT), response (13:06–13:12 PDT) and timeline (13:06 PDT)** |
 | Investigation | **Active. Blackout cause and unauthorized activity remain unconfirmed.** |
-| Latest published analyst updates reviewed | Evidence desk through 13:05 PDT; timeline through 12:49 PDT; response through 13:12 PDT, October 15, 2026 |
-| Lead reconciliation | The lead's numbered assessment was last reconciled at 10:34 PDT (Injects 1–2). At Kevin's request, the response chat reconciled the assessment below through Inject 7 at 13:10 PDT. The leader has not reviewed that version and may revise it. |
-| Drive coverage | Fifteen files: Injects 1–8, including four Inject 4 images, plus Instructions, Schedule, Mission Overview, and Presentation Criteria.jpg. |
-| Review coverage | Evidence desk, timeline, and response reviewed Inject 8. The response chat re-checked originals through Inject 7 at 12:45–13:05 PDT; see [Sync audit](#sync-audit--2026-10-15-1310-pdt). The lead's personal review is not assumed. |
+| Latest published analyst updates reviewed | Evidence desk through 13:05 PDT; timeline through 13:06 PDT; response through 13:12 PDT, October 15, 2026 |
+| Lead reconciliation | The lead's numbered assessment was last reconciled at 10:34 PDT (Injects 1–2). At Kevin's request, the response chat reconciled the assessment below through Inject 8 at 13:12 PDT. The leader has not reviewed that version and may revise it. |
+| Drive coverage | Fifteen files at about 13:02 PDT (evidence desk): Injects 1–8, including four Inject 4 images, plus Instructions, Schedule, Mission Overview, and Presentation Criteria.jpg. The evidence desk calls Inject 8 the final labelled inject. |
+| Review coverage | Evidence desk, timeline and response reviewed every inject through Inject 8. The response chat re-checked all originals against the repo at 12:45–13:06 PDT; see [Sync audit](#sync-audit--2026-10-15-1312-pdt). The lead's personal review is not assumed. |
 | Remaining intake gaps | Presentation length and format, submission method, explicit deadline, event time zone, and AI/sharing rules. The rubric is known from PC-001: six criteria, 5 points each. Its telecom and university examples are not Whoville facts |
-| Submission | Presentation has an Inject 8 response update and an evidence addendum. Not approved and not submitted |
+| Submission | **Final presentation ready for leader approval:** [presentation/presentation-outline.md](presentation/presentation-outline.md), mapped to the six criteria, with Inject 8 in the main sections (13:12 PDT). The evidence desk's Inject 8 addendum is kept at the end. Not approved and not submitted |
 | Participant presence | Gretzky (10:49), Kherion (10:50) and Kevin (10:51) confirmed in human-status.txt. The leader's personal status was last updated at 11:01 PDT. |
-| Next priority | Before 1:45 PM judging: leader integrates final Inject 8 safety/impact results into the walk-up and final script, approves public statement and speakers. Independently verify hospital backup power, water-treatment status, substation and breaker conditions |
+| Next priority | **Before 1:45 PM judging:** leader approves the presentation and the public statement, and confirms speakers. Safety: hospital generator fuel and the water treatment plant. Investigation: breaker and relay history for 00:05:58–11:03:15 and 06:31–08:43, the computer behind I-005–I-007, and account-owner calls |
 
-**What changed:** The assessment, event sequence, contradictions, team table, actions, register and requirements below now cover Injects 1–7. Earlier wording is kept in git history and in the collapsed lead assessment.
+**What changed:** The assessment, event sequence, contradictions, team table, actions, register and requirements below now cover Injects 1–8. Earlier wording is kept in git history and in the collapsed lead assessment.
 
-## Sync audit — 2026-10-15 13:10 PDT
+## Sync audit — 2026-10-15 13:12 PDT
 
 Kevin asked the response chat to check every repository file against the Drive originals without assuming any of it was right. Each item below was re-checked against the saved original images.
 
@@ -51,6 +51,8 @@ Kevin asked the response chat to check every repository file against the Drive o
 | I-007 first filename | `NOTstea1n…` with a letter O (all three desks) | `N0Tstea1nG?CredEntials.exe` with a zero. The character after G is I or l | Compared with the zeros in "2026" and "10:39" on the same screen |
 | PC-001 | "phone photo" (response) | Phone screenshot of a Drive viewer | Status bar, title bar, Drive and Share buttons |
 | progress.json assessment | Described Injects 1–3 ("leader is working on Inject 3") | Reconciled through Inject 7 | This audit |
+| I-008 SUB-01 SCADA status | Degraded (evidence log) | Degraded on the map, **Online** in the table on the same screen | Zoomed map label and table row |
+| I-008 customer change | "comparison period not shown" (evidence log) | "▲14% (and rising)" | Zoomed header |
 | Website role labels | Gretzky and Kherion shown as "suggested" | "confirmed" when the plaintext file has a filled-in "Role confirmed" field | docs/app.js |
 
 **New observations (inferences, not events)**
@@ -61,6 +63,9 @@ Kevin asked the response chat to check every repository file against the Drive o
 - `sudo[1802]` is lower than the process IDs logged minutes earlier (2296, 2599, 2618).
 - The backup cron text `(opt/backup/scada/dump.sh) > /dev/null/2.%1)` would normally fail if literal, so recent backups may not exist.
 - "Wed, Dec 24" fits 2025, not 2026. I-005 explicitly says December 24, 2026.
+- I-008: SUB-03 Central reads "Online" in SCADA at 0 MW while its note says "SCADA shows offline" and customers there report outages. Together with I-001 FDR-03 and the I-004 "central" post, this is the clearest sign the operators' view is wrong.
+- I-008: the earliest problem time on any screen is SUB-07 telemetry loss at 06:31, 6 h 25 min after rsyslog stopped.
+- I-008: Mount Crumpit, the I-003 sign-in location, is also where the Crumpit Generating Station is shown.
 - The Reddit poster in "central" reports no power while all Central Station feeders show voltage. FDR-03 Downtown shows 0.0 MW, which fits customers being dark.
 
 **Flagged for the owning desk (not edited here)**
@@ -94,14 +99,14 @@ The user of the evidence chat explicitly confirmed presence; recorded in [human-
 
 ## Current assessment
 
-**Coverage:** Reconciled through Inject 7 by Kevin's response chat at Kevin's request, 13:10 PDT. It draws on the published evidence, timeline and response logs and a fresh check of every original. The leader has not reviewed this version and may revise it. The lead's Injects 1–2 assessment is kept below.
+**Coverage:** Reconciled through Inject 8 by Kevin's response chat at Kevin's request, 13:12 PDT. It draws on the published evidence, timeline and response logs and a fresh check of every original. The leader has not reviewed this version and may revise it. The lead's Injects 1–2 assessment is kept below.
 
-1. **Situation:** At Dec 25, 2026, 08:43 the distribution screen is DEGRADED. 12 of 18 feeders show 0.0 MW and 0.0 kV, four carry load, and two show voltage with no load: Downtown and the Medical District. Residents report no power and no heat at 8:47 and 9:01 a.m. (I-001, I-004). The cause is not established.
-2. **New findings:** The SCADA host log shows password SSH logins from three public addresses. The contractor account logs in at midnight after one failure, two `su` attempts fail, `adminelk` runs `sudo su` as root, and rsyslog stops 44 seconds later (I-002). A Google new-sign-in alert from Mount Crumpit names `maxwafoone@gmail.com` (I-003). One managed Chrome profile downloaded `Tomodachi Life FREE.zip` and `ryujinxx.exe` on Dec 24, 2026 and viewed a Not secure `5freeedownloads.com` game page (I-005, I-006). A desktop folder with the zip's name holds `N0Tstea1nG?CredEntials.exe` (82 KB) and `setup.exe` (I-007).
+1. **Situation:** At Dec 25, 2026, 08:43 the grid map shows 92,430 customers without power and rising, the hospital on backup generators, the water treatment plant offline and the transit hub on partial power (I-008). The distribution screen is DEGRADED: 12 of 18 feeders show 0.0 MW and 0.0 kV, four carry load, and two show voltage with no load, Downtown and the Medical District. Residents report no power and no heat at 8:47 and 9:01 a.m. (I-001, I-004). The cause is not established.
+2. **New findings:** The SCADA host log shows password SSH logins from three public addresses. The contractor account logs in at midnight after one failure, two `su` attempts fail, `adminelk` runs `sudo su` as root, and rsyslog stops 44 seconds later (I-002). A Google new-sign-in alert from Mount Crumpit names `maxwafoone@gmail.com` (I-003). One managed Chrome profile downloaded `Tomodachi Life FREE.zip` and `ryujinxx.exe` on Dec 24, 2026 and viewed a Not secure `5freeedownloads.com` game page (I-005, I-006). A desktop folder with the zip's name holds `N0Tstea1nG?CredEntials.exe` (82 KB) and `setup.exe` (I-007). The grid map shows SUB-03 Central "Online" at 0 MW with customer outage reports, SUB-07 blind since 06:31, and alerts from 07:32 (I-008).
 3. **Leading hypotheses:** The working hypothesis to investigate first runs as follows. A pirated-game lure delivered a credential stealer. Stolen contractor credentials reached the SCADA host. Privileges were raised, logging was stopped, and the grid or its monitoring was then affected. Each step is shown on its own; the links between them are not. Confidence in the full chain is low to moderate. Alternatives remain: approved maintenance plus an unrelated equipment or supply failure, a monitoring or communications fault, or unrelated personal downloads. **A cyberattack as the cause of the blackout is not established.**
-4. **Contradictions:** Footer 17/1 vs table 14/4 vs six feeders with voltage vs four with flow. FDR-04 and FDR-08 are OFFLINE with load. The 11:00 recovery note conflicts with the 11:03:15 restart. "Wed, Dec 24" conflicts with Dec 24, 2026 being a Thursday. `sudo[1802]` is lower than the IDs logged before it. August file dates vs a December download is not necessarily a contradiction.
-5. **Recommended action:** Life safety first: welfare checks and warming for the dark areas and the resident-named places, then in-person checks of the Medical District and Downtown. Hold remote switching from `whoville-scada` and operate locally. Image the SCADA host and copy the backup before changes, and do not reboot first. Call the four account owners on known numbers, then disable the contractor's remote password login and block `89.46.57.27`. Identify the computer behind I-005–I-007, keep it powered on but off the network, and do not open the files. Issue a public statement only after leader approval. See the [presentation](presentation/presentation-outline.md) and the [response options](investigation/kevin-response.md).
-6. **Critical unknowns:** breaker and relay history for 00:05:58–11:03:15; whose computer and Chrome profile; whether any file ran; authorization of the four accounts; who sent signal 15; the year and zone of I-002 and I-003; presentation length, format and submission method.
+4. **Contradictions:** Footer 17/1 vs table 14/4 vs six feeders with voltage vs four with flow. FDR-04 and FDR-08 are OFFLINE with load. The 11:00 recovery note conflicts with the 11:03:15 restart. "Wed, Dec 24" conflicts with Dec 24, 2026 being a Thursday. `sudo[1802]` is lower than the IDs logged before it. In I-008, SUB-03 is Online with a note saying offline, SUB-01 is Degraded on the map and Online in the table, the same 8:43 is PST in I-001 and PDT in I-008, and 26 feeder statuses do not match 18 feeders. August file dates vs a December download is not necessarily a contradiction.
+5. **Recommended action:** Life safety first: confirm hospital generator fuel, tell the water utility and fire services the treatment plant shows offline, then welfare checks and warming for the dark areas and the resident-named places, then in-person checks of the Medical District and Downtown. Hold remote switching from `whoville-scada` and operate locally. Image the SCADA host and copy the backup before changes, and do not reboot first. Call the four account owners on known numbers, then disable the contractor's remote password login and block `89.46.57.27`. Identify the computer behind I-005–I-007, keep it powered on but off the network, and do not open the files. Issue a public statement only after leader approval. See the [presentation](presentation/presentation-outline.md) and the [response options](investigation/kevin-response.md).
+6. **Critical unknowns:** breaker and relay history for 00:05:58–11:03:15 and 06:31–08:43; hospital fuel and water status on the ground; how SUB substations map to FDR feeders; whose computer and Chrome profile; whether any file ran; authorization of the four accounts; who sent signal 15; the year and zone of I-002 and I-003; presentation length, format and submission method.
 
 **Interpretation limits:** One failed password followed by success does not establish brute force. The sudo entry does not by itself prove a successful root shell. Signal 15 does not prove malicious log suppression. Timing alone does not connect different accounts or prove blackout causation. Filenames are not proof that a file ran. IP and account strings are correlation leads, not confirmed malicious indicators.
 
@@ -137,8 +142,11 @@ Incident times below are scenario times, separate from October 15 team work time
 | Dec 25 00:01:51 / 00:03:03 | Two `su` authentication failures; initiating user not shown | I-002 |
 | Dec 25 00:05:14 | `adminelk` sudo `/usr/bin/su`, `USER=root`, `pts/0`, `/etc` | I-002 |
 | Dec 25 00:05:58 | rsyslog exit on signal 15; cause and sender unknown | I-002 |
+| 06:31 (alert clock, no date) | SUB-07 Riverdale telemetry lost | I-008 |
+| 07:32–08:41 (alert clocks) | Six alerts: SUB-05 mismatch; SUB-03 loss of output to the Industrial Zone; water treatment plant offline; North Heights voltage anomalies; SUB-07 unverified; Central District customer reports | I-008 |
 | Dec 25, 2026 08:42:12–08:43:03 PST | Feeder readings; FDR-04 and FDR-08 OFFLINE with nonzero MW and kV | I-001 |
 | Dec 25, 2026 08:43:12 AM; header zone unstated | DEGRADED dashboard and inconsistent summary counts | I-001 |
+| Dec 25, 2026 8:43 AM PDT | Grid map: 92,430 customers out and rising; hospital on backup generators; water treatment offline | I-008 |
 | Dec 25, 2026 8:47 AM / 9:01 AM; zone unstated | Resident posts: "nothing turns on"; "freezing to death in my house" | I-004 |
 | 11:00 AM; Dec 25 11:03:15 | Recovery annotation; rsyslog start | I-002 |
 
@@ -152,6 +160,10 @@ Incident times below are scenario times, separate from October 15 team work time
 | Weekday versus year | I-003 "Wed, Dec 24"; Dec 24, 2026 is a Thursday; Wednesday fits 2025. I-005 says December 24, 2026 | Original email headers; keep both raw dates |
 | sudo process ID | `sudo[1802]` at 00:05:14 is lower than `sshd[2296]`, `su[2599]`, `su[2618]` before it | Original log; wrap-around, container, edited line, or exercise formatting |
 | August files versus December download | I-007 date modified 8/12/2026 10:39 AM; I-005 download Dec 24, 2026 | Not necessarily a contradiction: zips usually keep original modified dates |
+| SUB-03 Central (I-008) | SCADA Online and field Unconfirmed at 0 MW; note says "SCADA shows offline"; customer reports at 08:41 | Crew reading at the substation |
+| SUB-01 North Heights (I-008) | Map: SCADA Degraded. Table: SCADA Online | Raw SCADA point values |
+| Zone labels | I-001 rows PST; I-008 header PDT for the same 8:43 a.m.; daylight time does not apply in December | Clock configuration of both systems |
+| Feeder scope | I-008: 26 feeder statuses (12/5/6/3); I-001: 18 feeders. SUB IDs are not FDR IDs | Asset inventory and topology |
 | Hoovey session-close PID | Resolved: `sshd[2189]` (timeline corrected at 10:50 PDT) | None |
 | Backup script transcription | Resolved: `opt/backup/scada/dump.sh` without a leading slash; the redirect text needs the original | Original text |
 | Hoovey login address | Resolved 13:05 PDT: `104.237.236.191` (response had 104.227) | Original text preferred; line clipped |
@@ -177,9 +189,9 @@ Members 2–4 confirmed their roles in the plaintext file. Shared-account commit
 | Workstream | Recorded progress | Next handoff |
 |---|---|---|
 | Lead support | Reconciled published Inject 1–2 handoffs and organized the hub (last 10:34 PDT); leader status Working on Inject 3 at 11:01 PDT | Approve the final presentation and public statement before 1:45 PM |
-| Timeline support (Kherion) | Injects 1–7 reviewed; [master timeline](investigation/team3.md) latest update 12:47 PDT | Clocks, provenance; header date and one handle spelling flagged in the sync audit |
-| Evidence desk (Gretzky) | Injects 1–7 and PC-001 reviewed; [evidence notes](investigation/codex-evidence-analyst.md) latest update 12:49 PDT; [handoff](handoffs/gretzky-handoff.md) | Full records, authorization, cross-source verification |
-| Response support (Kevin) | Inject 8 reviewed at 13:12 PDT. Simulated map preserved. Do not switch from it or publish its customer count. Sync audit through Inject 7 remains | Leader approves the presentation and public statement; confirms speakers |
+| Timeline support (Kherion) | Injects 1–8 reviewed; [master timeline](investigation/team3.md) latest update 13:06 PDT | Clocks, provenance; header date and one handle spelling flagged in the sync audit |
+| Evidence desk (Gretzky) | Injects 1–8 and PC-001 reviewed; [evidence notes](investigation/codex-evidence-analyst.md) latest update 13:05 PDT; [handoff](handoffs/gretzky-handoff.md) | Full records, authorization, cross-source verification |
+| Response support (Kevin) | Injects 1–8 reviewed; repo sync audit and final rubric-mapped presentation at 13:05–13:12 PDT | Leader approves the presentation and public statement; confirms speakers |
 
 **Chat visibility:** The available app listing exposed this lead chat and the related “Hackathon Crash Course” chat. The latter contains role/setup messages, with assistant content only exposed as reference placeholders. The separate evidence/timeline chats were not exposed in that listing; their committed handoffs were reviewed instead. This is not a claim that every same-account chat has been read. No messages were sent to other chats.
 
@@ -205,7 +217,7 @@ Drive originals remain the source material. The register below indexes them; it 
 
 | ID / material | Source | Review state / location |
 |---|---|---|
-| **I-008 — simulated grid map** | [Inject 8](https://drive.google.com/file/d/1-gc6iqIzCkryqRweTdYDUH0TLYf4cuM5/view) | Response chat reviewed at 13:12 PDT; [response note](investigation/kevin-response.md#i-008-response--2026-10-15-1312-pdt). Labeled simulated. Counts do not match Inject 1. [Evidence log](investigation/codex-evidence-analyst.md#i-008--e-008--final-grid-operations-map) |
+| **I-008 — grid operations map** | [Inject 8](https://drive.google.com/file/d/1-gc6iqIzCkryqRweTdYDUH0TLYf4cuM5/view) | Evidence desk (about 13:02 PDT) and response (13:06 PDT) reviewed; [evidence](investigation/codex-evidence-analyst.md#i-008--e-008--final-grid-operations-map), [response](investigation/kevin-response.md#i-008-response--2026-10-15-1312-pdt). Simulated view, not an engineering single-line. SUB-01 and SUB-03 statuses contradict themselves |
 | **I-007 — desktop folder** | [Inject 7](https://drive.google.com/file/d/1swqAROKb7An3qeNk3noP8o9pOQ00C63C/view) | Evidence desk, timeline and response reviewed 12:47–12:51 PDT; [evidence](investigation/codex-evidence-analyst.md#i-007--e-007--new-file-explorer-evidence), [timeline](investigation/team3.md#inject-7--windows-folder-contents-i-007--2026-10-15-1247-pdt), [response](investigation/kevin-response.md#i-007-response--2026-10-15-1249-pdt). First filename starts `N0T` with a zero |
 | **I-006 — FreeGameDownloads page** | [Inject 6](https://drive.google.com/file/d/1pRAe1brGsL_7PGZZ_B4xY-3mKlikQmIw/view) | Evidence desk and response reviewed; [evidence](investigation/codex-evidence-analyst.md#i-006--e-006--freegamedownloads-browser-screenshot), [response](investigation/kevin-response.md#i-006-response--2026-10-15-1232-pdt). Domain `5freeedownloads.com`, three e's. Same Chrome profile as I-005 |
 | **Judging criteria photo** | [Presentation Criteria.jpg](https://drive.google.com/file/d/1aF2OWNdCtQQq7PKXtBt9cm4pke95WU1h/view) | PC-001. Evidence desk and response reviewed. Phone screenshot of a Drive viewer. Six criteria, 5 points each. Example wording is not Whoville evidence |
@@ -365,9 +377,9 @@ The screenshot shows **Desktop > Tomodachi Life FREE** with **two Windows Applic
 
 **Next evidence needed if supplied:** Original ZIP listing, source URLs, file identity/hash, process activity, user and host mapping, and any independently verified utility-control event. Existing public safety priorities and presentation-approval gate remain unchanged. No executable was run, utility operated or external message submitted.
 
-## Kevin sync audit and final presentation — 2026-10-15 13:10 PDT
+## Kevin response handoff — Inject 8
 
-At Kevin's request, the response chat checked every repository file against the Drive originals, without assuming any of it was right. The corrections, new observations, and items flagged for the owning desks are in [Sync audit](#sync-audit--2026-10-15-1310-pdt). The assessment above is reconciled through Inject 7, pending the leader. The [final presentation](presentation/presentation-outline.md) maps the injects to the six judging criteria. It has a 60-second walk-up, a five-minute finalist version with proposed speakers, a public statement for approval, and judge Q&A. No utility command, external message, or competition submission was made.
+Inject 8 is the utility's grid map at 8:43 a.m.: 92,430 customers out and rising, the hospital on backup generators, and water treatment offline. SUB-03 Central reads "Online" in SCADA at 0 MW while customers there report outages, and SUB-01 is Degraded on the map but Online in the table. The first problem time is 06:31, 6 h 25 min after logging stopped. Still no breaker command or cause. Response: confirm hospital fuel, tell the water utility and fire services, send crews to SUB-03 and SUB-07, and keep the existing holds. Public paragraph unchanged; no customer count and no water advice unless the city confirms it. [Response note](investigation/kevin-response.md#i-008-response--2026-10-15-1312-pdt). [Presentation](presentation/presentation-outline.md).
 
 ## Gretzky final evidence handoff — Inject 8 — 2026-10-15 13:05 PDT
 
@@ -381,6 +393,6 @@ The final labelled Inject 8 is a **simulated** Hydro Siber operations map headed
 
 **Action for leader:** Incorporate the updated customer/service impact and these limits in the judging script; prioritize verified hospital/water and field-power conditions, retain the evidence, and do not declare an attacker or cyber cause. No utility operation, public release or competition submission has been authorized by this evidence-desk update. Kevin's main presentation was reconciled through Inject 7; the added Inject 8 material is **for leader approval**, not a claim that the lead has reviewed it.
 
-## Kevin response handoff — Inject 8
+## Kevin sync audit and final presentation — 2026-10-15 13:12 PDT
 
-At 13:12 PDT the folder included a Hydro Siber grid map. The banner says it is a simulated operational view and not an engineering single-line. The header is Dec 25, 2026, 8:43 AM, zone label PDT. It shows 1,240 MW, down 18% versus forecast, and 92,430 customers without power, up 14% and rising. Feeder status reads 12 online, 5 degraded, 6 offline, and 3 telemetry unverified. Those counts are not the Inject 1 tally. The water plant is marked offline. The hospital is partial power on backup generators. SUB-03’s dot says Online and its note says SCADA shows offline. Do not switch from this map and do not publish 92,430. The public paragraph is unchanged. [Response note](investigation/kevin-response.md#i-008-response--2026-10-15-1312-pdt). [Presentation](presentation/presentation-outline.md). The evidence desk’s map reading is in [E-008](investigation/codex-evidence-analyst.md#i-008--e-008--final-grid-operations-map).
+At Kevin's request, the response chat checked every repository file against the Drive originals, without assuming any of it was right. The corrections, new observations, and items flagged for the owning desks are in [Sync audit](#sync-audit--2026-10-15-1312-pdt). The assessment above is reconciled through Inject 8, pending the leader. The [final presentation](presentation/presentation-outline.md) maps all eight injects to the six judging criteria. It has a 60-second walk-up, a five-minute finalist version with proposed speakers, a public statement for approval, and judge Q&A. No utility command, external message, or competition submission was made.

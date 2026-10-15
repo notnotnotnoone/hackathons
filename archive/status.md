@@ -189,13 +189,14 @@ No utility command and no competition submission was made.
 - Response: do not open the files. Public paragraph unchanged. No cause shown.
 - No utility command and no competition submission was made.
 
-## Incident response — sync audit and final presentation — 2026-10-15 13:10 PDT
+## Incident response — sync audit and final presentation — 2026-10-15 13:12 PDT
 
 - At Kevin's request, every repository file was checked against the saved Drive originals.
 - Corrections: the Hoovey address is `104.237.236.191`, not 104.227. The Inject 6 domain is `5freeedownloads.com` with three e's, and it is not cut off. The Inject 7 name starts `N0T` with a zero. The Inject 6 entry above and the Inject 7 entry above keep their original wording as history.
 - New: the I-005 and I-006 toolbars are pixel-identical, so both come from one Chrome profile.
-- README assessment, event sequence, contradictions, team table, actions and register now cover Injects 1–7, pending the leader. Website role labels fixed.
-- Final presentation mapped to the six judging criteria. Leader approval needed before 1:45 PM. Not submitted.
+- README assessment, event sequence, contradictions, team table, actions and register now cover Injects 1–8, pending the leader. Website role labels fixed.
+- Inject 8 reviewed from the original at 13:06 PDT: 92,430 customers out, hospital on backup generators, water treatment offline. SUB-03 reads Online at 0 MW; SUB-01 is Degraded on the map and Online in the table; first problem time 06:31.
+- Final presentation mapped to the six judging criteria through Inject 8. Leader approval needed before 1:45 PM. Not submitted.
 - No utility command, external message or competition submission was made.
 
 ## Evidence participant identified — 2026-10-15 10:49 PDT (UTC-07:00)

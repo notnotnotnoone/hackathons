@@ -3,8 +3,62 @@
 **Team member / workstream:** kevin — Member 4, incident response chat. Kevin confirmed this status on 2026-10-15 at 10:51 PDT. The matching block in [human-status.txt](../human-status.txt) is no longer a draft.
 **Role used:** Incident response and crisis communications
 **Status:** Working
-**Updated:** 2026-10-15 13:12 PDT (UTC−07:00). Inject 8 response is below. Drive rechecked at 13:12 PDT: fifteen files, including Inject 8. The Inject 7 cross-check remains in [Inject 7 cross-check](#inject-7-cross-check--2026-10-15-1305-pdt).
-**Sources reviewed by this chat:** I-001 through I-007 (four images for I-004), Instructions, Mission Overview, Schedule, and Presentation Criteria.jpg. I-001 to I-006 re-opened from the saved originals at 12:45 PDT; I-007 at 13:00 PDT.
+**Updated:** 2026-10-15 13:12 PDT (UTC−07:00). Inject 8 response is directly below; the Inject 7 cross-check follows it. The evidence desk reports fifteen Drive files at about 13:02 PDT.
+**Sources reviewed by this chat:** I-001 through I-008 (four images for I-004), Instructions, Mission Overview, Schedule, and Presentation Criteria.jpg. I-001 to I-006 re-opened from the saved originals at 12:45 PDT; I-007 at 13:00 PDT; I-008 at 13:06 PDT.
+
+## I-008 response — 2026-10-15 13:12 PDT
+
+[Inject 8](https://drive.google.com/file/d/1-gc6iqIzCkryqRweTdYDUH0TLYf4cuM5/view) is a Hydro Siber grid operations map, Dec 25, 2026, 8:43 AM, labelled PDT and marked "simulated operational view — not an engineering single-line". Re-read from the original at 13:06 PDT, with zoomed crops of the header, table and map labels.
+
+**Current Situation**
+
+- 92,430 customers without power, "▲14% (and rising)". Demand 1,240 MW, 18% below forecast. System operations: degraded conditions.
+- Feeder status panel: 12 online, 5 degraded, 6 offline, 3 telemetry unverified (26 in total, against 18 feeders in I-001).
+- Hospital: partial power, backup generators active. Water treatment plant: offline (alert 07:57). Transit network and hub: partial power. Emergency services: online. Municipal facilities: some disruptions.
+- Selected assets table: SUB-01 SCADA Online, field Degraded, 210 MW, 23,500 customers. SUB-03 Online, Unconfirmed, 0 MW, 28,600. SUB-05 Offline, Offline, 0 MW, 17,200. SUB-07 Unverified, Unverified, 84 MW, 12,600, "Telemetry loss since 06:31". Hospital: partial power, on backup generators.
+- Alerts: 07:32 SUB-05 SCADA/field mismatch; 07:41 SUB-03 loss of output to the Industrial Zone; 07:57 water treatment plant offline; 08:12 voltage anomalies in North Heights; 08:36 SUB-07 unverified; 08:41 customer reports in the Central District.
+- Generating stations: North West Hills 820 MW online; Crumpit 640 MW online, at Mount Crumpit.
+
+**What this chat found beyond the evidence desk's reading**
+
+- **SUB-01 disagrees with itself.** The map label reads "SCADA: Degraded", while the table on the same screen shows SCADA "Online" with a green dot. The evidence log lists SUB-01 SCADA as Degraded only.
+- **The customer figure says "(and rising)".** The evidence log says the comparison period is not shown. Both are true; the label adds that the outage was still growing.
+- **Central is the clearest monitoring failure.** SUB-03 reads Online at 0 MW, its own note says "SCADA shows offline", and customers in the Central District are reporting outages at 08:41. That fits I-001 (FDR-03 Downtown at 13.8 kV with no load) and the I-004 resident in "central". Either the monitoring is faulty or the view is being manipulated. The screen cannot tell which.
+- **First problem time.** SUB-07 telemetry loss at 06:31 is the earliest problem on any screen, 6 h 25 min after rsyslog stopped at 00:05:58. Nothing covers the gap.
+- **Supply is probably not the problem.** If 820 and 640 MW are outputs, generation exceeds the 1,240 MW demand, which points at substations and distribution. They may be ratings.
+- **Mount Crumpit is a utility site.** The I-003 sign-in location is also where the Crumpit Generating Station is shown. A sign-in from there could be a staff member. This is a question for the account owner, not a link.
+- The table's four substations total 81,900 customers. Without SUB-02, 04 and 06 figures, this cannot be reconciled with 92,430, so the numbers are not added.
+
+**Immediate Risks**
+
+- Hospital on backup power: generator fuel and runtime are unknown.
+- Water treatment offline: drinking water and firefighting water pressure.
+- Operators may act on a wrong screen: SUB-03 and SUB-01 statuses contradict themselves, and SUB-07 is blind.
+- Cold exposure for tens of thousands of customers, rising.
+
+**Recommended Actions**
+
+1. Confirm hospital generator fuel and runtime, and plan a priority restoration path to the hospital, using local indications and authorized crews.
+2. Tell the water utility and fire services that the treatment plant shows offline, so they can check pressure and decide on any water advice.
+3. Send crews to SUB-03 Central and SUB-07 Riverdale to read the equipment in person. Do not switch based on either screen.
+4. Keep the holds already recommended: no remote switching from `whoville-scada`, image before changes, no reboot first.
+5. Add 06:31 to 08:43 to the breaker and relay history request, as well as 00:05:58 to 11:03:15.
+
+**Risks and Tradeoffs**
+
+- Restoring Central from the screen alone could energize a line crews are working on. Field confirmation costs time but avoids injury.
+- Prioritizing the hospital and water plant may delay other neighbourhoods. That is the right order for life safety.
+- Sharing the 92,430 figure publicly would repeat an unverified screen number.
+
+**Communication Priorities**
+
+- Hospital and emergency services: generator fuel, now.
+- Water utility and fire services: plant status, now.
+- Residents: the public paragraph stays as written. A water line is added only if the city confirms an impact. No customer count and no cause.
+
+**Message for Team Leader**
+
+> Inject 8 is the utility's grid map at 8:43 a.m.: 92,430 customers out and rising, the hospital on backup generators, and water treatment offline. Central substation reads "Online" in SCADA at zero megawatts while customers there report outages, and SUB-01 is Degraded on the map but Online in the table. The first problem time is 06:31, six and a half hours after logging stopped. Still no breaker command or cause. The presentation now opens with this and puts hospital fuel and water first. It needs your approval before 1:45 PM.
 
 ## Inject 7 cross-check — 2026-10-15 13:05 PDT
 
@@ -266,7 +320,7 @@ What this changes:
 | R-20 | Leave the folder in place. Do not open `setup.exe` or the other application. Copy it only through someone authorized to handle the files | I-007 two applications in a Tomodachi Life FREE folder; I-005 zip uses the same folder words | Now, so nobody runs them. Not ahead of the Medical District check | Avoids running unknown programs | The files stay on a machine whose link to the control network is unknown | A later copy is still possible. A run is not undoable from here | Know which computer this window belongs to | Recommend |
 | R-21 | Announce that these programs caused the outage | Two filenames, sizes, and one modified time. No process and no feeder command | — | None shown | A false public cause | Hard to walk back | Proof a file from this folder ran and changed a feeder | Do not recommend |
 
-## I-008 response — 2026-10-15 13:12 PDT
+## I-008 options — 2026-10-15 13:12 PDT (second response chat)
 
 [Inject 8](https://drive.google.com/file/d/1-gc6iqIzCkryqRweTdYDUH0TLYf4cuM5/view) is a Hydro Siber grid-operations map. The banner says it is a simulated operational view and not an engineering single-line. The header reads Dec 25, 2026, 8:43 AM, and the zone label reads PDT. System operations are marked degraded. This note uses the header, the feeder-status panel, the critical-infrastructure panel, the selected-assets table, and the alert list. The evidence desk has a separate map-pin reading in its log. This chat did not switch anything from the map.
 
@@ -306,8 +360,8 @@ What this changes:
 
 | ID | Option | Evidence | Urgency | Safety benefit | Operational risk | Reversibility | Prerequisites | Position |
 |---|---|---|---|---|---|---|---|---|
-| R-22 | Keep both operations pictures. Do not switch from either. Check the hospital in person and add the water plant, which this map marks offline | I-008 water treatment offline and hospital on backup; I-001 Medical District still needs a field check; the map says it is not an engineering drawing | Now, with the checks already recommended | A dark water plant and a hospital on generators are not left to the label | Sending a crew on a simulated picture can waste a crew if the plant is actually up | The check can stop when someone is on site | Treat the map as a picture, not a switching order | Recommend |
-| R-23 | Tell residents that 92,430 customers are dark, or that 12 feeders are online | I-008 counts; I-001’s 18-feeder table and footer disagree with those counts | — | None shown | A public number the other screen does not support | Hard to walk back | One picture that the leader accepts as the count | Do not recommend |
+| R-29 | Keep both operations pictures. Do not switch from either. Check the hospital in person and add the water plant, which this map marks offline | I-008 water treatment offline and hospital on backup; I-001 Medical District still needs a field check; the map says it is not an engineering drawing | Now, with the checks already recommended | A dark water plant and a hospital on generators are not left to the label | Sending a crew on a simulated picture can waste a crew if the plant is actually up | The check can stop when someone is on site | Treat the map as a picture, not a switching order | Recommend |
+| R-30 | Tell residents that 92,430 customers are dark, or that 12 feeders are online | I-008 counts; I-001’s 18-feeder table and footer disagree with those counts | — | None shown | A public number the other screen does not support | Hard to walk back | One picture that the leader accepts as the count | Do not recommend |
 
 ## Message for Team Leader
 

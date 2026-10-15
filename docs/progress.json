@@ -1,24 +1,24 @@
 {
   "schemaVersion": 1,
   "updatedAt": "2026-10-15T13:12:00-07:00",
-  "updatedBy": "Kevin",
+  "updatedBy": "Kevin — Response analysis (sync audit)",
   "latestInject": {
     "id": "I-008",
-    "title": "Simulated grid map",
-    "state": "Inject 8 reviewed by evidence desk and response",
+    "title": "Hydro Siber simulated grid-operations map",
+    "state": "Inject 8 reviewed by evidence, response and timeline",
     "checkedAt": "2026-10-15T13:12:00-07:00",
-    "note": "Fifteen Drive files. Dec 25, 2026 8:43 AM, zone label PDT. The map is labeled simulated. It shows 1,240 MW demand, 92,430 customers without power, feeder status 12/5/6/3, hospital on backup, and water treatment offline. SUB-03's status conflicts with its own note. Those counts are not the Inject 1 tally, and SUB labels are not FDR labels. No breaker command. Timeline published an Inject 8 chronology in investigation/team3.md.",
+    "note": "15 Drive files checked. At Dec 25, 2026 08:43 AM (dashboard label PDT), map reports 92,430 customers without power, 1,240 MW demand, 12 online / 5 degraded / 6 offline / 3 unverified feeder statuses; hospital partial with backups, water treatment offline. SUB-03 status conflicts with its own notes; SUB-07 telemetry unverified. I-001 FDR and I-008 SUB labels cannot be directly equated. Source is simulated; no cyber cause or breaker command established.",
     "sourceUrl": "https://drive.google.com/file/d/1-gc6iqIzCkryqRweTdYDUH0TLYf4cuM5/view"
   },
   "assessment": [
     {
       "label": "Situation",
-      "text": "At 08:43 on Dec 25, 2026 the distribution screen is DEGRADED: 12 of 18 feeders show no voltage or load, and Downtown and the Medical District show voltage with no load. Residents report no power or heat at 8:47 and 9:01 a.m. Cause not established. Reconciled through Inject 7 by Kevin's response chat at 13:10 PDT, pending leader review.",
+      "text": "At 08:43 on Dec 25, 2026 the grid map shows 92,430 customers out and rising, the hospital on backup generators and water treatment offline. 12 of 18 feeders show no voltage or load. Cause not established. Reconciled through Inject 8 by Kevin's response chat at 13:12 PDT, pending leader review.",
       "source": "README.md#current-assessment"
     },
     {
       "label": "New findings",
-      "text": "Password SSH logins from three public addresses; a contractor login at midnight; two su failures; adminelk sudo su to root; rsyslog stopped 44 s later. A Google new-sign-in alert. One managed Chrome profile downloaded Tomodachi Life FREE.zip and ryujinxx.exe and viewed 5freeedownloads.com. The desktop folder holds N0Tstea1nG?CredEntials.exe and setup.exe.",
+      "text": "Password SSH from three public addresses; contractor login at midnight; su failures; adminelk sudo su to root; rsyslog stopped 44 s later. Google sign-in alert from Mount Crumpit. One managed Chrome profile downloaded a game zip and ryujinxx.exe; desktop folder holds N0Tstea1nG?CredEntials.exe. Grid map: SUB-03 'Online' at 0 MW; SUB-07 blind since 06:31.",
       "source": "README.md#current-assessment"
     },
     {
@@ -28,17 +28,17 @@
     },
     {
       "label": "Contradictions",
-      "text": "Footer 17/1 vs table 14/4 vs six feeders with voltage; FDR-04 and FDR-08 OFFLINE with load; 11:00 note vs 11:03:15 restart; 'Wed, Dec 24' vs Dec 24, 2026 being a Thursday; sudo[1802] below earlier process IDs. Resolved: PID 2189, script path, IP 104.237.236.191, domain 5freeedownloads.com.",
+      "text": "I-001 footer 17/1 vs table 14/4; OFFLINE feeders with load; SUB-03 Online with a note saying offline; SUB-01 Degraded on the map, Online in the table; 8:43 labelled PST and PDT; 26 feeder statuses vs 18 feeders; 'Wed, Dec 24' vs Thursday in 2026; sudo[1802] out of order.",
       "source": "README.md#contradictions-to-resolve"
     },
     {
       "label": "Recommended action",
-      "text": "Inject 8 is a simulated map. Do not switch from it or from the feeder table. Add the water plant to the on-site checks; the hospital stays on that list. Do not publish 92,430. Hold remote switching. Do not open the downloaded files. Leader approves the presentation and public statement before 1:45 PM.",
+      "text": "Confirm hospital generator fuel; tell the water utility and fire services the treatment plant shows offline; welfare checks; crews to SUB-03 and SUB-07. Do not switch from either screen and do not publish 92,430. Hold remote switching; image before changes; call the four account owners. Leader approves the presentation and public statement before 1:45 PM.",
       "source": "investigation/kevin-response.md#i-008-response--2026-10-15-1312-pdt"
     },
     {
       "label": "Critical unknowns",
-      "text": "Breaker and relay history for 00:05:58–11:03:15; whose computer and Chrome profile; whether any file ran; authorization of the four accounts; who sent signal 15; year and zone of I-002 and I-003; presentation length, format and submission method.",
+      "text": "Breaker and relay history for 00:05:58–11:03:15 and 06:31–08:43; hospital fuel and water status on the ground; SUB-to-FDR mapping; whose computer; whether any file ran; account authorization; year and zone of I-002 and I-003; presentation length and format.",
       "source": "README.md#current-assessment"
     }
   ],
@@ -78,10 +78,10 @@
       "name": "Kevin — Response analysis",
       "status": "Working",
       "updatedAt": "2026-10-15T13:12:00-07:00",
-      "completed": "Inject 8 reviewed. The map is labeled simulated. Water treatment is marked offline. Hospital is on backup power. Counts do not match Inject 1.",
-      "next": "Do not switch from the map. Leader approves the presentation and public statement before 1:45 PM.",
-      "blocker": "The map disagrees with the feeder table. Leader approval is still required for any public line.",
-      "source": "investigation/kevin-response.md"
+      "completed": "Inject 8 reviewed from the original (SUB-01 and SUB-03 contradictions; first problem 06:31). Sync audit of every file against the originals. Final presentation mapped to the six criteria through Inject 8.",
+      "next": "Leader approves the presentation and public statement and confirms speakers before 1:45 PM.",
+      "blocker": "Leader approval. Presentation length and format are not published.",
+      "source": "investigation/kevin-response.md#i-008-response--2026-10-15-1312-pdt"
     }
   ],
   "actions": [
@@ -158,7 +158,7 @@
     },
     {
       "label": "Inject 4",
-      "status": "Reviewed by response",
+      "status": "Reviewed by evidence, timeline and response",
       "note": "Evidence, timeline, and response reviewed the resident posts. Cause not shown."
     },
     {
@@ -178,8 +178,8 @@
     },
     {
       "label": "Inject 8",
-      "status": "Reviewed by evidence and response",
-      "note": "Simulated 8:43 a.m. map. Water plant offline. Counts do not match Inject 1. Evidence, timeline, and response have readings."
+      "status": "Reviewed by evidence, response and timeline",
+      "note": "Grid map at 8:43 a.m.: 92,430 customers out, hospital on backup generators, water treatment offline. SUB-03 Online at 0 MW; SUB-01 contradicts itself; first problem time 06:31. No cause shown."
     },
     {
       "label": "Judging criteria",
@@ -194,7 +194,7 @@
     {
       "label": "Presentation",
       "status": "Final draft",
-      "note": "Walk-up updated with Inject 8 at 13:12 PDT. Awaiting leader approval. Not submitted."
+      "note": "Rubric-mapped presentation through Inject 8, updated 13:12 PDT. Awaiting leader approval; not submitted."
     }
   ]
 }
