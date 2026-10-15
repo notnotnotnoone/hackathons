@@ -49,13 +49,13 @@ function parseHumans(raw) {
       const i = line.indexOf(":");
       if (i > 0) fields[line.slice(0,i).trim()] = line.slice(i+1).trim();
     }
-    return {name:member.name,role:fields.Role || (fields["Suggested role"] ? fields["Suggested role"] + " · suggested" : member.role),fields};
+    return {name:member.name,isDraft:/^DRAFT\b/i.test(fields["Working on"] || ""),role:fields.Role || (fields["Suggested role"] ? fields["Suggested role"] + " · suggested" : member.role),fields};
   });
 }
 function renderPeople(raw) {
   const nodes = parseHumans(raw).map(member => {
     const card = text("article", "", "person");
-    card.replaceChildren(text("h3",member.name),text("p",member.role,"role"),pill(member.fields.Status));
+    card.replaceChildren(text("h3",member.name),text("p",member.role,"role"),pill(member.isDraft ? "Draft · " + (member.fields.Status || "Not reported") : member.fields.Status));
     const dl = document.createElement("dl");
     for (const [label,key] of [["Working on","Working on"],["Finished / handoff","Finished / handoff link"],["Next step","Next step"],["Needs help","Need help with"]]) {
       dl.append(text("dt",label),text("dd",member.fields[key]));
