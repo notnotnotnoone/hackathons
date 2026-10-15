@@ -2,10 +2,17 @@
 
 **Status:** Investigating  
 **Owner:** Codex, this timeline chat  
-**Last updated:** October 15, 2026, 10:29 PDT (UTC−07:00)  
+**Last updated:** October 15, 2026, 10:30 PDT (UTC−07:00)  
 **Scope:** Young Defenders — Whoville / Hydro Siber investigation
 
 This file tracks this chat's work. Suggested human analyst assignments remain as listed in the [README](README.md).
+
+## Latest update — Inject 2
+
+- Downloaded and visually reviewed the new Inject 2 screenshot; five Drive files are now saved locally.
+- Published [team3.md](team3.md) with the combined timeline, source limitations, contradictions, questions, and leader handoff.
+- New analysis covers recovered SCADA authentication, sudo, and syslog entries. Session linkage, authorization, clock alignment, and blackout causation remain unconfirmed.
+- Earlier progress below is retained as historical context. Detailed findings are now in team3.md; the README's shared assessment is maintained separately by the team.
 
 ## Current work
 
@@ -25,6 +32,7 @@ Build and maintain a sourced incident timeline. Separate event time from discove
 | File | Download | Analysis |
 |---|---|---|
 | Inject 1.png | Complete | Initial visual review and timestamp transcription complete; underlying readings not independently verified |
+| Inject 2.png | Complete | Initial log screenshot analysis complete; full text and clocks required |
 | Instructions.pdf | Complete | Pending |
 | Schedule.pdf | Complete | Pending |
 | Mission Overview.pdf | Complete | Pending |
