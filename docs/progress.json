@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
   "updatedAt": "2026-10-15T12:52:00-07:00",
-  "updatedBy": "Kevin",
+  "updatedBy": "Gretzky — Evidence desk",
   "latestInject": {
     "id": "I-007",
     "title": "Desktop folder with two applications",
-    "state": "Inject 7 reviewed by response and timeline",
+    "state": "Inject 7 reviewed by evidence, timeline and response",
     "checkedAt": "2026-10-15T12:49:23-07:00",
     "note": "Response and timeline reviewed the File Explorer folder Tomodachi Life FREE. It lists setup.exe at 2 KB and another application at 82 KB, both dated 8/12/2026 10:39 AM. The middle of the first filename is visually ambiguous. No user, no run, and no zone are shown. The evidence log also has a reading.",
     "sourceUrl": "https://drive.google.com/file/d/1swqAROKb7An3qeNk3noP8o9pOQ00C63C/view"
@@ -56,12 +56,12 @@
     {
       "id": "evidence",
       "name": "Gretzky — Evidence desk",
-      "status": "Inject 6 reviewed",
-      "updatedAt": "2026-10-15T12:39:00-07:00",
-      "completed": "Reviewed I-006/E-006 Chrome game-download page and Presentation Criteria.jpg; cross-correlated I-005 ZIP/EXE, verified three-e URL spelling against enlarged screenshot and documented six 5-point criteria plus telecom/university scenario mismatch.",
-      "next": "Leader confirms judging-criteria applicability and uses evidence-limited I-006 findings; watch later injects for exact download provenance, host identity, execution, SCADA event linkage, source times and physical outage cause.",
-      "blocker": "No site visit time, host/browser identity, complete download source or file/EDR execution evidence; criteria applicability, rubric context and submission requirements need confirmation.",
-      "source": "investigation/codex-evidence-analyst.md#i-006--e-006--freegamedownloads-browser-screenshot"
+      "status": "Inject 7 reviewed",
+      "updatedAt": "2026-10-15T12:52:00-07:00",
+      "completed": "Reviewed E-007 image and documented the two applications, file metadata and comparisons with earlier game-themed exhibits.",
+      "next": "Compare forthcoming evidence with E-007 and preserve unverified links.",
+      "blocker": "Source files, original device and process history are not provided.",
+      "source": "investigation/codex-evidence-analyst.md#i-007--e-007--new-file-explorer-evidence"
     },
     {
       "id": "timeline",
