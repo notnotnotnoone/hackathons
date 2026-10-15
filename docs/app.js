@@ -111,9 +111,17 @@ async function refresh() {
   $("refresh").disabled = true;
   const warnings=[];
   try {
+    let base = RAW;
+    try {
+      const revision = JSON.parse(await loadText("https://api.github.com/repos/notnotnotnoone/hackathons/commits/main"));
+      if (!/^[a-f0-9]{40}$/i.test(revision.sha)) throw new Error("Invalid revision");
+      base = "https://raw.githubusercontent.com/notnotnotnoone/hackathons/" + revision.sha + "/";
+    } catch {
+      warnings.push("Latest revision lookup unavailable. GitHub may return cached branch data; check source timestamps.");
+    }
     const results = await Promise.allSettled([
-      loadText(RAW + "docs/progress.json").then(body => validateProgress(JSON.parse(body))),
-      loadText(RAW + "human-status.txt")
+      loadText(base + "docs/progress.json").then(body => validateProgress(JSON.parse(body))),
+      loadText(base + "human-status.txt")
     ]);
     if (results[0].status === "fulfilled") {renderProgress(results[0].value);progressLoaded=true;}
     else {
@@ -138,5 +146,5 @@ async function refresh() {
   } finally {busy=false;$("refresh").disabled=false;}
 }
 $("refresh").addEventListener("click",refresh);
-setInterval(() => {if($("auto").checked && !document.hidden) refresh();},60000);
+setInterval(() => {if($("auto").checked && !document.hidden) refresh();},120000);
 refresh();
