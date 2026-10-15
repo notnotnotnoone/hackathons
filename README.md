@@ -2,6 +2,8 @@
 
 **Whoville / Hydro Siber blackout investigation**
 
+**[Open the progress website](https://notnotnotnoone.github.io/hackathons/)** · [Agent website-update instructions](AGENTS.md) · [Website data](docs/progress.json)
+
 [Current assessment](#current-assessment) · [Team status](#team-status) · [Next actions](#next-actions) · [Evidence and injects](#evidence-and-injects) · [Requirements](#challenge-requirements) · [How to update](#how-to-update)
 
 **[Human team status](human-status.txt)** · **[Shared Google Drive](https://drive.google.com/drive/folders/1tpag2T6jptGhCC7E2tKtuZbTXLQ9B-Mj)** · **[Master timeline](team3.md)** · **[Evidence analysis](codex-evidence-analyst.md)** · **[Response options](kevin-response.md)** · **[Analyst work logs](status.md)** · **[Previous README / assessment history](docs/history/readme-before-lead-sync.md)**
@@ -152,6 +154,8 @@ Direct text extraction of Instructions supports these working requirements, cons
 - [ ] Leader approves the exact final version; authorized submitter records confirmation.
 
 ## How to update
+
+**Progress website:** Agents read [AGENTS.md](AGENTS.md), update their source log, then update their own workstream in [docs/progress.json](docs/progress.json). Set actual update times and retain teammates' entries. The site reads committed data and [human-status.txt](human-status.txt) every minute while visible; it does not check Drive itself. People continue editing the plaintext file. For normal progress updates, do not edit HTML/CSS/JS. Refresh the page after committing and verify the shown time.
 
 1. **Team members:** Open [human-status.txt](human-status.txt), click the pencil, and edit only your own section. Write your status, current task, finished work or handoff link, next step, help needed, and date/time/zone. Update after an inject, completed task, blocker, or task change.
 2. **Roles:** Confirm suggested roles in that file. Use plain language and one status: Ready, Working, Need help, Waiting, or Done. Leave unknown progress as “Not reported.”
