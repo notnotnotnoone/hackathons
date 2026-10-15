@@ -92,3 +92,12 @@
 - I-002 downloaded and visually analyzed; earlier findings retained and new uncertainty recorded.
 - No utility commands or competition submission performed.
 - Next: full log acquisition through later evidence, PDF review, clock reconciliation, and leader handoff.
+
+## Presence and coordination update — 2026-10-15 10:40 PDT
+
+- This chat's participant explicitly requested presence confirmation; recorded in [human-status.txt](human-status.txt). Human name has not been supplied, so no named roster entry is attributed or changed.
+- Timeline support remains active. I-001 and I-002 are reviewed; five files downloaded. Three PDF reviews by this timeline chat remain pending.
+- Lead README now adopts E-002 for I-002 and links this file as the master timeline; the earlier unassigned-ID note above is superseded.
+- Evidence desk's 10:40 update reports visual Schedule review and no new inject in its latest check. These are teammate reports, not a fresh Drive check by this chat.
+- Transcription discrepancies are explicitly open: this timeline's Hoovey session-close PID 2182 versus evidence desk's native-resolution reading 2189; this timeline's leading slash on /opt/backup/scada/dump.sh versus evidence desk's reading without a leading slash. Treat the earlier PID and exact command spelling as provisional pending original text or independent reinspection. These differences do not establish new incident events.
+- Blackout cause, authorization, account/session linkage, actual outage onset, and source clock alignment remain unresolved. No confirmed attack attribution or approved submission is recorded.
