@@ -1,0 +1,77 @@
+TEAM MEMBER STATUS
+Young Defenders - Whoville investigation
+
+This file is for people's progress updates.
+Detailed evidence and AI analyst notes stay in the linked files in README.md.
+Created October 15, 2026. No personal progress has been assumed.
+
+HOW TO UPDATE
+1. Open human-status.txt on GitHub and click the pencil (Edit).
+2. Refresh before editing. Change only your own section.
+3. Write short, plain sentences. Include your update time and time zone.
+4. Use one status: Ready, Working, Need help, Waiting, or Done.
+5. Preview and commit with your name, e.g. "gretsky: update human status".
+6. Update after an inject, a completed task, a blocker, or a change of task.
+7. When handing work off, name the person and link the finding or draft.
+8. Never fill in another person's progress without their report.
+   AI helpers may draft an update, but must label it as a draft until you confirm.
+
+Blank or "Not reported" means no personal update was recorded.
+It does not mean the person has done no work.
+Roles for members 2-4 below are suggestions until each person confirms.
+All members use the same GitHub account; sign updates with your team name.
+
+============================================================
+LEADER - YOU
+Role: Lead Cybersecurity Investigator
+Status: Not reported
+Working on: Not reported
+Finished / handoff link: Not reported
+Next step: Not reported
+Need help with: Not reported
+Updated at (date, time, zone): Not reported
+
+============================================================
+GRETSKY - MEMBER 2
+Suggested role: Evidence investigator
+Role confirmed: Not reported
+Status: Not reported
+Working on: Not reported
+Finished / handoff link: Not reported
+Next step: Not reported
+Need help with: Not reported
+Updated at (date, time, zone): Not reported
+
+============================================================
+KHERION - MEMBER 3
+Suggested role: Timeline analyst
+Role confirmed: Not reported
+Status: Not reported
+Working on: Not reported
+Finished / handoff link: Not reported
+Next step: Not reported
+Need help with: Not reported
+Updated at (date, time, zone): Not reported
+
+============================================================
+KEVIN - MEMBER 4
+Suggested role: Incident response analyst
+Role confirmed: Not reported
+Status: Not reported
+Working on: Not reported
+Finished / handoff link: Not reported
+Next step: Not reported
+Need help with: Not reported
+Updated at (date, time, zone): Not reported
+
+============================================================
+EXAMPLE ONLY - NOT A TEAM STATUS
+Status: Working
+Working on: Checking the timestamps in Inject 2.
+Finished / handoff link: Timeline draft in team3.md.
+Next step: Compare the log times with the dashboard.
+Need help with: Leader to confirm the source time zone.
+Updated at (date, time, zone): YYYY-MM-DD HH:MM TIMEZONE
+
+Keep original evidence in the shared Drive folder.
+Get the leader's approval before a submission or operational action.
