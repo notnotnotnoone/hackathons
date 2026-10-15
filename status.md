@@ -99,3 +99,12 @@ Correlate future injects with these account/IP/host events and dashboard discrep
 - **Timeline support (Team 3):** team3.md now contains a combined Inject 1/2 timeline and uncertainty analysis. This evidence chat read that published handoff; downloaded files/hashes remain the timeline chat's own reported work.
 - **Human teammates:** suggested roles remain in README.md; no human identity or current activity is inferred by this update.
 - **Leader handoff:** prioritize verification of remote access, privilege changes, and logging interruption while retaining the Inject 1 monitoring discrepancies. No attack attribution or blackout cause is established.
+
+### Evidence desk follow-up — 2026-10-15 10:40 PDT
+
+- No Inject 3 appeared in the latest Drive check (five files remain).
+- Visually reviewed the complete Schedule PDF; recorded every displayed activity/time in [personal log](codex-evidence-analyst.md#follow-up-review--2026-10-15-1040-pdt). Event date/zone and submission deadline remain unconfirmed.
+- Re-read Inject 2 at native resolution: Hoovey session-close PID reads 2189; backup script spelling has no leading slash. This supports the evidence desk transcription where team3.md differs. Exact redirection punctuation remains provisional pending original text.
+- Read the lead's updated README and human-status.txt. Personal human progress is unreported; do not infer inactivity.
+- Prepared five prioritized evidence requests for leader: original logs/provenance, account/maintenance baselines, session/audit linkage and logging-stop reason, independent physical-state records, and dashboard definitions/data.
+- Initial available-evidence review is complete; next substantive correlation depends on new records or injects. Cause and authorization remain unknown. No external requests or operational actions were sent/performed.
