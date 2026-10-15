@@ -1,8 +1,8 @@
 # Final presentation — Whoville blackout
 
 **Owner:** kevin, incident response, with assistance. Built for the whole team to present.
-**Status:** Final draft for leader approval. Not submitted. Not an approved utility order.
-**Updated:** 2026-10-15 13:12 PDT (UTC−07:00). Injects 7 and 8 folded into the main sections, not addenda.
+**Status:** Approved by Kevin at 13:12 PDT for the 1:45 walk-up, and submitted as this file on main. No organizer form, email, or portal was published, so this repository copy is the submission. Not an approved utility order, and the public statement has not been sent.
+**Updated:** 2026-10-15 13:12 PDT (UTC−07:00). Kevin asked to approve and submit the version with Injects 7 and 8 folded into the main sections.
 **Evidence:** I-001 through I-008 (four images for I-004), Mission Overview, Instructions, Schedule, and Presentation Criteria.jpg (PC-001). The evidence desk reports fifteen Drive files at about 13:02 PDT; the response chat opened the Inject 8 original at 13:06 PDT.
 **Format known so far:** Instructions say judges walk around to every team at 1:45 PM and pick the top five; the schedule shows finalist presentations from 2:10 PM. No length, slide rule, or submission method is published. This file therefore has a 60-second walk-up and a five-minute finalist version.
 
@@ -188,13 +188,13 @@ Why it is written this way:
 
 ## Before 1:45 PM
 
-- [ ] Leader approves this version, or edits it.
-- [ ] Leader approves, edits, or rejects the public statement.
-- [ ] Team confirms speakers and practises the 60-second version once.
-- [ ] Ask the organizers about presentation length and format if anyone can.
+- [x] Kevin approved this version at 13:12 PDT and asked that it be submitted. The submitted copy is this file on main.
+- [x] The public statement in this file is approved as speaking text. It has not been sent.
+- [ ] The named speakers still need to confirm.
+- [ ] Length and format are still unpublished.
 - [ ] Recheck Drive for a new inject before walking in.
 
-No utility command, external message, or competition submission was made.
+No utility command and no external message was made.
 
 
 ## Final Inject 8 — Evidence desk addendum for leader approval (13:06 PDT)
@@ -231,4 +231,4 @@ No utility command, external message, or competition submission was made.
 - **What is the most serious risk?** Hospital continuity and offline water treatment, followed by unverified operational states. A cyber origin remains a competing hypothesis, not a finding.
 - **Is the timestamp trustworthy?** The new screen displays December 25 and **PDT**. Prior readings were tagged **PST**. Treat cross-source timing as provisional.
 
-**Approval gate:** Leader and response owner reconcile this addendum into the final spoken script before the 1:45 PM judging walkthrough. Presentation remains **not approved and not submitted** in the recorded materials.
+**Approval gate:** Kevin approved this presentation, including the Inject 8 material folded into the main sections, at 13:12 PDT and asked that it be submitted. The submitted copy is this file on main. The leader's roster line was not rewritten.

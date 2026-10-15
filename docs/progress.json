@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "updatedAt": "2026-10-15T13:12:00-07:00",
-  "updatedBy": "Kevin — Response analysis (sync audit)",
+  "updatedBy": "Kevin",
   "latestInject": {
     "id": "I-008",
     "title": "Hydro Siber simulated grid-operations map",
@@ -33,7 +33,7 @@
     },
     {
       "label": "Recommended action",
-      "text": "Confirm hospital generator fuel; tell the water utility and fire services the treatment plant shows offline; welfare checks; crews to SUB-03 and SUB-07. Do not switch from either screen and do not publish 92,430. Hold remote switching; image before changes; call the four account owners. Leader approves the presentation and public statement before 1:45 PM.",
+      "text": "The presentation is approved for the 1:45 walk-up and submitted on main. Confirm hospital generator fuel and tell the water utility the plant shows offline. Do not switch from either screen, do not publish 92,430, and do not send the public statement. Hold remote switching. Do not open the downloaded files.",
       "source": "investigation/kevin-response.md#i-008-response--2026-10-15-1312-pdt"
     },
     {
@@ -78,10 +78,10 @@
       "name": "Kevin — Response analysis",
       "status": "Working",
       "updatedAt": "2026-10-15T13:12:00-07:00",
-      "completed": "Inject 8 reviewed from the original (SUB-01 and SUB-03 contradictions; first problem 06:31). Sync audit of every file against the originals. Final presentation mapped to the six criteria through Inject 8.",
-      "next": "Leader approves the presentation and public statement and confirms speakers before 1:45 PM.",
-      "blocker": "Leader approval. Presentation length and format are not published.",
-      "source": "investigation/kevin-response.md#i-008-response--2026-10-15-1312-pdt"
+      "completed": "Kevin approved the Inject 8 presentation at 13:12 PDT and submitted that file on main. No organizer channel was published.",
+      "next": "Use the presentation at 1:45. Do not send the public statement.",
+      "blocker": "Speakers are not confirmed. Length and format are still unpublished.",
+      "source": "presentation/presentation-outline.md"
     }
   ],
   "actions": [
@@ -125,13 +125,13 @@
       "id": "A-007",
       "title": "Final presentation mapped to the judging criteria",
       "owner": "Response + leader",
-      "status": "Updated for Inject 8; still awaiting leader review"
+      "status": "Approved by Kevin at 13:12 PDT and submitted on main"
     },
     {
       "id": "A-008",
       "title": "Approve the presentation and public statement; confirm speakers before 1:45 PM",
       "owner": "Leader + team",
-      "status": "Open"
+      "status": "Presentation and statement text approved by Kevin at 13:12 PDT. Statement not sent. Speakers not confirmed"
     },
     {
       "id": "A-009",
@@ -193,8 +193,8 @@
     },
     {
       "label": "Presentation",
-      "status": "Final draft",
-      "note": "Rubric-mapped presentation through Inject 8, updated 13:12 PDT. Awaiting leader approval; not submitted."
+      "status": "Submitted",
+      "note": "Kevin approved presentation/presentation-outline.md at 13:12 PDT. Submitted on main. No organizer receipt."
     }
   ]
 }

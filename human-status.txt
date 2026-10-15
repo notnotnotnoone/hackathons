@@ -65,13 +65,13 @@ Suggested role: Incident response analyst
 Role: Incident response analyst
 Role confirmed: Confirmed by Kevin in this chat on 2026-10-15.
 Presence: Confirmed by Kevin's direct request to confirm this status.
-Status: Working
-Working on: Final presentation and a full sync audit of the repository through Inject 8. Do not switch from the Inject 8 map; the water plant is on the on-site checks.
-Finished / handoff link: presentation/presentation-outline.md (mapped to the six judging criteria); README.md "Sync audit"; investigation/kevin-response.md
-Next step: Leader approves or edits the presentation and the public statement, and confirms speakers, before 1:45 PM judging. Do not publish the map's customer count.
-Need help with: Leader approval. A field check of the water plant and the hospital's generator fuel. Whose computer the Inject 5-7 screens come from.
+Status: Done
+Working on: Approved the presentation and submitted it on main.
+Finished / handoff link: presentation/presentation-outline.md
+Next step: Use that file at the 1:45 walk-up. Do not send the public statement. Do not publish 92,430.
+Need help with: The named speakers confirming. A field check of the water plant and the hospital's generator fuel. Whose computer the Inject 5-7 screens come from.
 Updated at (date, time, zone): 2026-10-15 13:12 PDT (UTC-07:00)
-Recorded by: Incident-response assistant, merging Kevin's two response chats after Kevin asked for a full analysis and sync of every document and the website.
+Recorded by: Incident-response assistant, after Kevin asked to approve and submit the presentation.
 
 ============================================================
 EXAMPLE ONLY - NOT A TEAM STATUS
