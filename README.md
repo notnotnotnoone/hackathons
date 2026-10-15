@@ -27,10 +27,10 @@ docs/              GitHub Pages website and progress data
 |---|---|
 | Latest inject | **Inject 7 — desktop folder of two applications; response reviewed at 12:49 PDT** |
 | Investigation | **Active. Blackout cause and unauthorized activity remain unconfirmed.** |
-| Latest published analyst updates reviewed | Evidence desk through 12:39 PDT; timeline through 12:49 PDT; response through 12:49 PDT, October 15, 2026 |
+| Latest published analyst updates reviewed | Evidence desk through 12:51 PDT; timeline through 12:49 PDT; response through 12:49 PDT, October 15, 2026 |
 | Lead reconciliation | October 15, 2026, 10:34 PDT; reviewed all four existing repository files and the seven commits after initialization. The 10:40 PDT response handoff is linked and not yet folded into the numbered assessment. |
 | Drive coverage | Fourteen files at 12:49 PDT: Injects 1–7, including four Inject 4 images, plus Instructions, Schedule, Mission Overview, and Presentation Criteria.jpg. |
-| Review coverage | Response and timeline reviewed Inject 7. The evidence log also has an Inject 7 reading. The lead chat has not independently verified the image. |
+| Review coverage | Evidence desk, response and timeline independently reviewed Inject 7. The lead's personal review is not assumed. |
 | Remaining intake gaps | Official event date/time zone, explicit deadline, presentation duration, and AI/sharing rules. A judging-criteria photo is in the folder; its example wording is not Whoville evidence. Schedule visual review is complete |
 | Submission | Draft outline updated with Inject 7 at 12:49 PDT. Not approved and not submitted |
 | Participant presence | User of the evidence chat confirms presence at 10:41 PDT; name/roster mapping not supplied. See human-status.txt. |
@@ -296,3 +296,14 @@ At 12:32 PDT the folder included a FreeGameDownloads screenshot and Presentation
 ## Kevin response handoff — Inject 7
 
 At 12:49 PDT the folder included a File Explorer screenshot. The window is a folder named Tomodachi Life FREE on a desktop. The breadcrumb shows a cloud icon and the words Start backup. Two applications are listed, both dated 8/12/2026 10:39 AM: a name read as `NOTstea1nGlCredEntials.exe` at 82 KB, and `setup.exe` at 2 KB. The folder name matches the Inject 5 zip. The date does not match December 24. Neither file was opened. Do not run them. The public paragraph is unchanged. [Response note](investigation/kevin-response.md#i-007-response--2026-10-15-1249-pdt). [Presentation](presentation/presentation-outline.md).
+
+
+## Gretzky evidence update — Inject 7 — 2026-10-15 12:51 PDT
+
+**Source:** [Inject 7 screenshot](https://drive.google.com/file/d/1swqAROKb7An3qeNk3noP8o9pOQ00C63C/view). **Full evidence review:** [E-007](investigation/codex-evidence-analyst.md#i-007--e-007--new-file-explorer-evidence). **Member handoff:** [Gretzky through Inject 7](handoffs/gretzky-handoff.md#inject-7--i-007--e-007--evidence-handoff).
+
+The screenshot shows **Desktop > Tomodachi Life FREE** with **two Windows Application entries**: an **82 KB executable with a credential-related name** and **`setup.exe` (2 KB)**. Both display **Aug 12, 2026, 10:39 AM** under **Date modified**, with no time zone. The first filename's ambiguous glyphs were transcribed slightly differently by the evidence and response desks; preserve the original screenshot as the authoritative reference.
+
+**Cross-inject pattern:** I-005 shows `Tomodachi Life FREE.zip` in a Dec 24, 2026 download group. I-006 shows a similarly themed webpage. I-007 shows applications in a folder with the same name. This supports a **plausible software-download lead**, but not verified ZIP extraction, common browser/device ownership, file execution, credential access, SCADA compromise or outage causation. The August **file modification** dates cannot be substituted for December download or infection times.
+
+**Next evidence needed if supplied:** Original ZIP listing, source URLs, file identity/hash, process activity, user and host mapping, and any independently verified utility-control event. Existing public safety priorities and presentation-approval gate remain unchanged. No executable was run, utility operated or external message submitted.
