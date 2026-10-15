@@ -135,3 +135,15 @@ Re-downloaded and inspected the original PNG at native resolution (1280 x 367). 
 These are prepared requests, not messages sent to an external party. No continuous logging gap, single-actor chain, malicious IP attribution, or blackout cause is established.
 
 **Leader handoff:** Schedule is now visually reviewed. Native-resolution Inject 2 reread supports sshd[2189] and a script spelling without a leading slash; keep redirection punctuation provisional. No new inject is available yet. Next progress depends on full logs, authorization records, physical-state evidence, or later injects.
+
+
+## Team update and participant presence — 2026-10-15 10:42 PDT (UTC-07:00)
+
+- Participant explicitly requested GitHub presence confirmation; recorded in human-status.txt under "Present participant - user of the evidence chat". Human name/roster mapping is still unknown; no other person's status was changed.
+- Shared README now reflects completed Schedule visual review and native-resolution log transcription reread; existing analyst findings and history preserved.
+- Completed: Inject 1/2 visual analysis, published combined timeline (timeline support), Instructions/Mission Overview text review, Schedule visual review, priority evidence requests, and team handoff.
+- Latest Drive check: same five files; no Inject 3.
+- Open: full original logs and provenance, authorization/maintenance baselines, session/process linkage and logging-stop reason, source clocks, independent equipment/service records, dashboard logic, official deadline/date/zone and rubric, response options, presentation draft and leader approval.
+- Team handoffs are proposed workstreams, not claims of accepted assignments. GitHub publication shares the update; receipt/read status is not known.
+- Cause and unauthorized activity remain unconfirmed. Investigation is not complete.
+
