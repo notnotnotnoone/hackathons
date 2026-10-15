@@ -1,8 +1,8 @@
 # Team 3 — Timeline & Intelligence
 
-**Owner:** Codex, this timeline chat (human identity unconfirmed)  
+**Owner:** Kherion — Member 3, with Codex timeline support  
 **Status:** Investigating  
-**Updated:** 2026-10-15 10:30 PDT (UTC−07:00)
+**Updated:** 2026-10-15 10:50 PDT (UTC−07:00)
 
 ## Sources and scope
 
@@ -19,9 +19,9 @@
 |---|---|---|---|
 | Dec 24, 17:20 (seconds clipped) | Partially clipped accepted-password entry for hoovey.admin.cpc; full bottom line requires original text. | I-002 / bottom visible row | Moderate; clipped |
 | Dec 24, 17:22:43 | Accepted password for sally.admin.cpc from 183.229.57.190, port 22. | I-002 / sshd[2015] | High: visible text |
-| Dec 24, 17:30:38 | Root cron invokes /opt/backup/scada/dump.sh; command execution outcome is not shown. | I-002 / cron[2163] | High: visible text |
+| Dec 24, 17:30:38 | Root cron invokes opt/backup/scada/dump.sh (literal screenshot spelling; corrected, see history); command execution outcome is not shown. | I-002 / cron[2163] | High: visible text |
 | Dec 24, 17:46:00 | Remote session closed for sally.admin.cpc. | I-002 / sshd[2123] | High: visible text |
-| Dec 24, 17:58:20 | Remote session closed for hoovey.admin.cpc. | I-002 / sshd[2182] | High: visible text |
+| Dec 24, 17:58:20 | Remote session closed for hoovey.admin.cpc. | I-002 / sshd[2189] (corrected, see history) | High: visible text |
 | Dec 24, 23:59:02 | Failed password for max.contr.maint from 89.46.57.27, port 22. | I-002 / sshd[2204] | High: visible text |
 | Dec 25, 00:00:36 | Accepted password for max.contr.maint from the same IP, port 22. | I-002 / sshd[2296] | High: visible text |
 | Dec 25, 00:01:51 | su PAM authentication failure. | I-002 / su[2599] | High: visible text |
@@ -101,3 +101,11 @@
 - Evidence desk's 10:40 update reports visual Schedule review and no new inject in its latest check. These are teammate reports, not a fresh Drive check by this chat.
 - Transcription discrepancies are explicitly open: this timeline's Hoovey session-close PID 2182 versus evidence desk's native-resolution reading 2189; this timeline's leading slash on /opt/backup/scada/dump.sh versus evidence desk's reading without a leading slash. Treat the earlier PID and exact command spelling as provisional pending original text or independent reinspection. These differences do not establish new incident events.
 - Blackout cause, authorization, account/session linkage, actual outage onset, and source clock alignment remain unresolved. No confirmed attack attribution or approved submission is recorded.
+
+## Kherion identity and transcription reconciliation — 2026-10-15 10:50 PDT
+
+- The participant directly identified themselves as Kherion. The earlier unnamed timeline participant record refers to Kherion, not an additional team member.
+- Codex re-opened I-002/E-002 at original resolution. Corrected the Dec 24 17:58:20 row source PID from 2182 to **2189** and the Dec 24 17:30:38 command path from /opt/backup/scada/dump.sh to **opt/backup/scada/dump.sh**, preserving the literal lack of leading slash. Earlier transcription and disagreement are retained in this file's dated history. This resolves those two screenshot transcription differences (A-006); original command text/redirection and execution results remain unverified.
+- Inject 2's shared source ID is E-002, as adopted by the lead.
+- Next suggested human action: Kherion asks the leader/evidence desk for the complete recovered log text, source year/time zone, recovery timestamp provenance, and session-linking records. No external request has been sent by Codex.
+- Next handoff: one concise presentation timeline distinguishing confirmed displayed records, uncertain session links, and actual outage onset (still unknown). Maintain I-001's explicit PST separately from I-002's unstated zone; do not calculate an exact cross-source interval.
