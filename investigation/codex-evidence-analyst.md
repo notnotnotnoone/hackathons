@@ -391,3 +391,8 @@ A potential **download-lure chain** is: themed website → ZIP/EXE downloaded �
 ### Rubric-related message for leader
 
 > A separate new Drive image, **Presentation Criteria.jpg**, displays **six 5-point categories (30 total)**: technical analysis, incident response, data integrity/risk, security hardening, communication, and teamwork/presentation. **Important mismatch:** its examples refer to telecom infrastructure, telecom-university integration and LMS/student records, while our injects concern electric distribution/SCADA. Please verify this rubric applies before adapting the presentation; do not invent academic-data impacts. The screenshot does not specify a presentation duration or submission deadline.
+
+### URL transcription correction — 12:39 PDT
+
+The original I-006 screenshot's address bar was rechecked at higher resolution. The **literal visible string** is `5freeedownloads.com/tomodachi/free/c`, with **three consecutive `e` letters after `fr`** (`5fr` + `eee` + `downloads.com`). Another analyst's response notes transcribe `5freedownloads.com/tomodachi/free/c` with two `e` letters. Treat those as divergent transcriptions of the **same screenshot**, **not** two observed domains or independent indicators; the original E-006 image controls. No webpage was visited, and any continuation beyond the characters visible in the image is unknown. The E-006 evidence observations above already use the three-`e` spelling.
+
