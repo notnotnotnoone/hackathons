@@ -278,3 +278,53 @@ The game name matches the archive listed in I-005, making this a potential downl
 **Leader message:** Inject 6 may relate to the game archive in Inject 5. Neither source establishes a completed file transfer, compromise or blackout cause.
 
 **Change log (2026-10-15 12:38 PDT):** Additive timeline updates for I-005 and I-006; earlier entries and correction history retained.
+
+
+## Inject 7 — Windows folder contents (I-007) — 2026-10-15 12:47 PDT
+
+**Source:** [Inject 7 original screenshot](https://drive.google.com/file/d/1swqAROKb7An3qeNk3noP8o9pOQ00C63C/view), visually inspected by timeline support (AI-assisted). Single PNG image, 736,693 bytes. Direct shared-folder listing contained 14 items through Inject 7 and a separate judging-criteria image. **The screenshot is not an original forensic image, file collection, or verified filesystem export.** October 15 Drive upload and review times are collection times, not incident event times.
+
+### Updated Timeline
+
+| Raw time shown | Event / observation | Source | Confidence |
+|---|---|---|---|
+| **Aug 12, 2026, 10:39 AM**; zone unstated | Windows File Explorer shows an Application named `NOTstea1nGICredEntials.exe` (mixed-case filename; visual transcription should be checked against the original file listing), **82 KB** in Size column. This is the *Date modified* column, **not download, creation, execution, compromise or incident onset time**. | I-007, folder listing / first row | High: displayed file attributes; unknown: provenance, exact bytes, effects |
+| **Aug 12, 2026, 10:39 AM**; zone unstated | Same Explorer folder displays `setup.exe`, Application, **2 KB**, identical visible modification time. | I-007, folder listing / second row | High: displayed file attributes; unknown: execution and relationship |
+| **Undated screenshot capture** | Explorer breadcrumb indicates **Desktop > Tomodachi Life FREE**, with **2 items**. Screenshot does not show an extracted ZIP operation, file contents, executable launch, download path, owner or host ID. | I-007, breadcrumb, details and status | High: visible UI; unknown: origin and device identity |
+
+### New Connections
+
+- I-005 has a `Tomodachi Life FREE.zip` entry under **Dec 24, 2026** (browser download-date group). I-006 shows a Tomodachi Life-themed download site; I-007 now shows a **similarly titled desktop folder containing executables**. Together these form a **plausible but not independently proven** browsing/download/file-placement chain. The screenshots do not prove a common browser, computer, user, extraction, or execution.
+- A filename resembling a claim about *not stealing credentials* is suspiciously worded and worth prioritizing for defensive forensic inspection. **File naming is not behavioral or malware proof**; the contents, hash, signature and endpoint alerts are not provided. `setup.exe` is generic and neither its purpose nor safety is established.
+- The **August 12 modification dates** predate the **December 24 download-history grouping** if both clocks/calendars describe 2026. This is **not necessarily contradictory**: archive entries can preserve original modified timestamps; file copying or display can too. No evidence shows original compilation/creation, actual extraction date, execution order or clock alignment.
+- Earlier SCADA authentication activity (I-002), the Google alert (I-003), the reported outage (I-001/I-004), and these files have **no established host/person/session/physical-control linkage**.
+
+### Contradictions and limits
+
+- The files are in a **Desktop folder**, not evidence that the archive was actually downloaded from the I-006 website; there is no provenance chain, matching hash, zip contents or browser referrer.
+- Identical modification times are **file metadata**, not proof both files were run at 10:39 AM. The screenshot is not evidence that the files executed at any time.
+- The filename's exact letter/number capitalization is best verified using the original file listing; this document preserves the screenshot-based reading rather than silently standardizing it.
+- Existing issues remain: Dec 24 weekday/year in I-003, I-002 log recovery/restarter clocks, and I-001 feeder-state discrepancies.
+
+### Unanswered Questions
+
+1. Which computer/user profile and evidence-collection path are represented? Does it match the system in I-005/I-006 or the SCADA host?
+2. Can the original archive and both executable **bytes** be preserved safely with hashes, digital signatures, full paths and provenance? Was I-007's folder created through ZIP extraction or another route?
+3. Do verified EDR/antivirus results, process execution events, parent-child relationships, scheduled tasks, network and filesystem artifacts show either executable actually ran or collected credentials?
+4. What are real download and extraction/creation timestamps and source time zones, distinct from **last-modified metadata**?
+5. Is there any independent chain from a file or host to a specific SCADA command, logging event, relay action or physical feeder outage?
+
+### Six-part assessment for the team leader
+
+1. **Situation:** I-007 shows two executable files in a Tomodachi Life FREE desktop folder; physical blackout causation still unknown.
+2. **New findings:** Names, visible sizes **82 KB / 2 KB**, both **Aug 12, 2026 10:39 AM last-modified**, not execution times.
+3. **Leading hypotheses/confidence:** Untrusted or deceptive software is now a **higher-priority investigative lead** because of the executable names and prior browsing/download screenshots, but actual malware, credential theft, device compromise, common source and blackout causation remain **unverified**. Benign/mock sample data remain possible.
+4. **Contradictions:** Earlier injects' temporal and telemetry issues persist; the August modified date versus December download grouping requires provenance, but is not inherently inconsistent.
+5. **Recommended action:** Preserve artifacts with appropriate forensic handling and authorization; compare hashes, original archive, browser referrer, digital signatures and endpoint telemetry **without executing unknown files**. Independently confirm SCADA and grid states before asserting cause.
+6. **Critical unknowns:** Ownership, trusted file provenance, integrity/hashes, actual file behavior/execution, timeline alignment, SCADA device connection, breaker/relay actions, blackout onset.
+
+### Message for Team Leader
+
+> Inject 7 shows a Windows Desktop > Tomodachi Life FREE folder containing two applications: `NOTstea1nGICredEntials.exe` (82 KB) and `setup.exe` (2 KB), both marked **modified Aug 12, 2026, 10:39 AM**. It strengthens the *hypothesized* connection between Inject 5's ZIP and Inject 6's game-download page, but does not prove common-device provenance, actual extraction, execution, credential theft or SCADA compromise. Treat the odd executable as a priority forensic lead; obtain original files/hashes and endpoint process records. The blackout cause remains unconfirmed.
+
+**Change history:** Append-only I-007 review; Injects 1–6 and their corrections retained unchanged. No utility operations, account actions, or competition submission performed.
