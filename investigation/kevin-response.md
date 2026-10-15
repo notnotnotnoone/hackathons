@@ -3,7 +3,7 @@
 **Team member / workstream:** kevin — Member 4, incident response chat. Kevin confirmed this status on 2026-10-15 at 10:51 PDT. The matching block in [human-status.txt](../human-status.txt) is no longer a draft.
 **Role used:** Incident response and crisis communications
 **Status:** Working
-**Updated:** 2026-10-15 12:02 PDT (UTC−07:00). Inject 5 response is below. Drive rechecked at 12:02 PDT: eleven files, including Inject 5.
+**Updated:** 2026-10-15 12:32 PDT (UTC−07:00). Inject 6 response is below. Drive rechecked at 12:32 PDT: thirteen files, including Inject 6 and a judging-criteria photo.
 **Sources reviewed by this chat:** I-001, I-002, Instructions, Mission Overview, and a visual/OCR reading of Schedule. Drive listing rechecked at 10:40 PDT: still those five files, no Inject 3.
 
 ```text
@@ -161,8 +161,26 @@ What this changes:
 | R-16 | Preserve this browser. Do not click Clear all. Do not open the executable or the zip. Identify the user out of band | I-005 download list for December 24, 2026, including `ryujinxx.exe` and `Tomodachi Life FREE.zip` | Now, for evidence. Not ahead of the Medical District check | Keeps the record. Avoids running an unknown program on a live system | Leaving an unknown machine connected could matter if it is later tied to the control network | A copy can be taken later. A cleared history cannot | Know which computer this screen belongs to | Recommend |
 | R-17 | Announce that malware caused the outage | Filenames only. No run, no host, no breaker line | — | None shown | A false public cause | Hard to walk back | Proof a file ran and changed a feeder | Do not recommend |
 
+## I-006 response — 2026-10-15 12:32 PDT
+
+[Inject 6](https://drive.google.com/file/d/1pRAe1brGsL_7PGZZ_B4xY-3mKlikQmIw/view) is a browser screenshot. The tab title reads FreeGameDownloads. The address bar shows “Not secure” and the visible text `5freedownloads.com/tomodachi/free/c`. The rest of the address is cut off. The page has a green FreeGameDownloads banner, a Tomodachi Life “Living the Dream” logo, and a green Download button. No user, computer, download progress, or file name is on this page. This chat did not open that address and did not click Download.
+
+The same folder now also has [Presentation Criteria.jpg](https://drive.google.com/file/d/1aF2OWNdCtQQq7PKXtBt9cm4pke95WU1h/view), a phone photo of a “Young Defenders of the North Judging Criteria” page. The phone clock reads 10:56, with no date or zone. Six headings are shown at 5 points each. The bullets use telecom and university examples, including academic records. Those examples are on the criteria photo. They are not readings from the Whoville evidence.
+
+What this changes:
+
+- **Do not click Download and do not fetch the file from this page.** The button is on an address the browser marks “Not secure,” and the full address is not visible.
+- **The game name matches the zip in Inject 5. That is a name match, not a source.** Inject 5 lists `Tomodachi Life FREE.zip` on December 24, 2026. This page does not show that the zip was saved from here, that the button was used, or that any file ran.
+- **Do not announce this site as the cause.** There is still no breaker command and no host name.
+- **Use the criteria photo for the presentation shape only.** Cover detection, containment, what data is actually at risk, longer-term fixes, the public line, and how the team divided the work. Do not rewrite the blackout as a telecom or university incident because those words appear on the rubric.
+
+| ID | Option | Evidence | Urgency | Safety benefit | Operational risk | Reversibility | Prerequisites | Position |
+|---|---|---|---|---|---|---|---|---|
+| R-18 | Keep this screenshot. Do not click Download. Do not open the address to retrieve a file | I-006 visible “Not secure” address, truncated after `free/c`; I-005 zip name uses the same game title | Now, so nobody fetches the file. Not ahead of the Medical District check | Avoids saving an unknown file onto a live machine | The name match stays untested until an authorized copy of the already-listed zip is examined | The screenshot is already saved in Drive | Do not need the file to preserve the page | Recommend |
+| R-19 | Tell residents this website caused the outage | A logo and a button. No click, no host, no feeder change | — | None shown | A false public cause | Hard to walk back | Proof a file from this page ran and changed a feeder | Do not recommend |
+
 ## Message for Team Leader
 
-> Inject 5 is a managed Chrome download history. On December 24, 2026 it lists a zip named Tomodachi Life FREE, ryujinxx.exe, December Schedule.pdf, and Logs.txt. Do not clear that history and do not run those files. Find whose computer it is before treating it as the SCADA host. This does not show that anything executed, and it does not change the public paragraph or the hold on remote switching.
+> Inject 6 is a FreeGameDownloads page for Tomodachi Life. The browser marks the address “Not secure,” and the visible text stops at `5freedownloads.com/tomodachi/free/c`. Do not click Download. The name matches the zip already on the December 24 download list, and that match is not proof the file was saved or run. A judging-criteria photo is also in the folder. Its telecom and university examples are not Whoville facts. The public paragraph and the hold on remote switching stay as they are.
 
 No utility command and no competition submission was made.

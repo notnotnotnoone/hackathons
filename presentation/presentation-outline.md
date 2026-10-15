@@ -1,9 +1,9 @@
 # Presentation draft — for leader review
 
 **Owner:** kevin, incident response. This is an assisted draft, not a submitted presentation and not an approved utility order.
-**Updated:** 2026-10-15 10:55 PDT (UTC−07:00)
-**Evidence:** I-001, I-002, Mission Overview, Instructions, Schedule. Drive rechecked at 10:55 PDT: same five files, no Inject 3.
-**Use:** Walk-up answer for judges, and a short oral if the team is selected. No rubric, duration, or submission method has been published. Do not present this until the leader accepts the wording.
+**Updated:** 2026-10-15 12:32 PDT (UTC−07:00)
+**Evidence:** I-001 through I-006, Mission Overview, Instructions, Schedule, and the judging-criteria photo. Drive rechecked at 12:32 PDT: thirteen files.
+**Use:** Walk-up answer for judges, and a short oral if the team is selected. A criteria photo is now in the Drive folder. Duration and submission method are still unpublished. Do not present this until the leader accepts the wording.
 
 Options and tradeoffs stay in [investigation/kevin-response.md](../investigation/kevin-response.md). The timeline stays in [investigation/team3.md](../investigation/team3.md). The evidence limits stay in [investigation/codex-evidence-analyst.md](../investigation/codex-evidence-analyst.md).
 
@@ -125,6 +125,27 @@ It is Chrome download history on a browser the page says is managed by an organi
 
 Do not call this the cause. Do not name the executable in a public line. Do not clear the history.
 
+## Inject 6 addendum — 2026-10-15 12:32 PDT
+
+Say this only if asked what the newest screen shows.
+
+It is a page titled FreeGameDownloads. The address bar says “Not secure” and shows `5freedownloads.com/tomodachi/free/c`, then cuts off. The logo says Tomodachi Life, Living the Dream, and there is a Download button. That game name is the same name on the zip in the December 24 download list. The page does not show a click, a saved file, or a computer name.
+
+Do not click Download. Do not call the site the cause. Do not add it to the public paragraph.
+
+## Judging-criteria photo — 2026-10-15 12:32 PDT
+
+[Presentation Criteria.jpg](https://drive.google.com/file/d/1aF2OWNdCtQQq7PKXtBt9cm4pke95WU1h/view) is a phone photo. The title is Young Defenders of the North Judging Criteria. The phone clock reads 10:56, with no date or zone. Six headings are 5 points each:
+
+1. Technical analysis and threat detection.
+2. Incident response strategy.
+3. Data integrity and risk assessment.
+4. Security recommendations and longer-term defense.
+5. Communication and reporting.
+6. Teamwork, presentation, and critical thinking.
+
+The bullets mention telecom gear, a university link, and academic records. Use those bullets as the score sheet. Do not state them as things that happened in Whoville. For this incident, “data at risk” means the operations picture, the recovered log, and the download list, not student records. Duration is still not on this photo.
+
 ## Message for Team Leader
 
-> Inject 5 is a download list, not proof of an infection or of a switching command. Please still accept or edit the public paragraph before anyone says it. Please do not approve clearing that history, running the downloaded files, a malware announcement, a SCADA reboot, or switching from the 17/18 footer.
+> Inject 6 is a download page, not proof a file was saved or run. Please do not approve clicking Download, fetching that address, or naming the site in public. The criteria photo can shape the oral. Please still accept or edit the public paragraph before anyone says it. Please do not approve a malware announcement, a SCADA reboot, or switching from the 17/18 footer.

@@ -25,14 +25,14 @@ docs/              GitHub Pages website and progress data
 
 | Item | Current position |
 |---|---|
-| Latest inject | **Inject 5 — Chrome download history; response reviewed at 12:02 PDT** |
+| Latest inject | **Inject 6 — FreeGameDownloads page; response reviewed at 12:32 PDT** |
 | Investigation | **Active. Blackout cause and unauthorized activity remain unconfirmed.** |
-| Latest published analyst updates reviewed | Evidence desk through 12:06 PDT; timeline through 11:39 PDT; response through 12:02 PDT, October 15, 2026 |
+| Latest published analyst updates reviewed | Evidence desk through 12:06 PDT; timeline through 11:39 PDT; response through 12:32 PDT, October 15, 2026 |
 | Lead reconciliation | October 15, 2026, 10:34 PDT; reviewed all four existing repository files and the seven commits after initialization. The 10:40 PDT response handoff is linked and not yet folded into the numbered assessment. |
-| Drive coverage | Eleven files at 12:02 PDT: Injects 1–5, including four Inject 4 images, plus Instructions, Schedule, and Mission Overview. |
-| Review coverage | Evidence desk and response reviewed Inject 5; the evidence desk, timeline, and response reviewed Inject 4. The lead chat has not independently verified the images. |
-| Remaining intake gaps | Official event date/time zone and explicit deadline, rubric, presentation limits, AI/sharing rules; schedule visual review is complete |
-| Submission | Draft outline updated with an Inject 5 addendum at 12:02 PDT. Not approved and not submitted |
+| Drive coverage | Thirteen files at 12:32 PDT: Injects 1–6, including four Inject 4 images, plus Instructions, Schedule, Mission Overview, and Presentation Criteria.jpg. |
+| Review coverage | Response reviewed Inject 6 at 12:32 PDT. Evidence desk and response reviewed Inject 5. Timeline last published through Inject 4. The lead chat has not independently verified the images. |
+| Remaining intake gaps | Official event date/time zone, explicit deadline, presentation duration, and AI/sharing rules. A judging-criteria photo is in the folder; its example wording is not Whoville evidence. Schedule visual review is complete |
+| Submission | Draft outline updated with an Inject 6 addendum and the criteria photo at 12:32 PDT. Not approved and not submitted |
 | Participant presence | User of the evidence chat confirms presence at 10:41 PDT; name/roster mapping not supplied. See human-status.txt. |
 | Next priority | Obtain full logs and authorization/session records; independently confirm critical service and telemetry |
 
@@ -125,7 +125,7 @@ Members 2–4 confirm their roles in the plaintext file. Shared-account commits 
 | Lead support — this chat | Reconciled published Inject 1–2 handoffs and organized the hub | Requirements and priority review; personal progress belongs in human-status.txt |
 | Timeline support | Injects 1–2 reviewed; [master timeline](investigation/team3.md) published; latest reviewed update 10:30 PDT | Clocks, provenance, and PDF context |
 | Evidence desk | Injects 1–2 visually reviewed; [evidence notes](investigation/codex-evidence-analyst.md) published; latest reviewed update 10:41 PDT; schedule visually reviewed and source spellings rechecked | Full records, authorization, cross-source verification |
-| Response support | Inject 5 reviewed at 12:02 PDT. Download history preserved as a lead. Public paragraph unchanged | Leader accepts or edits the public paragraph before it is used |
+| Response support | Inject 6 reviewed at 12:32 PDT. Download page preserved. Do not click Download. Public paragraph unchanged | Leader accepts or edits the public paragraph before it is used |
 
 **Chat visibility:** The available app listing exposed this lead chat and the related “Hackathon Crash Course” chat. The latter contains role/setup messages, with assistant content only exposed as reference placeholders. The separate evidence/timeline chats were not exposed in that listing; their committed handoffs were reviewed instead. This is not a claim that every same-account chat has been read. No messages were sent to other chats.
 
@@ -141,7 +141,7 @@ Owners below are proposed workstreams, not claims that a named teammate has acce
 | **High / A-004** | Verify Medical District service, switch states, and independent measurements; reconcile source clocks. Safety priority and option comparison drafted in [investigation/kevin-response.md](investigation/kevin-response.md); field verification is still open | Response + timeline | Safety assessment and clock basis supported by evidence |
 | **High / A-005** | Correlate SSH, sudo/su, process ancestry, service manager, audit and SCADA command records | Evidence + timeline | Session links and logging-stop reason established or explicitly unresolved |
 | **High / A-006** | Evidence desk native-resolution reread supports PID 2189 and script spelling without leading slash; response OCR agrees. Timeline handoff still needs reconciliation; exact redirection requires original text | Evidence + timeline | Shared notes reconciled with correction history; original text checked when supplied |
-| **Next / A-007** | Response options and a presentation draft are written. Leader review of [presentation/presentation-outline.md](presentation/presentation-outline.md) is still open. Rubric and duration are still unpublished | Response + leader | Leader accepts the exact version, or edits it, before any submission |
+| **Next / A-007** | Response options and a presentation draft are written. Leader review of [presentation/presentation-outline.md](presentation/presentation-outline.md) is still open. A criteria photo is in the folder. Duration is still unpublished | Response + leader | Leader accepts the exact version, or edits it, before any submission |
 
 ## Evidence and injects
 
@@ -149,6 +149,8 @@ Drive originals remain the source material. The register below indexes them; it 
 
 | ID / material | Source | Review state / location |
 |---|---|---|
+| **I-006 — FreeGameDownloads page** | [Inject 6](https://drive.google.com/file/d/1pRAe1brGsL_7PGZZ_B4xY-3mKlikQmIw/view) | Response chat reviewed at 12:32 PDT; [response note](investigation/kevin-response.md#i-006-response--2026-10-15-1232-pdt). A visible address and a Download button are not proof a file was saved |
+| **Judging criteria photo** | [Presentation Criteria.jpg](https://drive.google.com/file/d/1aF2OWNdCtQQq7PKXtBt9cm4pke95WU1h/view) | Response chat reviewed at 12:32 PDT. Six headings at 5 points each. Example wording is not Whoville evidence |
 | **I-005 — Chrome download history** | [Inject 5](https://drive.google.com/file/d/1MR7QpdHrDBFiORdyDPr1D4jA5iqbZyjy/view) | Response chat reviewed at 12:02 PDT; [response note](investigation/kevin-response.md#i-005-response--2026-10-15-1202-pdt). Filenames are not proof a file ran |
 | **I-004 — four resident posts** | [Reddit-style](https://drive.google.com/file/d/1CUNuPYSCE9y9prf1uCUYhjlMU9K1_WAm/view), [9:01 a.m. tweet](https://drive.google.com/file/d/1XN9CpCFTRhB8AuFq9e_RgGDRfUK5cAIL/view), [advice post](https://drive.google.com/file/d/1a2gAJlOUtpwflgsO99Zex6_nqia_a_CA/view), [8:47 a.m. tweet](https://drive.google.com/file/d/1fAsOH6POqtOg9kaey9DQqxxYqrmyYScE/view) | Response chat reviewed at 11:18 PDT; [response note](investigation/kevin-response.md#i-004-response--2026-10-15-1118-pdt). Posts are claims, not confirmed identities or a cause |
 | **I-003 / E-003 — Google sign-in alert screenshot** | [Inject 3](https://drive.google.com/file/d/1iQa1Y2u0vdNfuVin0ejEClH4pdJv0KUL/view) | Evidence desk visually reviewed; [findings and limits](investigation/codex-evidence-analyst.md#i-003--e-003--google-sign-in-alert-screenshot); authenticity, authorization and account links unconfirmed |
@@ -170,7 +172,7 @@ Direct text extraction of Instructions supports these working requirements, cons
 | Presentation preparation | Build as you go; use the last hour to finalize |
 | Judging | Instructions and visually reviewed Schedule indicate **1:45 PM** judging walkthrough / top five selected. Schedule also displays 2:10 PM finalist presentations and 2:45 PM top three announcement. Event date/zone unstated |
 | Published start / deadline | Schedule displays 10:15 AM Hackathon Begins; no event date/time zone or explicit submission deadline. Three hours later is 1:15 PM by calculation only; reconcile with 1:45 PM judging before using a deadline |
-| Rubric / scoring weights | Not found in reviewed material |
+| Rubric / scoring weights | Presentation Criteria.jpg, reviewed 12:32 PDT. Six headings, 5 points each. Bullets use telecom and university examples that are not Whoville facts |
 | Presentation duration, format, submission method | Not established |
 | AI, research, and sharing rules | Not established |
 | Presentation draft / approval / receipt | No version, leader approval, or submission confirmation recorded |
@@ -273,3 +275,7 @@ At 12:02 PDT the folder included a Chrome download-history screenshot. December 
 The screenshot groups `Tomodachi Life FREE.zip`, `ryujinxx.exe`, `December Schedule.pdf`, and `Logs.txt` under **December 24, 2026**. Chrome states that the browser is managed by an organization. The executable name resembles Ryujinx with an extra `x`; this suggests an origin-and-execution check, **not** a demonstrated malicious file. Neither file contents nor exact download times, source URLs, host/user mapping, execution, or SCADA relationships are shown. I-002 and I-003 clocks and account links remain unresolved. No blackout-causation or attacker attribution claim is supported.
 
 **Next:** Timeline may correlate any later source times if exact event records arrive; the leader can use the cautious one-paragraph finding above. Keep the incident assessment and Kevin's public paragraph unmodified pending leader reconciliation and approval. The screenshot was reviewed, but no download URLs or files shown inside Chrome's history were opened or executed. No competition submission was made.
+
+## Kevin response handoff — Inject 6
+
+At 12:32 PDT the folder included a FreeGameDownloads screenshot and Presentation Criteria.jpg. The address bar shows “Not secure” and the visible text `5freedownloads.com/tomodachi/free/c`, then cuts off. A Tomodachi Life logo and a Download button are on the page. That game name matches the zip on the Inject 5 list. The page does not show a click, a saved file, or a computer. Do not click Download. The criteria photo has six headings at 5 points each; its telecom and university examples are not Whoville evidence. The public paragraph is unchanged. [Response note](investigation/kevin-response.md#i-006-response--2026-10-15-1232-pdt). [Presentation addendum](presentation/presentation-outline.md#inject-6-addendum--2026-10-15-1232-pdt).

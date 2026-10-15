@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-15T12:06:00-07:00",
-  "updatedBy": "Gretzky — Evidence desk",
+  "updatedAt": "2026-10-15T12:32:00-07:00",
+  "updatedBy": "Kevin",
   "latestInject": {
-    "id": "I-005",
-    "title": "Chrome download history",
-    "state": "Inject 5 reviewed by evidence desk and response",
-    "checkedAt": "2026-10-15T12:02:00-07:00",
-    "note": "Response and evidence desk reviewed the single Inject 5 Chrome download-history screenshot, with 11 Drive items present at the 12:02 PDT check. Four downloads are grouped under Dec 24, 2026, including ryujinxx.exe. Exact download times, user, host, source, contents, execution and SCADA link are unverified. Timeline review has not been confirmed.",
+    "id": "I-006",
+    "title": "FreeGameDownloads page",
+    "state": "Inject 6 reviewed by response",
+    "checkedAt": "2026-10-15T12:32:00-07:00",
+    "note": "Response chat listed thirteen Drive files at 12:32 PDT. Inject 6 shows a Not secure address. The visible text is 5freedownloads.com/tomodachi/free/c and then cuts off. A Tomodachi Life logo and a Download button are on the page. No click, host, or saved file is shown. A judging-criteria photo is also new. Other desks have not yet recorded a review.",
     "sourceUrl": "https://drive.google.com/drive/folders/1tpag2T6jptGhCC7E2tKtuZbTXLQ9B-Mj"
   },
   "assessment": [
@@ -33,12 +33,12 @@
     },
     {
       "label": "Recommended action",
-      "text": "Inject 5 is a download history. Preserve it, do not run the files, and do not announce malware as the cause. Welfare checks and the public paragraph from earlier injects still await leader approval.",
-      "source": "investigation/kevin-response.md#i-005-response--2026-10-15-1202-pdt"
+      "text": "Inject 6 is a download page. Do not click Download and do not announce the site as the cause. The game name matches a zip already listed. Preserve the earlier download history. The public paragraph still awaits leader approval.",
+      "source": "investigation/kevin-response.md#i-006-response--2026-10-15-1232-pdt"
     },
     {
       "label": "Critical unknowns",
-      "text": "Blackout cause, authorized activity, source clocks, physical grid state, official deadline and time zone, judging rubric, and presentation requirements.",
+      "text": "Blackout cause, authorized activity, source clocks, physical grid state, official deadline and time zone, presentation duration, and submission method. A judging-criteria photo is in the Drive folder; its example wording is not Whoville evidence.",
       "source": "README.md#challenge-requirements"
     }
   ],
@@ -77,10 +77,10 @@
       "id": "response",
       "name": "Kevin — Response analysis",
       "status": "Working",
-      "updatedAt": "2026-10-15T12:02:00-07:00",
-      "completed": "Inject 5 reviewed. December 24, 2026 downloads include ryujinxx.exe and a zip. History is to be preserved. Execution is not shown.",
-      "next": "Identify the computer. Leader accepts or edits the unchanged public paragraph.",
-      "blocker": "The screenshot does not name the computer. Leader approval is still required for any public line.",
+      "updatedAt": "2026-10-15T12:32:00-07:00",
+      "completed": "Inject 6 reviewed. The page shows a Not secure download button and a Tomodachi Life logo. No click or execution is shown. A six-part criteria photo was also read.",
+      "next": "Do not click Download. Identify the Inject 5 computer. Leader accepts or edits the unchanged public paragraph.",
+      "blocker": "The page does not show who clicked anything. Leader approval is still required for any public line.",
       "source": "investigation/kevin-response.md"
     }
   ],
@@ -125,7 +125,7 @@
       "id": "A-007",
       "title": "Review drafted response options and start presentation",
       "owner": "Response + leader",
-      "status": "Draft updated for Inject 5; leader review still open"
+      "status": "Draft updated for Inject 6; criteria photo read; leader review still open"
     }
   ],
   "milestones": [
@@ -152,7 +152,17 @@
     {
       "label": "Inject 5",
       "status": "Reviewed by response",
-      "note": "Download history for December 24, 2026. No execution or host name shown. Evidence and timeline reviews not yet recorded."
+      "note": "Evidence and response reviewed the download history. No execution or host name shown. Timeline review is not yet recorded."
+    },
+    {
+      "label": "Inject 6",
+      "status": "Reviewed by response",
+      "note": "Download page with a truncated Not secure address and a Download button. No click shown. Evidence and timeline reviews not yet recorded."
+    },
+    {
+      "label": "Judging criteria",
+      "status": "Photo reviewed by response",
+      "note": "Six headings at 5 points each. Telecom and university examples on the photo are not Whoville evidence. Duration still absent."
     },
     {
       "label": "Schedule",
@@ -162,7 +172,7 @@
     {
       "label": "Presentation",
       "status": "Draft",
-      "note": "Outline updated with an Inject 5 addendum at 12:02 PDT. Not approved and not submitted."
+      "note": "Outline updated with an Inject 6 addendum and the criteria photo at 12:32 PDT. Not approved and not submitted."
     }
   ]
 }

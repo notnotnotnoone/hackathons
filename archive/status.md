@@ -172,6 +172,15 @@ No utility command and no competition submission was made.
 - Response: do not clear history, do not run the files, identify the computer before calling it the SCADA host. Public paragraph unchanged. No cause shown.
 - No utility command and no competition submission was made.
 
+## Incident response — Inject 6 — 2026-10-15 12:32 PDT
+
+- Drive rechecked. Thirteen files. Inject 6 is a FreeGameDownloads browser page. Presentation Criteria.jpg is also new.
+- The address bar shows “Not secure” and the visible text `5freedownloads.com/tomodachi/free/c`, then cuts off. The page shows a Tomodachi Life logo and a Download button. No click and no host name are shown.
+- The game name matches the zip on the Inject 5 list. That match is not proof the zip came from this page or that it ran.
+- The criteria photo has six headings at 5 points each. Its telecom and university examples are not Whoville evidence. Duration is still absent.
+- Response: do not click Download and do not fetch the file. Public paragraph unchanged. No cause shown.
+- No utility command and no competition submission was made.
+
 ## Evidence participant identified — 2026-10-15 10:49 PDT (UTC-07:00)
 
 Gretzky directly confirmed their name in this evidence chat, mapping the previously unnamed evidence participant to Member 2 (roster spelling gretsky). Presence is confirmed; human-status.txt now records Gretzky's evidence-collection work and links the assisted findings. No other teammate's status changed. Existing analyst work remains AI-assisted; independent human verification is not claimed. Next: collect missing source records and next inject; brief the leader.
