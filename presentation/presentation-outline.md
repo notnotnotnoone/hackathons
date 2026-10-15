@@ -8,6 +8,21 @@
 
 Earlier drafts (10:55 to 12:32 PDT, with one addendum per inject) are in the git history of this file. Per-inject detail and the option table stay in [investigation/kevin-response.md](../investigation/kevin-response.md). The row-by-row timeline is in [investigation/team3.md](../investigation/team3.md); evidence limits are in [investigation/codex-evidence-analyst.md](../investigation/codex-evidence-analyst.md).
 
+## Our hypothesis
+
+**Leading hypothesis, moderate confidence:** this was a cyber intrusion that started with a pirated game on a work computer. It was not a plain equipment failure.
+
+1. **Lure (Dec 24, 2026).** On an organization-managed Chrome profile, someone downloads `Tomodachi Life FREE.zip` and `ryujinxx.exe` from a "Not secure" free-game site, `5freeedownloads.com` (I-005, I-006; same profile, matching toolbars).
+2. **Credential stealer.** The unpacked folder holds `setup.exe` and an 82 KB program named `N0Tstea1nG?CredEntials.exe`, "not stealing credentials" (I-007). If it ran, it took the passwords saved in that browser.
+3. **Stolen passwords tested.** At 10:12 PM a new sign-in to `maxwafoone@gmail.com` comes from Mount Crumpit, and Google flags it (I-003).
+4. **Into the control system.** At 23:59 the contractor account `max.contr.maint` fails once from `89.46.57.27`, then logs in to `whoville-scada` with a password at 00:00:36 (I-002). "Max" appears in both accounts.
+5. **Root, then tracks covered.** Two `su` attempts fail, `adminelk` runs `sudo su` to root at 00:05:14, and logging is killed 44 seconds later at 00:05:58. Nothing is logged for about 11 hours (I-002).
+6. **Grid hit, and the operators' screen made wrong.** Telemetry is lost from 06:31 and alerts start at 07:32. By 08:43, 92,430 customers are out, the hospital is on generators and water treatment is offline. SCADA still shows Central "Online" at 0 MW (I-008), and the feeder screen contradicts itself (I-001). Both generating stations show Online, so this is not a shortage of generation.
+
+**Facts we have:** every individual step above is on a screenshot.
+**What we still need to prove:** that the file ran, that the contractor's password was saved in that browser, and that a breaker command was sent during the logging gap.
+**What would change our mind:** the contractor confirms approved midnight work, and breaker history shows a field fault with no remote command. Then this is maintenance plus an equipment or telemetry failure.
+
 ## 60-second walk-up
 
 > On Christmas morning the utility's map shows 92,430 customers without power, the hospital on backup generators, and the water treatment plant offline. Residents say they have no heat, and the utility's own screens contradict themselves: Central substation reads "Online" in SCADA while it delivers zero megawatts and customers there report outages. Our working hypothesis — the one we investigate first — is an intrusion that began with a pirated-game download. We can show the pieces but not the links between them. On December 24 a work browser downloaded a "Tomodachi Life FREE" zip and a program called `ryujinxx.exe`. The same browser profile viewed a "Not secure" free-game site offering that game. A desktop folder with the zip's name holds `setup.exe` and an 82 KB program whose name reads "N0T stealing credentials". We did not open either. On the evening of December 24 a Google alert reports a new sign-in to `maxwafoone@gmail.com` from Mount Crumpit. Just before midnight the contractor account `max.contr.maint` fails once and then logs in to the SCADA host with a password. Two `su` attempts fail, `adminelk` runs `sudo su` as root, and 44 seconds later the logging service is stopped. We cannot show that the download ran, whose computer it was, or any command that opened a breaker. So we act on safety first — hospital fuel and water first — contain without destroying evidence, and tell the public only what we know: the power is out, here is how to stay safe, and the cause is under investigation.
