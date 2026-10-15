@@ -254,3 +254,56 @@ Original post URLs/permalinks and platform records; reliable account identity an
 
 **Current status:** Injects 1–4 reviewed by the evidence desk. Blackout cause, cyberattack, actor identity, and the authenticity/accuracy of social-media claims remain unconfirmed. No links/buttons or utility systems were accessed, and no external message or competition submission was made.
 
+
+## I-005 / E-005 — Chrome download-history screenshot
+
+**Evidence reviewed:** 2026-10-15 12:03 PDT (UTC-07:00), team-work time. **Original:** [Inject 5 PNG](https://drive.google.com/file/d/1MR7QpdHrDBFiORdyDPr1D4jA5iqbZyjy/view). Shared folder listed 11 items at check: eight screenshots (I-001–I-005, including four for I-004) and three PDFs. This is an image of a Chrome `chrome://downloads` page, **not** the underlying browser database or downloaded files. Screenshot capture time, browser owner, host, and download sources are not supplied.
+
+### Evidence Summary
+
+- The Chrome page shows a date group **December 24, 2026** containing four entries, in displayed top-to-bottom order: `Tomodachi Life FREE.zip`, `ryujinxx.exe`, `December Schedule.pdf`, and `Logs.txt`. The grouping is a date label, not four exact download timestamps. Do not infer chronology within the group from screen order.
+- `ryujinxx.exe` has an extra `x` compared with the familiar emulator name *Ryujinx*. The filename resemblance raises a possible software-impersonation/unsafe-download lead, **not** a malware determination. `Tomodachi Life FREE.zip` is an archive with game-related wording; its contents are not visible.
+- A banner reads **Your browser is managed by your organization**; this supports only that Chrome displays organizational management, not who operated it or whether it was a utility endpoint.
+- A second tab appears to be a Google search for **nearest pet store**. It provides no demonstrated connection to the incident.
+- The screenshot offers source-link and local-folder icons, but does not expose target URLs/paths, file hashes, file contents, security warnings, executed processes, browser profile, or download times. No link or file was opened or run.
+- Older deleted and nonincident download entries are partly visible below a **November 24, 2025** heading and later older headings; they are not treated as incident evidence.
+
+### Important Findings
+
+| Finding | Exact source/time | Why it matters | Fact or hypothesis |
+|---|---|---|---|
+| Four download items are displayed together | E-005, `chrome://downloads`, **December 24, 2026** date group | Potential computer/software entry point or benign user activity | Fact of screenshot text; downloads and machine attribution not independently authenticated |
+| `ryujinxx.exe` appears in the list | E-005, second entry, Dec 24 2026 group; **no clock time/zone** | Executable name resembles Ryujinx with an extra `x`; investigate origin, signature, hash, and execution | Filename fact; impersonation/malware is a hypothesis |
+| `Tomodachi Life FREE.zip` appears in the list | E-005, first entry, same date group | Possible lure or ordinary game-related download; archive contents unknown | Filename fact; malicious payload is a hypothesis |
+| `December Schedule.pdf` and `Logs.txt` are listed | E-005, third/fourth entries, same date group | Could be relevant if provenance shows incident work or log handling; names alone have no proven connection | Filename fact; incident link unknown |
+| Chrome says browser is managed by an organization | E-005, heading above date group | May allow endpoint/browser policy and download-record preservation **if** device ownership is established | Banner text fact; utility affiliation unknown |
+| Date group overlaps the scenario's Dec 24–25 period | E-005 vs I-002 screenshot (Dec 24–25 without year or zone), I-003 alert (Dec 24 without year/zone) | Candidate chronological correlation | Conditional only; no individual download times, no shared identity/session/clock basis |
+
+### Suspicious Activity
+
+The executable and game archive warrant source and execution checks, particularly because the executable looks like a differently spelled emulator name. A browser download entry **does not establish execution, malware, command-and-control, account theft, or a path into SCADA**. The screenshot does not prove this browser belonged to the `max.contr.maint` account owner, `adminelk`, or the claimed Google-account sign-in user. It does not associate the files with the SCADA login IP `89.46.57.27`. Likewise, `Logs.txt` in downloads cannot be equated to the recovered SCADA screenshot without contents/provenance.
+
+### Cross-inject comparison and clock limits
+
+- **I-002:** failed/accepted SSH logins, `su` failures, a sudo invocation and `rsyslog` stop remain investigative leads. I-005 contains no process logs or timestamp proving `ryujinxx.exe` ran before or during those events. I-002's year and time zone remain absent.
+- **I-003:** a claimed Google new-sign-in alert has a displayed Wed Dec 24 10:12 PM email time without year/zone. I-005 supplies a Dec 24 **2026** download date group but cannot resolve the I-003 Wednesday/Thursday mismatch or link identities.
+- **I-001 / I-004:** feeder dashboard discrepancies and resident outage reports are unchanged. Download history does not establish operational effects or blackout causation.
+
+### Missing Information
+
+Original complete Chrome download database and file-origin URLs; exact UTC/local times and time zone for each download; host identity, organization/ownership, browser profile and user; downloaded files or trustworthy hashes/signatures; antivirus/EDR detections and quarantine events; archive contents; file execution/process creation and persistence; network connections; whether `Logs.txt` is the same source as recovered logs; alignment to SCADA host/user/sessions. Future injects may supply these; do not chase unavailable systems, visit links, or run files.
+
+### Message for Team Leader
+
+> Inject 5 shows a managed-Chrome download-history screenshot with four entries grouped under **December 24, 2026**: `Tomodachi Life FREE.zip`, `ryujinxx.exe`, `December Schedule.pdf`, and `Logs.txt`. The executable's spelling resembles Ryujinx with an extra `x`, making its origin, hash, and execution worthwhile checks. But the screenshot gives no download clock times, URLs, device/user attribution, file contents, malware results, or evidence it ran. It cannot yet be tied to the SCADA SSH/sudo/logging sequence, the Google alert, or the blackout. Treat this as a possible initial-access lead, not proof of an attack.
+
+### Six-part evidence handoff
+
+1. **Situation:** I-005 adds a computer download-history screenshot to the SCADA, telemetry, alert, and public-impact evidence.
+2. **New findings:** Four named downloads share a Dec 24, 2026 Chrome date group; `ryujinxx.exe` and a game archive merit origin/execution validation. The browser displays an organization-managed banner.
+3. **Leading hypotheses:** Benign personal downloads, a disguised executable/malicious archive, or unrelated/curated exercise artifacts all remain possible. No cause ranking is justified.
+4. **Contradictions:** Dec 24, 2026 does not resolve the older claimed alert's Wednesday label. Event timestamps and host attribution are absent.
+5. **Recommended action:** Leader and timeline use this as a conditional lead; preserve the screenshot and request only evidence officially supplied in later injects. Do not open or execute the files.
+6. **Critical unknowns:** Download source/time, file integrity and execution, host/user mapping, SCADA linkage, outbreak chronology, and blackout cause.
+
+**Evidence-desk status:** Injects 1–5 reviewed to the extent present in shared Drive; no system actions, external communications, or competition submission. The attack hypothesis remains unconfirmed.
