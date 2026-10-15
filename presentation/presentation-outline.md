@@ -19,6 +19,13 @@ Earlier drafts (10:55 to 12:32 PDT, with one addendum per inject) are in the git
 5. **Root, then tracks covered.** Two `su` attempts fail, `adminelk` runs `sudo su` to root at 00:05:14, and logging is killed 44 seconds later at 00:05:58. Nothing is logged for about 11 hours (I-002).
 6. **Grid hit, and the operators' screen made wrong.** Telemetry is lost from 06:31 and alerts start at 07:32. By 08:43, 92,430 customers are out, the hospital is on generators and water treatment is offline. SCADA still shows Central "Online" at 0 MW (I-008), and the feeder screen contradicts itself (I-001). Both generating stations show Online, so this is not a shortage of generation.
 
+**Our culprit:** an outside attacker operating from **Mount Crumpit**, the Grinch in Whoville terms. The attacker got in through **Max**, the maintenance contractor, by stealing his passwords.
+- **Why Max is the way in:** the infected browser's profile picture is a cartoon dog, like the `maxwafoone` Gmail avatar. The SCADA login used `max.contr.maint`.
+- **Why Max is probably a victim, not an accomplice:** a credential stealer was planted, and an insider would not need one. Google flagged the Mount Crumpit sign-in as new, which suggests it was not Max's usual location. The first SCADA password attempt failed.
+- **Where the attacker was:** the only location shown anywhere is Mount Crumpit, which also hosts the Crumpit generating station.
+- **Alternative we keep open:** Max is an insider accomplice. In the story, Max is the Grinch's dog.
+- **Confidence:** moderate.
+
 **Facts we have:** every individual step above is on a screenshot.
 **What we still need to prove:** that the file ran, that the contractor's password was saved in that browser, and that a breaker command was sent during the logging gap.
 **What would change our mind:** the contractor confirms approved midnight work, and breaker history shows a field fault with no remote command. Then this is maintenance plus an equipment or telemetry failure.
