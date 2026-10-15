@@ -66,12 +66,12 @@ Role: Incident response analyst
 Role confirmed: Confirmed by Kevin in this chat on 2026-10-15.
 Presence: Confirmed by Kevin's direct request to confirm this status.
 Status: Working
-Working on: Response options for Injects 1 and 2.
-Finished / handoff link: kevin-response.md
-Next step: Leader reviews R-01 through R-10 before any public message or account change.
-Need help with: Leader decision on external wording.
-Updated at (date, time, zone): 2026-10-15 10:51 PDT (UTC-07:00)
-Recorded by: Incident-response assistant, at Kevin's explicit request to confirm this status.
+Working on: Presentation draft is ready for the leader. Response options for Injects 1 and 2 are published.
+Finished / handoff link: presentation-outline.md and kevin-response.md
+Next step: Leader accepts or edits the public paragraph before anyone uses it.
+Need help with: Leader decision on that wording. Official rubric and duration are still unpublished.
+Updated at (date, time, zone): 2026-10-15 10:55 PDT (UTC-07:00)
+Recorded by: Incident-response assistant, after Kevin asked to finish the response work.
 
 ============================================================
 EXAMPLE ONLY - NOT A TEAM STATUS

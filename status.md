@@ -145,6 +145,12 @@ Correlate future injects with these account/IP/host events and dashboard discrep
 
 No utility command and no competition submission was made.
 
+### Presentation draft — 2026-10-15 10:55 PDT
+
+- Drive listing rechecked. Still Inject 1, Inject 2, Instructions, Mission Overview, and Schedule.
+- Wrote [presentation-outline.md](presentation-outline.md): a walk-up brief, a four-minute speaking order, a public paragraph for leader approval, and the submission checks this draft can and cannot meet.
+- The draft is not submitted and is not an approved utility order. Field checks, full logs, and the rubric remain open.
+
 ## Evidence participant identified — 2026-10-15 10:49 PDT (UTC-07:00)
 
 Gretzky directly confirmed their name in this evidence chat, mapping the previously unnamed evidence participant to Member 2 (roster spelling gretsky). Presence is confirmed; human-status.txt now records Gretzky's evidence-collection work and links the assisted findings. No other teammate's status changed. Existing analyst work remains AI-assisted; independent human verification is not claimed. Next: collect missing source records and next inject; brief the leader.
