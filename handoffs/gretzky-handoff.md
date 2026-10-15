@@ -1,9 +1,9 @@
 # Gretzky Evidence Desk — Handoff
 
 **Prepared:** 2026-10-15 11:39 PDT (UTC-07:00)  
-**Updated:** 2026-10-15 12:51 PDT (UTC-07:00)  
+**Updated:** 2026-10-15 13:03 PDT (UTC-07:00)  
 **Owner:** Gretzky, Member 2 — evidence investigator  
-**Status:** Evidence review complete through Inject 7 (I-007 / E-007). Existing Presentation Criteria review remains conditional on rubric applicability.
+**Status:** Evidence review complete through final labelled Inject 8 (I-008 / E-008). Judging criteria applicability remains uncertain.
 
 ## Shared resources
 
@@ -134,3 +134,39 @@ The page (I-006), download list (I-005), and folder (I-007) share the Tomodachi 
 > **Gretzky Inject 7 update:** Windows File Explorer shows **Desktop > Tomodachi Life FREE** with two executable applications: an 82 KB credential-themed name and `setup.exe` (2 KB). Both show Aug 12, 2026, 10:39 AM **modified** dates, not execution dates. The folder naming aligns with Inject 5's ZIP and Inject 6's game page, strengthening a suspicious-software **lead**, but we cannot prove provenance, execution, account compromise or the blackout's cause. Detailed source and limits are in the [evidence log](../investigation/codex-evidence-analyst.md#i-007--e-007--new-file-explorer-evidence).
 
 **Status:** Gretzky evidence desk current through Inject 7. No software run, utility action, public message, or competition submission.
+
+
+## Inject 8 / I-008 / E-008 — Final operational handoff
+
+**Reviewed:** 2026-10-15 about 13:02 PDT (team work time). **Original:** [Hydro Siber map, Inject 8](https://drive.google.com/file/d/1-gc6iqIzCkryqRweTdYDUH0TLYf4cuM5/view). **Comprehensive evidence report:** [I-008 facts, contradiction table, alerts and cross-inject analysis](../investigation/codex-evidence-analyst.md#i-008--e-008--final-grid-operations-map). Shared Drive had **15 files**, including the new Inject 8 PNG.
+
+### Evidence Summary
+
+The map's own label is **Simulated Operational View, not an Engineering Single-Line**. At the displayed **Dec 25, 2026 8:43 AM (PDT)** it reports **1,240 MW demand (-18% vs forecast)** and **92,430 customers without power (+14%)**, with **12 Online, 5 Degraded, 6 Offline, 3 Telemetry Unverified** feeder categories (26 total). Hospital shows **Partial Power / Backup Generators Active**; Water Treatment **Offline**; Transit **Partial Power**; Emergency Services **Online**.
+
+### Important Findings
+
+| Finding | Exact source/time | Why it matters | Evidence limit |
+|---|---|---|---|
+| Demand/customers | E-008 header, Dec 25 2026 08:43 AM PDT | Indicates major apparent system impact | Screenshot values, uncorroborated; percent change basis incomplete |
+| SUB-03 Central | E-008 map/selected assets, 08:43; 0 MW, 28,600 customers | SCADA Online vs Field Unconfirmed; note simultaneously says "SCADA shows offline" | Internal display inconsistency, not proof of manipulation |
+| SUB-05 Hillsdale Park | E-008 map/table, Offline/Offline, 0 MW, 17,200 customers; 07:32 alert reports status mismatch | Important outage location; prior alert may reflect changed status | Different times, historical resolution unknown |
+| SUB-07 Riverdale | E-008, Unverified/Unverified, 84 MW, 12,600 customers; telemetry loss noted since 06:31 | Telemetry cannot establish actual power state | Current 84 MW reading may be unverified |
+| SUB-01 / SUB-02 | E-008, degraded/degraded in North Heights / East Valley | Shows operational degradation in distinct areas | Not independent field readings |
+| SUB-04 / SUB-06 | E-008, online/online in Lakeview / West Ridge | Network includes apparently energized areas | Do not equate these SUBs with earlier FDR identifiers |
+| Hospital/water/transit | E-008 at 08:43 | Welfare and critical infrastructure response priorities | Need field confirmation, generator/fuel/runtime and water safety checks |
+| Six alerts | E-008 clock labels: 07:32, 07:41, 07:57, 08:12, 08:36, 08:41 | Shows displayed warning sequence | Alert rows lack separately authenticated date/zone |
+
+### Suspicious Activity and cross-inject links
+
+This map adds **operational impacts and internal monitoring contradictions**, not proof of an attacker. I-001 (18 FDR table, contradictory counts and OFFLINE readings with nonzero flow) is **not asset-for-asset comparable** to the I-008 26-category feeder summary or SUB-01–07 map. I-001/PST vs I-008/PDT source labeling requires clock interpretation. I-004 resident place names overlap the map geography, but social media cannot independently validate substation measurements. I-002 access/logging events and I-005–I-007 download/software leads still have **no demonstrated causal link** to control actions, outage onset, or the state of this map.
+
+### Missing Information
+
+Independent physical switching/relay and field measurements, asset-topology mapping and population-count methodology, exact scenario event clocks/time zones, authenticated alarm history, hospital generator and water treatment status, and original system logs/file/process/security telemetry. No evidence of actual malware execution or malicious utility commands is present.
+
+### Message for Team Leader
+
+> Final Inject 8 shows a simulated Hydro Siber grid at **Dec 25 2026 8:43 AM (PDT)** with **92,430 customers reportedly without power**, 1,240 MW demand, 12 online/5 degraded/6 offline/3 unverified feeder categories and six displayed alerts (07:32–08:41). **Hospital partial power on backups and water treatment offline** are urgent safety items. **SUB-03 says SCADA Online but Field Unconfirmed, while a note says SCADA offline**; SUB-07 telemetry is unverified. Earlier FDR rows cannot be directly matched to today's SUB map, nor can cyber-authentication or suspect download evidence be tied to a breaker command. Present cause as unconfirmed, prioritize independently confirming critical services and switch states, preserve records, and request leader approval before external action or competition submission. [Full analysis](../investigation/codex-evidence-analyst.md#i-008--e-008--final-grid-operations-map).
+
+**Final evidence-desk position:** Injects 1–8 reviewed as supplied. Incident-cause and actor attribution remain unknown. Source screenshot and report preserved; no operational action, external messaging or submission.
