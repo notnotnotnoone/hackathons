@@ -396,3 +396,31 @@ A potential **download-lure chain** is: themed website → ZIP/EXE downloaded �
 
 The original I-006 screenshot's address bar was rechecked at higher resolution. The **literal visible string** is `5freeedownloads.com/tomodachi/free/c`, with **three consecutive `e` letters after `fr`** (`5fr` + `eee` + `downloads.com`). Another analyst's response notes transcribe `5freedownloads.com/tomodachi/free/c` with two `e` letters. Treat those as divergent transcriptions of the **same screenshot**, **not** two observed domains or independent indicators; the original E-006 image controls. No webpage was visited, and any continuation beyond the characters visible in the image is unknown. The E-006 evidence observations above already use the three-`e` spelling.
 
+
+
+## I-007 / E-007 — New File Explorer evidence
+
+**Review:** 2026-10-15 12:49 PDT. **Original:** [Inject 7 image](https://drive.google.com/file/d/1swqAROKb7An3qeNk3noP8o9pOQ00C63C/view). The shared Drive listing now contains 14 files, with Inject 7 as one new PNG.
+
+### Evidence Summary
+The Windows File Explorer breadcrumb reads **Desktop > Tomodachi Life FREE**. Two entries have Windows type **Application**: a first executable with a name suggesting credentials, approximately `NOTstea1nGICredEntials.exe` (some characters are visually confusable), **82 KB**, and `setup.exe`, **2 KB**. Each row displays **8/12/2026 10:39 AM** under **Date modified**. The page also shows a personal OneDrive navigation entry and Start backup control. It does not reveal account/host identity, capture date, file contents, execution, or any cloud synchronization.
+
+### Important Findings
+| Finding | Source and displayed time | Why it matters | Status |
+|---|---|---|---|
+| Matching game-folder name | E-007, Desktop > Tomodachi Life FREE; screenshot time unknown | Matches the game name of I-005 ZIP and I-006 website | Text observed; same device/source unproven |
+| 82 KB executable with a credential-related name | E-007, modified Aug 12 2026 10:39 AM, no zone | Raises concern about unsafe software | Filename/type/size observed; function unknown |
+| `setup.exe`, 2 KB | E-007, modified Aug 12 2026 10:39 AM, no zone | Possible companion application | Presence observed; purpose unknown |
+| Identical modification times | E-007, both rows | Could be preserved or copied file metadata | Observed; not evidence of download or execution timing |
+| I-005 Dec 24, 2026 date group | I-005 Chrome download history versus I-007 | Highlights distinct download-group and file-modification dates | Different timestamp types; no authenticated event ordering |
+
+### Suspicious Activity
+I-005 shows `Tomodachi Life FREE.zip`; I-006 shows a similarly branded download page; I-007 shows two executable entries in a similarly named folder. This is a **stronger thematic and directory-name correlation**. It does **not** prove that either application came from that ZIP or website, was opened, accessed accounts, reached SCADA, or caused the outage. The earlier `ryujinxx.exe` name does not appear in the two visible I-007 entries; no relationship between those files can be asserted.
+
+### Missing Information
+Original ZIP contents, browser download origins, full filenames and hashes, machine/user mapping, reliable file timestamps, execution and endpoint-security logs, account audit linkage, and grid-switch evidence. A file's modified time is not necessarily when it was downloaded or run; no time zone for either visible modification time is provided.
+
+### Message for Team Leader
+> Inject 7 shows **Desktop > Tomodachi Life FREE** containing an **82 KB application with a credential-related filename** and **setup.exe (2 KB)**. Both display Aug 12, 2026, 10:39 AM **file-modification times**, not proven incident or execution times. The folder title aligns with the Inject 5 ZIP and Inject 6 page. That strengthens the hypothesis of unsafe game-related software, but origin, execution, account compromise, utility access and blackout cause are still unproven. See the original E-007 image for the visually ambiguous first filename.
+
+**Conclusion:** Evidence desk reviewed through I-007. Keep the source screenshot and treat all causal links as unconfirmed.
