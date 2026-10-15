@@ -161,3 +161,64 @@
 
 - I-003/E-003 added with one message timestamp and an explicitly untimed sign-in claim. Earlier I-001/I-002 findings retained.
 - Earlier “five files” and “Inject 2 latest” notes describe prior checks; six files and Inject 3 are current as of this review.
+
+
+## Inject 4 — community outage reports — 2026-10-15 11:39 PDT
+
+**Evidence:** Four distinct screenshots named "Inject 4" in the challenge Drive, reviewed visually. Source IDs here use I-004a–d within Inject 4 (shared evidence desk uses I-004/E-004).
+- **I-004a:** [Reddit discussion](https://drive.google.com/file/d/1CUNuPYSCE9y9prf1uCUYhjlMU9K1_WAm/view)
+- **I-004b:** [Ned Mcdodd X post and generator reply](https://drive.google.com/file/d/1XN9CpCFTRhB8AuFq9e_RgGDRfUK5cAIL/view)
+- **I-004c:** [LouLouWho advice post](https://drive.google.com/file/d/1a2gAJlOUtpwflgsO99Zex6_nqia_a_CA/view)
+- **I-004d:** [OzzyFlight X post](https://drive.google.com/file/d/1fAsOH6POqtOg9kaey9DQqxxYqrmyYScE/view)
+
+Direct Drive folder inspection found ten items: four I-004 screenshots, the three earlier inject images, and three PDFs. The screenshots are unverified social-media representations, not authenticated original posts. Incident times are separate from October 15 collection/review times.
+
+### Updated Timeline (additions to existing I-001–I-003 master)
+
+| Time | Event | Source | Confidence |
+|---|---|---|---|
+| Dec 25, 2026, 08:47 AM; zone unstated | OzzyFlight (`pilot_ozzy2323`) says they hoped for a snow day but "now nothing turns on." Resident-reported electrical loss; place, start time, and equipment unverified. | I-004d, X header/body | High for screenshot text; low for independently verified conditions |
+| Dec 25, 2026, 09:01 AM; zone unstated | Ned Mcdodd (`notyourmayor_`) asks whether electricity is out elsewhere and reports freezing conditions at home. | I-004b, X header/body | High for screenshot text; low for independently verified conditions |
+| Relative "1h"; screenshot capture day/zone unknown | r/Whoville poster `greenestNotTheMeanest` reports apparent outage in Central; comments from `yelpb27`, `whobrisubris`, `chereshnya09`, and `stustustu0` report East Valley, West Ridge, and Riverdale outages, with Riverdale heating trouble. Status bar says 11:34 but cannot assign an absolute post timestamp. | I-004a, post, comments, status bar | High for visible claims; report/event timestamps unknown |
+| Relative "1h"; capture day/zone unknown | `bricklecrackled` (`Treesforchopping1`) says they have used a neighbour's generator "this morning." Not a measured power status or exact timeline event. | I-004b, reply | High for screenshot text; event time unverified |
+| Relative "23m"; capture day/zone unknown | `LouLouWho` posts household outage advice and warns of cold/heating consequences. Claimed urgency, official status and safety guidance not verified. | I-004c, post | High for visible claims; authority unverified |
+
+### New Connections
+
+- Public accounts independently *claim* losses or lack of heat in Central Whoville, East Valley, West Ridge and Riverdale. This is evidence of geographically broad **reported** impact, not independent feeder/relay confirmation.
+- 08:47 is the earliest explicit full date-and-clock stamp within I-004, not evidence the blackout *began* at 08:47. Relative "1h"/"23m" markers cannot be converted to timestamps without capture date/clock context.
+- The incident dashboard (I-001, 08:43:12 Dec 25, 2026, header zone unknown) precedes the 08:47 X post **only if source clock zones align**. Neither source establishes the initial physical outage time.
+- Heating reports increase the safety priority of verified warming resources and vulnerable-resident checks. A poster's emergency advice is not validated official guidance; in particular, do not repeat improvised food-storage advice as approved.
+- I-004 does not identify a SCADA actor, demonstrate a breaker switching command, correlate reported areas with feeders, or resolve physical status at the Medical District.
+
+### Contradictions / uncertainties
+
+- No new direct technical contradiction is established; firsthand outage complaints and SCADA display inconsistency can coexist.
+- Two X post timestamps contain the explicit date Dec 25, 2026 but **not** a zone. Reddit's phone-clock 11:34, relative "1h" and LouLouWho's "23m" do not identify a reliable incident timestamp or even a known screenshot date.
+- I-003's "Wed, Dec 24" versus Dec 24, 2026 Thursday issue remains unresolved, as do I-001 counts/telemetry and I-002 recovery/restart clocks.
+- A social platform's visual verified badge or name is not proof of identity, source authorization, content accuracy, or a government statement.
+
+### Unanswered Questions
+
+1. Are the neighbourhood outages confirmed by utility trouble calls, meter events, independent crews, or relay records, and what are their actual onset times?
+2. What are the social screenshots' original URLs, capture times, local time zones and authenticity?
+3. Which feeders serve Central, East Valley, West Ridge and Riverdale? Are Medical District facilities and confirmed warming sites powered?
+4. Does LouLouWho represent an authorized incident/public-safety source, and what advice has incident command verified?
+5. Has cold exposure caused urgent medical or community-service needs?
+
+### Six-part leader assessment
+
+1. **Situation:** Community claims suggest a wider public electricity/heating disruption than any single resident report; physical scope and cause remain unknown.
+2. **New findings:** Dec 25 08:47 and 09:01 explicitly timestamped X posts; four neighbourhoods reported in Reddit discussion; a relative-time public guidance post.
+3. **Leading hypotheses/confidence:** Multi-area disruption is credible as a *pattern of reports*, not established by physical readings. Authorized maintenance, account abuse, measurement problems, equipment failure, other operational and environmental causes remain open. Cyberattack not confirmed.
+4. **Contradictions:** Relative/social timestamps cannot be reconciled to absolute incident clocks. Prior dashboard, log recovery and email calendar discrepancies remain.
+5. **Recommended action:** Verify on-the-ground neighbourhood outages, Medical District conditions, incident clocks, welfare/warming support and publicly endorsed guidance. Preserve original technical logs and avoid unsupported cyber attribution.
+6. **Critical unknowns:** Power-loss onset, physical grid coverage, timing/identity of posts, health impact, officially approved guidance, actor/session links and cause.
+
+### Message for Team Leader
+
+> Inject 4 comprises four social-media screenshots. Dec 25, 2026 posts at 08:47 and 09:01 report power loss and freezing indoor conditions. Reddit comments claim outages across Central, East Valley, West Ridge and Riverdale, with time shown only relatively; LouLouWho shares unverified advice. These corroborate *reported* widespread impacts, not the physical outage onset, feeder states, or a cyberattack. Prioritize verified field conditions, Medical District service, vulnerable residents and approved public guidance. Existing technical uncertainties persist.
+
+### Change history
+
+- Added I-004a–d without deleting or retiming I-001–I-003 records; no causal conclusion or source authentication invented.
