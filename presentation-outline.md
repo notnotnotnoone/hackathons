@@ -105,6 +105,18 @@ Say this: the name and the place are leads for an out-of-band call. They are not
 
 Leave the public paragraph as written. R-11 in [kevin-response.md](kevin-response.md) is the account action: ask, do not click, do not reset yet.
 
+## Inject 4 addendum — 2026-10-15 11:18 PDT
+
+Four resident posts. Use them as reports of what people are saying. Do not read the usernames as confirmed identities.
+
+- At 8:47 a.m. and 9:01 a.m. on Dec 25, 2026, posts say nothing turns on and a person is freezing at home. That is the same morning as the 8:43 a.m. dashboard.
+- A West Ridge comment matches FDR-02, which showed zero voltage. “Central,” “east valley,” and “Riverdale” are not feeder names on that screen. Check those reports too.
+- One reply says the person is using a neighbour’s generator. Do not add a generator sentence unless the leader accepts it.
+- Do not repeat the post that says the clock is ticking, tells people to run to the store, and hopes they make it out alive.
+- One comment guesses the outage is everywhere and says they are not sure. Four feeders were still showing load at 8:43 a.m.
+
+The public paragraph stays the same unless the leader adds the generator line.
+
 ## Message for Team Leader
 
-> Inject 3 does not change the safety actions or the public paragraph. It adds one question for the contractor call: is maxwafoone@gmail.com theirs, and do they recognize a Mount Crumpit sign-in? Please still accept or edit the public paragraph before anyone says it. Please do not approve a click on the email button, a Google account reset from this screenshot, a cyberattack claim, a SCADA reboot, or switching from the 17/18 footer.
+> Inject 4 supports the cold-and-dark public line with resident posts at 8:47 and 9:01 a.m. It does not show a cause. Please still accept or edit the public paragraph before anyone says it. An optional added line, only if you accept it, is to keep generators outside and away from doors and windows. Please do not approve reposting the survival advice, a cyberattack claim, a SCADA reboot, or switching from the 17/18 footer.

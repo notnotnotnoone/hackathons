@@ -158,6 +158,13 @@ No utility command and no competition submission was made.
 - Response change is R-11: ask the contractor contact out of band; do not click Check activity; do not reset the Google account from the screenshot. Life safety and the public paragraph stay as written.
 - No utility command and no competition submission was made.
 
+## Incident response — Inject 4 — 2026-10-15 11:18 PDT
+
+- Drive rechecked. Ten files. Four images are named Inject 4: a Reddit-style thread, two tweets, and an advice post.
+- West Ridge comment matches dark feeder FDR-02. Riverdale, east valley, and “central” are not names on the 18-feeder table. Timed posts are 8:47 a.m. and 9:01 a.m. Dec 25, 2026.
+- Response: add those resident reports to welfare checks. Do not repost the survival advice. Hold one generator sentence for the leader. Public paragraph otherwise unchanged. No cause shown.
+- No utility command and no competition submission was made.
+
 ## Evidence participant identified — 2026-10-15 10:49 PDT (UTC-07:00)
 
 Gretzky directly confirmed their name in this evidence chat, mapping the previously unnamed evidence participant to Member 2 (roster spelling gretsky). Presence is confirmed; human-status.txt now records Gretzky's evidence-collection work and links the assisted findings. No other teammate's status changed. Existing analyst work remains AI-assisted; independent human verification is not claimed. Next: collect missing source records and next inject; brief the leader.

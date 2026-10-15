@@ -12,14 +12,14 @@
 
 | Item | Current position |
 |---|---|
-| Latest inject | **Inject 4 — community outage posts and public advice; evidence desk reviewed** |
+| Latest inject | **Inject 4 — community outage posts; evidence and response reviewed** |
 | Investigation | **Active. Blackout cause and unauthorized activity remain unconfirmed.** |
-| Latest published analyst updates reviewed | Evidence desk through 11:18 PDT; timeline handoff through 11:08 PDT; response through 11:05 PDT, October 15, 2026 |
+| Latest published analyst updates reviewed | Evidence desk through 11:18 PDT; timeline handoff through 11:08 PDT; response through 11:18 PDT, October 15, 2026 |
 | Lead reconciliation | October 15, 2026, 10:34 PDT; reviewed all four existing repository files and the seven commits after initialization. The 10:40 PDT response handoff is linked and not yet folded into the numbered assessment. |
-| Drive coverage | Ten files: seven inject screenshots across Injects 1–4, Instructions, Schedule, and Mission Overview. Inject 4 checked at 11:17 PDT. |
-| Review coverage | Evidence desk visually reviewed Injects 1–4; the lead chat has not independently inspected their images. Instructions and Mission Overview text were checked directly. |
+| Drive coverage | Ten files: seven inject screenshots across Injects 1–4, Instructions, Schedule, and Mission Overview. Evidence check 11:17 PDT; response check 11:18 PDT. |
+| Review coverage | Evidence desk and response chat visually reviewed Inject 4. The lead chat has not independently inspected the images. |
 | Remaining intake gaps | Official event date/time zone and explicit deadline, rubric, presentation limits, AI/sharing rules; schedule visual review is complete |
-| Submission | Draft outline updated with an Inject 3 addendum at 11:05 PDT. Not approved and not submitted |
+| Submission | Draft outline updated with an Inject 4 addendum at 11:18 PDT. Not approved and not submitted |
 | Participant presence | User of the evidence chat confirms presence at 10:41 PDT; name/roster mapping not supplied. See human-status.txt. |
 | Next priority | Obtain full logs and authorization/session records; independently confirm critical service and telemetry |
 
@@ -112,7 +112,7 @@ Members 2–4 confirm their roles in the plaintext file. Shared-account commits 
 | Lead support — this chat | Reconciled published Inject 1–2 handoffs and organized the hub | Requirements and priority review; personal progress belongs in human-status.txt |
 | Timeline support | Injects 1–2 reviewed; [master timeline](team3.md) published; latest reviewed update 10:30 PDT | Clocks, provenance, and PDF context |
 | Evidence desk | Injects 1–2 visually reviewed; [evidence notes](codex-evidence-analyst.md) published; latest reviewed update 10:41 PDT; schedule visually reviewed and source spellings rechecked | Full records, authorization, cross-source verification |
-| Response support | Inject 3 reviewed at 11:05 PDT. R-11 is in [kevin-response.md](kevin-response.md). Public paragraph unchanged | Leader accepts or edits the public paragraph before it is used |
+| Response support | Inject 4 reviewed at 11:18 PDT. Resident reports added to welfare checks. Public paragraph unchanged | Leader accepts or edits the public paragraph before it is used |
 
 **Chat visibility:** The available app listing exposed this lead chat and the related “Hackathon Crash Course” chat. The latter contains role/setup messages, with assistant content only exposed as reference placeholders. The separate evidence/timeline chats were not exposed in that listing; their committed handoffs were reviewed instead. This is not a claim that every same-account chat has been read. No messages were sent to other chats.
 
@@ -136,6 +136,7 @@ Drive originals remain the source material. The register below indexes them; it 
 
 | ID / material | Source | Review state / location |
 |---|---|---|
+| **I-004 — four resident posts** | [Reddit-style](https://drive.google.com/file/d/1CUNuPYSCE9y9prf1uCUYhjlMU9K1_WAm/view), [9:01 a.m. tweet](https://drive.google.com/file/d/1XN9CpCFTRhB8AuFq9e_RgGDRfUK5cAIL/view), [advice post](https://drive.google.com/file/d/1a2gAJlOUtpwflgsO99Zex6_nqia_a_CA/view), [8:47 a.m. tweet](https://drive.google.com/file/d/1fAsOH6POqtOg9kaey9DQqxxYqrmyYScE/view) | Response chat reviewed at 11:18 PDT; [response note](kevin-response.md#i-004-response--2026-10-15-1118-pdt). Posts are claims, not confirmed identities or a cause |
 | **I-003 / E-003 — Google sign-in alert screenshot** | [Inject 3](https://drive.google.com/file/d/1iQa1Y2u0vdNfuVin0ejEClH4pdJv0KUL/view) | Evidence desk visually reviewed; [findings and limits](codex-evidence-analyst.md#i-003--e-003--google-sign-in-alert-screenshot); authenticity, authorization and account links unconfirmed |
 | **I-001 / E-001 — distribution dashboard** | [Inject 1](https://drive.google.com/file/d/1AHluXwG8ne_K1KfKtUmcuQq0oamum46p/view) | Analysts visually reviewed; [evidence notes](codex-evidence-analyst.md#i-001--e-001--inject-1-review), [master timeline](team3.md#updated-timeline) |
 | **I-002 / E-002 — recovered SCADA logs screenshot** | [Inject 2](https://drive.google.com/file/d/1MCgSzKr_hXeddiMRyeHfcDiRR4_k9u51/view) | Analysts visually reviewed; cropped screenshot, original text absent from current listing; [detailed findings](codex-evidence-analyst.md#important-findings); [response options](kevin-response.md) |
@@ -223,7 +224,6 @@ Timeline support downloaded and visually reviewed I-003/E-003. The alert message
 
 Response support reviewed the same screenshot at 11:05 PDT. Life safety and the public paragraph stay as written. R-11 asks the contractor contact, out of band, whether `maxwafoone@gmail.com` and the Mount Crumpit sign-in are theirs. Do not click the button in the screenshot and do not reset that Google account from this image. [Response note](kevin-response.md#i-003-response--2026-10-15-1105-pdt). [Presentation addendum](presentation-outline.md#inject-3-addendum--2026-10-15-1105-pdt).
 
-
 ## Gretzky evidence update — Inject 4 — 2026-10-15 11:18 PDT (UTC-07:00)
 
 **Sources:** Four Drive screenshots, grouped as I-004 / E-004a–d: [Reddit thread](https://drive.google.com/file/d/1CUNuPYSCE9y9prf1uCUYhjlMU9K1_WAm/view), [Mayor-branded X post](https://drive.google.com/file/d/1XN9CpCFTRhB8AuFq9e_RgGDRfUK5cAIL/view), [Facebook advice post](https://drive.google.com/file/d/1a2gAJlOUtpwflgsO99Zex6_nqia_a_CA/view), and [X post](https://drive.google.com/file/d/1fAsOH6POqtOg9kaey9DQqxxYqrmyYScE/view). See the [full evidence analysis](codex-evidence-analyst.md#i-004--e-004--community-outage-posts-and-public-advice).
@@ -243,3 +243,7 @@ Response support reviewed the same screenshot at 11:05 PDT. Life safety and the 
 > Inject 4 contains four social-media screenshots reporting power/heating problems in Central Whoville, East Valley, West Ridge, and Riverdale; two X screenshots display Dec 25, 2026 at 8:47 and 9:01 AM, while Reddit/Facebook times are relative. They are public claims, not independent feeder measurements, and their time zones and account identities are unverified. One Facebook post gives urgent household advice, including burying food in snow and going to a store for water; please check any response against official safety guidance before repeating it. The posts do not establish a cyberattack or explain the blackout.
 
 **Assessment boundary:** This evidence-desk handoff updates the Inject 4 source findings. The lead’s six-part incident assessment was last reconciled separately; cyberattack, actor identity, and blackout causation remain unconfirmed.
+
+## Kevin response handoff — Inject 4
+
+At 11:18 PDT the Drive folder had four Inject 4 images. They are resident reports of a power and heat outage. West Ridge matches dark feeder FDR-02. Riverdale, east valley, and “central” are not on the feeder table. Timed posts are 8:47 a.m. and 9:01 a.m. on Dec 25, 2026. Do not repost the survival advice. The public paragraph is unchanged; a generator sentence is optional and needs the leader. [Response note](kevin-response.md#i-004-response--2026-10-15-1118-pdt). [Presentation addendum](presentation-outline.md#inject-4-addendum--2026-10-15-1118-pdt).

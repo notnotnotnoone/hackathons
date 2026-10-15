@@ -3,7 +3,7 @@
 **Team member / workstream:** kevin — Member 4, incident response chat. Kevin confirmed this status on 2026-10-15 at 10:51 PDT. The matching block in [human-status.txt](human-status.txt) is no longer a draft.
 **Role used:** Incident response and crisis communications
 **Status:** Working
-**Updated:** 2026-10-15 11:05 PDT (UTC−07:00). Inject 3 response is below. The presentation addendum is in [presentation-outline.md](presentation-outline.md). Drive rechecked at 11:05 PDT: six files, including Inject 3.
+**Updated:** 2026-10-15 11:18 PDT (UTC−07:00). Inject 4 response is below. Drive rechecked at 11:18 PDT: ten files, including four Inject 4 images.
 **Sources reviewed by this chat:** I-001, I-002, Instructions, Mission Overview, and a visual/OCR reading of Schedule. Drive listing rechecked at 10:40 PDT: still those five files, no Inject 3.
 
 ```text
@@ -108,8 +108,34 @@ If the email date and the SCADA clock are the same evening, 10:12 p.m. is about 
 |---|---|---|---|---|---|---|---|---|
 | R-11 | Ask the contractor contact, out of band, whether `maxwafoone@gmail.com` is theirs and whether the Mount Crumpit sign-in was theirs. Do not click Check activity. Do not reset the Google account yet | I-003 claim; name similarity to `max.contr.maint`; Mount Crumpit is also FDR-15 | High as a question. Not ahead of the Medical District check | Stops a blind reset and a click on an unseen link | The call can tip an account owner who is themself the actor. A premature reset can lock out a legitimate user | Questions can stop. A reset is harder to undo during the outage | A known phone number, not the address in the screenshot | Recommend the question. Do not recommend the click or the reset |
 
+## I-004 response — 2026-10-15 11:18 PDT
+
+Drive now lists four images under the name Inject 4. This chat opened each one. They are resident posts, not utility telemetry. Accounts and locations are what the screens display. They are not confirmed identities, and they do not show a cause.
+
+| Part | File | What is visible |
+|---|---|---|
+| I-004a | [Reddit-style post](https://drive.google.com/file/d/1CUNuPYSCE9y9prf1uCUYhjlMU9K1_WAm/view) | r/Whoville, phone clock 11:34, post marked 1h, u/greenestNotTheMeanest: power out in “central,” asks how widespread. Comments: u/yelpb27, east valley, no power; u/whobrishubris, West Ridge, nothing turning on, thinks it may be all of Whoville but is not sure; u/chereshnya09, Riverdale, same; a handle reading u/stustustu0, cold in Riverdale because the heater is not working. The last character of that handle also OCR-read as the letter o. No scenario date is on this screenshot |
+| I-004b | [Tweet](https://drive.google.com/file/d/1XN9CpCFTRhB8AuFq9e_RgGDRfUK5cAIL/view) | Ned Mcdodd, @notyourmayor_, 9:01 a.m. Dec 25, 2026: electricity out and freezing at home. Reply from bricklecrackled, @treesforchopping1, marked 1h: using a neighbour’s generator this morning. The verified badge is a display, not proof this person is the mayor |
+| I-004c | [Advice post](https://drive.google.com/file/d/1a2gAJlOUtpwflgsO99Zex6_nqia_a_CA/view) | LouLouWho, marked 23m, no date: “the clock is ticking,” then unplug devices, keep the fridge closed, bury food in snow, use battery lights rather than candles, bundle up, and run to the store for water. Closes with “Hopefully we make it out of this alive.” Tagged Whoville |
+| I-004d | [Tweet](https://drive.google.com/file/d/1fAsOH6POqtOg9kaey9DQqxxYqrmyYScE/view) | OzzyFlight, @pilot_ozzy2323, 8:47 a.m. Dec 25, 2026: hoping for a snow day, nothing turns on. No neighbourhood |
+
+What this changes:
+
+- **West Ridge is now a resident report as well as a meter reading.** FDR-02 was OFFLINE, 0.0 MW, 0.0 kV at 08:42:14 PST. The Reddit comment says nothing there is turning on. That supports a welfare check. It does not prove every other feeder.
+- **“Central,” “east valley,” and “Riverdale” are not names on the 18-feeder table.** Do not tell those residents they have power because their words are missing from the dashboard. Add the reported places to the welfare list.
+- **Two posts have a scenario clock.** 8:47 a.m. and 9:01 a.m. on Dec 25, 2026 sit just after the 8:43 a.m. dashboard. Residents were already saying nothing turns on and that someone is freezing. The Reddit “1h” and the advice post “23m” have no date, so they are not placed on that morning.
+- **One person says they are using a neighbour’s generator.** That is a reason for the leader to consider one added public sentence: keep a generator outside and away from doors and windows. It is not in the public paragraph until the leader accepts it.
+- **Do not repeat the advice post.** “The clock is ticking,” “run to the store,” and “make it out of this alive” can send a crowd to stores. Fridge-closed, bundle-up, and battery lights rather than candles already fit the calmer public line.
+- **The displayed mayor-style account is not an official statement.** Do not answer it as if the city has spoken.
+- **No new control-system evidence.** These posts do not connect the Google alert, the SCADA login, or a breaker command. The comment that it might be all of Whoville is one person’s guess, and the dashboard still shows load on four feeders.
+
+| ID | Option | Evidence | Urgency | Safety benefit | Operational risk | Reversibility | Prerequisites | Position |
+|---|---|---|---|---|---|---|---|---|
+| R-12 | Add West Ridge, and the resident-named places that are not on the feeder table, to welfare checks | I-004a West Ridge, east valley, Riverdale, and “central”; I-001 FDR-02 is zero voltage | Now, with the checks already recommended | People in an unlisted neighbourhood are not skipped | Sends responders to a name that may not match a feeder | Checks can stop when power is confirmed | Treat posts as reports, not as switching orders | Recommend |
+| R-13 | Leave the survival-style advice post unreposted. If the leader wants one addition, use a generator sentence only | I-004c alarmist wording; I-004b generator reply | Now for what not to say | Avoids a store rush. A generator sentence reduces indoor-exhaust risk | Saying nothing about generators leaves the reported use unaddressed | The sentence can be added later | Leader approval before any public line changes | Do not repost I-004c. Hold the generator sentence for the leader |
+
 ## Message for Team Leader
 
-> Safety checks stay first. Inject 3 adds a claimed Google sign-in for maxwafoone@gmail.com from Mount Crumpit, displayed Wed Dec 24 at 10:12 p.m. Ask the contractor contact out of band whether that account and sign-in are theirs. Do not click the button in the screenshot, do not reset the Google account from this image, and do not put the address in the public line. The alert does not show a breaker operation and does not change the Medical District check or the hold on remote switching.
+> Inject 4 is residents saying the power and heat are out. West Ridge matches a dark feeder. Riverdale and east valley are not on the dashboard, so do not assume those names are fine. Two timed posts are 8:47 and 9:01 a.m. on Dec 25. Do not repost the “clock is ticking” advice. The public paragraph can stay, with one optional line if you accept it: keep generators outside and away from doors and windows. This does not show a cause, and it does not change the hold on remote switching.
 
 No utility command and no competition submission was made.
