@@ -3,8 +3,16 @@
 **Team member / workstream:** kevin — Member 4, incident response chat. Kevin confirmed this status on 2026-10-15 at 10:51 PDT. The matching block in [human-status.txt](../human-status.txt) is no longer a draft.
 **Role used:** Incident response and crisis communications
 **Status:** Working
-**Updated:** 2026-10-15 12:49 PDT (UTC−07:00). Inject 7 response is below. Drive rechecked at 12:49 PDT: fourteen files, including Inject 7. The 12:50 audit in this file was written before that screenshot was in the listing.
-**Sources reviewed by this chat:** I-001 through I-006 (four images for I-004), Instructions, Mission Overview, Schedule, and Presentation Criteria.jpg. Each was re-opened from the saved originals at 12:45 PDT.
+**Updated:** 2026-10-15 13:05 PDT (UTC−07:00). Inject 7 cross-check added in [Inject 7 cross-check](#inject-7-cross-check--2026-10-15-1305-pdt). Drive rechecked at 12:49 PDT: fourteen files, including Inject 7. The 12:50 audit below was written before that screenshot was in the listing.
+**Sources reviewed by this chat:** I-001 through I-007 (four images for I-004), Instructions, Mission Overview, Schedule, and Presentation Criteria.jpg. I-001 to I-006 re-opened from the saved originals at 12:45 PDT; I-007 at 13:00 PDT.
+
+## Inject 7 cross-check — 2026-10-15 13:05 PDT
+
+- **First filename starts with a zero.** The second character of `N0Tstea1nG?CredEntials.exe` has the same narrow shape as the zeros in "2026" and "10:39" on the same screen, so it is `N0T`, not `NOT`. The `1` matches the screen's digit 1. The character after `G` is still either a capital I or a lowercase l. The timeline and evidence desk wrote `NOT` with a letter O.
+- **I-005 and I-006 are the same Chrome profile.** The toolbar areas (extension icons and profile picture) of the two screenshots are pixel-identical at full resolution, with a mean difference of 0.0. The address areas differ, as expected. This ties the download list to the lure page more strongly than the shared game name. It still does not name the computer or the person.
+- **The profile picture is a weak link to I-003.** It is an orange cartoon dog, similar in style to the `maxwafoone@gmail.com` avatar but a different image. This is not proof of the same account.
+- **August versus December is not a contradiction.** Explorer's "Date modified" is file metadata. Zip archives usually keep their contents' original modified dates. 8/12/2026 is not the download date and not a run time.
+- **Personal cloud account on the machine.** The navigation pane shows "OneDrive - Persona…", which suggests a personal Microsoft account on a computer whose browser is organization-managed. This is a lead for the "whose computer" question.
 
 ## Sync audit and consolidated position — 2026-10-15 12:50 PDT
 
@@ -30,7 +38,7 @@ Each item is an inference from visible text, not a confirmed event.
 - **Weekday.** "Wed, Dec 24" fits 2025, 2031, or 2014, not 2026. Download history (I-005) states December 24, 2026. Keep both raw dates.
 - **The account named "notyourmayor_".** The I-004b handle literally reads `notyourmayor_`. Calling it a mayor's account overstates what is shown.
 
-### Consolidated six-part position (Injects 1–6)
+### Consolidated six-part position (Injects 1–6; Inject 7 adds the desktop folder, see the cross-check above)
 
 ```text
 Member / workstream: kevin / incident response
@@ -48,13 +56,13 @@ Injects / evidence: I-001–I-006, PC-001, Mission Overview, Instructions, Sched
 
 | ID | Option | Evidence | Position |
 |---|---|---|---|
-| R-20 | No direct SSH to the SCADA host from outside addresses. Use a jump host with an allowlist | Three password logins from public addresses (I-002) | Recommend |
-| R-21 | Multi-factor and key-based SSH. Contractor access approved for a set window, expiring automatically | Contractor password login at midnight on Christmas Eve | Recommend |
-| R-22 | Remove broad `sudo su` rights. Alert on repeated `su` failures | Two `su` failures, then `adminelk` sudo to root | Recommend |
-| R-23 | Forward logs off the host in real time to write-once storage. Alert when rsyslog stops. Record year and zone in every line | Logging stopped about 11 hours; no year or zone | Recommend |
-| R-24 | Browser policy to block executable downloads and unapproved software on managed computers. Endpoint detection and lure awareness | I-005, I-006 | Recommend |
-| R-25 | Dashboard alarm when status disagrees with flow, plus an independent feeder reading path | I-001 count and label contradictions | Recommend |
-| R-26 | Fix and test the backup job, keep an offline copy, run restore drills | Malformed cron command text (I-002) | Recommend |
+| R-22 | No direct SSH to the SCADA host from outside addresses. Use a jump host with an allowlist | Three password logins from public addresses (I-002) | Recommend |
+| R-23 | Multi-factor and key-based SSH. Contractor access approved for a set window, expiring automatically | Contractor password login at midnight on Christmas Eve | Recommend |
+| R-24 | Remove broad `sudo su` rights. Alert on repeated `su` failures | Two `su` failures, then `adminelk` sudo to root | Recommend |
+| R-25 | Forward logs off the host in real time to write-once storage. Alert when rsyslog stops. Record year and zone in every line | Logging stopped about 11 hours; no year or zone | Recommend |
+| R-26 | Browser policy to block executable downloads and unapproved software on managed computers. Endpoint detection and lure awareness | I-005, I-006 | Recommend |
+| R-27 | Dashboard alarm when status disagrees with flow, plus an independent feeder reading path | I-001 count and label contradictions | Recommend |
+| R-28 | Fix and test the backup job, keep an offline copy, run restore drills | Malformed cron command text (I-002) | Recommend |
 
 The presentation built from this position is [presentation/presentation-outline.md](../presentation/presentation-outline.md).
 
@@ -241,7 +249,7 @@ What this changes:
 
 | Name as read | Date modified on screen | Type | Size |
 |---|---|---|---|
-| `NOTstea1nGlCredEntials.exe` | 8/12/2026 10:39 AM | Application | 82 KB |
+| `NOTstea1nGlCredEntials.exe` (corrected 13:05 PDT: `N0T…` with a zero; see the cross-check above) | 8/12/2026 10:39 AM | Application | 82 KB |
 | `setup.exe` | 8/12/2026 10:39 AM | Application | 2 KB |
 
 The character after `stea` is one tall glyph. This reading treats it as the digit 1, and the glyph before `Cred` as a lowercase L. A capital I in that spot would make `GI` instead of `Gl`. Check the image before repeating the middle of the name. The screen gives no time zone, and it shows `8/12/2026` without saying which number is the month.

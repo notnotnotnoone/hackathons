@@ -25,20 +25,50 @@ docs/              GitHub Pages website and progress data
 
 | Item | Current position |
 |---|---|
-| Latest inject | **Inject 7 — desktop folder of two applications; response reviewed at 12:49 PDT** |
+| Latest inject | **Inject 7 — desktop folder with two applications. Evidence desk, timeline and response reviewed it (12:47–12:51 PDT)** |
 | Investigation | **Active. Blackout cause and unauthorized activity remain unconfirmed.** |
-| Latest published analyst updates reviewed | Evidence desk through 12:51 PDT; timeline through 12:49 PDT; response through 12:49 PDT, October 15, 2026 |
-| Lead reconciliation | October 15, 2026, 10:34 PDT; reviewed all four existing repository files and the seven commits after initialization. The 10:40 PDT response handoff is linked and not yet folded into the numbered assessment. |
-| Drive coverage | Fourteen files at 12:49 PDT: Injects 1–7, including four Inject 4 images, plus Instructions, Schedule, Mission Overview, and Presentation Criteria.jpg. |
-| Review coverage | Evidence desk, response and timeline independently reviewed Inject 7. The lead's personal review is not assumed. |
-| Remaining intake gaps | Official event date/time zone, explicit deadline, presentation duration, and AI/sharing rules. A judging-criteria photo is in the folder; its example wording is not Whoville evidence. Schedule visual review is complete |
-| Submission | Draft outline updated with Inject 7 at 12:49 PDT. Not approved and not submitted |
-| Participant presence | User of the evidence chat confirms presence at 10:41 PDT; name/roster mapping not supplied. See human-status.txt. |
-| Next priority | Obtain full logs and authorization/session records; independently confirm critical service and telemetry |
+| Latest published analyst updates reviewed | Evidence desk through 12:51 PDT; timeline through 12:47 PDT; response through 13:10 PDT, October 15, 2026 |
+| Lead reconciliation | The lead's numbered assessment was last reconciled at 10:34 PDT (Injects 1–2). At Kevin's request, the response chat reconciled the assessment below through Inject 7 at 13:10 PDT. The leader has not reviewed that version and may revise it. |
+| Drive coverage | Fourteen files at 12:49 PDT (response chat): Injects 1–7, including four Inject 4 images, plus Instructions, Schedule, Mission Overview, and Presentation Criteria.jpg. |
+| Review coverage | Evidence desk, timeline and response reviewed every inject through Inject 7. The response chat re-checked all originals against the repo at 12:45–13:05 PDT; see [Sync audit](#sync-audit--2026-10-15-1310-pdt). The lead's personal review is not assumed. |
+| Remaining intake gaps | Presentation length and format, submission method, explicit deadline, event time zone, and AI/sharing rules. The rubric is known from PC-001: six criteria, 5 points each. Its telecom and university examples are not Whoville facts |
+| Submission | **Final presentation ready for leader approval:** [presentation/presentation-outline.md](presentation/presentation-outline.md), mapped to the six criteria, updated 13:05 PDT. Not approved and not submitted |
+| Participant presence | Gretzky (10:49), Kherion (10:50) and Kevin (10:51) confirmed in human-status.txt. The leader's personal status was last updated at 11:01 PDT. |
+| Next priority | **Before 1:45 PM judging:** leader approves the presentation and the public statement, and confirms speakers. Investigation: breaker and relay history for 00:05:58–11:03:15, the computer behind I-005–I-007, and account-owner calls |
 
-**What changed:** The front-page assessment now includes Inject 2. Earlier “awaiting evidence” and “no login evidence” statements described the setup / Inject 1 stage and are superseded. The original README is preserved in history; teammate files remain intact.
+**What changed:** The assessment, event sequence, contradictions, team table, actions, register and requirements below now cover Injects 1–7. Earlier wording is kept in git history and in the collapsed lead assessment.
 
-## Latest team handoff — 2026-10-15 10:41 PDT (UTC-07:00)
+## Sync audit — 2026-10-15 13:10 PDT
+
+Kevin asked the response chat to check every repository file against the Drive originals without assuming any of it was right. Each item below was re-checked against the saved original images.
+
+**Corrected in the response files, presentation, and progress data**
+
+| Item | Was | Is | Basis |
+|---|---|---|---|
+| I-002 Hoovey login address | `104.227.236.191` in the response note; unresolved in the timeline | `104.237.236.191`; full line Dec 24 17:20:02, `sshd[1994]` | Clipped digits compared with the screenshot's own fully visible digits |
+| I-006 domain | `5freedownloads.com`, "cuts off" (response) | `5freeedownloads.com/tomodachi/free/c`, three e's, not cut off | Zoomed address bar. The evidence desk was right |
+| I-007 first filename | `NOTstea1n…` with a letter O (all three desks) | `N0Tstea1nG?CredEntials.exe` with a zero. The character after G is I or l | Compared with the zeros in "2026" and "10:39" on the same screen |
+| PC-001 | "phone photo" (response) | Phone screenshot of a Drive viewer | Status bar, title bar, Drive and Share buttons |
+| progress.json assessment | Described Injects 1–3 ("leader is working on Inject 3") | Reconciled through Inject 7 | This audit |
+| Website role labels | Gretzky and Kherion shown as "suggested" | "confirmed" when the plaintext file has a filled-in "Role confirmed" field | docs/app.js |
+
+**New observations (inferences, not events)**
+
+- I-005 and I-006 toolbars are pixel-identical, so the download list and the lure page come from the same Chrome profile.
+- All three accepted SSH logins on `whoville-scada` come from publicly routable addresses.
+- `adminelk`'s `sudo` ran on `pts/0`. If the visible lines are complete, the contractor session was the only one open then.
+- `sudo[1802]` is lower than the process IDs logged minutes earlier (2296, 2599, 2618).
+- The backup cron text `(opt/backup/scada/dump.sh) > /dev/null/2.%1)` would normally fail if literal, so recent backups may not exist.
+- "Wed, Dec 24" fits 2025, not 2026. I-005 explicitly says December 24, 2026.
+- The Reddit poster in "central" reports no power while all Central Station feeders show voltage. FDR-03 Downtown shows 0.0 MW, which fits customers being dark.
+
+**Flagged for the owning desk (not edited here)**
+
+- [investigation/team3.md](investigation/team3.md): header still says Updated 11:01 PDT. "whobrisubris" should be `whobrishubris`, as in the screenshot. The Hoovey bottom row can now carry 17:20:02 and `104.237.236.191`.
+- [investigation/codex-evidence-analyst.md](investigation/codex-evidence-analyst.md): header still says "Injects 1, 2 and 3 reviewed" and 11:02 PDT. The I-006 section escapes its backticks, so code formatting shows as literal backticks. "Central Whoville" overstates the post's "I live in central". "Mayor-branded" overstates a handle that reads `notyourmayor_`.
+
+## Team handoff — 2026-10-15 10:41 PDT (UTC-07:00), historical
 
 The user of the evidence chat explicitly confirmed presence; recorded in [human-status.txt](human-status.txt) without guessing a roster name. This update shares new information through GitHub; it does not establish that teammates have read it.
 
@@ -64,10 +94,19 @@ The user of the evidence chat explicitly confirmed presence; recorded in [human-
 
 ## Current assessment
 
-**Coverage note:** The numbered lead assessment below was written for Injects 1–2. Inject 3's evidence-desk update above is current and awaits lead reconciliation; do not treat older waiting-for-Inject-3 statements as current.
+**Coverage:** Reconciled through Inject 7 by Kevin's response chat at Kevin's request, 13:10 PDT. It draws on the published evidence, timeline and response logs and a fresh check of every original. The leader has not reviewed this version and may revise it. The lead's Injects 1–2 assessment is kept below.
 
+1. **Situation:** At Dec 25, 2026, 08:43 the distribution screen is DEGRADED. 12 of 18 feeders show 0.0 MW and 0.0 kV, four carry load, and two show voltage with no load: Downtown and the Medical District. Residents report no power and no heat at 8:47 and 9:01 a.m. (I-001, I-004). The cause is not established.
+2. **New findings:** The SCADA host log shows password SSH logins from three public addresses. The contractor account logs in at midnight after one failure, two `su` attempts fail, `adminelk` runs `sudo su` as root, and rsyslog stops 44 seconds later (I-002). A Google new-sign-in alert from Mount Crumpit names `maxwafoone@gmail.com` (I-003). One managed Chrome profile downloaded `Tomodachi Life FREE.zip` and `ryujinxx.exe` on Dec 24, 2026 and viewed a Not secure `5freeedownloads.com` game page (I-005, I-006). A desktop folder with the zip's name holds `N0Tstea1nG?CredEntials.exe` (82 KB) and `setup.exe` (I-007).
+3. **Leading hypotheses:** The working hypothesis to investigate first runs as follows. A pirated-game lure delivered a credential stealer. Stolen contractor credentials reached the SCADA host. Privileges were raised, logging was stopped, and the grid or its monitoring was then affected. Each step is shown on its own; the links between them are not. Confidence in the full chain is low to moderate. Alternatives remain: approved maintenance plus an unrelated equipment or supply failure, a monitoring or communications fault, or unrelated personal downloads. **A cyberattack as the cause of the blackout is not established.**
+4. **Contradictions:** Footer 17/1 vs table 14/4 vs six feeders with voltage vs four with flow. FDR-04 and FDR-08 are OFFLINE with load. The 11:00 recovery note conflicts with the 11:03:15 restart. "Wed, Dec 24" conflicts with Dec 24, 2026 being a Thursday. `sudo[1802]` is lower than the IDs logged before it. August file dates vs a December download is not necessarily a contradiction.
+5. **Recommended action:** Life safety first: welfare checks and warming for the dark areas and the resident-named places, then in-person checks of the Medical District and Downtown. Hold remote switching from `whoville-scada` and operate locally. Image the SCADA host and copy the backup before changes, and do not reboot first. Call the four account owners on known numbers, then disable the contractor's remote password login and block `89.46.57.27`. Identify the computer behind I-005–I-007, keep it powered on but off the network, and do not open the files. Issue a public statement only after leader approval. See the [presentation](presentation/presentation-outline.md) and the [response options](investigation/kevin-response.md).
+6. **Critical unknowns:** breaker and relay history for 00:05:58–11:03:15; whose computer and Chrome profile; whether any file ran; authorization of the four accounts; who sent signal 15; the year and zone of I-002 and I-003; presentation length, format and submission method.
 
-**Basis:** I-001 / E-001 and I-002 / E-002 as analyzed in [evidence notes](investigation/codex-evidence-analyst.md) and [timeline](investigation/team3.md). These are source-content findings reported by the analysts; authenticity and physical effects still require corroboration.
+**Interpretation limits:** One failed password followed by success does not establish brute force. The sudo entry does not by itself prove a successful root shell. Signal 15 does not prove malicious log suppression. Timing alone does not connect different accounts or prove blackout causation. Filenames are not proof that a file ran. IP and account strings are correlation leads, not confirmed malicious indicators.
+
+<details>
+<summary>Lead assessment for Injects 1–2 (lead reconciliation, 10:34 PDT), kept for history</summary>
 
 1. **Situation:** The mission describes widespread electricity and heating loss in winter. Inject 1 shows degraded distribution monitoring; Inject 2 adds recovered host logs from `whoville-scada`. Neither source independently establishes the initiating blackout cause.
 2. **New findings:** The analysts transcribe a failed then accepted login for `max.contr.maint` from `89.46.57.27`, two `su` authentication failures, `adminelk` invoking `/usr/bin/su` through sudo with `USER=root`, and rsyslog exiting 44 seconds later. This makes access, privilege use, and logging interruption priority investigative leads.
@@ -78,30 +117,45 @@ The user of the evidence chat explicitly confirmed presence; recorded in [human-
 
 **Interpretation limits:** One failed password followed by success does not establish brute force. The sudo entry does not by itself prove a successful root shell. Signal 15 does not prove malicious log suppression. Timing alone does not connect different accounts or prove blackout causation. IP/account strings are correlation leads, not confirmed malicious IOCs. No Cyber Kill Chain progression is established.
 
+</details>
+
 ### Key event sequence
 
-Incident times below are scenario times, separate from October 15 team work times. Inject 2 omits year and zone; cross-source order is conditional on clock alignment. See [investigation/team3.md](investigation/team3.md) for the complete row-by-row timeline.
+Incident times below are scenario times, separate from October 15 team work times. I-002 and I-003 omit the year and zone, so cross-source order assumes the clocks agree. The row-by-row timeline is in [investigation/team3.md](investigation/team3.md).
 
 | Raw source time | Reported observation | Source |
 |---|---|---|
-| Dec 24 17:22:43 | Accepted login for `sally.admin.cpc` from `183.229.57.190`; authorization unknown | I-002 |
+| Dec 24, 2026; no clock time | Chrome download group: `Tomodachi Life FREE.zip`, `ryujinxx.exe`, `December Schedule.pdf`, `Logs.txt`; browser "managed by your organization" | I-005 |
+| No time shown | FreeGameDownloads page, `5freeedownloads.com/tomodachi/free/c`, Not secure, Download button; same Chrome profile as I-005 | I-006 |
+| 8/12/2026 10:39 AM; date modified, not an event time | Desktop > Tomodachi Life FREE: `N0Tstea1nG?CredEntials.exe` (82 KB), `setup.exe` (2 KB) | I-007 |
+| Dec 24 17:20:02 | Accepted password for `hoovey.admin.cpc` from `104.237.236.191`, `sshd[1994]`; bottom line clipped | I-002 |
+| Dec 24 17:22:43 | Accepted password for `sally.admin.cpc` from `183.229.57.190`; authorization unknown | I-002 |
+| Dec 24 17:30:38 | Root cron `(opt/backup/scada/dump.sh) > /dev/null/2.%1)` as displayed | I-002 |
+| Dec 24 17:46:00 / 17:58:20 | sally and hoovey sessions closed (`sshd[2123]`, `sshd[2189]`) | I-002 |
+| Wed, Dec 24, 10:12 PM; no year or zone | Google alert: new sign-in from Mount Crumpit for `maxwafoone@gmail.com` | I-003 |
 | Dec 24 23:59:02 → Dec 25 00:00:36 | One failed then accepted password for `max.contr.maint` from `89.46.57.27` | I-002 |
 | Dec 25 00:01:51 / 00:03:03 | Two `su` authentication failures; initiating user not shown | I-002 |
-| Dec 25 00:05:14 | `adminelk` root-targeted sudo invocation of `/usr/bin/su` | I-002 |
+| Dec 25 00:05:14 | `adminelk` sudo `/usr/bin/su`, `USER=root`, `pts/0`, `/etc` | I-002 |
 | Dec 25 00:05:58 | rsyslog exit on signal 15; cause and sender unknown | I-002 |
-| Dec 25 2026 08:42:18 / 08:42:26 PST | FDR-04 / FDR-08 display OFFLINE with nonzero MW and kV | I-001 |
-| Dec 25 2026 08:43:12 AM; header zone unstated | DEGRADED dashboard and inconsistent summary counts | I-001 |
-| 11:00 AM, date/zone unstated; Dec 25 11:03:15, year/zone unstated | Recovery annotation and later rsyslog start require reconciliation | I-002 |
+| Dec 25, 2026 08:42:12–08:43:03 PST | Feeder readings; FDR-04 and FDR-08 OFFLINE with nonzero MW and kV | I-001 |
+| Dec 25, 2026 08:43:12 AM; header zone unstated | DEGRADED dashboard and inconsistent summary counts | I-001 |
+| Dec 25, 2026 8:47 AM / 9:01 AM; zone unstated | Resident posts: "nothing turns on"; "freezing to death in my house" | I-004 |
+| 11:00 AM; Dec 25 11:03:15 | Recovery annotation; rsyslog start | I-002 |
 
 ### Contradictions to resolve
 
 | Issue | What is established in published analyses | Required check |
 |---|---|---|
-| Table versus footer | 14/4 versus 17/1 | Raw dashboard inputs, count definitions, refresh timing |
+| Table versus footer | 14/4 versus 17/1; six feeders have voltage and four carry load, matching neither | Raw dashboard inputs, count definitions, refresh timing |
 | OFFLINE with flow | FDR-04: 12.8 MW / 13.6 kV; FDR-08: 9.6 MW / 13.5 kV | Independent equipment readings and switch state |
 | Recovery versus restart | 11:00 AM annotation versus 11:03:15 log entry | Recovery date, rounding, collection process, clock offsets |
-| Hoovey session-close PID | Timeline transcribes `sshd[2182]`; evidence desk reread at native resolution supports `sshd[2189]` at Dec 24 17:58:20 | Evidence desk recheck complete; timeline should reconcile its transcription against the original PNG; underlying text still absent |
-| Backup script transcription | Evidence desk native-resolution reread supports `opt/backup/scada/dump.sh` without leading slash; timeline uses `/opt/backup/scada/dump.sh` | Preserve literal screenshot spelling and correction history; exact redirection / execution result still require original text at Dec 24 17:30:38 |
+| Weekday versus year | I-003 "Wed, Dec 24"; Dec 24, 2026 is a Thursday; Wednesday fits 2025. I-005 says December 24, 2026 | Original email headers; keep both raw dates |
+| sudo process ID | `sudo[1802]` at 00:05:14 is lower than `sshd[2296]`, `su[2599]`, `su[2618]` before it | Original log; wrap-around, container, edited line, or exercise formatting |
+| August files versus December download | I-007 date modified 8/12/2026 10:39 AM; I-005 download Dec 24, 2026 | Not necessarily a contradiction: zips usually keep original modified dates |
+| Hoovey session-close PID | Resolved: `sshd[2189]` (timeline corrected at 10:50 PDT) | None |
+| Backup script transcription | Resolved: `opt/backup/scada/dump.sh` without a leading slash; the redirect text needs the original | Original text |
+| Hoovey login address | Resolved 13:05 PDT: `104.237.236.191` (response had 104.227) | Original text preferred; line clipped |
+| I-006 domain | Resolved: `5freeedownloads.com`, three e's | None |
 
 Zero MW with nonzero voltage on FDR-03/FDR-07 needs operating context; it is not automatically inconsistent or malicious.
 
@@ -112,20 +166,20 @@ Zero MW with nonzero voltage on FDR-03/FDR-07 needs operating context; it is not
 | Team member | Role |
 |---|---|
 | You — Leader | Lead Cybersecurity Investigator |
-| gretsky — Member 2 | Evidence investigator, suggested |
-| kherion — Member 3 | Timeline analyst, suggested |
+| gretsky — Member 2 | Evidence investigator; confirmed by Gretzky at 10:49 PDT |
+| kherion — Member 3 | Timeline analyst; confirmed by Kherion at 10:50 PDT |
 | kevin — Member 4 | Incident response analyst, confirmed 10:51 PDT |
 
-Members 2–4 confirm their roles in the plaintext file. Shared-account commits do not establish which person used an analyst chat.
+Members 2–4 confirmed their roles in the plaintext file. Shared-account commits do not establish which person used an analyst chat.
 
 ### AI analyst workstreams
 
 | Workstream | Recorded progress | Next handoff |
 |---|---|---|
-| Lead support — this chat | Reconciled published Inject 1–2 handoffs and organized the hub | Requirements and priority review; personal progress belongs in human-status.txt |
-| Timeline support | Injects 1–2 reviewed; [master timeline](investigation/team3.md) published; latest reviewed update 10:30 PDT | Clocks, provenance, and PDF context |
-| Evidence desk | Injects 1–2 visually reviewed; [evidence notes](investigation/codex-evidence-analyst.md) published; latest reviewed update 10:41 PDT; schedule visually reviewed and source spellings rechecked | Full records, authorization, cross-source verification |
-| Response support | Inject 7 reviewed at 12:49 PDT. Desktop folder preserved. Do not open the two applications. Public paragraph unchanged | Leader accepts or edits the public paragraph before it is used |
+| Lead support | Reconciled published Inject 1–2 handoffs and organized the hub (last 10:34 PDT); leader status Working on Inject 3 at 11:01 PDT | Approve the final presentation and public statement before 1:45 PM |
+| Timeline support (Kherion) | Injects 1–7 reviewed; [master timeline](investigation/team3.md) latest update 12:47 PDT | Clocks, provenance; header date and one handle spelling flagged in the sync audit |
+| Evidence desk (Gretzky) | Injects 1–7 and PC-001 reviewed; [evidence notes](investigation/codex-evidence-analyst.md) latest update 12:49 PDT; [handoff](handoffs/gretzky-handoff.md) | Full records, authorization, cross-source verification |
+| Response support (Kevin) | Injects 1–7 reviewed; repo sync audit and final rubric-mapped presentation at 13:05–13:10 PDT | Leader approves the presentation and public statement; confirms speakers |
 
 **Chat visibility:** The available app listing exposed this lead chat and the related “Hackathon Crash Course” chat. The latter contains role/setup messages, with assistant content only exposed as reference placeholders. The separate evidence/timeline chats were not exposed in that listing; their committed handoffs were reviewed instead. This is not a claim that every same-account chat has been read. No messages were sent to other chats.
 
@@ -135,13 +189,15 @@ Owners below are proposed workstreams, not claims that a named teammate has acce
 
 | Priority / ID | Action | Proposed owner | Done when |
 |---|---|---|---|
-| **Now / A-001** | Schedule visually reviewed by the evidence desk; response chat OCR agrees. Confirm event date/zone, explicit deadline, rubric, presentation constraints, and AI/sharing rules | Leader + team | Remaining official requirements recorded |
+| **Now / A-001** | Rubric known from PC-001 (six criteria, 5 points each). Still confirm presentation length and format, submission method, explicit deadline, event zone, and AI/sharing rules | Leader + team | Remaining official requirements recorded |
 | **Now / A-002** | Update [human-status.txt](human-status.txt) and confirm your role | All members | Each member's latest work, blocker, and update time are recorded |
 | **High / A-003** | Obtain complete original recovered logs, collection details, and account/maintenance approvals; explain dashboard count/flow mismatch | Evidence desk | Source completeness, authorization, and telemetry discrepancies assessed |
 | **High / A-004** | Verify Medical District service, switch states, and independent measurements; reconcile source clocks. Safety priority and option comparison drafted in [investigation/kevin-response.md](investigation/kevin-response.md); field verification is still open | Response + timeline | Safety assessment and clock basis supported by evidence |
 | **High / A-005** | Correlate SSH, sudo/su, process ancestry, service manager, audit and SCADA command records | Evidence + timeline | Session links and logging-stop reason established or explicitly unresolved |
 | **High / A-006** | Evidence desk native-resolution reread supports PID 2189 and script spelling without leading slash; response OCR agrees. Timeline handoff still needs reconciliation; exact redirection requires original text | Evidence + timeline | Shared notes reconciled with correction history; original text checked when supplied |
-| **Next / A-007** | Response options and a presentation draft are written. Leader review of [presentation/presentation-outline.md](presentation/presentation-outline.md) is still open. A criteria photo is in the folder. Duration is still unpublished | Response + leader | Leader accepts the exact version, or edits it, before any submission |
+| **Now / A-007** | Final presentation written and mapped to the six criteria: [presentation/presentation-outline.md](presentation/presentation-outline.md). Leader review is open | Response + leader | Leader accepts the exact version, or edits it, before 1:45 PM |
+| **Now / A-008** | Approve, edit or reject the public statement; confirm speakers; practise the 60-second walk-up once | Leader + team | Decision recorded in human-status.txt before judging |
+| **High / A-009** | Identify the computer and Chrome profile behind I-005–I-007; keep it powered on and off the network; do not open the files | Response + evidence | Owner and host named, or explicitly unknown |
 
 ## Evidence and injects
 
@@ -149,12 +205,12 @@ Drive originals remain the source material. The register below indexes them; it 
 
 | ID / material | Source | Review state / location |
 |---|---|---|
-| **I-007 — desktop folder** | [Inject 7](https://drive.google.com/file/d/1swqAROKb7An3qeNk3noP8o9pOQ00C63C/view) | Response chat reviewed at 12:49 PDT; [response note](investigation/kevin-response.md#i-007-response--2026-10-15-1249-pdt). Two applications in a folder. Not proof they ran |
-| **I-006 — FreeGameDownloads page** | [Inject 6](https://drive.google.com/file/d/1pRAe1brGsL_7PGZZ_B4xY-3mKlikQmIw/view) | Response chat reviewed at 12:32 PDT; [response note](investigation/kevin-response.md#i-006-response--2026-10-15-1232-pdt). A visible address and a Download button are not proof a file was saved |
-| **Judging criteria photo** | [Presentation Criteria.jpg](https://drive.google.com/file/d/1aF2OWNdCtQQq7PKXtBt9cm4pke95WU1h/view) | Response chat reviewed at 12:32 PDT. Six headings at 5 points each. Example wording is not Whoville evidence |
-| **I-005 — Chrome download history** | [Inject 5](https://drive.google.com/file/d/1MR7QpdHrDBFiORdyDPr1D4jA5iqbZyjy/view) | Response chat reviewed at 12:02 PDT; [response note](investigation/kevin-response.md#i-005-response--2026-10-15-1202-pdt). Filenames are not proof a file ran |
-| **I-004 — four resident posts** | [Reddit-style](https://drive.google.com/file/d/1CUNuPYSCE9y9prf1uCUYhjlMU9K1_WAm/view), [9:01 a.m. tweet](https://drive.google.com/file/d/1XN9CpCFTRhB8AuFq9e_RgGDRfUK5cAIL/view), [advice post](https://drive.google.com/file/d/1a2gAJlOUtpwflgsO99Zex6_nqia_a_CA/view), [8:47 a.m. tweet](https://drive.google.com/file/d/1fAsOH6POqtOg9kaey9DQqxxYqrmyYScE/view) | Response chat reviewed at 11:18 PDT; [response note](investigation/kevin-response.md#i-004-response--2026-10-15-1118-pdt). Posts are claims, not confirmed identities or a cause |
-| **I-003 / E-003 — Google sign-in alert screenshot** | [Inject 3](https://drive.google.com/file/d/1iQa1Y2u0vdNfuVin0ejEClH4pdJv0KUL/view) | Evidence desk visually reviewed; [findings and limits](investigation/codex-evidence-analyst.md#i-003--e-003--google-sign-in-alert-screenshot); authenticity, authorization and account links unconfirmed |
+| **I-007 — desktop folder** | [Inject 7](https://drive.google.com/file/d/1swqAROKb7An3qeNk3noP8o9pOQ00C63C/view) | Evidence desk, timeline and response reviewed 12:47–12:51 PDT; [evidence](investigation/codex-evidence-analyst.md#i-007--e-007--new-file-explorer-evidence), [timeline](investigation/team3.md#inject-7--windows-folder-contents-i-007--2026-10-15-1247-pdt), [response](investigation/kevin-response.md#i-007-response--2026-10-15-1249-pdt). First filename starts `N0T` with a zero |
+| **I-006 — FreeGameDownloads page** | [Inject 6](https://drive.google.com/file/d/1pRAe1brGsL_7PGZZ_B4xY-3mKlikQmIw/view) | Evidence desk and response reviewed; [evidence](investigation/codex-evidence-analyst.md#i-006--e-006--freegamedownloads-browser-screenshot), [response](investigation/kevin-response.md#i-006-response--2026-10-15-1232-pdt). Domain `5freeedownloads.com`, three e's. Same Chrome profile as I-005 |
+| **Judging criteria photo** | [Presentation Criteria.jpg](https://drive.google.com/file/d/1aF2OWNdCtQQq7PKXtBt9cm4pke95WU1h/view) | PC-001. Evidence desk and response reviewed. Phone screenshot of a Drive viewer. Six criteria, 5 points each. Example wording is not Whoville evidence |
+| **I-005 — Chrome download history** | [Inject 5](https://drive.google.com/file/d/1MR7QpdHrDBFiORdyDPr1D4jA5iqbZyjy/view) | Evidence desk and response reviewed; [evidence](investigation/codex-evidence-analyst.md#i-005--e-005--chrome-download-history-screenshot), [response](investigation/kevin-response.md#i-005-response--2026-10-15-1202-pdt). Filenames are not proof a file ran |
+| **I-004 — four resident posts** | [Reddit-style](https://drive.google.com/file/d/1CUNuPYSCE9y9prf1uCUYhjlMU9K1_WAm/view), [9:01 a.m. tweet](https://drive.google.com/file/d/1XN9CpCFTRhB8AuFq9e_RgGDRfUK5cAIL/view), [advice post](https://drive.google.com/file/d/1a2gAJlOUtpwflgsO99Zex6_nqia_a_CA/view), [8:47 a.m. tweet](https://drive.google.com/file/d/1fAsOH6POqtOg9kaey9DQqxxYqrmyYScE/view) | Evidence desk, timeline and response reviewed; [evidence](investigation/codex-evidence-analyst.md#i-004--e-004--community-outage-posts-and-public-advice), [response](investigation/kevin-response.md#i-004-response--2026-10-15-1118-pdt). Posts are claims, not confirmed identities or a cause |
+| **I-003 / E-003 — Google sign-in alert screenshot** | [Inject 3](https://drive.google.com/file/d/1iQa1Y2u0vdNfuVin0ejEClH4pdJv0KUL/view) | Evidence desk, timeline and response reviewed; [findings and limits](investigation/codex-evidence-analyst.md#i-003--e-003--google-sign-in-alert-screenshot); authenticity, authorization and account links unconfirmed |
 | **I-001 / E-001 — distribution dashboard** | [Inject 1](https://drive.google.com/file/d/1AHluXwG8ne_K1KfKtUmcuQq0oamum46p/view) | Analysts visually reviewed; [evidence notes](investigation/codex-evidence-analyst.md#i-001--e-001--inject-1-review), [master timeline](investigation/team3.md#updated-timeline) |
 | **I-002 / E-002 — recovered SCADA logs screenshot** | [Inject 2](https://drive.google.com/file/d/1MCgSzKr_hXeddiMRyeHfcDiRR4_k9u51/view) | Analysts visually reviewed; cropped screenshot, original text absent from current listing; [detailed findings](investigation/codex-evidence-analyst.md#important-findings); [response options](investigation/kevin-response.md) |
 | Instructions | [PDF](https://drive.google.com/file/d/1G-lUTUJ4UZskPRoqscOQGws27nFlLr2W/view) | Evidence desk and lead sync checked extracted text; duplicated characters in extraction |
@@ -170,13 +226,13 @@ Direct text extraction of Instructions supports these working requirements, cons
 | Requirement | Recorded position |
 |---|---|
 | Investigation window | Three hours to review scenario and injects |
-| Presentation preparation | Build as you go; use the last hour to finalize |
+| Presentation preparation | Build as you go; use the last hour to finalize. If judging at 1:45 PM is the end point, the last hour began about 12:45 PM (calculation only) |
 | Judging | Instructions and visually reviewed Schedule indicate **1:45 PM** judging walkthrough / top five selected. Schedule also displays 2:10 PM finalist presentations and 2:45 PM top three announcement. Event date/zone unstated |
 | Published start / deadline | Schedule displays 10:15 AM Hackathon Begins; no event date/time zone or explicit submission deadline. Three hours later is 1:15 PM by calculation only; reconcile with 1:45 PM judging before using a deadline |
-| Rubric / scoring weights | Presentation Criteria.jpg, reviewed 12:32 PDT. Six headings, 5 points each. Bullets use telecom and university examples that are not Whoville facts |
+| Rubric / scoring weights | PC-001 (Presentation Criteria.jpg): 1. Technical analysis and threat detection; 2. Incident response strategy; 3. Data integrity and risk assessment; 4. Security recommendations and long-term defense; 5. Communication and reporting; 6. Teamwork, presentation and critical thinking. 5 points each, 30 total. Telecom and university examples are not Whoville facts |
 | Presentation duration, format, submission method | Not established |
 | AI, research, and sharing rules | Not established |
-| Presentation draft / approval / receipt | No version, leader approval, or submission confirmation recorded |
+| Presentation draft / approval / receipt | Final draft at [presentation/presentation-outline.md](presentation/presentation-outline.md), 13:05 PDT. No leader approval or submission confirmation recorded |
 
 ### Submission gate
 
@@ -279,7 +335,7 @@ The screenshot groups `Tomodachi Life FREE.zip`, `ryujinxx.exe`, `December Sched
 
 ## Kevin response handoff — Inject 6
 
-At 12:32 PDT the folder included a FreeGameDownloads screenshot and Presentation Criteria.jpg. The address bar shows “Not secure” and the visible text `5freedownloads.com/tomodachi/free/c`, then cuts off. A Tomodachi Life logo and a Download button are on the page. That game name matches the zip on the Inject 5 list. The page does not show a click, a saved file, or a computer. Do not click Download. The criteria photo has six headings at 5 points each; its telecom and university examples are not Whoville evidence. The public paragraph is unchanged. [Response note](investigation/kevin-response.md#i-006-response--2026-10-15-1232-pdt). [Presentation addendum](presentation/presentation-outline.md#inject-6-addendum--2026-10-15-1232-pdt).
+At 12:32 PDT the folder included a FreeGameDownloads screenshot and Presentation Criteria.jpg. The address bar shows “Not secure” and the text `5freeedownloads.com/tomodachi/free/c` (corrected at 12:50 PDT: three e's, not cut off). A Tomodachi Life logo and a Download button are on the page. That game name matches the zip on the Inject 5 list. The page does not show a click, a saved file, or a computer. Do not click Download. The criteria photo has six headings at 5 points each; its telecom and university examples are not Whoville evidence. The public paragraph is unchanged. [Response note](investigation/kevin-response.md#i-006-response--2026-10-15-1232-pdt). [Presentation addendum](presentation/presentation-outline.md#inject-6-addendum--2026-10-15-1232-pdt).
 
 
 ## Gretzky evidence handoff — Inject 6 — 2026-10-15 12:39 PDT
@@ -295,7 +351,7 @@ At 12:32 PDT the folder included a FreeGameDownloads screenshot and Presentation
 
 ## Kevin response handoff — Inject 7
 
-At 12:49 PDT the folder included a File Explorer screenshot. The window is a folder named Tomodachi Life FREE on a desktop. The breadcrumb shows a cloud icon and the words Start backup. Two applications are listed, both dated 8/12/2026 10:39 AM: a name read as `NOTstea1nGlCredEntials.exe` at 82 KB, and `setup.exe` at 2 KB. The folder name matches the Inject 5 zip. The date does not match December 24. Neither file was opened. Do not run them. The public paragraph is unchanged. [Response note](investigation/kevin-response.md#i-007-response--2026-10-15-1249-pdt). [Presentation](presentation/presentation-outline.md).
+At 12:49 PDT the folder included a File Explorer screenshot. The window is a folder named Tomodachi Life FREE on a desktop. The breadcrumb shows a cloud icon and the words Start backup. Two applications are listed, both dated 8/12/2026 10:39 AM: a name read as `N0Tstea1nG?CredEntials.exe` at 82 KB (zero after the N; the character after G is I or l), and `setup.exe` at 2 KB. The folder name matches the Inject 5 zip. The date does not match December 24. Neither file was opened. Do not run them. The public paragraph is unchanged. [Response note](investigation/kevin-response.md#i-007-response--2026-10-15-1249-pdt). [Presentation](presentation/presentation-outline.md).
 
 
 ## Gretzky evidence update — Inject 7 — 2026-10-15 12:51 PDT
@@ -307,3 +363,7 @@ The screenshot shows **Desktop > Tomodachi Life FREE** with **two Windows Applic
 **Cross-inject pattern:** I-005 shows `Tomodachi Life FREE.zip` in a Dec 24, 2026 download group. I-006 shows a similarly themed webpage. I-007 shows applications in a folder with the same name. This supports a **plausible software-download lead**, but not verified ZIP extraction, common browser/device ownership, file execution, credential access, SCADA compromise or outage causation. The August **file modification** dates cannot be substituted for December download or infection times.
 
 **Next evidence needed if supplied:** Original ZIP listing, source URLs, file identity/hash, process activity, user and host mapping, and any independently verified utility-control event. Existing public safety priorities and presentation-approval gate remain unchanged. No executable was run, utility operated or external message submitted.
+
+## Kevin sync audit and final presentation — 2026-10-15 13:10 PDT
+
+At Kevin's request, the response chat checked every repository file against the Drive originals, without assuming any of it was right. The corrections, new observations, and items flagged for the owning desks are in [Sync audit](#sync-audit--2026-10-15-1310-pdt). The assessment above is reconciled through Inject 7, pending the leader. The [final presentation](presentation/presentation-outline.md) maps all seven injects to the six judging criteria. It has a 60-second walk-up, a five-minute finalist version with proposed speakers, a public statement for approval, and judge Q&A. No utility command, external message, or competition submission was made.

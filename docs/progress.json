@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-15T12:52:00-07:00",
-  "updatedBy": "Gretzky — Evidence desk",
+  "updatedAt": "2026-10-15T13:10:00-07:00",
+  "updatedBy": "Kevin — Response analysis (sync audit)",
   "latestInject": {
     "id": "I-007",
     "title": "Desktop folder with two applications",
@@ -13,33 +13,33 @@
   "assessment": [
     {
       "label": "Situation",
-      "text": "Whoville has lost electricity and heating. The team has reviewed the distribution dashboard and recovered SCADA log screenshot.",
+      "text": "At 08:43 on Dec 25, 2026 the distribution screen is DEGRADED: 12 of 18 feeders show no voltage or load, and Downtown and the Medical District show voltage with no load. Residents report no power or heat at 8:47 and 9:01 a.m. Cause not established. Reconciled through Inject 7 by Kevin's response chat at 13:10 PDT, pending leader review.",
       "source": "README.md#current-assessment"
     },
     {
       "label": "New findings",
-      "text": "Inject 3 is available and the leader is working on it. Its contents and implications have not yet been analyzed in this lead chat. Earlier reviewed findings remain the Inject 1/2 baseline.",
+      "text": "Password SSH logins from three public addresses; a contractor login at midnight; two su failures; adminelk sudo su to root; rsyslog stopped 44 s later. A Google new-sign-in alert. One managed Chrome profile downloaded Tomodachi Life FREE.zip and ryujinxx.exe and viewed 5freeedownloads.com. The desktop folder holds N0Tstea1nG?CredEntials.exe and setup.exe.",
       "source": "README.md#current-assessment"
     },
     {
       "label": "Leading hypotheses",
-      "text": "Unauthorized account or privilege misuse and authorized maintenance remain alternatives. Monitoring faults, equipment failure, and other blackout causes remain open. A cyberattack is not established.",
+      "text": "Working hypothesis: a game-download lure, then credential theft, contractor login, root, logging stopped, grid affected. Each step is shown; the links are not (low to moderate confidence). Approved maintenance with an unrelated failure, a monitoring fault, or unrelated downloads remain open. A cyberattack is not established.",
       "source": "README.md#current-assessment"
     },
     {
       "label": "Contradictions",
-      "text": "Dashboard table and footer counts disagree; some OFFLINE readings show flow. Recovery/restart timing needs aligned clocks. A source reread supports PID 2189 and a backup path without a leading slash; underlying text is still needed.",
-      "source": "investigation/codex-evidence-analyst.md#transcription-differences-rechecked-against-inject-2"
+      "text": "Footer 17/1 vs table 14/4 vs six feeders with voltage; FDR-04 and FDR-08 OFFLINE with load; 11:00 note vs 11:03:15 restart; 'Wed, Dec 24' vs Dec 24, 2026 being a Thursday; sudo[1802] below earlier process IDs. Resolved: PID 2189, script path, IP 104.237.236.191, domain 5freeedownloads.com.",
+      "source": "README.md#contradictions-to-resolve"
     },
     {
       "label": "Recommended action",
-      "text": "Inject 7 is a desktop folder holding two applications. Do not open them and do not announce them as the cause. The folder name matches a zip already listed. The shown date does not. The public paragraph still awaits leader approval.",
-      "source": "investigation/kevin-response.md#i-007-response--2026-10-15-1249-pdt"
+      "text": "Welfare checks and warming first; in-person checks of the Medical District and Downtown. Hold remote switching from whoville-scada. Image the host before changes. Call the four account owners, then disable the contractor's remote login. Isolate the I-005–I-007 computer without opening the files. Leader approves the presentation and public statement before 1:45 PM.",
+      "source": "presentation/presentation-outline.md"
     },
     {
       "label": "Critical unknowns",
-      "text": "Blackout cause, authorized activity, source clocks, physical grid state, official deadline and time zone, presentation duration, and submission method. A judging-criteria photo is in the Drive folder; its example wording is not Whoville evidence.",
-      "source": "README.md#challenge-requirements"
+      "text": "Breaker and relay history for 00:05:58–11:03:15; whose computer and Chrome profile; whether any file ran; authorization of the four accounts; who sent signal 15; year and zone of I-002 and I-003; presentation length, format and submission method.",
+      "source": "README.md#current-assessment"
     }
   ],
   "workstreams": [
@@ -77,17 +77,17 @@
       "id": "response",
       "name": "Kevin — Response analysis",
       "status": "Working",
-      "updatedAt": "2026-10-15T12:49:00-07:00",
-      "completed": "Inject 7 reviewed. A Tomodachi Life FREE desktop folder lists setup.exe and another application. Neither was opened. Execution is not shown.",
-      "next": "Do not open the files. Identify the computer. Leader accepts or edits the unchanged public paragraph.",
-      "blocker": "The window does not name the person. Leader approval is still required for any public line.",
-      "source": "investigation/kevin-response.md"
+      "updatedAt": "2026-10-15T13:10:00-07:00",
+      "completed": "Sync audit of every repository file against the originals (IP, domain and filename corrected). Final presentation mapped to the six judging criteria, through Inject 7.",
+      "next": "Leader approves the presentation and public statement and confirms speakers before 1:45 PM.",
+      "blocker": "Leader approval. Presentation length and format are not published.",
+      "source": "README.md#sync-audit--2026-10-15-1310-pdt"
     }
   ],
   "actions": [
     {
       "id": "A-001",
-      "title": "Confirm deadline, time zone, rubric, and presentation limits",
+      "title": "Confirm deadline, time zone, and presentation limits (rubric known: six criteria, 5 points each)",
       "owner": "Leader + team",
       "status": "Open"
     },
@@ -95,7 +95,7 @@
       "id": "A-002",
       "title": "Confirm each person's name, role, and current task",
       "owner": "Everyone",
-      "status": "Kevin, Gretzky, and Kherion confirmed; leader not reported"
+      "status": "Kevin, Gretzky, and Kherion confirmed; leader's last status 11:01 PDT"
     },
     {
       "id": "A-003",
@@ -123,9 +123,21 @@
     },
     {
       "id": "A-007",
-      "title": "Review drafted response options and start presentation",
+      "title": "Final presentation mapped to the judging criteria",
       "owner": "Response + leader",
-      "status": "Draft updated for Inject 7; leader review still open"
+      "status": "Ready for leader review (13:05 PDT)"
+    },
+    {
+      "id": "A-008",
+      "title": "Approve the presentation and public statement; confirm speakers before 1:45 PM",
+      "owner": "Leader + team",
+      "status": "Open"
+    },
+    {
+      "id": "A-009",
+      "title": "Identify the computer behind I-005–I-007; keep it off the network; do not open the files",
+      "owner": "Response + evidence",
+      "status": "Open"
     }
   ],
   "milestones": [
@@ -156,18 +168,18 @@
     },
     {
       "label": "Inject 6",
-      "status": "Reviewed by response and timeline",
-      "note": "Timeline appended undated FreeGameDownloads webpage; possible archive source, no proven referrer, transfer, malware or outage link."
+      "status": "Reviewed by evidence, response and timeline",
+      "note": "FreeGameDownloads page at 5freeedownloads.com; toolbar matches I-005, so same Chrome profile. No proven transfer, malware or outage link."
     },
     {
       "label": "Inject 7",
-      "status": "Reviewed by response and timeline",
-      "note": "Desktop folder with two applications dated 8/12/2026 10:39 AM. No execution shown. The evidence log also has a reading."
+      "status": "Reviewed by evidence, response and timeline",
+      "note": "Desktop folder with N0Tstea1nG?CredEntials.exe (82 KB) and setup.exe, dated 8/12/2026 10:39 AM. No execution shown."
     },
     {
       "label": "Judging criteria",
-      "status": "Photo reviewed by response",
-      "note": "Six headings at 5 points each. Telecom and university examples on the photo are not Whoville evidence. Duration still absent."
+      "status": "Reviewed by evidence and response",
+      "note": "Six criteria at 5 points each; the presentation maps to all six. Telecom and university examples are not Whoville evidence. Duration still absent."
     },
     {
       "label": "Schedule",
@@ -176,8 +188,8 @@
     },
     {
       "label": "Presentation",
-      "status": "Draft",
-      "note": "Outline updated with Inject 7 at 12:49 PDT. Not approved and not submitted."
+      "status": "Final draft",
+      "note": "Rubric-mapped presentation through Inject 7, updated 13:05 PDT. Awaiting leader approval; not submitted."
     }
   ]
 }

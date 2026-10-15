@@ -49,7 +49,8 @@ function parseHumans(raw) {
       const i = line.indexOf(":");
       if (i > 0) fields[line.slice(0,i).trim()] = line.slice(i+1).trim();
     }
-    return {name:fields.Name ? fields.Name.replace(/\s*\(.*/, "") : member.name,isDraft:/^DRAFT\b/i.test(fields["Working on"] || ""),role:fields.Role || (fields["Suggested role"] ? fields["Suggested role"] + " · suggested" : member.role),fields};
+    const confirmed = fields["Role confirmed"] && !/^(not|no)\b/i.test(fields["Role confirmed"]);
+    return {name:fields.Name ? fields.Name.replace(/\s*\(.*/, "") : member.name,isDraft:/^DRAFT\b/i.test(fields["Working on"] || ""),role:fields.Role || (fields["Suggested role"] ? fields["Suggested role"] + (confirmed ? " · confirmed" : " · suggested") : member.role),fields};
   });
 }
 function renderPeople(raw) {

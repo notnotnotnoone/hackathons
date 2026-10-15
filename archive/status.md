@@ -189,6 +189,15 @@ No utility command and no competition submission was made.
 - Response: do not open the files. Public paragraph unchanged. No cause shown.
 - No utility command and no competition submission was made.
 
+## Incident response — sync audit and final presentation — 2026-10-15 13:10 PDT
+
+- At Kevin's request, every repository file was checked against the saved Drive originals.
+- Corrections: the Hoovey address is `104.237.236.191`, not 104.227. The Inject 6 domain is `5freeedownloads.com` with three e's, and it is not cut off. The Inject 7 name starts `N0T` with a zero. The Inject 6 entry above and the Inject 7 entry above keep their original wording as history.
+- New: the I-005 and I-006 toolbars are pixel-identical, so both come from one Chrome profile.
+- README assessment, event sequence, contradictions, team table, actions and register now cover Injects 1–7, pending the leader. Website role labels fixed.
+- Final presentation mapped to the six judging criteria. Leader approval needed before 1:45 PM. Not submitted.
+- No utility command, external message or competition submission was made.
+
 ## Evidence participant identified — 2026-10-15 10:49 PDT (UTC-07:00)
 
 Gretzky directly confirmed their name in this evidence chat, mapping the previously unnamed evidence participant to Member 2 (roster spelling gretsky). Presence is confirmed; human-status.txt now records Gretzky's evidence-collection work and links the assisted findings. No other teammate's status changed. Existing analyst work remains AI-assisted; independent human verification is not claimed. Next: collect missing source records and next inject; brief the leader.
