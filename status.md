@@ -144,3 +144,7 @@ Correlate future injects with these account/IP/host events and dashboard discrep
 - **Evidence and timeline:** A-006 remains open for the timeline reconciliation. The clipped hoovey login line is only a moderate-confidence provisional reading.
 
 No utility command and no competition submission was made.
+
+## Evidence participant identified — 2026-10-15 10:49 PDT (UTC-07:00)
+
+Gretzky directly confirmed their name in this evidence chat, mapping the previously unnamed evidence participant to Member 2 (roster spelling gretsky). Presence is confirmed; human-status.txt now records Gretzky's evidence-collection work and links the assisted findings. No other teammate's status changed. Existing analyst work remains AI-assisted; independent human verification is not claimed. Next: collect missing source records and next inject; brief the leader.
