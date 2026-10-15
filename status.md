@@ -108,3 +108,15 @@ Correlate future injects with these account/IP/host events and dashboard discrep
 - Read the lead's updated README and human-status.txt. Personal human progress is unreported; do not infer inactivity.
 - Prepared five prioritized evidence requests for leader: original logs/provenance, account/maintenance baselines, session/audit linkage and logging-stop reason, independent physical-state records, and dashboard definitions/data.
 - Initial available-evidence review is complete; next substantive correlation depends on new records or injects. Cause and authorization remain unknown. No external requests or operational actions were sent/performed.
+
+
+## Team update and participant presence — 2026-10-15 10:42 PDT (UTC-07:00)
+
+- Participant explicitly requested GitHub presence confirmation; recorded in human-status.txt under "Present participant - user of the evidence chat". Human name/roster mapping is still unknown; no other person's status was changed.
+- Shared README now reflects completed Schedule visual review and native-resolution log transcription reread; existing analyst findings and history preserved.
+- Completed: Inject 1/2 visual analysis, published combined timeline (timeline support), Instructions/Mission Overview text review, Schedule visual review, priority evidence requests, and team handoff.
+- Latest Drive check: same five files; no Inject 3.
+- Open: full original logs and provenance, authorization/maintenance baselines, session/process linkage and logging-stop reason, source clocks, independent equipment/service records, dashboard logic, official deadline/date/zone and rubric, response options, presentation draft and leader approval.
+- Team handoffs are proposed workstreams, not claims of accepted assignments. GitHub publication shares the update; receipt/read status is not known.
+- Cause and unauthorized activity remain unconfirmed. Investigation is not complete.
+
