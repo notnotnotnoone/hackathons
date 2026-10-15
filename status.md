@@ -177,3 +177,13 @@ Gretzky directly confirmed their name in this evidence chat, mapping the previou
 ## Kherion timeline follow-up — 2026-10-15 11:03 PDT
 
 Inject 3 downloaded and visually reviewed. Six Drive files now saved locally; manifest refreshed. Combined timeline and six-part handoff updated in [team3.md](team3.md#inject-3-update--2026-10-15-1101-pdt). New Google-labelled alert supplies a displayed message timestamp and a Mount Crumpit sign-in claim; year/zone, exact sign-in time, authenticity, owner and SCADA linkage are unknown. Weekday/scenario-year mismatch explicitly flagged. Earlier findings retained. Next: original email/security events and ownership/clock verification.
+
+
+## Gretzky evidence update — Inject 4 — 2026-10-15 11:18 PDT (UTC-07:00)
+
+- Checked the shared Drive folder at about 11:17 PDT; it now contains ten files, including four screenshots titled Inject 4.
+- Visually reviewed all four screenshots and added I-004 / E-004a–d findings to [the evidence log](codex-evidence-analyst.md#i-004--e-004--community-outage-posts-and-public-advice).
+- Reddit comments report power/heating problems in East Valley, West Ridge, and Riverdale. Two X screenshots display Dec 25, 2026 at 8:47 AM and 9:01 AM; one reply mentions borrowing a neighbor's generator. Relative-time labels in the Reddit and Facebook captures lack absolute date/zone.
+- The Facebook capture gives alarmist household advice, including burying food in snow and going to a store for water. Its source, accuracy, author identity, and reach are unknown; treat it as a public-safety lead, not an established coordinated misinformation effort.
+- The posts add public reports but do not independently validate feeder readings or establish cyber activity or blackout causation. The evidence workstream and latest-inject marker were updated in [docs/progress.json](docs/progress.json); the README includes the team handoff.
+- No social-media links/buttons were followed, no utility systems were accessed, and no external message or competition submission was made.
