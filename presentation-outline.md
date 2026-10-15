@@ -95,6 +95,16 @@ Instructions say three hours to review, build the presentation as you go, and us
 | Covers alternatives, safety, and tradeoffs | Yes. The option table is in kevin-response.md |
 | Leader approved this exact version | No |
 
+## Inject 3 addendum — 2026-10-15 11:05 PDT
+
+Add this only if a judge asks what arrived after the first draft. Do not add it to the public paragraph.
+
+Inject 3 is a screenshot of an email titled Security alert. It displays Wed, Dec 24, 10:12 PM, with no year and no zone, and claims a new Google sign-in from Mount Crumpit for `maxwafoone@gmail.com`. Mount Crumpit is also the FDR-15 service area, which at 08:42:40 PST showed 0.0 MW and 0.0 kV. The screen has no IP and no separate sign-in time. The button was not opened.
+
+Say this: the name and the place are leads for an out-of-band call. They are not proof that this Google user is `max.contr.maint`, and they are not proof that the sign-in caused the outage. The header says Wednesday. December 24, 2026 was a Thursday, and the email states no year.
+
+Leave the public paragraph as written. R-11 in [kevin-response.md](kevin-response.md) is the account action: ask, do not click, do not reset yet.
+
 ## Message for Team Leader
 
-> The response work that can be finished from Injects 1 and 2 is finished: options R-01 through R-10, and this presentation draft. Please accept or edit the public paragraph before anyone says it. Please do not approve a cyberattack claim, a reboot of `whoville-scada`, or switching from the 17/18 footer. Field checks, full logs, and the official rubric are still outside this draft.
+> Inject 3 does not change the safety actions or the public paragraph. It adds one question for the contractor call: is maxwafoone@gmail.com theirs, and do they recognize a Mount Crumpit sign-in? Please still accept or edit the public paragraph before anyone says it. Please do not approve a click on the email button, a Google account reset from this screenshot, a cyberattack claim, a SCADA reboot, or switching from the 17/18 footer.

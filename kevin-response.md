@@ -3,7 +3,7 @@
 **Team member / workstream:** kevin — Member 4, incident response chat. Kevin confirmed this status on 2026-10-15 at 10:51 PDT. The matching block in [human-status.txt](human-status.txt) is no longer a draft.
 **Role used:** Incident response and crisis communications
 **Status:** Working
-**Updated:** 2026-10-15 10:55 PDT (UTC−07:00). The presentation draft is [presentation-outline.md](presentation-outline.md). Drive rechecked at 10:55 PDT: still five files, no Inject 3.
+**Updated:** 2026-10-15 11:05 PDT (UTC−07:00). Inject 3 response is below. The presentation addendum is in [presentation-outline.md](presentation-outline.md). Drive rechecked at 11:05 PDT: six files, including Inject 3.
 **Sources reviewed by this chat:** I-001, I-002, Instructions, Mission Overview, and a visual/OCR reading of Schedule. Drive listing rechecked at 10:40 PDT: still those five files, no Inject 3.
 
 ```text
@@ -88,8 +88,28 @@ No time zone is printed on the page read here. Rubric, presentation length, subm
 
 IP registry lookups were done in the analyst chat. They are withheld from this public repository until sharing rules are confirmed. They are not part of the assessment above.
 
+## I-003 response — 2026-10-15 11:05 PDT
+
+This chat opened [Inject 3](https://drive.google.com/file/d/1iQa1Y2u0vdNfuVin0ejEClH4pdJv0KUL/view) and read the same screenshot the evidence desk and timeline already transcribed. The reading matches theirs.
+
+Visible claim: an email titled Security alert, displayed sender Google `<no-reply@accounts.google.com>`, header **Wed, Dec 24, 10:12 PM**, no year and no zone. The body says there was a new Google Account sign-in from Mount Crumpit for `maxwafoone@gmail.com`. A Check activity button is shown. The visible address text is `https://myaccount.google.com/notifications`. No IP, device, or separate sign-in time is on the screen. This chat did not open the button.
+
+What changes in the response:
+
+- **Life safety does not change.** Mount Crumpit is still FDR-15, OFFLINE, 0.0 MW, 0.0 kV at 08:42:40 PST. The alert does not show that a person was at that feeder, and it does not show that the feeder is now energized.
+- **Do not use the button in the screenshot.** Its destination is not visible. If an owner is reached on a known phone number, they can type `https://myaccount.google.com/notifications` themselves.
+- **Ask, before any Google account reset.** On the same out-of-band call already recommended for `max.contr.maint`, ask whether `maxwafoone@gmail.com` is theirs and whether they recognize a Mount Crumpit sign-in. A reset from this screenshot alone can lock out the wrong person or act on a message that has not been authenticated.
+- **Keep the public paragraph unchanged.** Do not add the Gmail address, the sign-in claim, or Mount Crumpit to what residents are told.
+- **Do not merge the accounts.** The shared “max” and the shared place name are leads. They do not show that the Google user and `max.contr.maint` are the same person, and they do not show that this sign-in opened a breaker.
+
+If the email date and the SCADA clock are the same evening, 10:12 p.m. is about one hour and 48 minutes before the failed SSH password. That is a question for the account-owner call. It is not one proven intrusion. The header says Wednesday. December 24, 2026 was a Thursday, and the email does not state a year, so this chat does not pin the message to the 2026 scenario date.
+
+| ID | Option | Evidence | Urgency | Safety benefit | Operational risk | Reversibility | Prerequisites | Position |
+|---|---|---|---|---|---|---|---|---|
+| R-11 | Ask the contractor contact, out of band, whether `maxwafoone@gmail.com` is theirs and whether the Mount Crumpit sign-in was theirs. Do not click Check activity. Do not reset the Google account yet | I-003 claim; name similarity to `max.contr.maint`; Mount Crumpit is also FDR-15 | High as a question. Not ahead of the Medical District check | Stops a blind reset and a click on an unseen link | The call can tip an account owner who is themself the actor. A premature reset can lock out a legitimate user | Questions can stop. A reset is harder to undo during the outage | A known phone number, not the address in the screenshot | Recommend the question. Do not recommend the click or the reset |
+
 ## Message for Team Leader
 
-> Safety checks can start without a cause. Twelve feeders look fully dark, four still show load, and Medical District shows voltage with zero load, so that check comes first. Hold remote switching and do not reboot the SCADA host. The midnight log sequence is enough to preserve evidence and to call the four account owners. It is not enough to say an intrusion caused the blackout or to announce that publicly. Response options R-01 through R-10 are in kevin-response.md. Two transcription conflicts are noted there and still need the original log line.
+> Safety checks stay first. Inject 3 adds a claimed Google sign-in for maxwafoone@gmail.com from Mount Crumpit, displayed Wed Dec 24 at 10:12 p.m. Ask the contractor contact out of band whether that account and sign-in are theirs. Do not click the button in the screenshot, do not reset the Google account from this image, and do not put the address in the public line. The alert does not show a breaker operation and does not change the Medical District check or the hold on remote switching.
 
 No utility command and no competition submission was made.

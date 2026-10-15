@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-15T11:03:00-07:00",
-  "updatedBy": "Kherion timeline chat / Codex",
+  "updatedAt": "2026-10-15T11:05:00-07:00",
+  "updatedBy": "Kevin",
   "latestInject": {
     "id": "I-003",
     "title": "Claimed Google sign-in alert",
-    "state": "Inject 3 reviewed by evidence desk",
-    "checkedAt": "2026-10-15T11:01:00-07:00",
-    "note": "Six files listed by evidence desk. Inject 3 visually reviewed at original resolution. Possible account/location connections are hypotheses; alert authenticity and clock alignment unverified.",
+    "state": "Inject 3 reviewed by evidence, timeline, and response",
+    "checkedAt": "2026-10-15T11:05:00-07:00",
+    "note": "Response chat rechecked Drive at 11:05 PDT. Six files. Inject 3 visually reviewed. Account and location links remain hypotheses. Alert authenticity and clock alignment are unverified.",
     "sourceUrl": "https://drive.google.com/file/d/1iQa1Y2u0vdNfuVin0ejEClH4pdJv0KUL/view"
   },
   "assessment": [
@@ -33,8 +33,8 @@
     },
     {
       "label": "Recommended action",
-      "text": "Review Inject 3, correlate it with the existing evidence and timeline, and revise the presentation draft where supported. Existing response recommendations remain proposals awaiting leader approval.",
-      "source": "presentation-outline.md"
+      "text": "Response review of Inject 3 is published. Ask about the claimed Google sign-in out of band. Do not click the screenshot button or reset the account from the image. Safety actions and the public paragraph are unchanged and still await leader approval.",
+      "source": "kevin-response.md#i-003-response--2026-10-15-1105-pdt"
     },
     {
       "label": "Critical unknowns",
@@ -76,11 +76,11 @@
     {
       "id": "response",
       "name": "Kevin — Response analysis",
-      "status": "Ready for leader review",
-      "updatedAt": "2026-10-15T10:55:37-07:00",
-      "completed": "Kevin confirmed the role. Options R-01 through R-10 and a presentation draft are published.",
-      "next": "Leader accepts or edits the public paragraph before it is used.",
-      "blocker": "Leader approval, unpublished rubric, and field confirmation of Medical District service.",
+      "status": "Working",
+      "updatedAt": "2026-10-15T11:05:00-07:00",
+      "completed": "Inject 3 reviewed. R-11 asks about maxwafoone@gmail.com out of band and does not reset the account from the screenshot.",
+      "next": "Leader accepts or edits the unchanged public paragraph before it is used.",
+      "blocker": "Leader approval, a known contractor phone number, and field confirmation of Medical District service.",
       "source": "kevin-response.md"
     }
   ],
@@ -125,7 +125,7 @@
       "id": "A-007",
       "title": "Review drafted response options and start presentation",
       "owner": "Response + leader",
-      "status": "Draft written; leader review still open"
+      "status": "Draft updated for Inject 3; leader review still open"
     }
   ],
   "milestones": [
@@ -141,8 +141,8 @@
     },
     {
       "label": "Inject 3",
-      "status": "In progress",
-      "note": "Available in Drive. Lead review underway; analysis pending."
+      "status": "Reviewed",
+      "note": "Evidence, timeline, and response reviewed the sign-in alert. Authenticity, account link, and cause remain unconfirmed."
     },
     {
       "label": "Schedule",
@@ -152,7 +152,7 @@
     {
       "label": "Presentation",
       "status": "Draft",
-      "note": "Outline recorded in presentation-outline.md at 10:55 PDT. Not approved and not submitted."
+      "note": "Outline updated with an Inject 3 addendum at 11:05 PDT. Not approved and not submitted."
     }
   ]
 }
