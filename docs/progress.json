@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-15T10:43:30-07:00",
-  "updatedBy": "Lead coordination chat",
+  "updatedAt": "2026-10-15T10:50:00-07:00",
+  "updatedBy": "Gretzky / evidence",
   "latestInject": {
     "id": "I-002",
     "title": "Recovered system logs",
@@ -55,11 +55,11 @@
     },
     {
       "id": "evidence",
-      "name": "Evidence desk",
+      "name": "Gretzky — Evidence desk",
       "status": "Waiting for evidence",
-      "updatedAt": "2026-10-15T10:42:00-07:00",
-      "completed": "Injects 1/2, instructions, mission overview, schedule, and transcription reread reviewed.",
-      "next": "Correlate new injects with full logs and authorization records.",
+      "updatedAt": "2026-10-15T10:50:00-07:00",
+      "completed": "Gretzky directly confirmed Member 2 identity and presence. AI-assisted Inject 1/2, schedule review and source reread are published.",
+      "next": "Collect full logs and authorization context through the team; brief the leader and review the next inject.",
       "blocker": "Original text logs, account baselines, audit linkage, physical readings.",
       "source": "codex-evidence-analyst.md"
     },
