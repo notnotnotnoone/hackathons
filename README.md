@@ -4,7 +4,7 @@
 
 [Current assessment](#current-assessment) · [Team status](#team-status) · [Next actions](#next-actions) · [Evidence and injects](#evidence-and-injects) · [Requirements](#challenge-requirements) · [How to update](#how-to-update)
 
-**[Shared Google Drive](https://drive.google.com/drive/folders/1tpag2T6jptGhCC7E2tKtuZbTXLQ9B-Mj)** · **[Master timeline](team3.md)** · **[Evidence analysis](codex-evidence-analyst.md)** · **[Analyst work logs](status.md)** · **[Previous README / assessment history](docs/history/readme-before-lead-sync.md)**
+**[Human team status](human-status.txt)** · **[Shared Google Drive](https://drive.google.com/drive/folders/1tpag2T6jptGhCC7E2tKtuZbTXLQ9B-Mj)** · **[Master timeline](team3.md)** · **[Evidence analysis](codex-evidence-analyst.md)** · **[Analyst work logs](status.md)** · **[Previous README / assessment history](docs/history/readme-before-lead-sync.md)**
 
 ## At a glance
 
@@ -64,16 +64,24 @@ Zero MW with nonzero voltage on FDR-03/FDR-07 needs operating context; it is not
 
 ## Team status
 
-All members use the same GitHub account. Attribute work through signed entries and commit messages. Suggested human assignments are retained; analyst chat identities have not been mapped to named members merely from shared-account commits.
+**People: update [human-status.txt](human-status.txt).** It is the single place for each person's current task, completed work, next step, blocker, and update time. Everyone uses the same account, so sign entries with your team name. Unreported status does not imply inactivity.
 
-| Member / workstream | Role | Recorded progress | Next handoff |
-|---|---|---|---|
-| **You — Leader** | Lead Cybersecurity Investigator | This lead chat reconciled published Inject 1–2 handoffs and reorganized the hub | Resolve priorities and official requirements; review exact presentation version |
-| **gretsky — Member 2** | Evidence investigator, suggested | Personal identity not linked to an analyst log yet; evidence work is published below | Confirm ownership; full-log and authorization checks |
-| **kherion — Member 3** | Timeline analyst, suggested | `team3.md` contains timeline work, but its owner explicitly leaves human identity unconfirmed | Confirm ownership; clock and event correlation |
-| **kevin — Member 4** | Incident response analyst, suggested | No identifiable response-analysis handoff in the four reviewed repository files | Service/safety priorities and response-option comparison |
-| **Timeline support** | Codex timeline chat | Injects 1–2 reviewed; master timeline published; latest recorded update 10:30 PDT | Complete clocks, provenance, and PDF context review |
-| **Evidence desk** | Codex evidence chat | Injects 1–2 visually reviewed; Instructions / Mission Overview text reviewed; latest recorded update 10:32 PDT | Full records, authorization, cross-source verification |
+| Team member | Role |
+|---|---|
+| You — Leader | Lead Cybersecurity Investigator |
+| gretsky — Member 2 | Evidence investigator, suggested |
+| kherion — Member 3 | Timeline analyst, suggested |
+| kevin — Member 4 | Incident response analyst, suggested |
+
+Members 2–4 confirm their roles in the plaintext file. Shared-account commits do not establish which person used an analyst chat.
+
+### AI analyst workstreams
+
+| Workstream | Recorded progress | Next handoff |
+|---|---|---|
+| Lead support — this chat | Reconciled published Inject 1–2 handoffs and organized the hub | Requirements and priority review; personal progress belongs in human-status.txt |
+| Timeline support | Injects 1–2 reviewed; [master timeline](team3.md) published; latest reviewed update 10:30 PDT | Clocks, provenance, and PDF context |
+| Evidence desk | Injects 1–2 visually reviewed; [evidence notes](codex-evidence-analyst.md) published; latest reviewed update 10:32 PDT | Full records, authorization, cross-source verification |
 
 **Chat visibility:** The available app listing exposed this lead chat and the related “Hackathon Crash Course” chat. The latter contains role/setup messages, with assistant content only exposed as reference placeholders. The separate evidence/timeline chats were not exposed in that listing; their committed handoffs were reviewed instead. This is not a claim that every same-account chat has been read. No messages were sent to other chats.
 
@@ -84,7 +92,7 @@ Owners below are proposed workstreams, not claims that a named teammate has acce
 | Priority / ID | Action | Proposed owner | Done when |
 |---|---|---|---|
 | **Now / A-001** | Confirm schedule visually, official start/deadline/zone, rubric, presentation constraints, and AI/sharing rules | Leader + team | Official source and exact requirements recorded |
-| **Now / A-002** | Sign each person's status / log and confirm role-to-name mapping | All members | Each member's latest work and blocker are attributable |
+| **Now / A-002** | Update [human-status.txt](human-status.txt) and confirm your role | All members | Each member's latest work, blocker, and update time are recorded |
 | **High / A-003** | Obtain complete original recovered logs, collection details, and account/maintenance approvals; explain dashboard count/flow mismatch | Evidence desk | Source completeness, authorization, and telemetry discrepancies assessed |
 | **High / A-004** | Verify Medical District service, switch states, and independent measurements; reconcile source clocks | Response + timeline | Safety assessment and clock basis supported by evidence |
 | **High / A-005** | Correlate SSH, sudo/su, process ancestry, service manager, audit and SCADA command records | Evidence + timeline | Session links and logging-stop reason established or explicitly unresolved |
@@ -131,11 +139,13 @@ Direct text extraction of Instructions supports these working requirements, cons
 
 ## How to update
 
-1. **Analysts:** Update your own detailed log, with name, work time/zone, inject IDs, findings, evidence locations, limitations, next action, and blocker. Keep prior findings or record explicit corrections.
-2. **Lead:** Reconcile those handoffs into this README's assessment, status, actions, and coverage time. Do not infer inactivity from an old status row; inspect recent commits and linked logs.
-3. **New inject:** Assign the next I-/E- IDs, link its original, record receipt separately from scenario time, and update the evidence index and assessment.
-4. **Shared account:** Use commit messages such as `kherion: reconcile I-002 timestamps`. Refresh and fetch the current version before editing; preserve others' changes.
-5. **Approval:** Investigation and draft preparation do not authorize utility changes, external communications, or competition submissions.
+1. **Team members:** Open [human-status.txt](human-status.txt), click the pencil, and edit only your own section. Write your status, current task, finished work or handoff link, next step, help needed, and date/time/zone. Update after an inject, completed task, blocker, or task change.
+2. **Roles:** Confirm suggested roles in that file. Use plain language and one status: Ready, Working, Need help, Waiting, or Done. Leave unknown progress as “Not reported.”
+3. **AI analysts:** Keep detailed findings in your existing analyst log, with evidence IDs, exact locations, limitations, corrections, and a dated handoff. Do not present AI work as a person's completed work or change another person's status without their report. Label proposed human updates as drafts until the person confirms.
+4. **Lead:** Use the plaintext file for personal progress and the analyst logs for investigation progress. Reconcile findings into this README's assessment, actions, and coverage time. Check recent commits as well as status dates before concluding someone is inactive.
+5. **New inject:** Assign the next I-/E- IDs, link its original, record receipt separately from scenario time, and update the evidence index and assessment.
+6. **Shared account:** Refresh and fetch the current version before editing, preserve others' changes, and commit with your name, for example `kevin: update human status`. Handoffs should name the recipient and link the finding or draft. GitHub history retains prior updates.
+7. **Approval:** Investigation and draft preparation do not authorize utility changes, external communications, or competition submissions.
 
 <details>
 <summary>Copyable six-part update</summary>
