@@ -7,7 +7,7 @@
     "title": "Simulated grid map",
     "state": "Inject 8 reviewed by evidence desk and response",
     "checkedAt": "2026-10-15T13:12:00-07:00",
-    "note": "Fifteen Drive files. Dec 25, 2026 8:43 AM, zone label PDT. The map is labeled simulated. It shows 1,240 MW demand, 92,430 customers without power, feeder status 12/5/6/3, hospital on backup, and water treatment offline. SUB-03's status conflicts with its own note. Those counts are not the Inject 1 tally, and SUB labels are not FDR labels. No breaker command. Timeline review is not yet recorded.",
+    "note": "Fifteen Drive files. Dec 25, 2026 8:43 AM, zone label PDT. The map is labeled simulated. It shows 1,240 MW demand, 92,430 customers without power, feeder status 12/5/6/3, hospital on backup, and water treatment offline. SUB-03's status conflicts with its own note. Those counts are not the Inject 1 tally, and SUB labels are not FDR labels. No breaker command. Timeline published an Inject 8 chronology in investigation/team3.md.",
     "sourceUrl": "https://drive.google.com/file/d/1-gc6iqIzCkryqRweTdYDUH0TLYf4cuM5/view"
   },
   "assessment": [
@@ -179,7 +179,7 @@
     {
       "label": "Inject 8",
       "status": "Reviewed by evidence and response",
-      "note": "Simulated 8:43 a.m. map. Water plant offline. Counts do not match Inject 1. Timeline review not yet recorded."
+      "note": "Simulated 8:43 a.m. map. Water plant offline. Counts do not match Inject 1. Evidence, timeline, and response have readings."
     },
     {
       "label": "Judging criteria",

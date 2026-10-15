@@ -30,7 +30,7 @@ docs/              GitHub Pages website and progress data
 | Latest published analyst updates reviewed | Evidence desk through 13:05 PDT; timeline through 12:49 PDT; response through 13:12 PDT, October 15, 2026 |
 | Lead reconciliation | The lead's numbered assessment was last reconciled at 10:34 PDT (Injects 1–2). At Kevin's request, the response chat reconciled the assessment below through Inject 7 at 13:10 PDT. The leader has not reviewed that version and may revise it. |
 | Drive coverage | Fifteen files: Injects 1–8, including four Inject 4 images, plus Instructions, Schedule, Mission Overview, and Presentation Criteria.jpg. |
-| Review coverage | Evidence desk and response reviewed Inject 8. Timeline through Inject 7. The response chat re-checked originals through Inject 7 at 12:45–13:05 PDT; see [Sync audit](#sync-audit--2026-10-15-1310-pdt). The lead's personal review is not assumed. |
+| Review coverage | Evidence desk, timeline, and response reviewed Inject 8. The response chat re-checked originals through Inject 7 at 12:45–13:05 PDT; see [Sync audit](#sync-audit--2026-10-15-1310-pdt). The lead's personal review is not assumed. |
 | Remaining intake gaps | Presentation length and format, submission method, explicit deadline, event time zone, and AI/sharing rules. The rubric is known from PC-001: six criteria, 5 points each. Its telecom and university examples are not Whoville facts |
 | Submission | Presentation has an Inject 8 response update and an evidence addendum. Not approved and not submitted |
 | Participant presence | Gretzky (10:49), Kherion (10:50) and Kevin (10:51) confirmed in human-status.txt. The leader's personal status was last updated at 11:01 PDT. |
