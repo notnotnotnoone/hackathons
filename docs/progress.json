@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-15T11:08:39-07:00",
-  "updatedBy": "Kherion timeline chat / Codex",
+  "updatedAt": "2026-10-15T11:18:11-07:00",
+  "updatedBy": "Gretzky — Evidence desk",
   "latestInject": {
-    "id": "I-003",
-    "title": "Claimed Google sign-in alert",
-    "state": "Inject 3 reviewed by evidence, timeline, and response",
-    "checkedAt": "2026-10-15T11:05:00-07:00",
-    "note": "Response chat rechecked Drive at 11:05 PDT. Six files. Inject 3 visually reviewed. Account and location links remain hypotheses. Alert authenticity and clock alignment are unverified.",
-    "sourceUrl": "https://drive.google.com/file/d/1iQa1Y2u0vdNfuVin0ejEClH4pdJv0KUL/view"
+    "id": "I-004",
+    "title": "Community outage posts and public advice",
+    "state": "Inject 4 reviewed by evidence desk",
+    "checkedAt": "2026-10-15T11:17:16-07:00",
+    "note": "Drive checked; four Inject 4 screenshots reviewed. They report public outage concerns and include an urgent, unverified household-advice post. Social claims do not independently verify feeder state or establish a cyberattack; account authenticity, time zones, locations, and advice source remain unknown.",
+    "sourceUrl": "https://drive.google.com/drive/folders/1tpag2T6jptGhCC7E2tKtuZbTXLQ9B-Mj"
   },
   "assessment": [
     {
@@ -56,12 +56,12 @@
     {
       "id": "evidence",
       "name": "Gretzky — Evidence desk",
-      "status": "Inject 3 reviewed",
-      "updatedAt": "2026-10-15T11:03:00-07:00",
-      "completed": "Inject 3 sign-in alert analyzed; candidate links to max.contr.maint and FDR-15/Mount Crumpit recorded, with weekday/year caveat.",
-      "next": "Brief leader and compare later injects; track alert authenticity, account mapping and clock questions.",
-      "blocker": "Details not provided yet: email headers, sign-in IP/device, owner recognition, account mapping and source clocks.",
-      "source": "codex-evidence-analyst.md#i-003--e-003--google-sign-in-alert-screenshot"
+      "status": "Inject 4 reviewed",
+      "updatedAt": "2026-10-15T11:18:11-07:00",
+      "completed": "Reviewed four Inject 4 social-media screenshots; documented reported outage locations, displayed timestamps, public-safety concern, and source limitations.",
+      "next": "Correlate any later injects with I-001–I-004; preserve account, time-zone, location, and provenance uncertainty.",
+      "blocker": "No absolute time/zone or independent authentication for the posts; extent and source of household advice are unknown.",
+      "source": "codex-evidence-analyst.md#i-004--e-004--community-outage-posts-and-public-advice"
     },
     {
       "id": "timeline",
