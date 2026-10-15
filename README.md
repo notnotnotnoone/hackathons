@@ -25,16 +25,16 @@ docs/              GitHub Pages website and progress data
 
 | Item | Current position |
 |---|---|
-| Latest inject | **Inject 7 — desktop folder with two applications. Evidence desk, timeline and response reviewed it (12:47–12:51 PDT)** |
+| Latest inject | **Final labelled Inject 8 — regional grid-operations map; Gretzky evidence review complete around 13:02 PDT** |
 | Investigation | **Active. Blackout cause and unauthorized activity remain unconfirmed.** |
-| Latest published analyst updates reviewed | Evidence desk through 12:51 PDT; timeline through 12:47 PDT; response through 13:10 PDT, October 15, 2026 |
+| Latest published analyst updates reviewed | Evidence desk through 13:05 PDT (Inject 8); timeline through Inject 7 (12:49 PDT); response through 13:10 PDT (Inject 7), October 15, 2026 |
 | Lead reconciliation | The lead's numbered assessment was last reconciled at 10:34 PDT (Injects 1–2). At Kevin's request, the response chat reconciled the assessment below through Inject 7 at 13:10 PDT. The leader has not reviewed that version and may revise it. |
-| Drive coverage | Fourteen files at 12:49 PDT (response chat): Injects 1–7, including four Inject 4 images, plus Instructions, Schedule, Mission Overview, and Presentation Criteria.jpg. |
-| Review coverage | Evidence desk, timeline and response reviewed every inject through Inject 7. The response chat re-checked all originals against the repo at 12:45–13:05 PDT; see [Sync audit](#sync-audit--2026-10-15-1310-pdt). The lead's personal review is not assumed. |
+| Drive coverage | Fifteen files at ~13:02 PDT: Injects 1–8 (11 images, including four for Inject 4), Presentation Criteria.jpg, Instructions, Schedule and Mission Overview |
+| Review coverage | Gretzky evidence desk reviewed Inject 8; timeline and response review of Inject 8 not assumed. All three desks previously reviewed through Inject 7. Lead review not assumed |
 | Remaining intake gaps | Presentation length and format, submission method, explicit deadline, event time zone, and AI/sharing rules. The rubric is known from PC-001: six criteria, 5 points each. Its telecom and university examples are not Whoville facts |
-| Submission | **Final presentation ready for leader approval:** [presentation/presentation-outline.md](presentation/presentation-outline.md), mapped to the six criteria, updated 13:05 PDT. Not approved and not submitted |
+| Submission | Kevin's rubric-mapped final draft now has a separately labelled Inject 8 evidence addendum for leader/response integration. Not approved and not submitted |
 | Participant presence | Gretzky (10:49), Kherion (10:50) and Kevin (10:51) confirmed in human-status.txt. The leader's personal status was last updated at 11:01 PDT. |
-| Next priority | **Before 1:45 PM judging:** leader approves the presentation and the public statement, and confirms speakers. Investigation: breaker and relay history for 00:05:58–11:03:15, the computer behind I-005–I-007, and account-owner calls |
+| Next priority | Before 1:45 PM judging: leader integrates final Inject 8 safety/impact results into the walk-up and final script, approves public statement and speakers. Independently verify hospital backup power, water-treatment status, substation and breaker conditions |
 
 **What changed:** The assessment, event sequence, contradictions, team table, actions, register and requirements below now cover Injects 1–7. Earlier wording is kept in git history and in the collapsed lead assessment.
 
@@ -367,3 +367,16 @@ The screenshot shows **Desktop > Tomodachi Life FREE** with **two Windows Applic
 ## Kevin sync audit and final presentation — 2026-10-15 13:10 PDT
 
 At Kevin's request, the response chat checked every repository file against the Drive originals, without assuming any of it was right. The corrections, new observations, and items flagged for the owning desks are in [Sync audit](#sync-audit--2026-10-15-1310-pdt). The assessment above is reconciled through Inject 7, pending the leader. The [final presentation](presentation/presentation-outline.md) maps all seven injects to the six judging criteria. It has a 60-second walk-up, a five-minute finalist version with proposed speakers, a public statement for approval, and judge Q&A. No utility command, external message, or competition submission was made.
+
+
+## Gretzky final evidence handoff — Inject 8 — 2026-10-15 13:05 PDT
+
+**Original:** [Hydro Siber regional grid map](https://drive.google.com/file/d/1-gc6iqIzCkryqRweTdYDUH0TLYf4cuM5/view). **Detailed I-008 findings:** [Evidence desk](investigation/codex-evidence-analyst.md#i-008--e-008--final-grid-operations-map). **Gretzky handoff:** [Final operational brief](handoffs/gretzky-handoff.md#inject-8--i-008--e-008--final-operational-handoff). **Presentation:** [Inject 8 addendum for leader approval](presentation/presentation-outline.md#final-inject-8--evidence-desk-addendum-for-leader-approval).
+
+The final labelled Inject 8 is a **simulated** Hydro Siber operations map headed **Dec 25, 2026, 8:43 AM (PDT)**. It reports **92,430 customers without power (+14%)**, total demand **1,240 MW (-18% vs forecast)**, and **12 online / 5 degraded / 6 offline / 3 telemetry-unverified** feeder categories. The screenshot identifies the **hospital as partially powered with backup generators, water treatment as offline, and transit as partially powered**, alongside six alert rows from 07:32 through 08:41. These are displayed values, not independent field verification.
+
+**Internal contradiction:** SUB-03 Central shows **SCADA Online / Field Unconfirmed**, but its note says **"SCADA shows offline"**. SUB-07 Riverdale shows **Unverified/Unverified** with a stated telemetry loss since 06:31. SUB-05 Hillsdale Park is **Offline/Offline**, while an earlier 07:32 alert described a mismatch; this difference may reflect historical state rather than simultaneous disagreement. SUB-01 and SUB-02 are degraded; SUB-04 and SUB-06 are online.
+
+**Cross-inject limit:** E-008's **SUB identifiers are not the FDR feeder IDs** from E-001; the aggregate 26 categories cannot be equated with the 18-row earlier dashboard. E-001 analyses recorded PST row timestamps while E-008's December header says PDT. Residents' neighborhood names in I-004 overlap mapped areas but do not authenticate telemetry. Suspicious SCADA authentication/logging events (I-002) and the possible game-download path (I-005–I-007) remain unconnected to a validated control action or outage causation.
+
+**Action for leader:** Incorporate the updated customer/service impact and these limits in the judging script; prioritize verified hospital/water and field-power conditions, retain the evidence, and do not declare an attacker or cyber cause. No utility operation, public release or competition submission has been authorized by this evidence-desk update. Kevin's main presentation was reconciled through Inject 7; the added Inject 8 material is **for leader approval**, not a claim that the lead has reviewed it.
