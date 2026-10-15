@@ -25,12 +25,12 @@ docs/              GitHub Pages website and progress data
 
 | Item | Current position |
 |---|---|
-| Latest inject | **Inject 6 — FreeGameDownloads page; response reviewed at 12:32 PDT** |
+| Latest inject | **Inject 6 — FreeGameDownloads page; response, evidence and timeline reviews published by 12:41 PDT** |
 | Investigation | **Active. Blackout cause and unauthorized activity remain unconfirmed.** |
-| Latest published analyst updates reviewed | Evidence desk through 12:06 PDT; timeline through 11:39 PDT; response through 12:32 PDT, October 15, 2026 |
+| Latest published analyst updates reviewed | Evidence desk through 12:39 PDT; timeline through 12:40 PDT; response through 12:32 PDT, October 15, 2026 |
 | Lead reconciliation | October 15, 2026, 10:34 PDT; reviewed all four existing repository files and the seven commits after initialization. The 10:40 PDT response handoff is linked and not yet folded into the numbered assessment. |
 | Drive coverage | Thirteen files at 12:32 PDT: Injects 1–6, including four Inject 4 images, plus Instructions, Schedule, Mission Overview, and Presentation Criteria.jpg. |
-| Review coverage | Response reviewed Inject 6 at 12:32 PDT. Evidence desk and response reviewed Inject 5. Timeline last published through Inject 4. The lead chat has not independently verified the images. |
+| Review coverage | Response, evidence and timeline analysts reviewed Inject 6; the lead's independent review is not assumed. Latest injection screenshot and criteria image are indexed in evidence/handoff records. |
 | Remaining intake gaps | Official event date/time zone, explicit deadline, presentation duration, and AI/sharing rules. A judging-criteria photo is in the folder; its example wording is not Whoville evidence. Schedule visual review is complete |
 | Submission | Draft outline updated with an Inject 6 addendum and the criteria photo at 12:32 PDT. Not approved and not submitted |
 | Participant presence | User of the evidence chat confirms presence at 10:41 PDT; name/roster mapping not supplied. See human-status.txt. |
