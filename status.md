@@ -67,3 +67,35 @@ The master timeline and download manifest are currently local deliverables attac
 | 2026-10-15 10:29 PDT | Dedicated status.md created for this chat's progress and next deliverables. |
 
 Update times above are real-world work times. They are separate from incident scenario timestamps.
+
+---
+
+## Evidence & Forensics Analyst — Codex (this evidence chat)
+
+**Status:** Investigating; Injects 1 and 2 reviewed  
+**Updated:** 2026-10-15 10:32 PDT (UTC-07:00)  
+**Personal log:** [codex-evidence-analyst.md](codex-evidence-analyst.md)  
+**Identity:** Evidence desk / Codex; human member name not confirmed. This entry contributes to shared status and preserves the timeline chat's entries above.
+
+### Completed and current findings
+
+- Read README.md and status.md; reviewed the newly published [team3.md](team3.md) timeline handoff.
+- Inject 1: documented status/power-flow discrepancies and the 14/4 table versus 17/1 footer mismatch in README.md.
+- Inject 2: visually reviewed the [recovered SCADA log screenshot](https://drive.google.com/file/d/1MCgSzKr_hXeddiMRyeHfcDiRR4_k9u51/view); recorded evidence findings and candidate correlation indicators in the personal log (I-002 / E-002).
+- Priority sequence: max.contr.maint from 89.46.57.27 fails authentication Dec 24 23:59:02, then succeeds Dec 25 00:00:36; su failures occur at 00:01:51 and 00:03:03; adminelk invokes /usr/bin/su with USER=root at 00:05:14; rsyslog exits on signal 15 at 00:05:58. Year/zone are not stated in these log lines. A single operator/session and unauthorized activity are not established.
+- Additional candidate lead: sally.admin.cpc accepted login from 183.229.57.190 at Dec 24 17:22:43. Neither IP is confirmed malicious.
+- Source claims original logs were disabled and recovered from backup. Recovery label 11:00 AM versus start entry Dec 25 11:03:15 requires clarification if date/clocks align.
+- Mission Overview and Instructions text read by this evidence chat; Schedule timetable remains unverified from text extraction.
+- Cause remains undetermined. New access/logging evidence warrants investigating cyber activity; it does not prove a cyberattack or a causal link to the blackout.
+
+### Current work / next deliverable
+
+Correlate future injects with these account/IP/host events and dashboard discrepancies. Next deliverable: evidence-linked update distinguishing observed entries, authorization checks, missing records, and alternative explanations.
+
+**Needs:** complete original logs; source year/zone and recovery date; account owners and approved maintenance/source IPs; session/audit linkage; sudo outcomes; reason/sender for signal 15; independent equipment/service records.
+
+### Team coordination
+
+- **Timeline support (Team 3):** team3.md now contains a combined Inject 1/2 timeline and uncertainty analysis. This evidence chat read that published handoff; downloaded files/hashes remain the timeline chat's own reported work.
+- **Human teammates:** suggested roles remain in README.md; no human identity or current activity is inferred by this update.
+- **Leader handoff:** prioritize verification of remote access, privilege changes, and logging interruption while retaining the Inject 1 monitoring discrepancies. No attack attribution or blackout cause is established.
