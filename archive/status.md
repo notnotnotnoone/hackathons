@@ -181,6 +181,14 @@ No utility command and no competition submission was made.
 - Response: do not click Download and do not fetch the file. Public paragraph unchanged. No cause shown.
 - No utility command and no competition submission was made.
 
+## Incident response — Inject 7 — 2026-10-15 12:49 PDT
+
+- Drive rechecked. Fourteen files. Inject 7 is a File Explorer window for a folder named Tomodachi Life FREE.
+- The breadcrumb shows a cloud icon, Start backup, Desktop, and that folder. Two applications are listed: a name read as NOTstea1nGlCredEntials.exe at 82 KB, and setup.exe at 2 KB. Both show 8/12/2026 10:39 AM. No zone. Neither file was opened.
+- The folder name matches the Inject 5 zip. The modified date does not match December 24, 2026. No run and no host name are shown.
+- Response: do not open the files. Public paragraph unchanged. No cause shown.
+- No utility command and no competition submission was made.
+
 ## Evidence participant identified — 2026-10-15 10:49 PDT (UTC-07:00)
 
 Gretzky directly confirmed their name in this evidence chat, mapping the previously unnamed evidence participant to Member 2 (roster spelling gretsky). Presence is confirmed; human-status.txt now records Gretzky's evidence-collection work and links the assisted findings. No other teammate's status changed. Existing analyst work remains AI-assisted; independent human verification is not claimed. Next: collect missing source records and next inject; brief the leader.

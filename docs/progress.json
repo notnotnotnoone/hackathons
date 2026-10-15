@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-15T12:49:23-07:00",
-  "updatedBy": "Kherion — timeline support",
+  "updatedAt": "2026-10-15T12:52:00-07:00",
+  "updatedBy": "Kevin",
   "latestInject": {
     "id": "I-007",
-    "title": "Desktop game folder screenshot",
-    "state": "Inject 7 reviewed by timeline",
+    "title": "Desktop folder with two applications",
+    "state": "Inject 7 reviewed by response and timeline",
     "checkedAt": "2026-10-15T12:49:23-07:00",
-    "note": "Fourteen Drive items confirmed. The screenshot shows two applications in a named desktop folder; detailed analysis, times, source limits and links are in investigation/team3.md. No execution or outage cause confirmed.",
+    "note": "Response and timeline reviewed the File Explorer folder Tomodachi Life FREE. It lists setup.exe at 2 KB and another application at 82 KB, both dated 8/12/2026 10:39 AM. The middle of the first filename is visually ambiguous. No user, no run, and no zone are shown. The evidence log also has a reading.",
     "sourceUrl": "https://drive.google.com/file/d/1swqAROKb7An3qeNk3noP8o9pOQ00C63C/view"
   },
   "assessment": [
@@ -33,8 +33,8 @@
     },
     {
       "label": "Recommended action",
-      "text": "Inject 6 is a download page. Do not click Download and do not announce the site as the cause. The game name matches a zip already listed. Preserve the earlier download history. The public paragraph still awaits leader approval.",
-      "source": "investigation/kevin-response.md#i-006-response--2026-10-15-1232-pdt"
+      "text": "Inject 7 is a desktop folder holding two applications. Do not open them and do not announce them as the cause. The folder name matches a zip already listed. The shown date does not. The public paragraph still awaits leader approval.",
+      "source": "investigation/kevin-response.md#i-007-response--2026-10-15-1249-pdt"
     },
     {
       "label": "Critical unknowns",
@@ -77,10 +77,10 @@
       "id": "response",
       "name": "Kevin — Response analysis",
       "status": "Working",
-      "updatedAt": "2026-10-15T12:32:00-07:00",
-      "completed": "Inject 6 reviewed. The page shows a Not secure download button and a Tomodachi Life logo. No click or execution is shown. A six-part criteria photo was also read.",
-      "next": "Do not click Download. Identify the Inject 5 computer. Leader accepts or edits the unchanged public paragraph.",
-      "blocker": "The page does not show who clicked anything. Leader approval is still required for any public line.",
+      "updatedAt": "2026-10-15T12:49:00-07:00",
+      "completed": "Inject 7 reviewed. A Tomodachi Life FREE desktop folder lists setup.exe and another application. Neither was opened. Execution is not shown.",
+      "next": "Do not open the files. Identify the computer. Leader accepts or edits the unchanged public paragraph.",
+      "blocker": "The window does not name the person. Leader approval is still required for any public line.",
       "source": "investigation/kevin-response.md"
     }
   ],
@@ -125,7 +125,7 @@
       "id": "A-007",
       "title": "Review drafted response options and start presentation",
       "owner": "Response + leader",
-      "status": "Draft updated for Inject 6; criteria photo read; leader review still open"
+      "status": "Draft updated for Inject 7; leader review still open"
     }
   ],
   "milestones": [
@@ -160,6 +160,11 @@
       "note": "Timeline appended undated FreeGameDownloads webpage; possible archive source, no proven referrer, transfer, malware or outage link."
     },
     {
+      "label": "Inject 7",
+      "status": "Reviewed by response and timeline",
+      "note": "Desktop folder with two applications dated 8/12/2026 10:39 AM. No execution shown. The evidence log also has a reading."
+    },
+    {
       "label": "Judging criteria",
       "status": "Photo reviewed by response",
       "note": "Six headings at 5 points each. Telecom and university examples on the photo are not Whoville evidence. Duration still absent."
@@ -172,7 +177,7 @@
     {
       "label": "Presentation",
       "status": "Draft",
-      "note": "Outline updated with an Inject 6 addendum and the criteria photo at 12:32 PDT. Not approved and not submitted."
+      "note": "Outline updated with Inject 7 at 12:49 PDT. Not approved and not submitted."
     }
   ]
 }

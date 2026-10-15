@@ -1,151 +1,171 @@
-# Presentation draft — for leader review
+# Final presentation — Whoville blackout
 
-**Owner:** kevin, incident response. This is an assisted draft, not a submitted presentation and not an approved utility order.
-**Updated:** 2026-10-15 12:32 PDT (UTC−07:00)
-**Evidence:** I-001 through I-006, Mission Overview, Instructions, Schedule, and the judging-criteria photo. Drive rechecked at 12:32 PDT: thirteen files.
-**Use:** Walk-up answer for judges, and a short oral if the team is selected. A criteria photo is now in the Drive folder. Duration and submission method are still unpublished. Do not present this until the leader accepts the wording.
+**Owner:** kevin, incident response, with assistance. Built for the whole team to present.
+**Status:** Final draft for leader approval. Not submitted. Not an approved utility order.
+**Updated:** 2026-10-15 12:49 PDT (UTC−07:00)
+**Evidence:** I-001 through I-007 (four images for I-004), Mission Overview, Instructions, Schedule, and Presentation Criteria.jpg (PC-001). Drive checked at 12:49 PDT: fourteen files, including Inject 7.
+**Format known so far:** Instructions say judges walk around to every team at 1:45 PM and pick the top five; the schedule shows finalist presentations from 2:10 PM. No length, slide rule, or submission method is published. This file therefore has a 60-second walk-up and a five-minute finalist version.
 
-Options and tradeoffs stay in [investigation/kevin-response.md](../investigation/kevin-response.md). The timeline stays in [investigation/team3.md](../investigation/team3.md). The evidence limits stay in [investigation/codex-evidence-analyst.md](../investigation/codex-evidence-analyst.md).
+Earlier drafts (10:55 to 12:32 PDT, with one addendum per inject) are in the git history of this file. Per-inject detail and the option table stay in [investigation/kevin-response.md](../investigation/kevin-response.md). The row-by-row timeline is in [investigation/team3.md](../investigation/team3.md); evidence limits are in [investigation/codex-evidence-analyst.md](../investigation/codex-evidence-analyst.md).
 
-## Finding in one sentence
+## 60-second walk-up
 
-Much of Whoville is showing no voltage on a freezing morning, the operations screen disagrees with itself, and the SCADA host's logging was stopped after a privileged login. That login is not proof the login caused the blackout.
+> On Christmas morning, 12 of Whoville's 18 feeders show no voltage, residents say they have no heat, and the utility's own screen contradicts itself. Our working hypothesis — the one we investigate first — is an intrusion that began with a pirated-game download. We can show the pieces but not the links between them. On December 24 a work browser downloaded a "Tomodachi Life FREE" zip and a program called `ryujinxx.exe`, and a "Not secure" free-game site offers that same game. A desktop folder with that same name now shows `setup.exe` (2 KB) and another application (82 KB), both dated 8/12/2026 10:39 AM. We did not open them. That night a Google alert reports a new sign-in to `maxwafoone@gmail.com` from Mount Crumpit. Just before midnight the contractor account `max.contr.maint` fails once and then logs in to the SCADA host with a password. Two `su` attempts fail, `adminelk` runs `sudo su` as root, and 44 seconds later the logging service is stopped. We cannot show that the download ran, whose computer it was, or any command that opened a breaker. So we act on safety first, contain without destroying evidence, and tell the public only what we know: the power is out, here is how to stay safe, and the cause is under investigation.
 
-## Walk-up version
+## Five-minute finalist version
 
-Residents are without power and heat. Twelve of 18 feeders show zero power and zero voltage. Four still show load, including two that the screen marks offline. The Medical District shows voltage and no load, so someone has to check that facility in person. Just after midnight, a contractor login, two failed `su` attempts, a root-targeted `sudo` by `adminelk`, and a logging stop happened on `whoville-scada`. Logging was off at the time of the 8:43 a.m. screen if the clocks match. No line in the recovered screenshot operates a breaker. We hold remote switching, preserve the host and the backup, and we do not tell the city this was a confirmed cyberattack.
+Proposed speakers follow the team roles. The leader confirms or changes them.
 
-## If the team is selected to present
-
-Aim for about four minutes. Cut to the walk-up version if the slot is shorter.
-
-### 1. What we were asked
-
-Find what the evidence supports, separate life safety from the cause, and say what Hydro Siber should do next. The mission says the utility does not know the cause. We still do not.
-
-### 2. What the grid screen shows
-
-Source: I-001, Dec 25, 2026, 8:43:12 a.m. System state DEGRADED. Row times are labeled PST.
-
-| Group | Feeders | Reading | What we do with it |
+| Time | Speaker (proposed) | Section | Judging criterion |
 |---|---|---|---|
-| Treat as dark until a crew confirms | FDR-01, FDR-02, FDR-06, FDR-09–FDR-17 | OFFLINE, 0.0 MW, 0.0 kV | Welfare checks and warming. North, West, and Ridge stations have no voltage in this set |
-| Keep in service until local gear agrees | FDR-04, FDR-05, FDR-08, FDR-18 | Voltage about 13.5–13.9 kV and load from 8.4 to 14.2 MW | FDR-04 and FDR-08 are labeled OFFLINE anyway. Do not open them from that label |
-| Check on site before trusting the label | FDR-03 Downtown, FDR-07 Medical District | ONLINE, 0.0 MW, voltage about 13.7–13.8 kV | Zero load is not proof the customers are dark, and it is not proof a hospital is powered |
+| 0:00–0:30 | Leader | What happened and what we recommend | All |
+| 0:30–1:45 | Gretzky (evidence) | What the evidence shows, and the breach hypothesis | 1. Technical analysis and threat detection |
+| 1:45–2:30 | Kherion (timeline) | Timeline and affected systems | 5. Communication and reporting (internal report) |
+| 2:30–3:45 | Kevin (response) | Response plan and data at risk | 2. Incident response strategy; 3. Data integrity and risk |
+| 3:45–4:30 | Kevin, then Leader | Long-term fixes and the public statement | 4. Security recommendations; 5. Communication and reporting (public) |
+| 4:30–5:00 | Leader | What would change our mind; how we worked | 6. Teamwork and critical thinking |
 
-The footer says 17/18 offline and 1/18 online. The status column says 14 offline and 4 online. The warning on the same screen says reported state does not match observed power flow. The footer is not a switching order.
+### 1. Technical analysis and threat detection
 
-### 3. What the recovered log shows
+**The grid screen (I-001, Dec 25, 2026, 08:43:12 a.m., state DEGRADED, row times labelled PST)**
 
-Source: I-002, screenshot of `_logsrecovered.txt`, host `whoville-scada`. Year and zone are not in the log lines. Order below assumes one clock.
+| Group | Feeders | Reading | Meaning for the response |
+|---|---|---|---|
+| Dark | FDR-01, 02, 06, 09–17 (12 feeders) | OFFLINE, 0.0 MW, 0.0 kV | Treat as no power until a crew confirms otherwise. All of North, West, and Ridge stations are in this group |
+| Carrying load | FDR-04, 05, 08, 18 | 8.4–14.2 MW at 13.5–13.9 kV | FDR-04 and FDR-08 are labelled OFFLINE while carrying load. Do not open them because of the label |
+| Uncertain | FDR-03 Downtown, FDR-07 Medical District | ONLINE, 0.0 MW, 13.7–13.8 kV | Voltage with no load. Customers may be dark. Check on site |
 
-| Time | Visible entry | Limit |
+The footer says 17 offline and 1 online. The table says 14 and 4. Six feeders have voltage, and four carry load. None of those counts agree, and the screen itself warns that reported states do not match observed power flow. **We cannot trust the operations picture.** Whether that comes from a fault or from manipulation is unknown.
+
+**The SCADA host (I-002, screenshot of `_logsrecovered.txt` from `whoville-scada`; no year or zone in the lines)**
+
+- Dec 24, 17:20 and 17:22: `hoovey.admin.cpc` and `sally.admin.cpc` log in with passwords from `104.237.236.191` and `183.229.57.190`. Both sessions close by 17:58.
+- 23:59:02, then 00:00:36: one failed and then one accepted password for the contractor account `max.contr.maint` from `89.46.57.27`.
+- 00:01:51 and 00:03:03: two `su` authentication failures. The lines do not name the user.
+- 00:05:14: `adminelk` runs `sudo /usr/bin/su` with `USER=root`, from `/etc`, on terminal `pts/0`.
+- 00:05:58: `rsyslogd` exits on signal 15. The next logged line is a restart at 11:03:15.
+
+What we noticed beyond the raw lines (each is an inference, labelled as such):
+
+- **All three accepted logins use passwords from publicly routable addresses.** None is in a private range. Whatever the sessions were, the SCADA host appears to accept password SSH from outside addresses. That is a weakness regardless of who logged in.
+- **`pts/0` probably ties `adminelk` to the contractor session.** If the visible lines are complete, the contractor session was the only one open at 00:05:14, and Linux reuses the lowest free terminal number. The log does not show a successful switch to `adminelk`.
+- **The `sudo` process ID is out of order.** `sudo[1802]` is lower than `sshd[2296]`, `su[2599]`, and `su[2618]` logged minutes earlier, although Linux normally assigns rising IDs to new processes. Possible explanations are wrap-around, a container, an edited line, or exercise formatting. We flag it as a question, not as proof of tampering.
+- **The backup job may not work.** At 17:30:38, root's cron runs `opt/backup/scada/dump.sh` with no leading slash and an output redirect shown as `> /dev/null/2.%1`. If that text is literal, the redirect is not valid and the job may never have written a backup. That matters for recovery.
+
+**The breach hypothesis (I-003, I-005, I-006)**
+
+| Step | Evidence | Confidence the step happened | Gap |
+|---|---|---|---|
+| A lure page offers the game | I-006: "FreeGameDownloads", `5freeedownloads.com/tomodachi/free/c` (three e's), marked Not secure, with a Download button | High that the page was viewed. Nothing shows when | No visit time, user, or computer |
+| A work browser downloads it | I-005: managed Chrome, Dec 24, 2026: `Tomodachi Life FREE.zip`, `ryujinxx.exe`, `December Schedule.pdf`, `Logs.txt` | High that the list shows this | No source URL, no execution, no owner |
+| The program runs and steals credentials | Nothing direct. `ryujinxx.exe` has one more x than the name of a known emulator (analyst background knowledge) | Low | No file, hash, or process record |
+| A personal account is accessed | I-003: alert of a new Google sign-in from Mount Crumpit for `maxwafoone@gmail.com`, Wed Dec 24, 10:12 PM | Moderate that an alert was shown. Authenticity unknown | Owner not asked. December 24, 2026 is a Thursday; Wednesday fits 2025 |
+| The contractor account reaches the SCADA host | I-002: `max.contr.maint` fail then success from `89.46.57.27` | High that the log shows this | Authorization unknown. "max" in both names is not proof of one person |
+| Privilege use and log stop | I-002: `su` failures, `adminelk` `sudo su`, rsyslog stopped 44 s later | High that the log shows this | No session link. Who sent signal 15 is unknown |
+| The grid is affected | I-001 and I-004: dark feeders, contradictory screen, resident posts at 8:47 and 9:01 a.m. | High that the outage is real. Unknown that the intrusion caused it | No breaker command in any inject. Logging is blank from 00:05:58 to 11:03:15 |
+
+**Alternatives we have not ruled out:** approved midnight maintenance combined with an unrelated equipment or supply failure; a monitoring or communications fault; personal downloads that have nothing to do with the outage.
+
+**Framework labels for the hypothesis** (MITRE ATT&CK names, not evidence): User Execution of a malicious file (T1204.002), Valid Accounts (T1078), SSH (T1021.004), Sudo abuse (T1548.003), Impair Defenses (T1562), and for the grid Manipulation of View (T0832) and Loss of Availability (T0826). The suspected lateral movement is from an office browser, to a personal account, to the operational network using a contractor's credentials.
+
+### 2. Timeline and affected systems (internal report)
+
+| Scenario time, as displayed | Event | Source |
 |---|---|---|
-| Dec 24, 5:22:43 p.m. | Password accepted for `sally.admin.cpc` from `183.229.57.190` | Authorization unknown. Session closed at 5:46 p.m. |
-| Dec 24, about 5:20 p.m. | Clipped accepted-password line for `hoovey.admin.cpc` | Bottom line is cut off. Do not rely on a source address from that line |
-| Dec 24, 5:58:20 p.m. | `hoovey.admin.cpc` session closed, `sshd[2189]` | Evidence reread and this chat agree. An earlier timeline line said 2182 |
-| Dec 24, 11:59:02 p.m. then Dec 25, 12:00:36 a.m. | One failed password, then a success, for `max.contr.maint` from `89.46.57.27` | One failure is not brute force |
-| Dec 25, 12:01:51 and 12:03:03 a.m. | Two `su` authentication failures | The lines do not name the user |
-| Dec 25, 12:05:14 a.m. | `adminelk` sudo of `/usr/bin/su` as root, directory `/etc`, terminal `pts/0` | This does not by itself prove a finished root shell or name the person |
-| Dec 25, 12:05:58 a.m. | `rsyslogd` exits on signal 15 | A stop request. Sender unknown |
-| Dec 25, 11:03:15 a.m. | `rsyslogd` starts | Header says recovered at 11:00 a.m. Those two times still need an explanation |
+| Dec 24, 2026, no clock time | Downloads: game zip, `ryujinxx.exe`, schedule PDF, `Logs.txt` | I-005 |
+| No time shown | FreeGameDownloads page for the same game | I-006 |
+| Dec 24, 17:20:02–17:58:20 | `hoovey.admin.cpc` and `sally.admin.cpc` sessions; root backup cron at 17:30:38 | I-002 |
+| Wed Dec 24, 10:12 PM, no year | Google new-sign-in alert, Mount Crumpit, `maxwafoone@gmail.com` | I-003 |
+| Dec 24, 23:59:02 → Dec 25, 00:05:58 | Contractor login, two `su` failures, `adminelk` sudo to root, logging stopped | I-002 |
+| Dec 25, 2026, 08:42:12–08:43:12 | Dashboard DEGRADED: 12 dark feeders, contradictory labels and counts | I-001 |
+| Dec 25, 2026, 08:47 and 09:01 | Residents: "nothing turns on", "freezing to death in my house" | I-004 |
+| Relative times only | Reports from "central", East Valley, West Ridge, and Riverdale; a neighbour's generator in use; a viral "survival" post | I-004 |
+| 11:00 AM and Dec 25, 11:03:15 | Logs recovered from a physical backup; rsyslog restarts | I-002 |
 
-There is no shown session that ties `max.contr.maint` to `adminelk`. There is no breaker command. Missing logs are not evidence that a breaker moved.
+Order across sources assumes the clocks agree. I-002 and I-003 give no year or zone.
 
-### 4. Response, in incident order
+**Affected or involved systems:** `whoville-scada` (four named accounts plus root; about 11 hours without local logging); the Grid Operations Centre dashboard; 12 dark feeders and 2 uncertain ones; one organization-managed computer that has not been identified; one personal Google account; the backup server that held the recovered logs.
 
-| Phase | Do now | Leave for later |
+### 3. Incident response strategy
+
+| Phase | Do now | Do next, once the precondition is met | Do not do |
+|---|---|---|---|
+| Identify | Keep every original. Pull relay and substation events for 00:05:58–11:03:15. Call the four account owners on known numbers. Identify whose browser I-005 and I-006 came from | Analyse `ryujinxx.exe` and the zip in an isolated lab, by authorized staff | Click Download, fetch the site, or run the files |
+| Contain | Welfare checks and warming for the 12 dark areas and the resident-named places. In-person check of the Medical District, then Downtown. Hold remote switching from `whoville-scada`. Run feeders from local, staffed control. Image the SCADA host and copy the backup before anything changes | After the calls: disable remote password login for `max.contr.maint`, block `89.46.57.27` at the perimeter, and take the identified computer off the network while it stays powered on | Reboot the SCADA host first. Switch feeders from the 17/18 footer. Disable every account at once and lock out the crews |
+| Eradicate | Nothing until images exist and the field state is known | Rotate all SCADA and contractor credentials. Remove unknown keys, cron jobs, and accounts. Rebuild from a known-good image. The owner of `maxwafoone@gmail.com` secures it from a device they trust | Clean up before evidence is copied |
+| Recover | Keep the four loaded feeders in service. Restore dark feeders from local indications | Trust the dashboard again only after it matches field readings feeder by feeder. Restart forwarded logging and confirm it arrives off the host | Declare the grid normal from this screen |
+| Learn | Record each counting error and each transcription correction | Root-cause report once breaker history is known. Then the long-term fixes below | Publish a cause before it is proven |
+
+**Root cause, honestly:** not yet known. The test that settles it is breaker and relay history for the logging gap. A remote command in that window points to the intrusion. No command, plus a field fault, points elsewhere.
+
+### 4. Data integrity and risk
+
+- **Tampering:** the recovered log says the originals were disabled, and rsyslog stopped 44 seconds after a root-targeted `sudo`. Local logs for about 11 hours cannot be trusted or are missing. The recovered copy has no hash or chain of custody.
+- **Operations data:** the dashboard's labels and counts contradict its own measurements. Until field readings agree, the screen is a lead, not a fact.
+- **Credentials:** possible exposure of the contractor's credentials and the Google account. That is a hypothesis.
+- **Files that may have left or arrived:** `December Schedule.pdf` and `Logs.txt` were downloaded to the managed browser. Their contents and origin are unknown.
+- **Persistence to look for:** new SSH keys, cron entries, accounts, or services on `whoville-scada`; `ryujinxx.exe` and anything it installed on the computer.
+- **Backups and restoration:** the root backup job's command looks malformed, so recent backups may not exist. Test a restore before relying on it.
+- **Rubric wording:** the criteria photo mentions academic data and student records. There are none in the Whoville evidence. The equivalent sensitive data here is control-system telemetry, logs, credentials, and resident safety information.
+
+### 5. Security recommendations and long-term defense
+
+1. **Segmentation:** no direct SSH to the SCADA host from outside addresses. Use a monitored jump host with an allowlist, and keep office browsing off the control network.
+2. **Authentication:** multi-factor and key-based SSH, with password login disabled. Contractor access should be named, approved for a set window, and expire automatically.
+3. **Least privilege:** remove broad `sudo su` rights from `adminelk` and similar accounts, and alert on repeated `su` failures.
+4. **Logging you cannot switch off quietly:** forward logs off the host in real time to write-once storage, alert when rsyslog stops, and record the year and zone in every line, synchronized by NTP. The clock gaps in this case made the investigation harder.
+5. **Managed computers:** block executable downloads and unapproved software through browser policy, allow only approved applications, run endpoint detection, and train staff on "free game" lures.
+6. **Monitoring integrity:** the dashboard should alarm when a status disagrees with flow, and operators need an independent way to read the feeders.
+7. **Backups:** fix and test the backup job, keep an offline copy, and run restore drills.
+8. **Ongoing:** vulnerability scanning, quarterly access reviews, and an outage exercise that includes warming sites and emergency services. The rubric's "telecom–university integration" example becomes third-party and contractor access here.
+
+### 6. Communication
+
+| Audience | When | What we can say |
 |---|---|---|
-| Identify | Keep this screenshot. Compare it with relay and local substation records. Call the four account owners on known numbers | Naming an actor or a cause |
-| Contain | Welfare checks for the twelve dark feeders. In-person power check at the Medical District, then Downtown. Hold remote switching from `whoville-scada`. Copy the backup, then keep it from being changed. Leave the host powered on | Disabling the contractor login until those calls are done. Any public line until the leader approves it |
-| Eradicate | Nothing yet | Password changes, key removal, and a rebuild, after an image and after the field state is known |
-| Recover | Keep the feeders that still show load in service. Restore the dark areas from local indications | Declaring the grid normal from this dashboard |
-| Learn | Record which screen counts were wrong and that logging could be stopped | A full lessons report before the outage is stable |
+| Emergency services | Now | Ask for on-site checks at medical facilities on FDR-07, and confirm hospital backup generation and fuel. Share the list of dark areas |
+| Hydro Siber staff and crews | Now | Use local readings. No remote switching from `whoville-scada`. Do not touch the SCADA host or the identified computer |
+| Account owners | Now, by known phone numbers | Were you working last night? Is this address yours? Is this Gmail account yours? |
+| Residents | Now, then on a regular schedule the utility sets | The public statement below |
+| Leadership, regulators, police, national cyber authority | Leader decision | Facts so far, including that unauthorized access is suspected and not confirmed |
 
-### 5. Lines that are ready, and lines that are not
+**Public statement — for the leader to approve, edit, or reject**
 
-Ready for the leader to approve as public wording:
+> Many parts of Whoville are without power and heat this morning. Our crews are checking substations, starting with medical facilities. We do not yet know the cause, and we are investigating every possibility. Please check on your neighbours, especially older residents. Dress in layers. If your home gets too cold, go to a warming site: [locations confirmed by the city]. Use flashlights, not candles. Run generators only outdoors, away from doors and windows. Keep fridges and freezers closed, and avoid unnecessary travel. We will post our next update by [time set by Hydro Siber].
 
-> Many areas of Whoville are without power and heat. Crews are checking substations, including medical facilities. The cause is under investigation. Check on neighbors and use a known warming site.
+Why it is written this way:
 
-Not ready:
+- It answers the viral "survival" post (I-004c) without repeating it. Stay home instead of running to the store; keep the fridge closed instead of burying food in snow.
+- The generator line responds to a resident who is already using a neighbour's generator (I-004b).
+- "Avoid unnecessary travel" fits FDR-10 Transit Corridor showing no voltage.
+- "Crews are checking" is only true once crews are actually sent. The warming sites and the update time are placeholders, because no inject names them.
+- It says "investigating every possibility" instead of claiming or ruling out a cyberattack.
 
-- “A cyberattack caused the blackout.”
-- “Seventeen of 18 feeders are down.”
-- “The hospital is dark” or “the hospital has power.”
-- Any account name, address, or claim about who sent signal 15.
+**Do not say:** "A cyberattack caused the blackout." "Malware from a game site caused it." "Seventeen of 18 feeders are down." "The hospital is dark" or "the hospital has power." Any account name, IP address, or the Gmail address.
 
-### 6. What would change the briefing
+## Questions judges may ask
 
-- A relay or local event showing a breaker operation during the logging gap.
-- An out-of-band answer that the midnight login and the `adminelk` command were approved maintenance.
-- A crew report on the Medical District.
-- A new inject. None was in the Drive folder at 10:55 PDT.
+- **Was it a cyberattack?** We can show suspicious access and logging being stopped on the SCADA host. We cannot yet show a command that opened a breaker. It is a likely security incident, and the cause of the outage is not yet proven. Breaker history for the logging gap would settle it.
+- **Why not shut the SCADA system down?** Four feeders still carry load, and a reboot destroys evidence in memory. We stop remote switching and run from local control instead.
+- **Why not disable every account right away?** That could lock out the people restoring power. We call first on known numbers, then cut the contractor's remote path.
+- **What was the way in?** The leading candidate is the game zip and the misspelled emulator on a managed browser, plus the Inject 7 desktop folder that uses the same name and holds `setup.exe` and another application. The names support the lead. Nothing shows that a file ran.
+- **Mount Crumpit — the Grinch?** Mount Crumpit is FDR-15's service area and the place named in the alert. We do not name an actor from a place name or a profile picture.
+- **Why does the alert say Wednesday?** December 24, 2026 is a Thursday, and Wednesday fits 2025. The download history says 2026. We keep both raw dates instead of forcing them to agree.
+- **What changed as injects arrived?** Injects 1 and 2 showed a broken screen and suspicious logins. Injects 3, 5, and 6 added a possible way in. Inject 7 shows two applications in a desktop folder with the zip's name, dated 8/12/2026 10:39 AM, which is not the December 24 download date. Inject 4 confirmed that people were cold and that bad advice was spreading, which shaped the public statement.
 
-## Draft submission against the known requirements
+## Critical thinking we can point to
 
-Instructions say three hours to review, build the presentation as you go, and use the last hour to finalize. Judging on the schedule is 1:45 p.m., with no date or time zone. This draft does not set a deadline.
+- We rejected the dashboard's own summary count, which matches neither its table nor its measurements.
+- We corrected our own transcriptions in public: process ID 2182 to 2189, the backup path with no leading slash, the Hoovey address `104.237.236.191` (an earlier note had 104.227), and the site name `5freeedownloads` with three e's.
+- We kept the rubric's telecom and university examples out of our facts.
+- We kept the weekday mismatch instead of guessing a year.
 
-| Submission gate | This draft |
-|---|---|
-| Answers the known prompt: what happened, and what to do | Yes, within the evidence |
-| Meets a confirmed rubric, length, format, and deadline | No. Those requirements have not been published |
-| Claims cite evidence IDs | Yes |
-| Separates observation, source claim, and hypothesis | Yes |
-| Covers alternatives, safety, and tradeoffs | Yes. The option table is in investigation/kevin-response.md |
-| Leader approved this exact version | No |
+## Before 1:45 PM
 
-## Inject 3 addendum — 2026-10-15 11:05 PDT
+- [ ] Leader approves this version, or edits it.
+- [ ] Leader approves, edits, or rejects the public statement.
+- [ ] Team confirms speakers and practises the 60-second version once.
+- [ ] Ask the organizers about presentation length and format if anyone can.
+- [ ] Recheck Drive for a new inject before walking in.
 
-Add this only if a judge asks what arrived after the first draft. Do not add it to the public paragraph.
-
-Inject 3 is a screenshot of an email titled Security alert. It displays Wed, Dec 24, 10:12 PM, with no year and no zone, and claims a new Google sign-in from Mount Crumpit for `maxwafoone@gmail.com`. Mount Crumpit is also the FDR-15 service area, which at 08:42:40 PST showed 0.0 MW and 0.0 kV. The screen has no IP and no separate sign-in time. The button was not opened.
-
-Say this: the name and the place are leads for an out-of-band call. They are not proof that this Google user is `max.contr.maint`, and they are not proof that the sign-in caused the outage. The header says Wednesday. December 24, 2026 was a Thursday, and the email states no year.
-
-Leave the public paragraph as written. R-11 in [investigation/kevin-response.md](../investigation/kevin-response.md) is the account action: ask, do not click, do not reset yet.
-
-## Inject 4 addendum — 2026-10-15 11:18 PDT
-
-Four resident posts. Use them as reports of what people are saying. Do not read the usernames as confirmed identities.
-
-- At 8:47 a.m. and 9:01 a.m. on Dec 25, 2026, posts say nothing turns on and a person is freezing at home. That is the same morning as the 8:43 a.m. dashboard.
-- A West Ridge comment matches FDR-02, which showed zero voltage. “Central,” “east valley,” and “Riverdale” are not feeder names on that screen. Check those reports too.
-- One reply says the person is using a neighbour’s generator. Do not add a generator sentence unless the leader accepts it.
-- Do not repeat the post that says the clock is ticking, tells people to run to the store, and hopes they make it out alive.
-- One comment guesses the outage is everywhere and says they are not sure. Four feeders were still showing load at 8:43 a.m.
-
-The public paragraph stays the same unless the leader adds the generator line.
-
-## Inject 5 addendum — 2026-10-15 12:02 PDT
-
-Say this only if asked what the newest screen shows.
-
-It is Chrome download history on a browser the page says is managed by an organization. December 24, 2026 lists `Tomodachi Life FREE.zip`, `ryujinxx.exe`, `December Schedule.pdf`, and `Logs.txt`. Older files are marked deleted. The screen has no user, no computer name, and no sign that a file was opened.
-
-Do not call this the cause. Do not name the executable in a public line. Do not clear the history.
-
-## Inject 6 addendum — 2026-10-15 12:32 PDT
-
-Say this only if asked what the newest screen shows.
-
-It is a page titled FreeGameDownloads. The address bar says “Not secure” and shows `5freedownloads.com/tomodachi/free/c`, then cuts off. The logo says Tomodachi Life, Living the Dream, and there is a Download button. That game name is the same name on the zip in the December 24 download list. The page does not show a click, a saved file, or a computer name.
-
-Do not click Download. Do not call the site the cause. Do not add it to the public paragraph.
-
-## Judging-criteria photo — 2026-10-15 12:32 PDT
-
-[Presentation Criteria.jpg](https://drive.google.com/file/d/1aF2OWNdCtQQq7PKXtBt9cm4pke95WU1h/view) is a phone photo. The title is Young Defenders of the North Judging Criteria. The phone clock reads 10:56, with no date or zone. Six headings are 5 points each:
-
-1. Technical analysis and threat detection.
-2. Incident response strategy.
-3. Data integrity and risk assessment.
-4. Security recommendations and longer-term defense.
-5. Communication and reporting.
-6. Teamwork, presentation, and critical thinking.
-
-The bullets mention telecom gear, a university link, and academic records. Use those bullets as the score sheet. Do not state them as things that happened in Whoville. For this incident, “data at risk” means the operations picture, the recovered log, and the download list, not student records. Duration is still not on this photo.
-
-## Message for Team Leader
-
-> Inject 6 is a download page, not proof a file was saved or run. Please do not approve clicking Download, fetching that address, or naming the site in public. The criteria photo can shape the oral. Please still accept or edit the public paragraph before anyone says it. Please do not approve a malware announcement, a SCADA reboot, or switching from the 17/18 footer.
+No utility command, external message, or competition submission was made.

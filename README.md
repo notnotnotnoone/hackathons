@@ -25,14 +25,14 @@ docs/              GitHub Pages website and progress data
 
 | Item | Current position |
 |---|---|
-| Latest inject | **Inject 6 — FreeGameDownloads page; response, evidence and timeline reviews published by 12:41 PDT** |
+| Latest inject | **Inject 7 — desktop folder of two applications; response reviewed at 12:49 PDT** |
 | Investigation | **Active. Blackout cause and unauthorized activity remain unconfirmed.** |
-| Latest published analyst updates reviewed | Evidence desk through 12:39 PDT; timeline through 12:40 PDT; response through 12:32 PDT, October 15, 2026 |
+| Latest published analyst updates reviewed | Evidence desk through 12:39 PDT; timeline through 12:49 PDT; response through 12:49 PDT, October 15, 2026 |
 | Lead reconciliation | October 15, 2026, 10:34 PDT; reviewed all four existing repository files and the seven commits after initialization. The 10:40 PDT response handoff is linked and not yet folded into the numbered assessment. |
-| Drive coverage | Thirteen files at 12:32 PDT: Injects 1–6, including four Inject 4 images, plus Instructions, Schedule, Mission Overview, and Presentation Criteria.jpg. |
-| Review coverage | Response, evidence and timeline analysts reviewed Inject 6; the lead's independent review is not assumed. Latest injection screenshot and criteria image are indexed in evidence/handoff records. |
+| Drive coverage | Fourteen files at 12:49 PDT: Injects 1–7, including four Inject 4 images, plus Instructions, Schedule, Mission Overview, and Presentation Criteria.jpg. |
+| Review coverage | Response and timeline reviewed Inject 7. The evidence log also has an Inject 7 reading. The lead chat has not independently verified the image. |
 | Remaining intake gaps | Official event date/time zone, explicit deadline, presentation duration, and AI/sharing rules. A judging-criteria photo is in the folder; its example wording is not Whoville evidence. Schedule visual review is complete |
-| Submission | Draft outline updated with an Inject 6 addendum and the criteria photo at 12:32 PDT. Not approved and not submitted |
+| Submission | Draft outline updated with Inject 7 at 12:49 PDT. Not approved and not submitted |
 | Participant presence | User of the evidence chat confirms presence at 10:41 PDT; name/roster mapping not supplied. See human-status.txt. |
 | Next priority | Obtain full logs and authorization/session records; independently confirm critical service and telemetry |
 
@@ -125,7 +125,7 @@ Members 2–4 confirm their roles in the plaintext file. Shared-account commits 
 | Lead support — this chat | Reconciled published Inject 1–2 handoffs and organized the hub | Requirements and priority review; personal progress belongs in human-status.txt |
 | Timeline support | Injects 1–2 reviewed; [master timeline](investigation/team3.md) published; latest reviewed update 10:30 PDT | Clocks, provenance, and PDF context |
 | Evidence desk | Injects 1–2 visually reviewed; [evidence notes](investigation/codex-evidence-analyst.md) published; latest reviewed update 10:41 PDT; schedule visually reviewed and source spellings rechecked | Full records, authorization, cross-source verification |
-| Response support | Inject 6 reviewed at 12:32 PDT. Download page preserved. Do not click Download. Public paragraph unchanged | Leader accepts or edits the public paragraph before it is used |
+| Response support | Inject 7 reviewed at 12:49 PDT. Desktop folder preserved. Do not open the two applications. Public paragraph unchanged | Leader accepts or edits the public paragraph before it is used |
 
 **Chat visibility:** The available app listing exposed this lead chat and the related “Hackathon Crash Course” chat. The latter contains role/setup messages, with assistant content only exposed as reference placeholders. The separate evidence/timeline chats were not exposed in that listing; their committed handoffs were reviewed instead. This is not a claim that every same-account chat has been read. No messages were sent to other chats.
 
@@ -149,6 +149,7 @@ Drive originals remain the source material. The register below indexes them; it 
 
 | ID / material | Source | Review state / location |
 |---|---|---|
+| **I-007 — desktop folder** | [Inject 7](https://drive.google.com/file/d/1swqAROKb7An3qeNk3noP8o9pOQ00C63C/view) | Response chat reviewed at 12:49 PDT; [response note](investigation/kevin-response.md#i-007-response--2026-10-15-1249-pdt). Two applications in a folder. Not proof they ran |
 | **I-006 — FreeGameDownloads page** | [Inject 6](https://drive.google.com/file/d/1pRAe1brGsL_7PGZZ_B4xY-3mKlikQmIw/view) | Response chat reviewed at 12:32 PDT; [response note](investigation/kevin-response.md#i-006-response--2026-10-15-1232-pdt). A visible address and a Download button are not proof a file was saved |
 | **Judging criteria photo** | [Presentation Criteria.jpg](https://drive.google.com/file/d/1aF2OWNdCtQQq7PKXtBt9cm4pke95WU1h/view) | Response chat reviewed at 12:32 PDT. Six headings at 5 points each. Example wording is not Whoville evidence |
 | **I-005 — Chrome download history** | [Inject 5](https://drive.google.com/file/d/1MR7QpdHrDBFiORdyDPr1D4jA5iqbZyjy/view) | Response chat reviewed at 12:02 PDT; [response note](investigation/kevin-response.md#i-005-response--2026-10-15-1202-pdt). Filenames are not proof a file ran |
@@ -291,3 +292,7 @@ At 12:32 PDT the folder included a FreeGameDownloads screenshot and Presentation
 - Evidence desk status is **reviewed through Inject 6**. Leader-controlled briefing and presentation still require explicit approval. No suspicious site was visited, downloaded file opened, utility operated, public statement sent or competition submission made.
 
 **Message for team leader:** The strongest new line of inquiry is a possible game-themed download lure linking I-006 page imagery to I-005 ZIP naming. Confirm host/browser identity, actual file origins, exact timestamps and any executable/process records if the organizers supply them; until then this is a conditional hypothesis. Confirm whether the 30-point criteria image is applicable. [Full evidence and limits](investigation/codex-evidence-analyst.md#i-006--e-006--freegamedownloads-browser-screenshot).
+
+## Kevin response handoff — Inject 7
+
+At 12:49 PDT the folder included a File Explorer screenshot. The window is a folder named Tomodachi Life FREE on a desktop. The breadcrumb shows a cloud icon and the words Start backup. Two applications are listed, both dated 8/12/2026 10:39 AM: a name read as `NOTstea1nGlCredEntials.exe` at 82 KB, and `setup.exe` at 2 KB. The folder name matches the Inject 5 zip. The date does not match December 24. Neither file was opened. Do not run them. The public paragraph is unchanged. [Response note](investigation/kevin-response.md#i-007-response--2026-10-15-1249-pdt). [Presentation](presentation/presentation-outline.md).

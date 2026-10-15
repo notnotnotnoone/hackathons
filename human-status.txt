@@ -66,11 +66,11 @@ Role: Incident response analyst
 Role confirmed: Confirmed by Kevin in this chat on 2026-10-15.
 Presence: Confirmed by Kevin's direct request to confirm this status.
 Status: Working
-Working on: Inject 6 download page. Do not click Download. Do not fetch the file.
+Working on: Inject 7 desktop folder. Do not open setup.exe or the other application.
 Finished / handoff link: investigation/kevin-response.md and presentation/presentation-outline.md
-Next step: Leader accepts or edits the public paragraph. Identify whose computer the Inject 5 download screen belongs to.
-Need help with: Leader decision on the public wording. The name of the computer in Inject 5.
-Updated at (date, time, zone): 2026-10-15 12:32 PDT (UTC-07:00)
+Next step: Leader accepts or edits the public paragraph. Identify whose computer this folder and the Inject 5 download screen belong to.
+Need help with: Leader decision on the public wording. The name of the computer in Inject 7.
+Updated at (date, time, zone): 2026-10-15 12:49 PDT (UTC-07:00)
 Recorded by: Incident-response assistant, after Kevin asked to add the new inject to GitHub.
 
 ============================================================

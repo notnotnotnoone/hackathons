@@ -3,8 +3,62 @@
 **Team member / workstream:** kevin — Member 4, incident response chat. Kevin confirmed this status on 2026-10-15 at 10:51 PDT. The matching block in [human-status.txt](../human-status.txt) is no longer a draft.
 **Role used:** Incident response and crisis communications
 **Status:** Working
-**Updated:** 2026-10-15 12:32 PDT (UTC−07:00). Inject 6 response is below. Drive rechecked at 12:32 PDT: thirteen files, including Inject 6 and a judging-criteria photo.
-**Sources reviewed by this chat:** I-001, I-002, Instructions, Mission Overview, and a visual/OCR reading of Schedule. Drive listing rechecked at 10:40 PDT: still those five files, no Inject 3.
+**Updated:** 2026-10-15 12:49 PDT (UTC−07:00). Inject 7 response is below. Drive rechecked at 12:49 PDT: fourteen files, including Inject 7. The 12:50 audit in this file was written before that screenshot was in the listing.
+**Sources reviewed by this chat:** I-001 through I-006 (four images for I-004), Instructions, Mission Overview, Schedule, and Presentation Criteria.jpg. Each was re-opened from the saved originals at 12:45 PDT.
+
+## Sync audit and consolidated position — 2026-10-15 12:50 PDT
+
+### Corrections to this file
+
+Earlier wording is kept in git history and in the dated sections below, which are marked where they were wrong.
+
+| Item | Earlier reading in this file | Corrected reading | How it was checked |
+|---|---|---|---|
+| Hoovey login address, I-002 bottom line | `104.227.236.191` | **`104.237.236.191`**. Full line: Dec 24 17:20:02, `sshd[1994]`, accepted password for `hoovey.admin.cpc`, port 22 | The bottom two pixel rows of the line are cut off. Each digit was compared with fully visible digits on the line above at native resolution (1280 × 367). The disputed digit matches the screenshot's "3" glyphs almost exactly and differs sharply from its "2" glyphs. The IP registry lookup done earlier in this chat used the misread address and is void |
+| I-006 address | `5freedownloads.com/tomodachi/free/c`, "then cuts off" | **`5freeedownloads.com/tomodachi/free/c`**, three e's. The text ends at `/c`, and the address bar is empty after it, so nothing is visibly cut off | Address bar cropped and zoomed from the 4960 × 3508 original. The evidence desk's three-e reading was right |
+| Presentation Criteria.jpg | "phone photo" | Phone **screenshot** of a Drive viewer: status bar 10:56, title bar, and Drive and Share buttons | Re-opened the image |
+
+### New observations from the originals
+
+Each item is an inference from visible text, not a confirmed event.
+
+- **Public addresses.** All three accepted SSH logins on `whoville-scada` (`104.237.236.191`, `183.229.57.190`, `89.46.57.27`) are publicly routable addresses, not private ranges. If the lines are real, the SCADA host accepts password SSH from outside addresses, whoever the users were.
+- **`pts/0`.** The contractor session was the only visible session open at 00:05:14, because sally closed at 17:46 and hoovey at 17:58. Linux gives a new session the lowest free terminal number. So `adminelk`'s `sudo` on `pts/0` was probably typed in the contractor session. No successful switch to `adminelk` is shown.
+- **Process ID order.** `sudo[1802]` at 00:05:14 is lower than `sshd[2296]`, `su[2599]`, and `su[2618]` logged minutes before it. New processes normally get rising IDs. Wrap-around, a container, an edited line, or exercise formatting could explain it. This is a question, not proof of tampering.
+- **Backup job.** The cron text at 17:30:38 is `(opt/backup/scada/dump.sh) > /dev/null/2.%1)`. A relative path and a redirect into a path under `/dev/null` would normally fail. If the text is literal, recent backups may not exist, and that matters for recovery.
+- **"central."** The Reddit poster says "I live in central" and that the power is out. All three Central Station feeders show voltage. One of them, FDR-03 Downtown, shows 0.0 MW. If "central" means downtown, the report fits voltage with no customers served. It strengthens R-02's Downtown check. The word is ambiguous.
+- **Weekday.** "Wed, Dec 24" fits 2025, 2031, or 2014, not 2026. Download history (I-005) states December 24, 2026. Keep both raw dates.
+- **The account named "notyourmayor_".** The I-004b handle literally reads `notyourmayor_`. Calling it a mayor's account overstates what is shown.
+
+### Consolidated six-part position (Injects 1–6)
+
+```text
+Member / workstream: kevin / incident response
+Updated at / time zone: 2026-10-15 12:50 PDT
+Injects / evidence: I-001–I-006, PC-001, Mission Overview, Instructions, Schedule
+1. Situation: 12 of 18 feeders dark at 08:42 PST on Dec 25, 2026; residents report no heat. The operations screen contradicts itself. The SCADA host shows a contractor login, failed su attempts, a root-targeted sudo, and logging stopped just after midnight. A managed browser downloaded a game zip and an oddly named executable on Dec 24, and a matching free-game page was viewed.
+2. New findings: The pieces form a plausible intrusion path: lure page, download, account alert, contractor SSH, privilege use, logging stop. Only the individual pieces are shown, not the links. See the corrections and observations above.
+3. Leading hypotheses and confidence: The intrusion path is the working hypothesis to investigate first. Confidence in the full chain is low to moderate, and no link to a breaker operation is shown. Alternatives are authorized maintenance plus an unrelated failure, a monitoring fault, or unrelated personal downloads.
+4. Contradictions: footer 17/1 vs table 14/4 vs six feeders with voltage vs four with flow; OFFLINE with load; Wednesday vs a 2026 Thursday; 11:00 recovery vs 11:03:15 restart; sudo PID order.
+5. Recommended action / owner / checkpoint: Safety first: welfare and warming, Medical District then Downtown on site. Hold remote switching. Image and preserve. Call account owners, then cut the contractor path and block 89.46.57.27. Identify the I-005/I-006 computer. Leader approves the public statement and the final presentation before 1:45 PM.
+6. Critical unknowns: breaker history for 00:05:58–11:03:15; whose browser; whether ryujinxx.exe ran; authorization of the four accounts; who sent signal 15; year/zone of I-002 and I-003; presentation length and format.
+```
+
+### Long-term options added for judging criterion 4
+
+| ID | Option | Evidence | Position |
+|---|---|---|---|
+| R-20 | No direct SSH to the SCADA host from outside addresses. Use a jump host with an allowlist | Three password logins from public addresses (I-002) | Recommend |
+| R-21 | Multi-factor and key-based SSH. Contractor access approved for a set window, expiring automatically | Contractor password login at midnight on Christmas Eve | Recommend |
+| R-22 | Remove broad `sudo su` rights. Alert on repeated `su` failures | Two `su` failures, then `adminelk` sudo to root | Recommend |
+| R-23 | Forward logs off the host in real time to write-once storage. Alert when rsyslog stops. Record year and zone in every line | Logging stopped about 11 hours; no year or zone | Recommend |
+| R-24 | Browser policy to block executable downloads and unapproved software on managed computers. Endpoint detection and lure awareness | I-005, I-006 | Recommend |
+| R-25 | Dashboard alarm when status disagrees with flow, plus an independent feeder reading path | I-001 count and label contradictions | Recommend |
+| R-26 | Fix and test the backup job, keep an offline copy, run restore drills | Malformed cron command text (I-002) | Recommend |
+
+The presentation built from this position is [presentation/presentation-outline.md](../presentation/presentation-outline.md).
+
+## Six-part summary — 10:40 PDT (Injects 1–2; superseded by the consolidated position above)
 
 ```text
 Member / workstream: kevin / incident response
@@ -65,7 +119,7 @@ These are this chat's readings of the same screenshot. They do not replace [inve
 |---|---|---|---|
 | Hoovey session close, Dec 24 17:58:20 | `sshd[2189]` | High on the OCR pass of that line | Timeline records `sshd[2182]`. Evidence desk native reread also supports `sshd[2189]`. This chat agrees with the evidence desk. Timeline reconciliation is still open. |
 | Backup cron, Dec 24 17:30:38 | Command text `opt/backup/scada/dump.sh` with no leading slash. Output appears discarded toward `/dev/null`. The error-redirection characters were not clean enough to quote. | High on the missing leading slash. Low on the exact redirection spelling | Evidence desk native reread also has no leading slash. Timeline records `/opt/backup/scada/dump.sh`. Do not treat either spelling as proof of the real filesystem path. |
-| Clipped bottom line | Provisional: Dec 24 17:20:02, `sshd[1994]`, accepted password for `hoovey.admin.cpc` from `104.227.236.191`, port 22 | Moderate. The line is cut off. OCR of that line was garbled. Two visual passes suggested this text | Timeline left seconds and the address unresolved. Do not put `104.227.236.191` on the master timeline until the original line is re-read. |
+| Clipped bottom line | **Corrected 12:50 PDT:** Dec 24 17:20:02, `sshd[1994]`, accepted password for `hoovey.admin.cpc` from **`104.237.236.191`**, port 22. The 10:40 reading `104.227.236.191` was wrong | High on each digit after glyph comparison with the screenshot's own fully visible digits. The line is still clipped, so the original text is preferred | Timeline left seconds and the address unresolved. This reading can go on the master timeline with the clipping noted. |
 
 ## Schedule page, visual reading
 
@@ -86,7 +140,7 @@ No time zone is printed on the page read here. Rubric, presentation length, subm
 
 ## Outside research
 
-IP registry lookups were done in the analyst chat. They are withheld from this public repository until sharing rules are confirmed. They are not part of the assessment above.
+IP registry lookups were done in the analyst chat. They are withheld from this public repository until sharing rules are confirmed. They are not part of the assessment above. The lookup for the Hoovey address used the misread `104.227.236.191` and is void.
 
 ## I-003 response — 2026-10-15 11:05 PDT
 
@@ -163,9 +217,11 @@ What this changes:
 
 ## I-006 response — 2026-10-15 12:32 PDT
 
+**Corrected 12:50 PDT:** the address is `5freeedownloads.com/tomodachi/free/c` with three e's, and it is not cut off. The two-e spelling and "cut off" below were this chat's misreading.
+
 [Inject 6](https://drive.google.com/file/d/1pRAe1brGsL_7PGZZ_B4xY-3mKlikQmIw/view) is a browser screenshot. The tab title reads FreeGameDownloads. The address bar shows “Not secure” and the visible text `5freedownloads.com/tomodachi/free/c`. The rest of the address is cut off. The page has a green FreeGameDownloads banner, a Tomodachi Life “Living the Dream” logo, and a green Download button. No user, computer, download progress, or file name is on this page. This chat did not open that address and did not click Download.
 
-The same folder now also has [Presentation Criteria.jpg](https://drive.google.com/file/d/1aF2OWNdCtQQq7PKXtBt9cm4pke95WU1h/view), a phone photo of a “Young Defenders of the North Judging Criteria” page. The phone clock reads 10:56, with no date or zone. Six headings are shown at 5 points each. The bullets use telecom and university examples, including academic records. Those examples are on the criteria photo. They are not readings from the Whoville evidence.
+The same folder now also has [Presentation Criteria.jpg](https://drive.google.com/file/d/1aF2OWNdCtQQq7PKXtBt9cm4pke95WU1h/view), a phone screenshot of a Drive viewer showing a “Young Defenders of the North Judging Criteria” page (first written here as a photo; corrected 12:50 PDT). The phone clock reads 10:56, with no date or zone. Six headings are shown at 5 points each. The bullets use telecom and university examples, including academic records. Those examples are on the criteria photo. They are not readings from the Whoville evidence.
 
 What this changes:
 
@@ -179,8 +235,33 @@ What this changes:
 | R-18 | Keep this screenshot. Do not click Download. Do not open the address to retrieve a file | I-006 visible “Not secure” address, truncated after `free/c`; I-005 zip name uses the same game title | Now, so nobody fetches the file. Not ahead of the Medical District check | Avoids saving an unknown file onto a live machine | The name match stays untested until an authorized copy of the already-listed zip is examined | The screenshot is already saved in Drive | Do not need the file to preserve the page | Recommend |
 | R-19 | Tell residents this website caused the outage | A logo and a button. No click, no host, no feeder change | — | None shown | A false public cause | Hard to walk back | Proof a file from this page ran and changed a feeder | Do not recommend |
 
+## I-007 response — 2026-10-15 12:49 PDT
+
+[Inject 7](https://drive.google.com/file/d/1swqAROKb7An3qeNk3noP8o9pOQ00C63C/view) is a File Explorer window. The title is Tomodachi Life FREE. The breadcrumb shows a cloud icon, then the words Start backup, Desktop, and Tomodachi Life FREE. The left pane shows Home, Gallery, and OneDrive with the visible text “OneDrive - Persona”; the rest of that label is cut off. The folder reports 2 items. The details pane says to select a single file. This chat did not open either file.
+
+| Name as read | Date modified on screen | Type | Size |
+|---|---|---|---|
+| `NOTstea1nGlCredEntials.exe` | 8/12/2026 10:39 AM | Application | 82 KB |
+| `setup.exe` | 8/12/2026 10:39 AM | Application | 2 KB |
+
+The character after `stea` is one tall glyph. This reading treats it as the digit 1, and the glyph before `Cred` as a lowercase L. A capital I in that spot would make `GI` instead of `Gl`. Check the image before repeating the middle of the name. The screen gives no time zone, and it shows `8/12/2026` without saying which number is the month.
+
+What this changes:
+
+- **Do not open either file.** They are applications sitting in a folder whose name matches the zip on the December 24 download list. Opening them is not containment.
+- **The name match is not an unzip, and it is not a run.** The modified time on this screen is 8/12/2026 10:39 AM. The download list says December 24, 2026. Those are different dates. Nothing on this screen shows a double-click, a process, or a user name.
+- **Do not call this computer the SCADA host.** The path is a desktop under a cloud breadcrumb. If this machine is not the control host, leave it on and keep it off the control network until authorized staff copy the folder. If it is the control host, do not power it off.
+- **The public paragraph stays the same.** Do not tell residents these files caused the blackout.
+
+| ID | Option | Evidence | Urgency | Safety benefit | Operational risk | Reversibility | Prerequisites | Position |
+|---|---|---|---|---|---|---|---|---|
+| R-20 | Leave the folder in place. Do not open `setup.exe` or the other application. Copy it only through someone authorized to handle the files | I-007 two applications in a Tomodachi Life FREE folder; I-005 zip uses the same folder words | Now, so nobody runs them. Not ahead of the Medical District check | Avoids running unknown programs | The files stay on a machine whose link to the control network is unknown | A later copy is still possible. A run is not undoable from here | Know which computer this window belongs to | Recommend |
+| R-21 | Announce that these programs caused the outage | Two filenames, sizes, and one modified time. No process and no feeder command | — | None shown | A false public cause | Hard to walk back | Proof a file from this folder ran and changed a feeder | Do not recommend |
+
 ## Message for Team Leader
 
-> Inject 6 is a FreeGameDownloads page for Tomodachi Life. The browser marks the address “Not secure,” and the visible text stops at `5freedownloads.com/tomodachi/free/c`. Do not click Download. The name matches the zip already on the December 24 download list, and that match is not proof the file was saved or run. A judging-criteria photo is also in the folder. Its telecom and university examples are not Whoville facts. The public paragraph and the hold on remote switching stay as they are.
+> Inject 7 is a desktop folder named Tomodachi Life FREE. It holds setup.exe at 2 KB and another application at 82 KB. Both show 8/12/2026 10:39 AM. Do not open them. The folder name matches the zip from December 24, and the dates do not match, so this is not proof the zip was unpacked or that anything ran. The presentation now includes this screen. Please still approve, edit, or reject the public statement, and confirm who speaks. The hold on remote switching stays.
+
+Earlier message (12:32 PDT, Inject 6): the domain spelling and "stops at" in that message were wrong; see the correction above.
 
 No utility command and no competition submission was made.
