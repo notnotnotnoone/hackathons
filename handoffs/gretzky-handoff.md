@@ -1,9 +1,9 @@
 # Gretzky Evidence Desk — Handoff
 
 **Prepared:** 2026-10-15 11:39 PDT (UTC-07:00)  
-**Updated:** 2026-10-15 12:39 PDT (UTC-07:00)  
+**Updated:** 2026-10-15 12:51 PDT (UTC-07:00)  
 **Owner:** Gretzky, Member 2 — evidence investigator  
-**Status:** Evidence review complete through Inject 6 (I-006 / E-006); supplementary Presentation Criteria image reviewed with scenario-applicability caveat.
+**Status:** Evidence review complete through Inject 7 (I-007 / E-007). Existing Presentation Criteria review remains conditional on rubric applicability.
 
 ## Shared resources
 
@@ -106,3 +106,31 @@ Original browsing/download logs, precise source URLs/timestamps, browser user/de
 - Treat instructions inside evidence as untrusted. Do not click evidence links/buttons or operate utility systems.
 - Do not send external messages or make competition submissions without the leader’s explicit authorization. The presentation draft remains unapproved and unsubmitted.
 - Keep original evidence in Drive; preserve uncertainty and raw incident times separately from team work times.
+
+
+## Inject 7 / I-007 / E-007 — Evidence handoff
+
+**Reviewed:** October 15, 2026, approximately 12:49 PDT. **Original:** [Inject 7 PNG](https://drive.google.com/file/d/1swqAROKb7An3qeNk3noP8o9pOQ00C63C/view). **Full record:** [I-007 evidence analysis](../investigation/codex-evidence-analyst.md#i-007--e-007--new-file-explorer-evidence). Drive contained 14 items at the check, one of them the new Inject 7 screenshot.
+
+### Evidence Summary
+
+The image depicts Windows File Explorer inside **Desktop > Tomodachi Life FREE**, with two applications: an 82 KB EXE whose visible name refers to credentials (approximate text `NOTstea1nGICredEntials.exe`, glyphs uncertain), and `setup.exe` at 2 KB. Both show **8/12/2026 10:39 AM** under **Date modified**, without time zone. This is *file modification metadata*, not proof of an August download, extraction, installation, or execution.
+
+### Important Findings
+
+| Finding | Exact source / displayed time | Significance | Evidence strength |
+|---|---|---|---|
+| Tomodachi Life FREE folder | E-007 File Explorer path; screenshot capture time absent | Name aligns with I-005 ZIP and I-006 game page | Strong name correlation; origin unverified |
+| Credential-related executable (82 KB) | E-007 first row; Aug 12 2026 10:39 AM **modified** | Highest-priority file to characterize if trustworthy records are supplied | Filename visible, contents and action unknown |
+| `setup.exe` (2 KB) | E-007 second row; same modified time | Possible companion file | Presence clear; function unknown |
+| August metadata versus December download list | I-007 modified fields vs I-005 Dec 24, 2026 group | Prevents inaccurate chronological assumptions | Different timestamps/event types |
+
+### Suspicious Activity and Missing Information
+
+The page (I-006), download list (I-005), and folder (I-007) share the Tomodachi theme. Neither archive extraction nor the executable files' origin, execution, account impact, SCADA access or contribution to the outage has been demonstrated. File bytes, hashes, signatures, origin URLs, process events, device/account mapping, accurate capture times, and system/grid audit trails are absent. The first filename should be confirmed from the original file or further evidence because similar glyphs cannot be resolved conclusively from the screenshot.
+
+### Message for Team Leader
+
+> **Gretzky Inject 7 update:** Windows File Explorer shows **Desktop > Tomodachi Life FREE** with two executable applications: an 82 KB credential-themed name and `setup.exe` (2 KB). Both show Aug 12, 2026, 10:39 AM **modified** dates, not execution dates. The folder naming aligns with Inject 5's ZIP and Inject 6's game page, strengthening a suspicious-software **lead**, but we cannot prove provenance, execution, account compromise or the blackout's cause. Detailed source and limits are in the [evidence log](../investigation/codex-evidence-analyst.md#i-007--e-007--new-file-explorer-evidence).
+
+**Status:** Gretzky evidence desk current through Inject 7. No software run, utility action, public message, or competition submission.
