@@ -66,12 +66,12 @@ Role: Incident response analyst
 Role confirmed: Confirmed by Kevin in this chat on 2026-10-15.
 Presence: Confirmed by Kevin's direct request to confirm this status.
 Status: Working
-Working on: Final presentation and a full sync audit of the repository through Inject 7.
-Finished / handoff link: presentation/presentation-outline.md (mapped to the six judging criteria); README.md "Sync audit"; investigation/kevin-response.md
-Next step: Leader approves or edits the presentation and the public statement, and confirms speakers, before 1:45 PM judging.
-Need help with: Leader approval. Whose computer the Inject 5-7 screens come from.
-Updated at (date, time, zone): 2026-10-15 13:10 PDT (UTC-07:00)
-Recorded by: Incident-response assistant, after Kevin asked for a full analysis and sync of every document and the website.
+Working on: Inject 8 grid map. Do not switch from it. Add the water plant to on-site checks.
+Finished / handoff link: investigation/kevin-response.md and presentation/presentation-outline.md
+Next step: Leader approves or edits the presentation and the public statement before 1:45 PM. Do not publish the map's customer count.
+Need help with: Leader approval. A field check of the water plant and the hospital.
+Updated at (date, time, zone): 2026-10-15 13:12 PDT (UTC-07:00)
+Recorded by: Incident-response assistant, after Kevin asked to add the new inject to GitHub.
 
 ============================================================
 EXAMPLE ONLY - NOT A TEAM STATUS

@@ -3,7 +3,7 @@
 **Team member / workstream:** kevin — Member 4, incident response chat. Kevin confirmed this status on 2026-10-15 at 10:51 PDT. The matching block in [human-status.txt](../human-status.txt) is no longer a draft.
 **Role used:** Incident response and crisis communications
 **Status:** Working
-**Updated:** 2026-10-15 13:05 PDT (UTC−07:00). Inject 7 cross-check added in [Inject 7 cross-check](#inject-7-cross-check--2026-10-15-1305-pdt). Drive rechecked at 12:49 PDT: fourteen files, including Inject 7. The 12:50 audit below was written before that screenshot was in the listing.
+**Updated:** 2026-10-15 13:12 PDT (UTC−07:00). Inject 8 response is below. Drive rechecked at 13:12 PDT: fifteen files, including Inject 8. The Inject 7 cross-check remains in [Inject 7 cross-check](#inject-7-cross-check--2026-10-15-1305-pdt).
 **Sources reviewed by this chat:** I-001 through I-007 (four images for I-004), Instructions, Mission Overview, Schedule, and Presentation Criteria.jpg. I-001 to I-006 re-opened from the saved originals at 12:45 PDT; I-007 at 13:00 PDT.
 
 ## Inject 7 cross-check — 2026-10-15 13:05 PDT
@@ -266,9 +266,52 @@ What this changes:
 | R-20 | Leave the folder in place. Do not open `setup.exe` or the other application. Copy it only through someone authorized to handle the files | I-007 two applications in a Tomodachi Life FREE folder; I-005 zip uses the same folder words | Now, so nobody runs them. Not ahead of the Medical District check | Avoids running unknown programs | The files stay on a machine whose link to the control network is unknown | A later copy is still possible. A run is not undoable from here | Know which computer this window belongs to | Recommend |
 | R-21 | Announce that these programs caused the outage | Two filenames, sizes, and one modified time. No process and no feeder command | — | None shown | A false public cause | Hard to walk back | Proof a file from this folder ran and changed a feeder | Do not recommend |
 
+## I-008 response — 2026-10-15 13:12 PDT
+
+[Inject 8](https://drive.google.com/file/d/1-gc6iqIzCkryqRweTdYDUH0TLYf4cuM5/view) is a Hydro Siber grid-operations map. The banner says it is a simulated operational view and not an engineering single-line. The header reads Dec 25, 2026, 8:43 AM, and the zone label reads PDT. System operations are marked degraded. This note uses the header, the feeder-status panel, the critical-infrastructure panel, the selected-assets table, and the alert list. The evidence desk has a separate map-pin reading in its log. This chat did not switch anything from the map.
+
+The same minute on Inject 1 was an 18-feeder table with PST row times. These are two pictures. Their counts do not match, and this map says it is not a switching drawing.
+
+| Reading on this map | What the screen shows |
+|---|---|
+| Total system demand | 1,240 MW, down 18% versus forecast |
+| Customers without power | 92,430, up 14%, and rising |
+| Feeder status | 12 online, 5 degraded, 6 offline, 3 telemetry unverified. Those four numbers add to 26, not 18 |
+| Hospital | Partial power. Backup generators active |
+| Emergency services | Online |
+| Water treatment | Offline |
+| Transit | Partial power |
+| Municipal facilities | Some disruptions |
+
+Selected assets on the same screen:
+
+| Asset | SCADA status | Field status | Demand | Customers | Note on the row |
+|---|---|---|---|---|---|
+| SUB-01 | Online | Degraded | 210 MW | 23,500 | Voltage fluctuations reported |
+| SUB-03 | Online | Unconfirmed | 0 MW | 28,600 | SCADA shows offline, field telemetry inconsistent |
+| SUB-05 | Offline | Offline | 0 MW | 17,200 | No input to transmission zone |
+| SUB-07 | Unverified | Unverified | 84 MW | 12,600 | Telemetry loss since 06:31 |
+| Hospital | Partial power | Partial power | — | — | On backup generators |
+
+SUB-03’s status dot says Online and its note says SCADA shows offline. That disagreement is on one row.
+
+Six alerts are listed, with no zone: 07:32 SUB-05 SCADA/field mismatch; 07:41 SUB-03 loss of output in the industrial zone; 07:57 water treatment plant offline; 08:12 voltage anomalies at North Heights; 08:36 SUB-07 telemetry unverified; 08:41 customer reports in the central district. If this is the same morning as the 8:43 screens, the map says trouble was already flagged before that minute. The 06:31 telemetry note has no zone.
+
+What this changes:
+
+- **Do not switch from this map.** It says it is simulated and not an engineering single-line. The 12 online here is not the 12 dark feeders on Inject 1.
+- **Add the water plant to the on-site list.** The screen marks it offline. That sits with the hospital check. Partial power and backup generators are not a reason to skip the hospital.
+- **Do not publish 92,430.** The number is on a simulated picture that disagrees with the feeder table. The public paragraph stays as written until the leader accepts it. A water line, if any, has to come from the utility.
+- **This is not a cause.** A SCADA/field mismatch was already on Inject 1. These alerts do not show a breaker command or a link to the download folder.
+
+| ID | Option | Evidence | Urgency | Safety benefit | Operational risk | Reversibility | Prerequisites | Position |
+|---|---|---|---|---|---|---|---|---|
+| R-22 | Keep both operations pictures. Do not switch from either. Check the hospital in person and add the water plant, which this map marks offline | I-008 water treatment offline and hospital on backup; I-001 Medical District still needs a field check; the map says it is not an engineering drawing | Now, with the checks already recommended | A dark water plant and a hospital on generators are not left to the label | Sending a crew on a simulated picture can waste a crew if the plant is actually up | The check can stop when someone is on site | Treat the map as a picture, not a switching order | Recommend |
+| R-23 | Tell residents that 92,430 customers are dark, or that 12 feeders are online | I-008 counts; I-001’s 18-feeder table and footer disagree with those counts | — | None shown | A public number the other screen does not support | Hard to walk back | One picture that the leader accepts as the count | Do not recommend |
+
 ## Message for Team Leader
 
-> Inject 7 is a desktop folder named Tomodachi Life FREE. It holds setup.exe at 2 KB and another application at 82 KB. Both show 8/12/2026 10:39 AM. Do not open them. The folder name matches the zip from December 24, and the dates do not match, so this is not proof the zip was unpacked or that anything ran. The presentation now includes this screen. Please still approve, edit, or reject the public statement, and confirm who speaks. The hold on remote switching stays.
+> Inject 8 is another 8:43 a.m. picture, labeled a simulated view and not an engineering drawing, with the zone marked PDT. It shows 92,430 customers without power and rising, the water plant offline, and the hospital on backup generators. Its feeder counts do not match the first dashboard. Do not switch from either screen, and do not put 92,430 in the public line. Please still approve or edit that line. Add the water plant to the on-site checks. The hold on remote switching stays.
 
 Earlier message (12:32 PDT, Inject 6): the domain spelling and "stops at" in that message were wrong; see the correction above.
 

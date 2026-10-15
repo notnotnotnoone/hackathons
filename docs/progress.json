@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-15T13:05:00-07:00",
-  "updatedBy": "Gretzky — Evidence desk",
+  "updatedAt": "2026-10-15T13:12:00-07:00",
+  "updatedBy": "Kevin",
   "latestInject": {
     "id": "I-008",
-    "title": "Hydro Siber simulated grid-operations map",
-    "state": "Inject 8 reviewed by Gretzky evidence desk; other desks' review not assumed",
-    "checkedAt": "2026-10-15T13:02:00-07:00",
-    "note": "15 Drive files checked. At Dec 25, 2026 08:43 AM (dashboard label PDT), map reports 92,430 customers without power, 1,240 MW demand, 12 online / 5 degraded / 6 offline / 3 unverified feeder statuses; hospital partial with backups, water treatment offline. SUB-03 status conflicts with its own notes; SUB-07 telemetry unverified. I-001 FDR and I-008 SUB labels cannot be directly equated. Source is simulated; no cyber cause or breaker command established.",
+    "title": "Simulated grid map",
+    "state": "Inject 8 reviewed by evidence desk and response",
+    "checkedAt": "2026-10-15T13:12:00-07:00",
+    "note": "Fifteen Drive files. Dec 25, 2026 8:43 AM, zone label PDT. The map is labeled simulated. It shows 1,240 MW demand, 92,430 customers without power, feeder status 12/5/6/3, hospital on backup, and water treatment offline. SUB-03's status conflicts with its own note. Those counts are not the Inject 1 tally, and SUB labels are not FDR labels. No breaker command. Timeline review is not yet recorded.",
     "sourceUrl": "https://drive.google.com/file/d/1-gc6iqIzCkryqRweTdYDUH0TLYf4cuM5/view"
   },
   "assessment": [
@@ -33,8 +33,8 @@
     },
     {
       "label": "Recommended action",
-      "text": "Welfare checks and warming first; in-person checks of the Medical District and Downtown. Hold remote switching from whoville-scada. Image the host before changes. Call the four account owners, then disable the contractor's remote login. Isolate the I-005–I-007 computer without opening the files. Leader approves the presentation and public statement before 1:45 PM.",
-      "source": "presentation/presentation-outline.md"
+      "text": "Inject 8 is a simulated map. Do not switch from it or from the feeder table. Add the water plant to the on-site checks; the hospital stays on that list. Do not publish 92,430. Hold remote switching. Do not open the downloaded files. Leader approves the presentation and public statement before 1:45 PM.",
+      "source": "investigation/kevin-response.md#i-008-response--2026-10-15-1312-pdt"
     },
     {
       "label": "Critical unknowns",
@@ -77,11 +77,11 @@
       "id": "response",
       "name": "Kevin — Response analysis",
       "status": "Working",
-      "updatedAt": "2026-10-15T13:10:00-07:00",
-      "completed": "Sync audit of every repository file against the originals (IP, domain and filename corrected). Final presentation mapped to the six judging criteria, through Inject 7.",
-      "next": "Leader approves the presentation and public statement and confirms speakers before 1:45 PM.",
-      "blocker": "Leader approval. Presentation length and format are not published.",
-      "source": "README.md#sync-audit--2026-10-15-1310-pdt"
+      "updatedAt": "2026-10-15T13:12:00-07:00",
+      "completed": "Inject 8 reviewed. The map is labeled simulated. Water treatment is marked offline. Hospital is on backup power. Counts do not match Inject 1.",
+      "next": "Do not switch from the map. Leader approves the presentation and public statement before 1:45 PM.",
+      "blocker": "The map disagrees with the feeder table. Leader approval is still required for any public line.",
+      "source": "investigation/kevin-response.md"
     }
   ],
   "actions": [
@@ -125,7 +125,7 @@
       "id": "A-007",
       "title": "Final presentation mapped to the judging criteria",
       "owner": "Response + leader",
-      "status": "Ready for leader review (13:05 PDT)"
+      "status": "Updated for Inject 8; still awaiting leader review"
     },
     {
       "id": "A-008",
@@ -177,6 +177,11 @@
       "note": "Desktop folder with N0Tstea1nG?CredEntials.exe (82 KB) and setup.exe, dated 8/12/2026 10:39 AM. No execution shown."
     },
     {
+      "label": "Inject 8",
+      "status": "Reviewed by evidence and response",
+      "note": "Simulated 8:43 a.m. map. Water plant offline. Counts do not match Inject 1. Timeline review not yet recorded."
+    },
+    {
       "label": "Judging criteria",
       "status": "Reviewed by evidence and response",
       "note": "Six criteria at 5 points each; the presentation maps to all six. Telecom and university examples are not Whoville evidence. Duration still absent."
@@ -189,7 +194,7 @@
     {
       "label": "Presentation",
       "status": "Final draft",
-      "note": "Rubric-mapped presentation through Inject 7, updated 13:05 PDT. Awaiting leader approval; not submitted."
+      "note": "Walk-up updated with Inject 8 at 13:12 PDT. Awaiting leader approval. Not submitted."
     }
   ]
 }

@@ -227,3 +227,12 @@ Inject 3 downloaded and visually reviewed. Six Drive files now saved locally; ma
 - The Facebook capture gives alarmist household advice, including burying food in snow and going to a store for water. Its source, accuracy, author identity, and reach are unknown; treat it as a public-safety lead, not an established coordinated misinformation effort.
 - The posts add public reports but do not independently validate feeder readings or establish cyber activity or blackout causation. The evidence workstream and latest-inject marker were updated in [docs/progress.json](../docs/progress.json); the README includes the team handoff.
 - No social-media links/buttons were followed, no utility systems were accessed, and no external message or competition submission was made.
+
+## Incident response — Inject 8 — 2026-10-15 13:12 PDT
+
+- Drive rechecked. Fifteen files. Inject 8 is a Hydro Siber grid map labeled a simulated operational view and not an engineering single-line.
+- Header: Dec 25, 2026, 8:43 AM, zone label PDT. Demand 1,240 MW, down 18% versus forecast. Customers without power 92,430, up 14% and rising. Feeder status 12 online, 5 degraded, 6 offline, 3 telemetry unverified. Those counts are not the Inject 1 tally.
+- Hospital partial power on backup generators. Water treatment offline. Emergency services marked online. Transit partial power.
+- SUB-03’s dot says Online and its note says SCADA shows offline. Alerts run from 07:32 to 08:41 with no zone. SUB-07 telemetry loss since 06:31.
+- Response: do not switch from this map. Add the water plant to on-site checks. Do not publish 92,430. Public paragraph unchanged. No cause shown.
+- No utility command and no competition submission was made.
