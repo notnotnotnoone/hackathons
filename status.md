@@ -154,3 +154,15 @@ No utility command and no competition submission was made.
 ## Evidence participant identified — 2026-10-15 10:49 PDT (UTC-07:00)
 
 Gretzky directly confirmed their name in this evidence chat, mapping the previously unnamed evidence participant to Member 2 (roster spelling gretsky). Presence is confirmed; human-status.txt now records Gretzky's evidence-collection work and links the assisted findings. No other teammate's status changed. Existing analyst work remains AI-assisted; independent human verification is not claimed. Next: collect missing source records and next inject; brief the leader.
+
+
+## Gretzky evidence update — Inject 3 — 2026-10-15 11:03 PDT (UTC-07:00)
+
+**Source:** [Inject 3](https://drive.google.com/file/d/1iQa1Y2u0vdNfuVin0ejEClH4pdJv0KUL/view), I-003 / E-003; [full evidence analysis](codex-evidence-analyst.md#i-003--e-003--google-sign-in-alert-screenshot).
+
+- Visually reviewed the original-resolution screenshot. Email displays Google / no-reply@accounts.google.com and claims a new sign-in for maxwafoone@gmail.com from Mount Crumpit. Displayed email time: Wed, Dec 24, 10:12 PM; year/zone absent.
+- Possible connections: max.contr.maint in Inject 2 and Mount Crumpit / FDR-15 in Inject 1. These are leads, not proven identity or causation; Inject 3 has no source IP.
+- Displayed sender and URL cannot authenticate an email or reveal the actual button target. Phishing and unauthorized access are unconfirmed; the owner has not said whether they recognized the sign-in.
+- Calendar caveat: Dec 24, 2026 was Thursday, not the displayed Wednesday. Preserve raw dates; do not assume alignment or infer another year.
+- Status: evidence through Inject 3 reviewed. Six files were listed in Drive around 11:01 PDT. Open questions are tracked for later injects; Gretzky does not need to obtain inaccessible records.
+- Proposed handoff: timeline to preserve clock/year uncertainty; leader to consider this account-access lead in the presentation. No email link was opened and no account or utility action taken.
