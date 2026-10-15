@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-15T12:40:02-07:00",
-  "updatedBy": "Kherion — timeline support (AI-assisted)",
+  "updatedAt": "2026-10-15T12:41:00-07:00",
+  "updatedBy": "Gretzky — evidence desk coordination",
   "latestInject": {
     "id": "I-006",
     "title": "FreeGameDownloads page",
-    "state": "Inject 6 reviewed by response and timeline",
+    "state": "Inject 6 reviewed by response, timeline and evidence desk",
     "checkedAt": "2026-10-15T12:33:00-07:00",
-    "note": "Response and timeline reviewed the Inject 6 browser-page screenshot. Visible partial 5freedownloads.com address, Tomodachi Life Download button and Not secure label. Possible link to the Inject 5 archive remains unverified; no visit time, download, execution or SCADA link shown. Prior Drive check at the recorded checkedAt; not continuously monitored.",
+    "note": "Response, timeline and evidence desk reviewed Inject 6; 13 items at the last Drive check. The page visibly shows a Not secure label, FreeGameDownloads, Tomodachi Life artwork, a Download area and address text 5freeedownloads.com/tomodachi/free/c (three e letters after fr in enlarged-source reread; another analyst transcribed two). Source URL completion, browser/host attribution, visit timestamp, file origin, execution and SCADA linkage are unknown. Presentation Criteria.jpg has six 5-point categories but telecom/university examples may not apply to the Whoville utility scenario.",
     "sourceUrl": "https://drive.google.com/drive/folders/1tpag2T6jptGhCC7E2tKtuZbTXLQ9B-Mj"
   },
   "assessment": [
