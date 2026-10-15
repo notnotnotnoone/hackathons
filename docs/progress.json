@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "updatedAt": "2026-10-15T11:03:00-07:00",
-  "updatedBy": "Gretzky / evidence",
+  "updatedBy": "Kherion timeline chat / Codex",
   "latestInject": {
     "id": "I-003",
     "title": "Claimed Google sign-in alert",
@@ -66,11 +66,11 @@
     {
       "id": "timeline",
       "name": "Timeline support — Kherion + Codex",
-      "status": "Investigating",
-      "updatedAt": "2026-10-15T10:50:00-07:00",
-      "completed": "Combined Inject 1/2 timeline published; Kherion identity confirmed; original-resolution reread reconciled PID 2189 and backup path without leading slash.",
-      "next": "Obtain clock context and complete logs; prepare concise timeline presentation handoff.",
-      "blocker": "Missing log year/zone, recovery provenance, session linkage, and actual outage onset.",
+      "status": "Inject 3 reviewed",
+      "updatedAt": "2026-10-15T11:03:00-07:00",
+      "completed": "Injects 1–3 timeline published; alert timestamp, tentative account/location connections and weekday/year mismatch recorded.",
+      "next": "Verify original email, exact sign-in time, year/zone, owner, IP/device and SCADA account linkage.",
+      "blocker": "Missing email authenticity, event clock context, identity linkage and complete logs.",
       "source": "team3.md"
     },
     {
