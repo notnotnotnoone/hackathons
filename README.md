@@ -12,11 +12,11 @@
 
 | Item | Current position |
 |---|---|
-| Latest inject | **Inject 2 — recovered SCADA log screenshot** |
+| Latest inject | **Inject 3 — claimed Google sign-in alert; evidence desk reviewed** |
 | Investigation | **Active. Blackout cause and unauthorized activity remain unconfirmed.** |
 | Latest published analyst updates reviewed | Evidence desk through 10:41 PDT; timeline through 10:30 PDT; response through 10:55 PDT, October 15, 2026 |
 | Lead reconciliation | October 15, 2026, 10:34 PDT; reviewed all four existing repository files and the seven commits after initialization. The 10:40 PDT response handoff is linked and not yet folded into the numbered assessment. |
-| Drive coverage | Folder listing shows five files: Injects 1–2, Instructions, Schedule, Mission Overview. Response chat rechecked at 10:55 PDT; no later inject. |
+| Drive coverage | Evidence desk listed six files around 11:01 PDT: Injects 1–3, Instructions, Schedule, Mission Overview. Inject 3 visually reviewed; prior checks below are historical. |
 | Review coverage | This lead chat reconciled committed analyses; it has not independently inspected the inject images. Instructions and Mission Overview text were checked directly. |
 | Remaining intake gaps | Official event date/time zone and explicit deadline, rubric, presentation limits, AI/sharing rules; schedule visual review is complete |
 | Submission | Draft outline in [presentation-outline.md](presentation-outline.md) at 10:55 PDT. Not approved and not submitted |
@@ -37,7 +37,22 @@ The user of the evidence chat explicitly confirmed presence; recorded in [human-
 
 **Assessment:** Access and logging activity are priority leads; cyberattack, actor identity, and blackout causation remain unconfirmed.
 
+
+## Gretzky evidence update — Inject 3 — 2026-10-15 11:03 PDT (UTC-07:00)
+
+**Source:** [Inject 3](https://drive.google.com/file/d/1iQa1Y2u0vdNfuVin0ejEClH4pdJv0KUL/view), I-003 / E-003; [full evidence analysis](codex-evidence-analyst.md#i-003--e-003--google-sign-in-alert-screenshot).
+
+- Visually reviewed the original-resolution screenshot. Email displays Google / no-reply@accounts.google.com and claims a new sign-in for maxwafoone@gmail.com from Mount Crumpit. Displayed email time: Wed, Dec 24, 10:12 PM; year/zone absent.
+- Possible connections: max.contr.maint in Inject 2 and Mount Crumpit / FDR-15 in Inject 1. These are leads, not proven identity or causation; Inject 3 has no source IP.
+- Displayed sender and URL cannot authenticate an email or reveal the actual button target. Phishing and unauthorized access are unconfirmed; the owner has not said whether they recognized the sign-in.
+- Calendar caveat: Dec 24, 2026 was Thursday, not the displayed Wednesday. Preserve raw dates; do not assume alignment or infer another year.
+- Status: evidence through Inject 3 reviewed. Six files were listed in Drive around 11:01 PDT. Open questions are tracked for later injects; Gretzky does not need to obtain inaccessible records.
+- Proposed handoff: timeline to preserve clock/year uncertainty; leader to consider this account-access lead in the presentation. No email link was opened and no account or utility action taken.
+
 ## Current assessment
+
+**Coverage note:** The numbered lead assessment below was written for Injects 1–2. Inject 3's evidence-desk update above is current and awaits lead reconciliation; do not treat older waiting-for-Inject-3 statements as current.
+
 
 **Basis:** I-001 / E-001 and I-002 / E-002 as analyzed in [evidence notes](codex-evidence-analyst.md) and [timeline](team3.md). These are source-content findings reported by the analysts; authenticity and physical effects still require corroboration.
 
@@ -121,6 +136,7 @@ Drive originals remain the source material. The register below indexes them; it 
 
 | ID / material | Source | Review state / location |
 |---|---|---|
+| **I-003 / E-003 — Google sign-in alert screenshot** | [Inject 3](https://drive.google.com/file/d/1iQa1Y2u0vdNfuVin0ejEClH4pdJv0KUL/view) | Evidence desk visually reviewed; [findings and limits](codex-evidence-analyst.md#i-003--e-003--google-sign-in-alert-screenshot); authenticity, authorization and account links unconfirmed |
 | **I-001 / E-001 — distribution dashboard** | [Inject 1](https://drive.google.com/file/d/1AHluXwG8ne_K1KfKtUmcuQq0oamum46p/view) | Analysts visually reviewed; [evidence notes](codex-evidence-analyst.md#i-001--e-001--inject-1-review), [master timeline](team3.md#updated-timeline) |
 | **I-002 / E-002 — recovered SCADA logs screenshot** | [Inject 2](https://drive.google.com/file/d/1MCgSzKr_hXeddiMRyeHfcDiRR4_k9u51/view) | Analysts visually reviewed; cropped screenshot, original text absent from current listing; [detailed findings](codex-evidence-analyst.md#important-findings); [response options](kevin-response.md) |
 | Instructions | [PDF](https://drive.google.com/file/d/1G-lUTUJ4UZskPRoqscOQGws27nFlLr2W/view) | Evidence desk and lead sync checked extracted text; duplicated characters in extraction |
