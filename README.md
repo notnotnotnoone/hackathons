@@ -12,15 +12,28 @@
 |---|---|
 | Latest inject | **Inject 2 — recovered SCADA log screenshot** |
 | Investigation | **Active. Blackout cause and unauthorized activity remain unconfirmed.** |
-| Latest published analyst updates reviewed | Evidence desk through 10:32 PDT; timeline through 10:30 PDT, October 15, 2026 |
+| Latest published analyst updates reviewed | Evidence desk through 10:41 PDT; timeline through 10:30 PDT, October 15, 2026 |
 | Lead reconciliation | October 15, 2026, 10:34 PDT; reviewed all four existing repository files and the seven commits after initialization |
 | Drive coverage | Folder listing shows five files: Injects 1–2, Instructions, Schedule, Mission Overview. No later inject appeared in this check. |
 | Review coverage | This lead chat reconciled committed analyses; it has not independently inspected the inject images. Instructions and Mission Overview text were checked directly. |
-| Remaining intake gaps | Schedule visual review, official start/deadline/time zone, rubric, presentation limits, AI/sharing rules |
+| Remaining intake gaps | Official event date/time zone and explicit deadline, rubric, presentation limits, AI/sharing rules; schedule visual review is complete |
 | Submission | No approved or submitted presentation recorded |
+| Participant presence | User of the evidence chat confirms presence at 10:41 PDT; name/roster mapping not supplied. See human-status.txt. |
 | Next priority | Obtain full logs and authorization/session records; independently confirm critical service and telemetry |
 
 **What changed:** The front-page assessment now includes Inject 2. Earlier “awaiting evidence” and “no login evidence” statements described the setup / Inject 1 stage and are superseded. The original README is preserved in history; teammate files remain intact.
+
+## Latest team handoff — 2026-10-15 10:41 PDT (UTC-07:00)
+
+The user of the evidence chat explicitly confirmed presence; recorded in [human-status.txt](human-status.txt) without guessing a roster name. This update shares new information through GitHub; it does not establish that teammates have read it.
+
+**Completed:** Inject 1/2 visual evidence analysis, combined timeline published by timeline support, Instructions/Mission Overview text review, complete Schedule visual review, and evidence-desk native-resolution recheck of log transcription differences. No Inject 3 appeared in the latest Drive listing.
+
+**Still open:** full source logs/provenance, maintenance/account/IP authorization, session links, reason for logging stop, physical outage/service confirmation, clocks, dashboard logic, requirements/rubric, and presentation preparation/approval.
+
+**Proposed handoffs (not accepted assignments):** timeline support to reconcile PID/script spelling and clocks; response support to assess Medical District service and compare response options; leader to confirm requirements and assemble/review the presentation; evidence desk to correlate later injects and evaluate full records when available. Named teammates' personal statuses remain unchanged until they report them.
+
+**Assessment:** Access and logging activity are priority leads; cyberattack, actor identity, and blackout causation remain unconfirmed.
 
 ## Current assessment
 
@@ -57,8 +70,8 @@ Incident times below are scenario times, separate from October 15 team work time
 | Table versus footer | 14/4 versus 17/1 | Raw dashboard inputs, count definitions, refresh timing |
 | OFFLINE with flow | FDR-04: 12.8 MW / 13.6 kV; FDR-08: 9.6 MW / 13.5 kV | Independent equipment readings and switch state |
 | Recovery versus restart | 11:00 AM annotation versus 11:03:15 log entry | Recovery date, rounding, collection process, clock offsets |
-| Hoovey session-close PID | Timeline transcribes `sshd[2182]`; evidence notes transcribe `sshd[2189]` | Re-read original at Dec 24 17:58:20 before relying on the PID |
-| Backup script transcription | Timeline uses `/opt/backup/scada/dump.sh`; evidence notes use `opt/backup/scada/dump.sh` and flag punctuation/redirection | Obtain original text at Dec 24 17:30:38; do not silently choose a version |
+| Hoovey session-close PID | Timeline transcribes `sshd[2182]`; evidence desk reread at native resolution supports `sshd[2189]` at Dec 24 17:58:20 | Evidence desk recheck complete; timeline should reconcile its transcription against the original PNG; underlying text still absent |
+| Backup script transcription | Evidence desk native-resolution reread supports `opt/backup/scada/dump.sh` without leading slash; timeline uses `/opt/backup/scada/dump.sh` | Preserve literal screenshot spelling and correction history; exact redirection / execution result still require original text at Dec 24 17:30:38 |
 
 Zero MW with nonzero voltage on FDR-03/FDR-07 needs operating context; it is not automatically inconsistent or malicious.
 
@@ -81,7 +94,7 @@ Members 2–4 confirm their roles in the plaintext file. Shared-account commits 
 |---|---|---|
 | Lead support — this chat | Reconciled published Inject 1–2 handoffs and organized the hub | Requirements and priority review; personal progress belongs in human-status.txt |
 | Timeline support | Injects 1–2 reviewed; [master timeline](team3.md) published; latest reviewed update 10:30 PDT | Clocks, provenance, and PDF context |
-| Evidence desk | Injects 1–2 visually reviewed; [evidence notes](codex-evidence-analyst.md) published; latest reviewed update 10:32 PDT | Full records, authorization, cross-source verification |
+| Evidence desk | Injects 1–2 visually reviewed; [evidence notes](codex-evidence-analyst.md) published; latest reviewed update 10:41 PDT; schedule visually reviewed and source spellings rechecked | Full records, authorization, cross-source verification |
 
 **Chat visibility:** The available app listing exposed this lead chat and the related “Hackathon Crash Course” chat. The latter contains role/setup messages, with assistant content only exposed as reference placeholders. The separate evidence/timeline chats were not exposed in that listing; their committed handoffs were reviewed instead. This is not a claim that every same-account chat has been read. No messages were sent to other chats.
 
@@ -91,12 +104,12 @@ Owners below are proposed workstreams, not claims that a named teammate has acce
 
 | Priority / ID | Action | Proposed owner | Done when |
 |---|---|---|---|
-| **Now / A-001** | Confirm schedule visually, official start/deadline/zone, rubric, presentation constraints, and AI/sharing rules | Leader + team | Official source and exact requirements recorded |
+| **Now / A-001** | Schedule visually reviewed by evidence desk; confirm event date/zone, explicit deadline, rubric, presentation constraints, and AI/sharing rules | Leader + team | Remaining official requirements recorded |
 | **Now / A-002** | Update [human-status.txt](human-status.txt) and confirm your role | All members | Each member's latest work, blocker, and update time are recorded |
 | **High / A-003** | Obtain complete original recovered logs, collection details, and account/maintenance approvals; explain dashboard count/flow mismatch | Evidence desk | Source completeness, authorization, and telemetry discrepancies assessed |
 | **High / A-004** | Verify Medical District service, switch states, and independent measurements; reconcile source clocks | Response + timeline | Safety assessment and clock basis supported by evidence |
 | **High / A-005** | Correlate SSH, sudo/su, process ancestry, service manager, audit and SCADA command records | Evidence + timeline | Session links and logging-stop reason established or explicitly unresolved |
-| **High / A-006** | Resolve transcription differences listed above | Evidence + timeline | Original-source reading recorded with correction history |
+| **High / A-006** | Evidence desk native-resolution reread supports PID 2189 and script spelling without leading slash; timeline handoff still needs reconciliation; exact redirection requires original text | Evidence + timeline | Shared notes reconciled with correction history; original text checked when supplied |
 | **Next / A-007** | Compare response options and start presentation outline | Response + leader | Options state evidence, urgency, safety benefit, operational risk, reversibility, and prerequisites |
 
 ## Evidence and injects
@@ -109,7 +122,7 @@ Drive originals remain the source material. The register below indexes them; it 
 | **I-002 / E-002 — recovered SCADA logs screenshot** | [Inject 2](https://drive.google.com/file/d/1MCgSzKr_hXeddiMRyeHfcDiRR4_k9u51/view) | Analysts visually reviewed; cropped screenshot, original text absent from current listing; [detailed findings](codex-evidence-analyst.md#important-findings) |
 | Instructions | [PDF](https://drive.google.com/file/d/1G-lUTUJ4UZskPRoqscOQGws27nFlLr2W/view) | Evidence desk and lead sync checked extracted text; duplicated characters in extraction |
 | Mission Overview | [PDF](https://drive.google.com/file/d/1DLBUDgcRvDuI3U80JKUTrM3kXnUGv61z/view) | Evidence desk and lead sync checked extracted text; scenario context |
-| Schedule | [PDF](https://drive.google.com/file/d/1WC0S3vKC0HR8sd2lQq1gzcs9qh7fcjSC/view) | Listed; text extraction lacks timetable. Visual review still needed |
+| Schedule | [PDF](https://drive.google.com/file/d/1WC0S3vKC0HR8sd2lQq1gzcs9qh7fcjSC/view) | Evidence desk visually reviewed full page at 10:40 PDT; [transcribed schedule and limits](codex-evidence-analyst.md#schedule-visual-review-completed) |
 
 No external research is used in this assessment. Download hashes reported by timeline support track its copies; no hash or source authenticity is independently verified by this lead sync. Inject receipt times and inject-specific deadlines were not fully recorded.
 
@@ -121,8 +134,8 @@ Direct text extraction of Instructions supports these working requirements, cons
 |---|---|
 | Investigation window | Three hours to review scenario and injects |
 | Presentation preparation | Build as you go; use the last hour to finalize |
-| Judging | Instructions indicate **1:45 PM**, zone/date not supplied in extracted text; judges visit teams and select five to present |
-| Confirmed challenge start / deadline | Not established; do not calculate remaining time from the judging line alone |
+| Judging | Instructions and visually reviewed Schedule indicate **1:45 PM** judging walkthrough / top five selected. Schedule also displays 2:10 PM finalist presentations and 2:45 PM top three announcement. Event date/zone unstated |
+| Published start / deadline | Schedule displays 10:15 AM Hackathon Begins; no event date/time zone or explicit submission deadline. Three hours later is 1:15 PM by calculation only; reconcile with 1:45 PM judging before using a deadline |
 | Rubric / scoring weights | Not found in reviewed material |
 | Presentation duration, format, submission method | Not established |
 | AI, research, and sharing rules | Not established |
