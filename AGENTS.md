@@ -10,7 +10,7 @@ Read README.md, human-status.txt, docs/progress.json, and the latest relevant an
 - docs/progress.json is the structured, public progress snapshot.
 - human-status.txt is the source for human progress. The page displays the four named roster sections and preserves additional participant reports in its full-text disclosure.
 - README.md is the written investigation hub. status.md, team3.md, and codex-evidence-analyst.md retain detailed work and source limitations.
-- The page fetches committed progress.json and human-status.txt from the public raw GitHub main branch at load, manual refresh, and every minute while visible if auto-refresh is enabled. GitHub CDN caching may delay updates. If the progress fetch fails, it can show a clearly labelled deployed snapshot.
+- The page fetches committed progress.json and human-status.txt from the public raw GitHub main branch at load, manual refresh, and every two minutes while visible if auto-refresh is enabled. The page resolves the latest public commit first so both files come from one revision. This uses one unauthenticated GitHub API request per refresh. On rate limits or lookup failure, it labels branch data as potentially cached. If the progress fetch fails, it can show a clearly labelled deployed snapshot.
 - The page does NOT monitor Drive, trigger agents, receive chat messages, or submit responses. A page refresh does not mean new evidence has been checked.
 
 ## After each substantive update
