@@ -214,3 +214,7 @@ Injects / evidence / exact locations:
 This repository is public. Keep original evidence in Drive and follow official sharing rules. This is a checked snapshot, not an automatically synchronized dashboard.
 
 **Accuracy before confidence. Unknown means unknown.**
+
+## Kherion timeline handoff — Inject 3
+
+Timeline support downloaded and visually reviewed I-003/E-003. The alert message displays Wed Dec 24 10:12 PM (year/zone unstated), claims a new sign-in for maxwafoone@gmail.com from Mount Crumpit, and does not provide the exact sign-in timestamp or source IP. Weekday versus scenario-year alignment needs clarification; account-name and location similarities do not establish identity or blackout causation. [Full sourced timeline update and six-part assessment](team3.md#inject-3-update--2026-10-15-1101-pdt). Earlier assessments remain preserved; leader reconciliation may supersede them explicitly.
