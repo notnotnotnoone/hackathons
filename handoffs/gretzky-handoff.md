@@ -1,8 +1,9 @@
 # Gretzky Evidence Desk — Handoff
 
 **Prepared:** 2026-10-15 11:39 PDT (UTC-07:00)  
+**Updated:** 2026-10-15 12:05 PDT (UTC-07:00)  
 **Owner:** Gretzky, Member 2 — evidence investigator  
-**Status:** Evidence review complete through Inject 4. Check Drive for later injects before making a “caught up” claim.
+**Status:** Evidence review complete through Inject 5 (I-005 / E-005); later injects must still be checked before claiming continuing coverage.
 
 ## Shared resources
 
@@ -15,9 +16,9 @@
 
 ## Current review position
 
-The Drive folder contained ten items at the last check: seven inject screenshots (Injects 1–3 and four separate images titled “Inject 4”), plus Instructions, Schedule, and Mission Overview. Injects 1–4 were visually reviewed by the evidence desk. The four Inject 4 screenshots are grouped as I-004 / E-004a–d.
+At the earlier 11:39 PDT check the folder contained ten items: seven inject screenshots (Injects 1–3 and four separate images titled “Inject 4”), plus Instructions, Schedule, and Mission Overview. The new check around 12:02 PDT found **eleven items**, including the single new **Inject 5** PNG. Injects 1–5 have now been visually reviewed by the evidence desk. The four Inject 4 screenshots remain grouped as I-004 / E-004a–d.
 
-**Latest evidence status:** Inject 4 reviewed and documented in the evidence log, README, archive/status.md, and progress data. The evidence workstream in docs/progress.json is marked “Inject 4 reviewed.” The JSON was parsed successfully. The progress website URL returned a 404 at the last browser check, so live display could not be confirmed.
+**Latest evidence status:** Inject 5 reviewed and recorded in [the evidence log](../investigation/codex-evidence-analyst.md#i-005--e-005--chrome-download-history-screenshot). The source image is [E-005 on Drive](https://drive.google.com/file/d/1MR7QpdHrDBFiORdyDPr1D4jA5iqbZyjy/view). Chrome displays four Dec 24, 2026 downloads but no exact clock times, user, host, source URLs, file contents, or proof of execution. The website was not verified live at the time of this note.
 
 ## Evidence summary
 
@@ -26,7 +27,35 @@ The Drive folder contained ten items at the last check: seven inject screenshots
 - **Inject 3 (I-003 / E-003):** Screenshot of a claimed Google security alert for maxwafoone@gmail.com, reporting a new sign-in from Mount Crumpit. Displayed email time is Wed, Dec 24, 10:12 PM; no year or zone. “max” and Mount Crumpit/FDR-15 are possible links, not proof. Authenticity, owner recognition, sign-in IP/device are unknown. Dec 24, 2026 was Thursday, conflicting with the displayed Wednesday.
 - **Inject 4 (I-004 / E-004a–d):** Four social screenshots report power/heating concerns. Reddit comments mention East Valley, West Ridge, and Riverdale. Two X posts display Dec 25, 2026 at 8:47 and 9:01 AM, with no time zone; one reply mentions using a neighbor’s generator. A Facebook post with a relative “23m” label uses urgent language and advises, among other things, burying food in snow and going to a store for water. Treat the advice as unverified and check official guidance before repeating it. These posts are not independent feeder measurements.
 
-**Conclusion:** Cyberattack, account compromise, attacker identity, and blackout causation remain unconfirmed. Public posts add claims and response context, not proof of cyber activity or exact outage scope.
+- **Inject 5 (I-005 / E-005):** A screenshot of `chrome://downloads` lists `Tomodachi Life FREE.zip`, `ryujinxx.exe`, `December Schedule.pdf`, and `Logs.txt` under **December 24, 2026**. Chrome displays “Your browser is managed by your organization.” The executable name resembles Ryujinx with an extra `x`; an altered filename and download entry are investigation leads, not malware proof. Neither device ownership nor execution, maliciousness, or SCADA linkage is shown.
+
+**Conclusion:** Cyberattack, account compromise, attacker identity, and blackout causation remain unconfirmed. Inject 5 adds a possible download/initial-access lead, not confirmation of malware or attack. Public posts add claims and response context, not proof of cyber activity or exact outage scope.
+
+## Inject 5 / I-005 / E-005 — New evidence handoff
+
+**Reviewed:** October 15, 2026, about 12:03 PDT (team time). **Displayed incident date:** December 24, 2026 (no individual download time or zone).
+
+**Evidence Summary:** [Inject 5 screenshot](https://drive.google.com/file/d/1MR7QpdHrDBFiORdyDPr1D4jA5iqbZyjy/view) depicts a managed Chrome browser's download history. Four named files appear in one date group, including a ZIP, an EXE, a PDF, and a TXT. The page is not a forensically verified browser history database or proof the files still exist.
+
+### Important Findings
+
+| Finding | Exact source/time | Why it matters | Classification |
+|---|---|---|---|
+| `Tomodachi Life FREE.zip` | E-005 first entry, Dec 24, 2026 group; exact time/zone absent | Potential game archive or lure; contents unknown | Visible filename; maliciousness hypothesized only |
+| `ryujinxx.exe` | E-005 second entry, same date group | Resembles Ryujinx with extra `x`; origin and execution merit scrutiny | Visible filename; impersonation/malware not proven |
+| `December Schedule.pdf`, `Logs.txt` | E-005 third/fourth entries, same date group | Could be benign or linked to the investigation, but contents unknown | Visible filenames; linkage hypothetical |
+| Organization-managed browser banner | E-005 page, above date group | Browser-management context; no identified user or SCADA host | Visible page text; system attribution unproven |
+| Potential time overlap with I-002/I-003 | I-005 Dec 24, 2026 versus earlier incident dates | Investigative timing lead only | Correlation, not causation |
+
+**Suspicious Activity:** The altered executable-looking filename and a game-related ZIP warrant provenance, security-scan, and execution checks if such records appear in later injects. No malware verdict, process execution, C2, credential theft, or utility access is visible. Do not associate these downloads with `max.contr.maint`, `adminelk`, or the Google alert solely from the date.
+
+**Missing Information:** Machine and user attribution, original URLs, file hashes/signatures, archive contents, exact download timestamps/zone, security telemetry, process-execution evidence, and any relation between `Logs.txt` and recovered SCADA logs.
+
+**Message for Team Leader:**
+
+> Inject 5 adds a managed-Chrome download-history screenshot grouped under Dec 24, 2026. It lists `Tomodachi Life FREE.zip`, `ryujinxx.exe`, `December Schedule.pdf`, and `Logs.txt`. The executable name resembles Ryujinx with an extra `x`, so origin and execution deserve attention. However, we have no file hashes, source URLs, precise times, user/host attribution, malware detection, or execution proof. No link to Inject 2's SCADA activity, Inject 3's account alert, or the blackout is established. Detailed report: [E-005 evidence desk](../investigation/codex-evidence-analyst.md#i-005--e-005--chrome-download-history-screenshot).
+
+**Handoff:** Evidence review completed through I-005. Preserve uncertainty. Do not open/run evidence downloads or submit anything without leader authorization.
 
 ## Next inject workflow
 
