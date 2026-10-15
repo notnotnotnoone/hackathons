@@ -75,3 +75,15 @@ Updated at (date, time, zone): YYYY-MM-DD HH:MM TIMEZONE
 
 Keep original evidence in the shared Drive folder.
 Get the leader's approval before a submission or operational action.
+
+============================================================
+TIMELINE CHAT PARTICIPANT - NAME NOT YET SUPPLIED
+Presence: Confirmed by the participant's direct request in the timeline chat.
+Team association: Team 3 / timeline chat; named roster identity not established.
+Status: Ready
+Working on: Timeline investigation support through this chat.
+Finished / handoff link: AI-assisted timeline and analysis published at team3.md; AI work status at status.md. These are not claims of independently completed human analysis.
+Next step: Confirm team name for attribution to the existing roster entry; review the timeline handoff.
+Need help with: Full original logs and source clock context remain investigation dependencies.
+Updated at (date, time, zone): 2026-10-15 10:40 PDT (UTC-07:00)
+Recorded by: Codex, at participant request. No other person's status changed.
