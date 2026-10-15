@@ -51,13 +51,13 @@ Recorded by: Codex evidence assistant from Gretzky's direct identity confirmatio
 ============================================================
 KHERION - MEMBER 3
 Suggested role: Timeline analyst
-Role confirmed: Not reported
-Status: Not reported
-Working on: Not reported
-Finished / handoff link: Not reported
-Next step: Not reported
-Need help with: Not reported
-Updated at (date, time, zone): Not reported
+Role confirmed: Timeline workstream identified with Kherion by direct self-identification in the existing timeline chat.
+Status: Working
+Working on: Incident timeline with Codex support.
+Finished / handoff link: AI-assisted Inject 1/2 timeline at team3.md; Codex reconciled PID/script screenshot transcription with correction history.
+Next step: Suggested: ask leader/evidence desk for complete logs and clock context; review a concise timeline presentation handoff.
+Need help with: Source year/time zone, recovery provenance, session-linking records, actual outage onset.
+Updated at (date, time, zone): 2026-10-15 10:50 PDT (UTC-07:00)
 
 ============================================================
 KEVIN - MEMBER 4
@@ -83,7 +83,8 @@ Keep original evidence in the shared Drive folder.
 Get the leader's approval before a submission or operational action.
 
 ============================================================
-TIMELINE CHAT PARTICIPANT - NAME NOT YET SUPPLIED
+HISTORICAL TIMELINE PARTICIPANT RECORD - NOW IDENTIFIED AS KHERION
+Identity update: Participant directly supplied the name Kherion on 2026-10-15; this is the same participant as KHERION - MEMBER 3 above. Earlier fields below are retained as history.
 Presence: Confirmed by the participant's direct request in the timeline chat.
 Team association: Team 3 / timeline chat; named roster identity not established.
 Status: Ready
