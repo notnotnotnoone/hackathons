@@ -222,3 +222,59 @@ Direct Drive folder inspection found ten items: four I-004 screenshots, the thre
 ### Change history
 
 - Added I-004a–d without deleting or retiming I-001–I-003 records; no causal conclusion or source authentication invented.
+
+## Inject 5 — Chrome download history (I-005)
+
+**Evidence:** [Drive screenshot](https://drive.google.com/file/d/1MR7QpdHrDBFiORdyDPr1D4jA5iqbZyjy/view). AI-assisted timeline review October 15, 2026. Screenshot only; neither original downloads database nor downloaded files supplied.
+
+### Updated Timeline
+
+| Time | Visible observation | Source | Confidence |
+|---|---|---|---|
+| Dec 24, 2026 (exact time/zone unknown) | Download entry: `Tomodachi Life FREE.zip` | I-005 | High for text; provenance unknown |
+| Dec 24, 2026 (exact time/zone unknown) | Download entry: `ryujinxx.exe` | I-005 | High for text; execution unknown |
+| Dec 24, 2026 (exact time/zone unknown) | Download entry: `December Schedule.pdf` | I-005 | High for text; contents unknown |
+| Dec 24, 2026 (exact time/zone unknown) | Download entry: `Logs.txt` | I-005 | High for text; relationship unknown |
+| Capture time unknown | Chrome reports organization-managed browser; older 2025 groups visible | I-005 | High for interface; owner unknown |
+
+### New Connections, Contradictions and Questions
+
+`Logs.txt` might be related to Inject 2's `_logsrecovered.txt`, but their names differ and contents are not available. The schedule might be unrelated to maintenance. Game archive/executable names are leads rather than proof of malicious code. Nothing identifies the browser owner as Hydro Siber or the SCADA host. Date grouping does not establish individual download order or time relative to SSH logs. Identify the browser profile/device; obtain authorized original download times, URLs, hashes, files and execution records. Earlier calendar, dashboard and logging contradictions remain unresolved.
+
+### Six-part assessment for leader review
+
+1. **Situation:** Browser-history screenshot adds unverified download leads.
+2. **New findings:** Four named files grouped under Dec 24, 2026; no specific times.
+3. **Leading hypotheses:** Ordinary downloads and unsafe software are alternatives; cause unknown.
+4. **Contradictions:** `Logs.txt` differs from `_logsrecovered.txt`; clock gaps persist.
+5. **Recommended action:** Preserve downloads metadata and corroborate files/host safely before attribution.
+6. **Critical unknowns:** User/device, original source, file contents, execution and grid linkage.
+
+**Leader message:** Inject 5 has four date-grouped downloads but no proof of malware, execution, SCADA involvement or blackout causation.
+
+## Inject 6 — Game-download webpage (I-006)
+
+**Evidence:** [Drive screenshot](https://drive.google.com/file/d/1pRAe1brGsL_7PGZZ_B4xY-3mKlikQmIw/view). AI-assisted timeline review October 15, 2026.
+
+### Updated Timeline
+
+| Time | Visible observation | Source | Confidence |
+|---|---|---|---|
+| Unknown: no date/time or zone | Chrome shows FreeGameDownloads, partial URL `5freedownloads.com/tomodachi/free/c`, "Not secure", Tomodachi Life artwork and a Download button. No click shown. | I-006 | High for displayed page; browsing history and security consequences unknown |
+
+### New Connections, Contradictions and Questions
+
+The game name matches the archive listed in I-005, making this a potential download origin, **not a proven referrer**. Browser warning alone does not establish malicious activity. The screenshot does not show when the site was viewed, who used it, whether files were transferred/executed, or any relation to power-grid events. Obtain authorized original visit/download records, full URL and hashes; determine device ownership and independently verify endpoint behavior. No earlier contradictions are resolved.
+
+### Six-part assessment for leader review
+
+1. **Situation:** Screenshot supplies a webpage clue, not SCADA telemetry.
+2. **New findings:** Tomodachi Life download page, truncated URL and Not secure indicator; no timestamp.
+3. **Leading hypotheses:** Possible source of the I-005 archive, unverified.
+4. **Contradictions:** Cannot place page visit before the Dec 24 download.
+5. **Recommended action:** Correlate original browser/file evidence; do not run unknown software.
+6. **Critical unknowns:** Visit time, file source, browser owner, execution and physical impact.
+
+**Leader message:** Inject 6 may relate to the game archive in Inject 5. Neither source establishes a completed file transfer, compromise or blackout cause.
+
+**Change log (2026-10-15 12:38 PDT):** Additive timeline updates for I-005 and I-006; earlier entries and correction history retained.
