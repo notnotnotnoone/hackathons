@@ -4,7 +4,7 @@
 
 [Current assessment](#current-assessment) · [Team status](#team-status) · [Next actions](#next-actions) · [Evidence and injects](#evidence-and-injects) · [Requirements](#challenge-requirements) · [How to update](#how-to-update)
 
-**[Human team status](human-status.txt)** · **[Shared Google Drive](https://drive.google.com/drive/folders/1tpag2T6jptGhCC7E2tKtuZbTXLQ9B-Mj)** · **[Master timeline](team3.md)** · **[Evidence analysis](codex-evidence-analyst.md)** · **[Analyst work logs](status.md)** · **[Previous README / assessment history](docs/history/readme-before-lead-sync.md)**
+**[Human team status](human-status.txt)** · **[Shared Google Drive](https://drive.google.com/drive/folders/1tpag2T6jptGhCC7E2tKtuZbTXLQ9B-Mj)** · **[Master timeline](team3.md)** · **[Evidence analysis](codex-evidence-analyst.md)** · **[Response options](kevin-response.md)** · **[Analyst work logs](status.md)** · **[Previous README / assessment history](docs/history/readme-before-lead-sync.md)**
 
 ## At a glance
 
@@ -12,9 +12,9 @@
 |---|---|
 | Latest inject | **Inject 2 — recovered SCADA log screenshot** |
 | Investigation | **Active. Blackout cause and unauthorized activity remain unconfirmed.** |
-| Latest published analyst updates reviewed | Evidence desk through 10:41 PDT; timeline through 10:30 PDT, October 15, 2026 |
-| Lead reconciliation | October 15, 2026, 10:34 PDT; reviewed all four existing repository files and the seven commits after initialization |
-| Drive coverage | Folder listing shows five files: Injects 1–2, Instructions, Schedule, Mission Overview. No later inject appeared in this check. |
+| Latest published analyst updates reviewed | Evidence desk through 10:41 PDT; timeline through 10:30 PDT; response through 10:40 PDT, October 15, 2026 |
+| Lead reconciliation | October 15, 2026, 10:34 PDT; reviewed all four existing repository files and the seven commits after initialization. The 10:40 PDT response handoff is linked and not yet folded into the numbered assessment. |
+| Drive coverage | Folder listing shows five files: Injects 1–2, Instructions, Schedule, Mission Overview. Evidence desk and response chat rechecked around 10:40–10:41 PDT; no later inject. |
 | Review coverage | This lead chat reconciled committed analyses; it has not independently inspected the inject images. Instructions and Mission Overview text were checked directly. |
 | Remaining intake gaps | Official event date/time zone and explicit deadline, rubric, presentation limits, AI/sharing rules; schedule visual review is complete |
 | Submission | No approved or submitted presentation recorded |
@@ -31,7 +31,7 @@ The user of the evidence chat explicitly confirmed presence; recorded in [human-
 
 **Still open:** full source logs/provenance, maintenance/account/IP authorization, session links, reason for logging stop, physical outage/service confirmation, clocks, dashboard logic, requirements/rubric, and presentation preparation/approval.
 
-**Proposed handoffs (not accepted assignments):** timeline support to reconcile PID/script spelling and clocks; response support to assess Medical District service and compare response options; leader to confirm requirements and assemble/review the presentation; evidence desk to correlate later injects and evaluate full records when available. Named teammates' personal statuses remain unchanged until they report them.
+**Proposed handoffs (not accepted assignments):** timeline support to reconcile PID/script spelling and clocks; response support has drafted options in [kevin-response.md](kevin-response.md), and Medical District service still needs a field check; leader to confirm requirements and review R-01–R-10 before any external message; evidence desk to correlate later injects and evaluate full records when available. Named teammates' personal statuses remain unchanged until they report them. The kevin human-status block is a draft from the response chat.
 
 **Assessment:** Access and logging activity are priority leads; cyberattack, actor identity, and blackout causation remain unconfirmed.
 
@@ -95,6 +95,7 @@ Members 2–4 confirm their roles in the plaintext file. Shared-account commits 
 | Lead support — this chat | Reconciled published Inject 1–2 handoffs and organized the hub | Requirements and priority review; personal progress belongs in human-status.txt |
 | Timeline support | Injects 1–2 reviewed; [master timeline](team3.md) published; latest reviewed update 10:30 PDT | Clocks, provenance, and PDF context |
 | Evidence desk | Injects 1–2 visually reviewed; [evidence notes](codex-evidence-analyst.md) published; latest reviewed update 10:41 PDT; schedule visually reviewed and source spellings rechecked | Full records, authorization, cross-source verification |
+| Response support | Injects 1–2 reviewed; [response options](kevin-response.md) published at 10:40 PDT. OCR agrees with the evidence desk on PID 2189, the backup spelling, and the schedule page | Leader review of R-01–R-10 before any external message or account change |
 
 **Chat visibility:** The available app listing exposed this lead chat and the related “Hackathon Crash Course” chat. The latter contains role/setup messages, with assistant content only exposed as reference placeholders. The separate evidence/timeline chats were not exposed in that listing; their committed handoffs were reviewed instead. This is not a claim that every same-account chat has been read. No messages were sent to other chats.
 
@@ -104,13 +105,13 @@ Owners below are proposed workstreams, not claims that a named teammate has acce
 
 | Priority / ID | Action | Proposed owner | Done when |
 |---|---|---|---|
-| **Now / A-001** | Schedule visually reviewed by evidence desk; confirm event date/zone, explicit deadline, rubric, presentation constraints, and AI/sharing rules | Leader + team | Remaining official requirements recorded |
+| **Now / A-001** | Schedule visually reviewed by the evidence desk; response chat OCR agrees. Confirm event date/zone, explicit deadline, rubric, presentation constraints, and AI/sharing rules | Leader + team | Remaining official requirements recorded |
 | **Now / A-002** | Update [human-status.txt](human-status.txt) and confirm your role | All members | Each member's latest work, blocker, and update time are recorded |
 | **High / A-003** | Obtain complete original recovered logs, collection details, and account/maintenance approvals; explain dashboard count/flow mismatch | Evidence desk | Source completeness, authorization, and telemetry discrepancies assessed |
-| **High / A-004** | Verify Medical District service, switch states, and independent measurements; reconcile source clocks | Response + timeline | Safety assessment and clock basis supported by evidence |
+| **High / A-004** | Verify Medical District service, switch states, and independent measurements; reconcile source clocks. Safety priority and option comparison drafted in [kevin-response.md](kevin-response.md); field verification is still open | Response + timeline | Safety assessment and clock basis supported by evidence |
 | **High / A-005** | Correlate SSH, sudo/su, process ancestry, service manager, audit and SCADA command records | Evidence + timeline | Session links and logging-stop reason established or explicitly unresolved |
-| **High / A-006** | Evidence desk native-resolution reread supports PID 2189 and script spelling without leading slash; timeline handoff still needs reconciliation; exact redirection requires original text | Evidence + timeline | Shared notes reconciled with correction history; original text checked when supplied |
-| **Next / A-007** | Compare response options and start presentation outline | Response + leader | Options state evidence, urgency, safety benefit, operational risk, reversibility, and prerequisites |
+| **High / A-006** | Evidence desk native-resolution reread supports PID 2189 and script spelling without leading slash; response OCR agrees. Timeline handoff still needs reconciliation; exact redirection requires original text | Evidence + timeline | Shared notes reconciled with correction history; original text checked when supplied |
+| **Next / A-007** | Compare response options and start presentation outline. Options R-01–R-10 are drafted in [kevin-response.md](kevin-response.md); leader approval and a presentation outline are still open | Response + leader | Options state evidence, urgency, safety benefit, operational risk, reversibility, and prerequisites |
 
 ## Evidence and injects
 
@@ -119,10 +120,10 @@ Drive originals remain the source material. The register below indexes them; it 
 | ID / material | Source | Review state / location |
 |---|---|---|
 | **I-001 / E-001 — distribution dashboard** | [Inject 1](https://drive.google.com/file/d/1AHluXwG8ne_K1KfKtUmcuQq0oamum46p/view) | Analysts visually reviewed; [evidence notes](codex-evidence-analyst.md#i-001--e-001--inject-1-review), [master timeline](team3.md#updated-timeline) |
-| **I-002 / E-002 — recovered SCADA logs screenshot** | [Inject 2](https://drive.google.com/file/d/1MCgSzKr_hXeddiMRyeHfcDiRR4_k9u51/view) | Analysts visually reviewed; cropped screenshot, original text absent from current listing; [detailed findings](codex-evidence-analyst.md#important-findings) |
+| **I-002 / E-002 — recovered SCADA logs screenshot** | [Inject 2](https://drive.google.com/file/d/1MCgSzKr_hXeddiMRyeHfcDiRR4_k9u51/view) | Analysts visually reviewed; cropped screenshot, original text absent from current listing; [detailed findings](codex-evidence-analyst.md#important-findings); [response options](kevin-response.md) |
 | Instructions | [PDF](https://drive.google.com/file/d/1G-lUTUJ4UZskPRoqscOQGws27nFlLr2W/view) | Evidence desk and lead sync checked extracted text; duplicated characters in extraction |
 | Mission Overview | [PDF](https://drive.google.com/file/d/1DLBUDgcRvDuI3U80JKUTrM3kXnUGv61z/view) | Evidence desk and lead sync checked extracted text; scenario context |
-| Schedule | [PDF](https://drive.google.com/file/d/1WC0S3vKC0HR8sd2lQq1gzcs9qh7fcjSC/view) | Evidence desk visually reviewed full page at 10:40 PDT; [transcribed schedule and limits](codex-evidence-analyst.md#schedule-visual-review-completed) |
+| Schedule | [PDF](https://drive.google.com/file/d/1WC0S3vKC0HR8sd2lQq1gzcs9qh7fcjSC/view) | Evidence desk visually reviewed the full page at 10:40 PDT; [transcribed schedule and limits](codex-evidence-analyst.md#schedule-visual-review-completed). Response chat OCR agrees. No zone on the page |
 
 No external research is used in this assessment. Download hashes reported by timeline support track its copies; no hash or source authenticity is independently verified by this lead sync. Inject receipt times and inject-specific deadlines were not fully recorded.
 
@@ -182,6 +183,7 @@ Injects / evidence / exact locations:
 
 - [Master timeline and timeline leader handoff](team3.md)
 - [Evidence findings, limitations, and evidence leader handoff](codex-evidence-analyst.md)
+- [Incident response options and leader handoff](kevin-response.md)
 - [Analyst work logs](status.md) — some older sections refer to four files / Inject 1; prefer each file's latest dated update.
 - [Pre-reorganization README](docs/history/readme-before-lead-sync.md) — retains initial assessment, earlier register entries, role handoffs, and operating guidance. Historical statements are not current status.
 - [Commit history](https://github.com/notnotnotnoone/hackathons/commits/main/) — inspect alongside signed logs when checking progress.
