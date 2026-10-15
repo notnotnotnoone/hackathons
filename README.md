@@ -29,8 +29,19 @@ Roles for members 2–4 are suggested assignments, pending team confirmation. Na
 | gretsky — Member 2 | Evidence investigator (suggested) | Awaiting role confirmation | After confirmation: inspect evidence and preserve provenance | Evidence-linked findings and limitations | Initial evidence | Setup; no member update yet |
 | kherion — Member 3 | Timeline analyst (suggested) | Awaiting role confirmation | After confirmation: reconstruct events and correlate clocks | Timeline with sources and uncertainty | Initial evidence and source time zones | Setup; no member update yet |
 | kevin — Member 4 | Incident response analyst (suggested) | Awaiting role confirmation | After confirmation: compare response options and safety impacts | Prioritized options with tradeoffs | Challenge constraints and system context | Setup; no member update yet |
+| Codex — this timeline chat | Incident timeline and intelligence support | Investigating | All four currently available Drive files downloaded; Inject 1 reviewed and initial master timeline saved locally | Review Instructions, Schedule, and Mission Overview; reconcile incident timestamps and prepare evidence-linked leader update | Outage onset and header time zone unconfirmed; official timing and sharing rules not yet reviewed | Codex / 2026-10-15 10:28 PDT (UTC−07:00) |
 
 Status vocabulary: `Ready`, `Investigating`, `Needs review`, `Blocked`, `Done`, `Awaiting materials`, `Awaiting role confirmation`. A status is self-reported; include an update time so others can assess freshness.
+
+### Timeline support progress — Codex
+
+**Updated:** 2026-10-15 10:28 PDT (UTC−07:00). This entry reports work from the timeline chat; it does not confirm or change the suggested human role assignments above.
+
+- **Completed:** Accessed the shared Drive folder and downloaded all four files currently present: Inject 1 (PNG), Instructions (PDF), Schedule (PDF), and Mission Overview (PDF). Recorded local file sizes and SHA-256 hashes. No subfolders were listed.
+- **Reviewed:** Inject 1. An initial master timeline, contradictions, unknowns, and a leader-message draft are saved locally in the timeline chat. These detailed findings have not yet been integrated into this README's shared assessment, evidence register, or incident timeline.
+- **Next:** Read the three PDFs for official requirements and scenario context, confirm source time zones, and prepare the sourced timeline handoff for the leader. Original evidence remains in Drive.
+- **Limits:** The initiating event, outage onset, and cause remain unconfirmed. Competition start/deadline and sharing rules have not yet been verified. Local hashes track downloaded copies; they do not authenticate the evidence.
+- **History:** The repository was empty during this chat's first inspection. A README is now present and has been reviewed. The setup text elsewhere describes the earlier intake state and has been preserved pending the leader's assessment update.
 
 ### Role handoffs
 
