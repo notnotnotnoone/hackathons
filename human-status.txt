@@ -87,3 +87,16 @@ Next step: Confirm team name for attribution to the existing roster entry; revie
 Need help with: Full original logs and source clock context remain investigation dependencies.
 Updated at (date, time, zone): 2026-10-15 10:40 PDT (UTC-07:00)
 Recorded by: Codex, at participant request. No other person's status changed.
+
+============================================================
+PRESENT PARTICIPANT - USER OF THE EVIDENCE CHAT
+Name / roster mapping: Not yet supplied; do not assume this is the leader, gretsky, kherion, or kevin.
+Presence: Confirmed by the participant's direct request to record presence in GitHub.
+Status: Working
+Working on: Evidence collection and team coordination with the Codex evidence assistant.
+Finished / handoff link: AI-assisted Inject 1/2 analysis and schedule review are committed in codex-evidence-analyst.md; this records assisted work, not independent manual verification by the participant.
+Next step: Share the team update; collect the next inject and clarify the open evidence/competition requirements.
+Need help with: Full original logs, authorization/maintenance records, independent equipment readings, official deadline/time zone and rubric.
+Updated at (date, time, zone): 2026-10-15 10:41 PDT (UTC-07:00)
+Recorded by: Codex evidence assistant, at the participant's explicit request. Presence is confirmed; name and roster mapping remain unresolved.
+Attribution note: Chat-specific presence records may refer to the same person. Do not count them as distinct people without roster confirmation.
