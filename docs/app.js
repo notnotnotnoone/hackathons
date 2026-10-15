@@ -98,7 +98,7 @@ function renderProgress(p) {
   }));
 }
 async function loadText(url) {
-  const response = await fetch(url, {cache:"no-store",signal:AbortSignal.timeout(12000)});
+  const response = await fetch(url + (url.includes("?") ? "&" : "?") + "t=" + Date.now(), {cache:"no-store",signal:AbortSignal.timeout(12000)});
   if (!response.ok) throw new Error("HTTP " + response.status);
   return response.text();
 }
