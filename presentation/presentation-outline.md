@@ -174,3 +174,38 @@ Why it is written this way:
 - [ ] Recheck Drive for a new inject before walking in.
 
 No utility command, external message, or competition submission was made.
+
+
+## Final Inject 8 — Evidence desk addendum for leader approval (13:06 PDT)
+
+**This is an evidence-desk addendum to Kevin's presentation, not independent leader approval.** It should be integrated into the 60-second and five-minute scripts before presenting. The existing seven-inject draft above remains historical until the team approves the exact revised wording. [Source: original I-008](https://drive.google.com/file/d/1-gc6iqIzCkryqRweTdYDUH0TLYf4cuM5/view) · [full I-008 evidence analysis](../investigation/codex-evidence-analyst.md#i-008--e-008--final-grid-operations-map).
+
+### Recommended change to the spoken summary
+
+> Final Inject 8 gives us a simulated Hydro Siber regional map dated Dec 25, 2026 at 8:43 AM, labelled PDT. It reports 92,430 customers without power and demand at 1,240 MW, down 18 percent from forecast. The hospital is on partial power with backup generators, water treatment is shown offline, and transit is partially powered. The displayed system includes 12 online, 5 degraded, 6 offline, and 3 unverified feeder statuses. Crucially, SUB-03 shows SCADA Online but field status Unconfirmed, while its note says SCADA shows offline; SUB-07 telemetry is unverified. The map is simulated, and the earlier feeder IDs are not directly interchangeable with these substation IDs. We have a strong picture of reported impacts but **still no verified cause or cyber-to-breaker command**. Our first response is to verify and protect critical services, preserve evidence, and restrict unsafe actions only through authorized operators.
+
+### Operational evidence to add to the judging version
+
+| Area | I-008 observed condition | Implication |
+|---|---|---|
+| System impact | 92,430 customers reportedly out (+14%), 1,240 MW demand (-18% vs forecast) | Quantifies the on-screen impact; denominator/baseline for customer change not shown |
+| Critical services | Hospital partial, backup generators active; water treatment offline; transit partial; emergency services online | Prioritize independent hospital/water/welfare and generator checks |
+| SUB-03 Central | SCADA Online; field Unconfirmed; 0 MW; 28,600 customers; note oddly says SCADA offline | **Internal contradiction**; don't order grid changes using one status field |
+| SUB-05 Hillsdale Park | SCADA/Field Offline, 0 MW, 17,200 customers | Physical outage state still needs confirmation; 07:32 mismatch alert could describe a prior condition |
+| SUB-07 Riverdale | SCADA/Field Unverified; 84 MW; 12,600 customers; telemetry loss since 06:31 | Telemetry uncertainty, not automatic proof of no power |
+| SUB-01 and SUB-02 | Degraded/Degraded | Voltage/service concerns in North Heights and East Valley |
+| SUB-04 and SUB-06 | Online/Online | These are substation IDs, **not** the FDR-04 and FDR-06 feeder IDs from Inject 1 |
+
+**Alert sequence, as displayed:** 07:32 SUB-05 status mismatch; 07:41 SUB-03 output loss; 07:57 water treatment offline; 08:12 North Heights voltage anomalies; 08:36 SUB-07 telemetry unverified; 08:41 Central District customer reports. The dashboard headline reads **PDT** despite a December date; Inject 1 was described with **PST** readings. Keep raw times and do not assert synchronization.
+
+**Important presentation correction:** The earlier 60-second opener says **12 of 18 feeders show no voltage**, based on Inject 1's row readings. That is an earlier screenshot-specific statement, not equivalent to Inject 8's **12 online / 5 degraded / 6 offline / 3 unverified** summary; the underlying asset counts are different and cannot be reconciled without an asset map. State the source explicitly rather than implying one snapshot corrected the other. Also avoid treating station MW figures (820 and 640) as actual measured generation.
+
+### Likely judge questions
+
+- **Did the final map prove the cyberattack?** No. It shows reported degradation, service disruption and unreliable/contradictory telemetry, not a successful malicious breaker command or attribution.
+- **How many feeders were down?** Inject 1 and Inject 8 use different asset displays/count definitions. Report each separately; neither reconciles the other without topology and definitions.
+- **What would you do first?** Verify hospital backups and water-treatment status with appropriate operators, support affected people, independently cross-check switch/relay states, and preserve forensic logs. Do not command switching based on contradictory screenshots.
+- **What is the most serious risk?** Hospital continuity and offline water treatment, followed by unverified operational states. A cyber origin remains a competing hypothesis, not a finding.
+- **Is the timestamp trustworthy?** The new screen displays December 25 and **PDT**. Prior readings were tagged **PST**. Treat cross-source timing as provisional.
+
+**Approval gate:** Leader and response owner reconcile this addendum into the final spoken script before the 1:45 PM judging walkthrough. Presentation remains **not approved and not submitted** in the recorded materials.
