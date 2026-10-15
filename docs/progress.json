@@ -29,12 +29,12 @@
     {
       "label": "Contradictions",
       "text": "Dashboard table and footer counts disagree; some OFFLINE readings show flow. Recovery/restart timing needs aligned clocks. A source reread supports PID 2189 and a backup path without a leading slash; underlying text is still needed.",
-      "source": "codex-evidence-analyst.md#transcription-differences-rechecked-against-inject-2"
+      "source": "investigation/codex-evidence-analyst.md#transcription-differences-rechecked-against-inject-2"
     },
     {
       "label": "Recommended action",
       "text": "Inject 4 resident reports support welfare checks, including places that are not on the feeder table. Do not repost the survival advice. The public paragraph is unchanged and still awaits leader approval. A generator sentence is optional.",
-      "source": "kevin-response.md#i-004-response--2026-10-15-1118-pdt"
+      "source": "investigation/kevin-response.md#i-004-response--2026-10-15-1118-pdt"
     },
     {
       "label": "Critical unknowns",
@@ -61,17 +61,17 @@
       "completed": "Reviewed four Inject 4 social-media screenshots; documented reported outage locations, displayed timestamps, public-safety concern, and source limitations.",
       "next": "Correlate any later injects with I-001–I-004; preserve account, time-zone, location, and provenance uncertainty.",
       "blocker": "No absolute time/zone or independent authentication for the posts; extent and source of household advice are unknown.",
-      "source": "codex-evidence-analyst.md#i-004--e-004--community-outage-posts-and-public-advice"
+      "source": "investigation/codex-evidence-analyst.md#i-004--e-004--community-outage-posts-and-public-advice"
     },
     {
       "id": "timeline",
       "name": "Timeline support — Kherion + Codex",
       "status": "Inject 4 reviewed and published",
       "updatedAt": "2026-10-15T11:39:00-07:00",
-      "completed": "Reviewed all four Inject 4 images, added dated and untimed resident reports, neighbourhood correlations, source confidence and six-part briefing to team3.md; preserved Injects 1–3.",
+      "completed": "Reviewed all four Inject 4 images, added dated and untimed resident reports, neighbourhood correlations, source confidence and six-part briefing to investigation/team3.md; preserved Injects 1–3.",
       "next": "Confirm affected feeder mapping, actual outage onset, post timing and independent field/Medical District conditions with later evidence.",
       "blocker": "Community posts unauthenticated, relative clocks unresolved, no independently confirmed feeder status or cyber causation.",
-      "source": "team3.md"
+      "source": "investigation/team3.md"
     },
     {
       "id": "response",
@@ -81,7 +81,7 @@
       "completed": "Inject 4 reviewed. West Ridge matches a dark feeder. Unlisted resident place names are added to welfare checks. Survival advice is not for reposting.",
       "next": "Leader accepts or edits the public paragraph. Optional generator sentence waits on that decision.",
       "blocker": "Leader approval, and field confirmation of Medical District service.",
-      "source": "kevin-response.md"
+      "source": "investigation/kevin-response.md"
     }
   ],
   "actions": [

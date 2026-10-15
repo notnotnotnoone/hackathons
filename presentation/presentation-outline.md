@@ -5,7 +5,7 @@
 **Evidence:** I-001, I-002, Mission Overview, Instructions, Schedule. Drive rechecked at 10:55 PDT: same five files, no Inject 3.
 **Use:** Walk-up answer for judges, and a short oral if the team is selected. No rubric, duration, or submission method has been published. Do not present this until the leader accepts the wording.
 
-Options and tradeoffs stay in [kevin-response.md](kevin-response.md). The timeline stays in [team3.md](team3.md). The evidence limits stay in [codex-evidence-analyst.md](codex-evidence-analyst.md).
+Options and tradeoffs stay in [investigation/kevin-response.md](../investigation/kevin-response.md). The timeline stays in [investigation/team3.md](../investigation/team3.md). The evidence limits stay in [investigation/codex-evidence-analyst.md](../investigation/codex-evidence-analyst.md).
 
 ## Finding in one sentence
 
@@ -92,7 +92,7 @@ Instructions say three hours to review, build the presentation as you go, and us
 | Meets a confirmed rubric, length, format, and deadline | No. Those requirements have not been published |
 | Claims cite evidence IDs | Yes |
 | Separates observation, source claim, and hypothesis | Yes |
-| Covers alternatives, safety, and tradeoffs | Yes. The option table is in kevin-response.md |
+| Covers alternatives, safety, and tradeoffs | Yes. The option table is in investigation/kevin-response.md |
 | Leader approved this exact version | No |
 
 ## Inject 3 addendum — 2026-10-15 11:05 PDT
@@ -103,7 +103,7 @@ Inject 3 is a screenshot of an email titled Security alert. It displays Wed, Dec
 
 Say this: the name and the place are leads for an out-of-band call. They are not proof that this Google user is `max.contr.maint`, and they are not proof that the sign-in caused the outage. The header says Wednesday. December 24, 2026 was a Thursday, and the email states no year.
 
-Leave the public paragraph as written. R-11 in [kevin-response.md](kevin-response.md) is the account action: ask, do not click, do not reset yet.
+Leave the public paragraph as written. R-11 in [investigation/kevin-response.md](../investigation/kevin-response.md) is the account action: ask, do not click, do not reset yet.
 
 ## Inject 4 addendum — 2026-10-15 11:18 PDT
 

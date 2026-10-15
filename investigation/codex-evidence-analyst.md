@@ -4,11 +4,11 @@
 **Role:** Cybersecurity Evidence & Forensics Analyst
 **Status:** Investigating; Injects 1, 2 and 3 reviewed
 **Updated:** 2026-10-15 11:02 PDT (UTC-07:00)
-**Shared status:** [status.md](status.md)
+**Shared status:** [archive/status.md](../archive/status.md)
 
 ## Work completed
 
-- Read the repository coordination README and status.md.
+- Read the repository coordination README and archive/status.md.
 - Visually reviewed Inject 1, extracted discrepancies, and committed evidence-linked assessment, register, timeline entries, and questions to README.md (commit 3d22574121136b8618b9eafd7e2edbc6e4f1227c).
 - Read Mission Overview and Instructions through text extraction. Schedule timetable remains unverified because it did not extract as text.
 - Checked Drive again and found Inject 2, a PNG screenshot of recovered system logs. Visually reviewed the visible entries; no underlying text log was supplied.
@@ -119,7 +119,7 @@ Re-downloaded and inspected the original PNG at native resolution (1280 x 367). 
 
 | Item | Native-resolution reread | Correction / implication |
 |---|---|---|
-| Hoovey session closure, Dec 24 17:58:20 | Screenshot reads sshd[2189] | Confirms this evidence log's 2189 reading; team3.md's 2182 differs. Lead/timeline should reconcile against the PNG; no attribution depends on this PID. |
+| Hoovey session closure, Dec 24 17:58:20 | Screenshot reads sshd[2189] | Confirms this evidence log's 2189 reading; investigation/team3.md's 2182 differs. Lead/timeline should reconcile against the PNG; no attribution depends on this PID. |
 | Root cron, Dec 24 17:30:38 | Visible path reads opt/backup/scada/dump.sh, without a leading slash | Preserve literal source spelling; do not normalize it to /opt/backup/scada/dump.sh. This screenshot alone cannot establish the actual filesystem path or execution result. |
 | Cron redirection | Visible suffix appears as > /dev/null/2.%1 | Treat exact punctuation as provisional until original text is available; do not turn it into a conventional shell command or infer successful backup. |
 | Recovery annotation | Recovered at: 11:00 AM, with no date/zone | Any recovery/restart conflict requires matching date and clock, not just comparing the displayed times. |

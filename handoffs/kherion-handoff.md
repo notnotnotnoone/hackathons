@@ -1,3 +1,155 @@
+# Kherion — New Chat Handoff
+
+Prepared October 15, 2026, 11:07 PDT (UTC−07:00). This is a snapshot; repository and Drive may change after this time.
+
+## Who and what
+
+The user directly confirmed their name is **Kherion**, Member 3 / timeline analyst, in the Young Defenders Hackathon. Continue as their incident timeline and intelligence assistant for the Whoville / Hydro Siber blackout. Do not ask their name again. A previous unnamed timeline participant record was mapped to Kherion; it is not an extra person.
+
+Competition context from the user: three hours, new injects about every 10–30 minutes. Maintain the complete chronological timeline; track assets/accounts/people, distinguish occurrence from discovery/reporting, preserve corrections, evaluate hypotheses and contradictions, and provide concise leader messages. Never invent timestamps, causal links, or missing clock zones.
+
+For each inject, respond with:
+1. Updated Timeline: Time | Event | Source | Confidence.
+2. New Connections.
+3. Contradictions.
+4. Unanswered Questions.
+5. Message for Team Leader (short, copyable).
+
+Also follow the repository's six-part assessment when publishing handoffs: Situation, New findings, Leading hypotheses/confidence, Contradictions, Recommended action, Critical unknowns.
+
+## Start here in the new chat
+
+1. Read the live repository's AGENTS.md, README.md, human-status.txt, docs/progress.json, and investigation/team3.md. They may be newer than this snapshot.
+2. Check the shared Drive folder for later injects when requested; the last direct timeline-chat listing around 11:01 PDT had six files, through Inject 3. A teammate's later 11:05 check also reported six files. No unattended monitoring is configured.
+3. Continue the existing investigation/team3.md master timeline and correction history. Do not create a competing timeline or redo completed screenshot analysis without a reason.
+4. Highest-value next evidence: complete recovered logs, original email/security events, clock/year/time-zone context, account authorization/ownership and session linkage, independent physical-grid readings.
+5. A presentation draft exists; read its latest version before proposing changes. Preserve leader approval requirements.
+
+## Shared locations
+
+- Repository: https://github.com/notnotnotnoone/hackathons (public, main branch).
+- Progress website: https://notnotnotnoone.github.io/hackathons/
+- Drive: https://drive.google.com/drive/folders/1tpag2T6jptGhCC7E2tKtuZbTXLQ9B-Mj
+- investigation/team3.md: Kherion's master timeline, source limits, correction history and leader handoffs.
+- archive/status.md: shared AI analyst logs; append/change only this workstream's entries.
+- human-status.txt: named human status; Kherion identity is confirmed. Human analysis is AI-assisted unless the person reports independent verification.
+- investigation/codex-evidence-analyst.md: Gretzky's evidence workstream.
+- investigation/kevin-response.md: Kevin's response options.
+- presentation/presentation-outline.md: draft, not approved/submitted.
+- README.md: shared lead assessment and requirements; some dates/sections lag newer analyst handoffs.
+- docs/progress.json: structured progress website data.
+- AGENTS.md: current repository update rules.
+
+All members share one GitHub account. A shared-account commit does not identify the human author. Named team: Leader, Gretzky (header GRETSKY preserved for compatibility), Kherion, Kevin. Do not change anyone else's personal status or infer inactivity from older dates.
+
+## Evidence coverage
+
+Six files downloaded locally: Inject 1.png, Inject 2.png, Inject 3.png, Instructions.pdf, Schedule.pdf, Mission Overview.pdf. Images were visually inspected; file sizes and SHA-256 hashes recorded.
+
+This timeline chat has NOT independently read the three PDFs. Evidence and lead chats report Instructions/Mission Overview text review; evidence desk reports Schedule visual review, with response OCR agreement. Treat these as published teammate findings until independently inspected.
+
+### Sources
+
+- I-001 / E-001, dashboard: https://drive.google.com/file/d/1AHluXwG8ne_K1KfKtUmcuQq0oamum46p/view
+- I-002 / E-002, cropped recovered logs screenshot: https://drive.google.com/file/d/1MCgSzKr_hXeddiMRyeHfcDiRR4_k9u51/view
+- I-003 / E-003, Google-labelled security alert screenshot: https://drive.google.com/file/d/1iQa1Y2u0vdNfuVin0ejEClH4pdJv0KUL/view
+- Instructions: https://drive.google.com/file/d/1G-lUTUJ4UZskPRoqscOQGws27nFlLr2W/view
+- Schedule: https://drive.google.com/file/d/1WC0S3vKC0HR8sd2lQq1gzcs9qh7fcjSC/view
+- Mission Overview: https://drive.google.com/file/d/1DLBUDgcRvDuI3U80JKUTrM3kXnUGv61z/view
+
+Earlier local E01–E04 labels were collection aliases (including PDFs), not the shared E-001/E-002/E-003 register.
+
+## Current intelligence
+
+### Inject 1
+
+Dashboard header: Dec 25, 2026, 08:43:12 AM; header zone unstated. Row update column explicitly says PST, ranging 08:42:12 to 08:43:03. These are reading updates, not proven outage onset.
+
+- Table: 14 OFFLINE / 4 ONLINE (03, 05, 07, 18). Footer: 17 OFFLINE / 1 ONLINE.
+- FDR-04: OFFLINE but 12.8 MW / 13.6 kV, updated 08:42:18 PST.
+- FDR-08: OFFLINE but 9.6 MW / 13.5 kV, updated 08:42:26 PST.
+- FDR-03 and FDR-07: ONLINE, zero MW with nonzero voltage. Zero load alone does not prove outage or manipulation.
+- Mount Crumpit is FDR-15, Ridge Station; OFFLINE, zero MW/kV, 08:42:40 PST.
+- DEGRADED and discrepancy warning shown. Independent physical state is not established.
+
+### Inject 2
+
+Host whoville-scada; log lines omit year/time zone. Read raw timestamps; year 2026 is contextual only.
+
+| Raw time | Visible record |
+|---|---|
+| Dec 24 17:20 (seconds clipped) | Partial accepted-login line for hoovey.admin.cpc; bottom edge cropped. |
+| Dec 24 17:22:43 | Accepted password for sally.admin.cpc from 183.229.57.190. |
+| Dec 24 17:30:38 | Root cron command opt/backup/scada/dump.sh; exact redirection/outcome unverified. |
+| Dec 24 17:46:00 | sally.admin.cpc remote session closed. |
+| Dec 24 17:58:20 | hoovey.admin.cpc remote session closed; PID 2189. |
+| Dec 24 23:59:02 | Failed password for max.contr.maint from 89.46.57.27. |
+| Dec 25 00:00:36 | Accepted password for max.contr.maint from same IP. |
+| Dec 25 00:01:51 / 00:03:03 | su authentication failures; initiating account not shown. |
+| Dec 25 00:05:14 | adminelk sudo record: TTY=pts/0; PWD=/etc; USER=root; COMMAND=/usr/bin/su. |
+| Dec 25 00:05:58 | rsyslog exits on signal 15; sender/reason unknown. |
+| 11:00 AM, date/zone absent | Annotation says logs recovered from physical-location backup server; original logs allegedly disabled. |
+| Dec 25 11:03:15 | rsyslog start entry. |
+
+The 11:00 recovery note versus 11:03:15 start entry conflicts only if same day/clocks apply. Screenshot is not complete coverage; do not assert continuous logging outage. One failed password then success is not proof of brute force. Sudo record does not prove root shell. No shown linkage proves max.contr.maint, su failures and adminelk actions came from one person/session. Signal 15 does not prove malicious suppression.
+
+**Corrections already made and documented:** Hoovey PID was initially misread 2182; original-resolution reread supports **2189**. Backup path initially gained an invented leading slash; screenshot says **opt/backup/scada/dump.sh**. Current investigation/team3.md rows are corrected and dated history retains earlier readings.
+
+### Inject 3
+
+Google-labelled security alert screenshot; visible sender no-reply@accounts.google.com; displayed message timestamp **Wed, Dec 24, 10:12 PM**. No year/zone. Body claims new sign-in for **maxwafoone@gmail.com** from **Mount Crumpit**. Exact sign-in event time, IP/device/session are not supplied. Sender authenticity is unverified from screenshot.
+
+- “max” versus max.contr.maint is a candidate relationship, not an established identity.
+- Mount Crumpit matches I-001 FDR-15's service-area name, not proof of a shared asset or causal relationship.
+- If clocks/year align, email display precedes later SSH records; that cross-source order is conditional.
+- **Calendar contradiction:** Dec 24, 2026 is Thursday, but email says Wednesday. Preserve missing-year uncertainty; do not silently pick a different year.
+- New sign-in alone does not establish unauthorized access or explain the blackout.
+
+## Assessment and unanswered questions
+
+Blackout cause, initiating event and actual outage onset remain unknown. No confirmed malicious actor, attack chain, compromise, or connection from account actions to physical service loss is established. Cyber activity, authorized maintenance, technical/measurement/display faults, human error, equipment failure and environmental/supply explanations remain open.
+
+Obtain, through challenge evidence/team:
+- Full original recovered logs, omitted lines, collection provenance and source clocks.
+- Google original message/full headers/security event data, owner recognition, exact sign-in time/IP/device.
+- Account ownership, approved maintenance, source-IP baselines and Gmail-to-SCADA linkage.
+- Session/audit/process ancestry, sudo outcome, reason/sender for syslog stop, SCADA control commands.
+- Independent breaker/relay/field readings, especially Medical District service.
+- Official event date/zone, explicit deadline, rubric, presentation limits and sharing/AI rules.
+
+Teammate-reported schedule: 10:15 AM start; three hours stated (1:15 PM is calculated only, not an explicit deadline); 1:45 PM judging walkthrough; 2:10 PM finalists; 2:45 PM top three. Date/zone and exact submission deadline remain unconfirmed.
+
+Latest team response report at 11:05: Kevin added R-11, proposing out-of-band verification of the claimed sign-in using a known contact. No account reset from the screenshot; public paragraph unchanged, leader approval pending. No external messages, utility commands, or competition submission have been performed by this timeline chat.
+
+## GitHub update workflow and tooling
+
+User has explicitly authorized progress/status commits. Continue focused routine commits without repeated permission questions. Utility operations, external messages, competition submissions and account changes require explicit authorization for those actions.
+
+Use available GitHub connector tools: fetch_file reads contents and current blob SHA; update_file replaces UTF-8 content using that SHA; create_file creates new paths. Local git was not found in PATH or common install locations; connector writes work and were used successfully. Do not waste time cloning again unless environment changes.
+
+Multiple teammates edit concurrently. A 409 conflict occurred and was resolved by fetching the latest version and merging only our change. Never overwrite unrelated work or force-push.
+
+After substantive work:
+1. Update source log investigation/team3.md with exact sources, confidence and correction history.
+2. Re-fetch docs/progress.json, update only timeline workstream and assigned actions; set actual ISO time/zone and top-level updatedBy. Preserve six assessment entries, other workstreams, IDs and milestones; shared assessment reconciliation is led by the leader.
+3. Only update latestInject after direct Drive check or explicitly dated teammate report; checkedAt is evidence-check time, not edit time.
+4. Validate JSON and commit; open progress website, click Refresh progress and verify visible values/time. Latest verification displayed timeline “Inject 3 reviewed” at 11:03 PDT. Website is a committed-data view, not a Drive monitor.
+5. Preserve human-status section headers/fields. Kherion's last human row is older than Inject 3; do not mistake it for current AI review coverage.
+6. Keep evidence originals in Drive. No secrets/tokens in commits.
+
+## Local continuity
+
+If the next chat is on the same machine, prior outputs are in:
+C:/Users/ReuseTechBC/Documents/Codex/2026-10-15/new-chat/outputs/Whoville Evidence/
+
+Files include all six originals, Download Manifest.csv, Master Timeline.md (initial I-001 snapshot), Team 3 Timeline.md (older I-001/I-002 snapshot), and Inject 3 Timeline Update.md. **Live GitHub investigation/team3.md is the authoritative evolving master; older local snapshots are historical.** New chat cwd may differ; use absolute paths if needed.
+
+Below is the full investigation/team3.md snapshot fetched for this handoff, preserving all row timestamps and prior history. Prefer the live file if newer.
+
+---
+
+# Appendix — investigation/team3.md snapshot
+
 # Team 3 — Timeline & Intelligence
 
 **Owner:** Kherion — Member 3, with Codex timeline support  
@@ -98,7 +250,7 @@
 
 ## Presence and coordination update — 2026-10-15 10:40 PDT
 
-- This chat's participant explicitly requested presence confirmation; recorded in [human-status.txt](human-status.txt). Human name has not been supplied, so no named roster entry is attributed or changed.
+- This chat's participant explicitly requested presence confirmation; recorded in [human-status.txt](../human-status.txt). Human name has not been supplied, so no named roster entry is attributed or changed.
 - Timeline support remains active. I-001 and I-002 are reviewed; five files downloaded. Three PDF reviews by this timeline chat remain pending.
 - Lead README now adopts E-002 for I-002 and links this file as the master timeline; the earlier unassigned-ID note above is superseded.
 - Evidence desk's 10:40 update reports visual Schedule review and no new inject in its latest check. These are teammate reports, not a fresh Drive check by this chat.
@@ -162,63 +314,3 @@
 - I-003/E-003 added with one message timestamp and an explicitly untimed sign-in claim. Earlier I-001/I-002 findings retained.
 - Earlier “five files” and “Inject 2 latest” notes describe prior checks; six files and Inject 3 are current as of this review.
 
-
-## Inject 4 — community outage reports — 2026-10-15 11:39 PDT
-
-**Evidence:** Four distinct screenshots named "Inject 4" in the challenge Drive, reviewed visually. Source IDs here use I-004a–d within Inject 4 (shared evidence desk uses I-004/E-004).
-- **I-004a:** [Reddit discussion](https://drive.google.com/file/d/1CUNuPYSCE9y9prf1uCUYhjlMU9K1_WAm/view)
-- **I-004b:** [Ned Mcdodd X post and generator reply](https://drive.google.com/file/d/1XN9CpCFTRhB8AuFq9e_RgGDRfUK5cAIL/view)
-- **I-004c:** [LouLouWho advice post](https://drive.google.com/file/d/1a2gAJlOUtpwflgsO99Zex6_nqia_a_CA/view)
-- **I-004d:** [OzzyFlight X post](https://drive.google.com/file/d/1fAsOH6POqtOg9kaey9DQqxxYqrmyYScE/view)
-
-Direct Drive folder inspection found ten items: four I-004 screenshots, the three earlier inject images, and three PDFs. The screenshots are unverified social-media representations, not authenticated original posts. Incident times are separate from October 15 collection/review times.
-
-### Updated Timeline (additions to existing I-001–I-003 master)
-
-| Time | Event | Source | Confidence |
-|---|---|---|---|
-| Dec 25, 2026, 08:47 AM; zone unstated | OzzyFlight (`pilot_ozzy2323`) says they hoped for a snow day but "now nothing turns on." Resident-reported electrical loss; place, start time, and equipment unverified. | I-004d, X header/body | High for screenshot text; low for independently verified conditions |
-| Dec 25, 2026, 09:01 AM; zone unstated | Ned Mcdodd (`notyourmayor_`) asks whether electricity is out elsewhere and reports freezing conditions at home. | I-004b, X header/body | High for screenshot text; low for independently verified conditions |
-| Relative "1h"; screenshot capture day/zone unknown | r/Whoville poster `greenestNotTheMeanest` reports apparent outage in Central; comments from `yelpb27`, `whobrisubris`, `chereshnya09`, and `stustustu0` report East Valley, West Ridge, and Riverdale outages, with Riverdale heating trouble. Status bar says 11:34 but cannot assign an absolute post timestamp. | I-004a, post, comments, status bar | High for visible claims; report/event timestamps unknown |
-| Relative "1h"; capture day/zone unknown | `bricklecrackled` (`Treesforchopping1`) says they have used a neighbour's generator "this morning." Not a measured power status or exact timeline event. | I-004b, reply | High for screenshot text; event time unverified |
-| Relative "23m"; capture day/zone unknown | `LouLouWho` posts household outage advice and warns of cold/heating consequences. Claimed urgency, official status and safety guidance not verified. | I-004c, post | High for visible claims; authority unverified |
-
-### New Connections
-
-- Public accounts independently *claim* losses or lack of heat in Central Whoville, East Valley, West Ridge and Riverdale. This is evidence of geographically broad **reported** impact, not independent feeder/relay confirmation.
-- 08:47 is the earliest explicit full date-and-clock stamp within I-004, not evidence the blackout *began* at 08:47. Relative "1h"/"23m" markers cannot be converted to timestamps without capture date/clock context.
-- The incident dashboard (I-001, 08:43:12 Dec 25, 2026, header zone unknown) precedes the 08:47 X post **only if source clock zones align**. Neither source establishes the initial physical outage time.
-- Heating reports increase the safety priority of verified warming resources and vulnerable-resident checks. A poster's emergency advice is not validated official guidance; in particular, do not repeat improvised food-storage advice as approved.
-- I-004 does not identify a SCADA actor, demonstrate a breaker switching command, correlate reported areas with feeders, or resolve physical status at the Medical District.
-
-### Contradictions / uncertainties
-
-- No new direct technical contradiction is established; firsthand outage complaints and SCADA display inconsistency can coexist.
-- Two X post timestamps contain the explicit date Dec 25, 2026 but **not** a zone. Reddit's phone-clock 11:34, relative "1h" and LouLouWho's "23m" do not identify a reliable incident timestamp or even a known screenshot date.
-- I-003's "Wed, Dec 24" versus Dec 24, 2026 Thursday issue remains unresolved, as do I-001 counts/telemetry and I-002 recovery/restart clocks.
-- A social platform's visual verified badge or name is not proof of identity, source authorization, content accuracy, or a government statement.
-
-### Unanswered Questions
-
-1. Are the neighbourhood outages confirmed by utility trouble calls, meter events, independent crews, or relay records, and what are their actual onset times?
-2. What are the social screenshots' original URLs, capture times, local time zones and authenticity?
-3. Which feeders serve Central, East Valley, West Ridge and Riverdale? Are Medical District facilities and confirmed warming sites powered?
-4. Does LouLouWho represent an authorized incident/public-safety source, and what advice has incident command verified?
-5. Has cold exposure caused urgent medical or community-service needs?
-
-### Six-part leader assessment
-
-1. **Situation:** Community claims suggest a wider public electricity/heating disruption than any single resident report; physical scope and cause remain unknown.
-2. **New findings:** Dec 25 08:47 and 09:01 explicitly timestamped X posts; four neighbourhoods reported in Reddit discussion; a relative-time public guidance post.
-3. **Leading hypotheses/confidence:** Multi-area disruption is credible as a *pattern of reports*, not established by physical readings. Authorized maintenance, account abuse, measurement problems, equipment failure, other operational and environmental causes remain open. Cyberattack not confirmed.
-4. **Contradictions:** Relative/social timestamps cannot be reconciled to absolute incident clocks. Prior dashboard, log recovery and email calendar discrepancies remain.
-5. **Recommended action:** Verify on-the-ground neighbourhood outages, Medical District conditions, incident clocks, welfare/warming support and publicly endorsed guidance. Preserve original technical logs and avoid unsupported cyber attribution.
-6. **Critical unknowns:** Power-loss onset, physical grid coverage, timing/identity of posts, health impact, officially approved guidance, actor/session links and cause.
-
-### Message for Team Leader
-
-> Inject 4 comprises four social-media screenshots. Dec 25, 2026 posts at 08:47 and 09:01 report power loss and freezing indoor conditions. Reddit comments claim outages across Central, East Valley, West Ridge and Riverdale, with time shown only relatively; LouLouWho shares unverified advice. These corroborate *reported* widespread impacts, not the physical outage onset, feeder states, or a cyberattack. Prioritize verified field conditions, Medical District service, vulnerable residents and approved public guidance. Existing technical uncertainties persist.
-
-### Change history
-
-- Added I-004a–d without deleting or retiming I-001–I-003 records; no causal conclusion or source authentication invented.

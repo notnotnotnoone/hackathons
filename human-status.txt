@@ -42,7 +42,7 @@ Role confirmed: Evidence collection / investigation role established in this cha
 Presence: Confirmed directly by Gretzky in the evidence chat.
 Status: Working
 Working on: Collecting evidence and coordinating AI-assisted evidence analysis.
-Finished / handoff link: AI-assisted Inject 1/2 findings, schedule review and log reread in codex-evidence-analyst.md. Independent human verification is not claimed.
+Finished / handoff link: AI-assisted Inject 1/2 findings, schedule review and log reread in investigation/codex-evidence-analyst.md. Independent human verification is not claimed.
 Next step: Obtain full logs and maintenance/access approvals through the team; collect the next inject and brief the leader.
 Need help with: Full source logs, authorized-account/IP baselines, audit linkage, independent equipment readings, official requirements.
 Updated at (date, time, zone): 2026-10-15 10:49 PDT (UTC-07:00)
@@ -54,7 +54,7 @@ Suggested role: Timeline analyst
 Role confirmed: Timeline workstream identified with Kherion by direct self-identification in the existing timeline chat.
 Status: Working
 Working on: Incident timeline with Codex support.
-Finished / handoff link: AI-assisted Inject 1/2 timeline at team3.md; Codex reconciled PID/script screenshot transcription with correction history.
+Finished / handoff link: AI-assisted Inject 1/2 timeline at investigation/team3.md; Codex reconciled PID/script screenshot transcription with correction history.
 Next step: Suggested: ask leader/evidence desk for complete logs and clock context; review a concise timeline presentation handoff.
 Need help with: Source year/time zone, recovery provenance, session-linking records, actual outage onset.
 Updated at (date, time, zone): 2026-10-15 10:50 PDT (UTC-07:00)
@@ -67,7 +67,7 @@ Role confirmed: Confirmed by Kevin in this chat on 2026-10-15.
 Presence: Confirmed by Kevin's direct request to confirm this status.
 Status: Working
 Working on: Inject 4 resident reports. Add unnamed neighbourhoods to welfare checks. Do not repost the survival advice.
-Finished / handoff link: kevin-response.md and presentation-outline.md
+Finished / handoff link: investigation/kevin-response.md and presentation/presentation-outline.md
 Next step: Leader accepts or edits the public paragraph. An optional generator sentence is waiting on that decision.
 Need help with: Leader decision on the public wording.
 Updated at (date, time, zone): 2026-10-15 11:18 PDT (UTC-07:00)
@@ -77,7 +77,7 @@ Recorded by: Incident-response assistant, after Kevin asked to add the new injec
 EXAMPLE ONLY - NOT A TEAM STATUS
 Status: Working
 Working on: Checking the timestamps in Inject 2.
-Finished / handoff link: Timeline draft in team3.md.
+Finished / handoff link: Timeline draft in investigation/team3.md.
 Next step: Compare the log times with the dashboard.
 Need help with: Leader to confirm the source time zone.
 Updated at (date, time, zone): YYYY-MM-DD HH:MM TIMEZONE
@@ -92,7 +92,7 @@ Presence: Confirmed by the participant's direct request in the timeline chat.
 Team association: Team 3 / timeline chat; named roster identity not established.
 Status: Ready
 Working on: Timeline investigation support through this chat.
-Finished / handoff link: AI-assisted timeline and analysis published at team3.md; AI work status at status.md. These are not claims of independently completed human analysis.
+Finished / handoff link: AI-assisted timeline and analysis published at investigation/team3.md; AI work status at archive/status.md. These are not claims of independently completed human analysis.
 Next step: Confirm team name for attribution to the existing roster entry; review the timeline handoff.
 Need help with: Full original logs and source clock context remain investigation dependencies.
 Updated at (date, time, zone): 2026-10-15 10:40 PDT (UTC-07:00)
@@ -104,7 +104,7 @@ Name / roster mapping: Gretzky, confirmed directly in the evidence chat; maps to
 Presence: Confirmed by the participant's direct request to record presence in GitHub.
 Status: Working
 Working on: Evidence collection and team coordination with the Codex evidence assistant.
-Finished / handoff link: AI-assisted Inject 1/2 analysis and schedule review are committed in codex-evidence-analyst.md; this records assisted work, not independent manual verification by the participant.
+Finished / handoff link: AI-assisted Inject 1/2 analysis and schedule review are committed in investigation/codex-evidence-analyst.md; this records assisted work, not independent manual verification by the participant.
 Next step: Share the team update; collect the next inject and clarify the open evidence/competition requirements.
 Need help with: Full original logs, authorization/maintenance records, independent equipment readings, official deadline/time zone and rubric.
 Updated at (date, time, zone): 2026-10-15 10:41 PDT (UTC-07:00)

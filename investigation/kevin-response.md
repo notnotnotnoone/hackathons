@@ -1,6 +1,6 @@
 # Kevin — Incident response and communications
 
-**Team member / workstream:** kevin — Member 4, incident response chat. Kevin confirmed this status on 2026-10-15 at 10:51 PDT. The matching block in [human-status.txt](human-status.txt) is no longer a draft.
+**Team member / workstream:** kevin — Member 4, incident response chat. Kevin confirmed this status on 2026-10-15 at 10:51 PDT. The matching block in [human-status.txt](../human-status.txt) is no longer a draft.
 **Role used:** Incident response and crisis communications
 **Status:** Working
 **Updated:** 2026-10-15 11:18 PDT (UTC−07:00). Inject 4 response is below. Drive rechecked at 11:18 PDT: ten files, including four Inject 4 images.
@@ -11,7 +11,7 @@ Member / workstream: kevin / incident response
 Updated at / time zone: 2026-10-15 10:40 PDT
 Injects / evidence / exact locations: I-001 dashboard; I-002 recovered log screenshot; Schedule page timetable
 1. Situation: Widespread reported loss of power and heat. The 08:43 dashboard is degraded and internally inconsistent. whoville-scada logs were recovered after a logging stop that, if clocks align, covers that dashboard time. Cause is unconfirmed.
-2. New findings: Twelve feeders show 0.0 MW and 0.0 kV. Four show voltage and load, two of them labeled OFFLINE. Medical District and Downtown show voltage and 0.0 MW. Response options are compared below. An independent reading of two disputed log strings is recorded and is not a silent overwrite of team3.md.
+2. New findings: Twelve feeders show 0.0 MW and 0.0 kV. Four show voltage and load, two of them labeled OFFLINE. Medical District and Downtown show voltage and 0.0 MW. Response options are compared below. An independent reading of two disputed log strings is recorded and is not a silent overwrite of investigation/team3.md.
 3. Leading hypotheses and confidence: Life safety does not depend on picking a blackout cause. Unauthorized access and authorized maintenance both still fit the midnight log sequence. A cyberattack is not established as the cause of the outage.
 4. Contradictions: 14/4 versus 17/1; OFFLINE with flow; 11:00 AM recovery versus 11:03:15 start; hoovey close PID; backup path spelling. This chat's readings are in the transcription section.
 5. Recommended action / owner / checkpoint: Do the reversible safety checks now. Hold remote switching and a SCADA reboot. Leader approves any external message or account disable.
@@ -59,7 +59,7 @@ No option below is an instruction to Hydro Siber. External messages, account cha
 
 ## Independent readings for A-006
 
-These are this chat's readings of the same screenshot. They do not replace [team3.md](team3.md) or [codex-evidence-analyst.md](codex-evidence-analyst.md).
+These are this chat's readings of the same screenshot. They do not replace [investigation/team3.md](team3.md) or [investigation/codex-evidence-analyst.md](codex-evidence-analyst.md).
 
 | Item | Reading in this chat | Confidence | Conflict |
 |---|---|---|---|

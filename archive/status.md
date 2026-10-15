@@ -5,14 +5,14 @@
 **Last updated:** October 15, 2026, 10:30 PDT (UTC−07:00)  
 **Scope:** Young Defenders — Whoville / Hydro Siber investigation
 
-This file tracks this chat's work. Suggested human analyst assignments remain as listed in the [README](README.md).
+This file tracks this chat's work. Suggested human analyst assignments remain as listed in the [README](../README.md).
 
 ## Latest update — Inject 2
 
 - Downloaded and visually reviewed the new Inject 2 screenshot; five Drive files are now saved locally.
-- Published [team3.md](team3.md) with the combined timeline, source limitations, contradictions, questions, and leader handoff.
+- Published [investigation/team3.md](../investigation/team3.md) with the combined timeline, source limitations, contradictions, questions, and leader handoff.
 - New analysis covers recovered SCADA authentication, sudo, and syslog entries. Session linkage, authorization, clock alignment, and blackout causation remain unconfirmed.
-- Earlier progress below is retained as historical context. Detailed findings are now in team3.md; the README's shared assessment is maintained separately by the team.
+- Earlier progress below is retained as historical context. Detailed findings are now in investigation/team3.md; the README's shared assessment is maintained separately by the team.
 
 ## Current work
 
@@ -64,7 +64,7 @@ The master timeline and download manifest are currently local deliverables attac
 | Updated at | Work recorded |
 |---|---|
 | 2026-10-15 10:28 PDT | README status committed: intake completed, Inject 1 initially reviewed, PDF analysis pending. |
-| 2026-10-15 10:29 PDT | Dedicated status.md created for this chat's progress and next deliverables. |
+| 2026-10-15 10:29 PDT | Dedicated archive/status.md created for this chat's progress and next deliverables. |
 
 Update times above are real-world work times. They are separate from incident scenario timestamps.
 
@@ -74,12 +74,12 @@ Update times above are real-world work times. They are separate from incident sc
 
 **Status:** Investigating; Injects 1 and 2 reviewed  
 **Updated:** 2026-10-15 10:32 PDT (UTC-07:00)  
-**Personal log:** [codex-evidence-analyst.md](codex-evidence-analyst.md)  
+**Personal log:** [investigation/codex-evidence-analyst.md](../investigation/codex-evidence-analyst.md)  
 **Identity:** Evidence desk / Codex; human member name not confirmed. This entry contributes to shared status and preserves the timeline chat's entries above.
 
 ### Completed and current findings
 
-- Read README.md and status.md; reviewed the newly published [team3.md](team3.md) timeline handoff.
+- Read README.md and archive/status.md; reviewed the newly published [investigation/team3.md](../investigation/team3.md) timeline handoff.
 - Inject 1: documented status/power-flow discrepancies and the 14/4 table versus 17/1 footer mismatch in README.md.
 - Inject 2: visually reviewed the [recovered SCADA log screenshot](https://drive.google.com/file/d/1MCgSzKr_hXeddiMRyeHfcDiRR4_k9u51/view); recorded evidence findings and candidate correlation indicators in the personal log (I-002 / E-002).
 - Priority sequence: max.contr.maint from 89.46.57.27 fails authentication Dec 24 23:59:02, then succeeds Dec 25 00:00:36; su failures occur at 00:01:51 and 00:03:03; adminelk invokes /usr/bin/su with USER=root at 00:05:14; rsyslog exits on signal 15 at 00:05:58. Year/zone are not stated in these log lines. A single operator/session and unauthorized activity are not established.
@@ -96,15 +96,15 @@ Correlate future injects with these account/IP/host events and dashboard discrep
 
 ### Team coordination
 
-- **Timeline support (Team 3):** team3.md now contains a combined Inject 1/2 timeline and uncertainty analysis. This evidence chat read that published handoff; downloaded files/hashes remain the timeline chat's own reported work.
+- **Timeline support (Team 3):** investigation/team3.md now contains a combined Inject 1/2 timeline and uncertainty analysis. This evidence chat read that published handoff; downloaded files/hashes remain the timeline chat's own reported work.
 - **Human teammates:** suggested roles remain in README.md; no human identity or current activity is inferred by this update.
 - **Leader handoff:** prioritize verification of remote access, privilege changes, and logging interruption while retaining the Inject 1 monitoring discrepancies. No attack attribution or blackout cause is established.
 
 ### Evidence desk follow-up — 2026-10-15 10:40 PDT
 
 - No Inject 3 appeared in the latest Drive check (five files remain).
-- Visually reviewed the complete Schedule PDF; recorded every displayed activity/time in [personal log](codex-evidence-analyst.md#follow-up-review--2026-10-15-1040-pdt). Event date/zone and submission deadline remain unconfirmed.
-- Re-read Inject 2 at native resolution: Hoovey session-close PID reads 2189; backup script spelling has no leading slash. This supports the evidence desk transcription where team3.md differs. Exact redirection punctuation remains provisional pending original text.
+- Visually reviewed the complete Schedule PDF; recorded every displayed activity/time in [personal log](../investigation/codex-evidence-analyst.md#follow-up-review--2026-10-15-1040-pdt). Event date/zone and submission deadline remain unconfirmed.
+- Re-read Inject 2 at native resolution: Hoovey session-close PID reads 2189; backup script spelling has no leading slash. This supports the evidence desk transcription where investigation/team3.md differs. Exact redirection punctuation remains provisional pending original text.
 - Read the lead's updated README and human-status.txt. Personal human progress is unreported; do not infer inactivity.
 - Prepared five prioritized evidence requests for leader: original logs/provenance, account/maintenance baselines, session/audit linkage and logging-stop reason, independent physical-state records, and dashboard definitions/data.
 - Initial available-evidence review is complete; next substantive correlation depends on new records or injects. Cause and authorization remain unknown. No external requests or operational actions were sent/performed.
@@ -126,7 +126,7 @@ Correlate future injects with these account/IP/host events and dashboard discrep
 
 **Status:** Working  
 **Updated:** 2026-10-15 10:40 PDT (UTC−07:00)  
-**Personal log:** [kevin-response.md](kevin-response.md)  
+**Personal log:** [investigation/kevin-response.md](../investigation/kevin-response.md)  
 **Identity:** Incident response chat for Member 4. Kevin confirmed this status at 10:51 PDT. This entry does not change Gretzky, Kherion, the leader, or the evidence-chat participant entries.
 
 ### Completed and current findings
@@ -148,7 +148,7 @@ No utility command and no competition submission was made.
 ### Presentation draft — 2026-10-15 10:55 PDT
 
 - Drive listing rechecked. Still Inject 1, Inject 2, Instructions, Mission Overview, and Schedule.
-- Wrote [presentation-outline.md](presentation-outline.md): a walk-up brief, a four-minute speaking order, a public paragraph for leader approval, and the submission checks this draft can and cannot meet.
+- Wrote [presentation/presentation-outline.md](../presentation/presentation-outline.md): a walk-up brief, a four-minute speaking order, a public paragraph for leader approval, and the submission checks this draft can and cannot meet.
 - The draft is not submitted and is not an approved utility order. Field checks, full logs, and the rubric remain open.
 
 ## Incident response — Inject 3 — 2026-10-15 11:05 PDT
@@ -172,7 +172,7 @@ Gretzky directly confirmed their name in this evidence chat, mapping the previou
 
 ## Gretzky evidence update — Inject 3 — 2026-10-15 11:03 PDT (UTC-07:00)
 
-**Source:** [Inject 3](https://drive.google.com/file/d/1iQa1Y2u0vdNfuVin0ejEClH4pdJv0KUL/view), I-003 / E-003; [full evidence analysis](codex-evidence-analyst.md#i-003--e-003--google-sign-in-alert-screenshot).
+**Source:** [Inject 3](https://drive.google.com/file/d/1iQa1Y2u0vdNfuVin0ejEClH4pdJv0KUL/view), I-003 / E-003; [full evidence analysis](../investigation/codex-evidence-analyst.md#i-003--e-003--google-sign-in-alert-screenshot).
 
 - Visually reviewed the original-resolution screenshot. Email displays Google / no-reply@accounts.google.com and claims a new sign-in for maxwafoone@gmail.com from Mount Crumpit. Displayed email time: Wed, Dec 24, 10:12 PM; year/zone absent.
 - Possible connections: max.contr.maint in Inject 2 and Mount Crumpit / FDR-15 in Inject 1. These are leads, not proven identity or causation; Inject 3 has no source IP.
@@ -183,14 +183,14 @@ Gretzky directly confirmed their name in this evidence chat, mapping the previou
 
 ## Kherion timeline follow-up — 2026-10-15 11:03 PDT
 
-Inject 3 downloaded and visually reviewed. Six Drive files now saved locally; manifest refreshed. Combined timeline and six-part handoff updated in [team3.md](team3.md#inject-3-update--2026-10-15-1101-pdt). New Google-labelled alert supplies a displayed message timestamp and a Mount Crumpit sign-in claim; year/zone, exact sign-in time, authenticity, owner and SCADA linkage are unknown. Weekday/scenario-year mismatch explicitly flagged. Earlier findings retained. Next: original email/security events and ownership/clock verification.
+Inject 3 downloaded and visually reviewed. Six Drive files now saved locally; manifest refreshed. Combined timeline and six-part handoff updated in [investigation/team3.md](../investigation/team3.md#inject-3-update--2026-10-15-1101-pdt). New Google-labelled alert supplies a displayed message timestamp and a Mount Crumpit sign-in claim; year/zone, exact sign-in time, authenticity, owner and SCADA linkage are unknown. Weekday/scenario-year mismatch explicitly flagged. Earlier findings retained. Next: original email/security events and ownership/clock verification.
 
 
 ## Gretzky evidence update — Inject 4 — 2026-10-15 11:18 PDT (UTC-07:00)
 
 - Checked the shared Drive folder at about 11:17 PDT; it now contains ten files, including four screenshots titled Inject 4.
-- Visually reviewed all four screenshots and added I-004 / E-004a–d findings to [the evidence log](codex-evidence-analyst.md#i-004--e-004--community-outage-posts-and-public-advice).
+- Visually reviewed all four screenshots and added I-004 / E-004a–d findings to [the evidence log](../investigation/codex-evidence-analyst.md#i-004--e-004--community-outage-posts-and-public-advice).
 - Reddit comments report power/heating problems in East Valley, West Ridge, and Riverdale. Two X screenshots display Dec 25, 2026 at 8:47 AM and 9:01 AM; one reply mentions borrowing a neighbor's generator. Relative-time labels in the Reddit and Facebook captures lack absolute date/zone.
 - The Facebook capture gives alarmist household advice, including burying food in snow and going to a store for water. Its source, accuracy, author identity, and reach are unknown; treat it as a public-safety lead, not an established coordinated misinformation effort.
-- The posts add public reports but do not independently validate feeder readings or establish cyber activity or blackout causation. The evidence workstream and latest-inject marker were updated in [docs/progress.json](docs/progress.json); the README includes the team handoff.
+- The posts add public reports but do not independently validate feeder readings or establish cyber activity or blackout causation. The evidence workstream and latest-inject marker were updated in [docs/progress.json](../docs/progress.json); the README includes the team handoff.
 - No social-media links/buttons were followed, no utility systems were accessed, and no external message or competition submission was made.

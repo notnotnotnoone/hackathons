@@ -9,15 +9,15 @@
 - Evidence folder: https://drive.google.com/drive/folders/1tpag2T6jptGhCC7E2tKtuZbTXLQ9B-Mj
 - GitHub repository: https://github.com/notnotnotnoone/hackathons
 - Progress website: https://notnotnotnoone.github.io/hackathons/
-- Detailed evidence record: [codex-evidence-analyst.md](codex-evidence-analyst.md)
-- Structured progress: [docs/progress.json](docs/progress.json)
-- Team investigation hub: [README.md](README.md)
+- Detailed evidence record: [investigation/codex-evidence-analyst.md](../investigation/codex-evidence-analyst.md)
+- Structured progress: [docs/progress.json](../docs/progress.json)
+- Team investigation hub: [README.md](../README.md)
 
 ## Current review position
 
 The Drive folder contained ten items at the last check: seven inject screenshots (Injects 1–3 and four separate images titled “Inject 4”), plus Instructions, Schedule, and Mission Overview. Injects 1–4 were visually reviewed by the evidence desk. The four Inject 4 screenshots are grouped as I-004 / E-004a–d.
 
-**Latest evidence status:** Inject 4 reviewed and documented in the evidence log, README, status.md, and progress data. The evidence workstream in docs/progress.json is marked “Inject 4 reviewed.” The JSON was parsed successfully. The progress website URL returned a 404 at the last browser check, so live display could not be confirmed.
+**Latest evidence status:** Inject 4 reviewed and documented in the evidence log, README, archive/status.md, and progress data. The evidence workstream in docs/progress.json is marked “Inject 4 reviewed.” The JSON was parsed successfully. The progress website URL returned a 404 at the last browser check, so live display could not be confirmed.
 
 ## Evidence summary
 

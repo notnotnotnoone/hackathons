@@ -6,7 +6,20 @@
 
 [Current assessment](#current-assessment) · [Team status](#team-status) · [Next actions](#next-actions) · [Evidence and injects](#evidence-and-injects) · [Requirements](#challenge-requirements) · [How to update](#how-to-update)
 
-**[Human team status](human-status.txt)** · **[Shared Google Drive](https://drive.google.com/drive/folders/1tpag2T6jptGhCC7E2tKtuZbTXLQ9B-Mj)** · **[Master timeline](team3.md)** · **[Evidence analysis](codex-evidence-analyst.md)** · **[Response options](kevin-response.md)** · **[Presentation draft](presentation-outline.md)** · **[Analyst work logs](status.md)** · **[Previous README / assessment history](docs/history/readme-before-lead-sync.md)**
+**[Human team status](human-status.txt)** · **[Shared Google Drive](https://drive.google.com/drive/folders/1tpag2T6jptGhCC7E2tKtuZbTXLQ9B-Mj)** · **[Master timeline](investigation/team3.md)** · **[Evidence analysis](investigation/codex-evidence-analyst.md)** · **[Response options](investigation/kevin-response.md)** · **[Presentation draft](presentation/presentation-outline.md)** · **[Analyst work logs](archive/status.md)** · **[Previous README / assessment history](archive/readme-before-lead-sync.md)**
+
+## Repository structure
+
+```text
+README.md          Investigation hub and navigation
+AGENTS.md          Shared agent instructions
+human-status.txt   Personal team updates
+investigation/     Evidence, timeline and response notes
+handoffs/          Teammate handoff snapshots
+presentation/      Presentation draft
+archive/           Historical status and previous README
+docs/              GitHub Pages website and progress data
+```
 
 ## At a glance
 
@@ -33,14 +46,14 @@ The user of the evidence chat explicitly confirmed presence; recorded in [human-
 
 **Still open:** full source logs/provenance, maintenance/account/IP authorization, session links, reason for logging stop, physical outage/service confirmation, clocks, dashboard logic, requirements/rubric, and presentation preparation/approval.
 
-**Proposed handoffs (not accepted assignments):** timeline support to reconcile PID/script spelling and clocks; response support has drafted options in [kevin-response.md](kevin-response.md), and Medical District service still needs a field check; leader to confirm requirements and review R-01–R-10 before any external message; evidence desk to correlate later injects and evaluate full records when available. Kevin confirmed the Member 4 status at 10:51 PDT. The leader's personal status is still unreported.
+**Proposed handoffs (not accepted assignments):** timeline support to reconcile PID/script spelling and clocks; response support has drafted options in [investigation/kevin-response.md](investigation/kevin-response.md), and Medical District service still needs a field check; leader to confirm requirements and review R-01–R-10 before any external message; evidence desk to correlate later injects and evaluate full records when available. Kevin confirmed the Member 4 status at 10:51 PDT. The leader's personal status is still unreported.
 
 **Assessment:** Access and logging activity are priority leads; cyberattack, actor identity, and blackout causation remain unconfirmed.
 
 
 ## Gretzky evidence update — Inject 3 — 2026-10-15 11:03 PDT (UTC-07:00)
 
-**Source:** [Inject 3](https://drive.google.com/file/d/1iQa1Y2u0vdNfuVin0ejEClH4pdJv0KUL/view), I-003 / E-003; [full evidence analysis](codex-evidence-analyst.md#i-003--e-003--google-sign-in-alert-screenshot).
+**Source:** [Inject 3](https://drive.google.com/file/d/1iQa1Y2u0vdNfuVin0ejEClH4pdJv0KUL/view), I-003 / E-003; [full evidence analysis](investigation/codex-evidence-analyst.md#i-003--e-003--google-sign-in-alert-screenshot).
 
 - Visually reviewed the original-resolution screenshot. Email displays Google / no-reply@accounts.google.com and claims a new sign-in for maxwafoone@gmail.com from Mount Crumpit. Displayed email time: Wed, Dec 24, 10:12 PM; year/zone absent.
 - Possible connections: max.contr.maint in Inject 2 and Mount Crumpit / FDR-15 in Inject 1. These are leads, not proven identity or causation; Inject 3 has no source IP.
@@ -54,7 +67,7 @@ The user of the evidence chat explicitly confirmed presence; recorded in [human-
 **Coverage note:** The numbered lead assessment below was written for Injects 1–2. Inject 3's evidence-desk update above is current and awaits lead reconciliation; do not treat older waiting-for-Inject-3 statements as current.
 
 
-**Basis:** I-001 / E-001 and I-002 / E-002 as analyzed in [evidence notes](codex-evidence-analyst.md) and [timeline](team3.md). These are source-content findings reported by the analysts; authenticity and physical effects still require corroboration.
+**Basis:** I-001 / E-001 and I-002 / E-002 as analyzed in [evidence notes](investigation/codex-evidence-analyst.md) and [timeline](investigation/team3.md). These are source-content findings reported by the analysts; authenticity and physical effects still require corroboration.
 
 1. **Situation:** The mission describes widespread electricity and heating loss in winter. Inject 1 shows degraded distribution monitoring; Inject 2 adds recovered host logs from `whoville-scada`. Neither source independently establishes the initiating blackout cause.
 2. **New findings:** The analysts transcribe a failed then accepted login for `max.contr.maint` from `89.46.57.27`, two `su` authentication failures, `adminelk` invoking `/usr/bin/su` through sudo with `USER=root`, and rsyslog exiting 44 seconds later. This makes access, privilege use, and logging interruption priority investigative leads.
@@ -67,7 +80,7 @@ The user of the evidence chat explicitly confirmed presence; recorded in [human-
 
 ### Key event sequence
 
-Incident times below are scenario times, separate from October 15 team work times. Inject 2 omits year and zone; cross-source order is conditional on clock alignment. See [team3.md](team3.md) for the complete row-by-row timeline.
+Incident times below are scenario times, separate from October 15 team work times. Inject 2 omits year and zone; cross-source order is conditional on clock alignment. See [investigation/team3.md](investigation/team3.md) for the complete row-by-row timeline.
 
 | Raw source time | Reported observation | Source |
 |---|---|---|
@@ -110,8 +123,8 @@ Members 2–4 confirm their roles in the plaintext file. Shared-account commits 
 | Workstream | Recorded progress | Next handoff |
 |---|---|---|
 | Lead support — this chat | Reconciled published Inject 1–2 handoffs and organized the hub | Requirements and priority review; personal progress belongs in human-status.txt |
-| Timeline support | Injects 1–2 reviewed; [master timeline](team3.md) published; latest reviewed update 10:30 PDT | Clocks, provenance, and PDF context |
-| Evidence desk | Injects 1–2 visually reviewed; [evidence notes](codex-evidence-analyst.md) published; latest reviewed update 10:41 PDT; schedule visually reviewed and source spellings rechecked | Full records, authorization, cross-source verification |
+| Timeline support | Injects 1–2 reviewed; [master timeline](investigation/team3.md) published; latest reviewed update 10:30 PDT | Clocks, provenance, and PDF context |
+| Evidence desk | Injects 1–2 visually reviewed; [evidence notes](investigation/codex-evidence-analyst.md) published; latest reviewed update 10:41 PDT; schedule visually reviewed and source spellings rechecked | Full records, authorization, cross-source verification |
 | Response support | Inject 4 reviewed at 11:18 PDT. Resident reports added to welfare checks. Public paragraph unchanged | Leader accepts or edits the public paragraph before it is used |
 
 **Chat visibility:** The available app listing exposed this lead chat and the related “Hackathon Crash Course” chat. The latter contains role/setup messages, with assistant content only exposed as reference placeholders. The separate evidence/timeline chats were not exposed in that listing; their committed handoffs were reviewed instead. This is not a claim that every same-account chat has been read. No messages were sent to other chats.
@@ -125,10 +138,10 @@ Owners below are proposed workstreams, not claims that a named teammate has acce
 | **Now / A-001** | Schedule visually reviewed by the evidence desk; response chat OCR agrees. Confirm event date/zone, explicit deadline, rubric, presentation constraints, and AI/sharing rules | Leader + team | Remaining official requirements recorded |
 | **Now / A-002** | Update [human-status.txt](human-status.txt) and confirm your role | All members | Each member's latest work, blocker, and update time are recorded |
 | **High / A-003** | Obtain complete original recovered logs, collection details, and account/maintenance approvals; explain dashboard count/flow mismatch | Evidence desk | Source completeness, authorization, and telemetry discrepancies assessed |
-| **High / A-004** | Verify Medical District service, switch states, and independent measurements; reconcile source clocks. Safety priority and option comparison drafted in [kevin-response.md](kevin-response.md); field verification is still open | Response + timeline | Safety assessment and clock basis supported by evidence |
+| **High / A-004** | Verify Medical District service, switch states, and independent measurements; reconcile source clocks. Safety priority and option comparison drafted in [investigation/kevin-response.md](investigation/kevin-response.md); field verification is still open | Response + timeline | Safety assessment and clock basis supported by evidence |
 | **High / A-005** | Correlate SSH, sudo/su, process ancestry, service manager, audit and SCADA command records | Evidence + timeline | Session links and logging-stop reason established or explicitly unresolved |
 | **High / A-006** | Evidence desk native-resolution reread supports PID 2189 and script spelling without leading slash; response OCR agrees. Timeline handoff still needs reconciliation; exact redirection requires original text | Evidence + timeline | Shared notes reconciled with correction history; original text checked when supplied |
-| **Next / A-007** | Response options and a presentation draft are written. Leader review of [presentation-outline.md](presentation-outline.md) is still open. Rubric and duration are still unpublished | Response + leader | Leader accepts the exact version, or edits it, before any submission |
+| **Next / A-007** | Response options and a presentation draft are written. Leader review of [presentation/presentation-outline.md](presentation/presentation-outline.md) is still open. Rubric and duration are still unpublished | Response + leader | Leader accepts the exact version, or edits it, before any submission |
 
 ## Evidence and injects
 
@@ -136,13 +149,13 @@ Drive originals remain the source material. The register below indexes them; it 
 
 | ID / material | Source | Review state / location |
 |---|---|---|
-| **I-004 — four resident posts** | [Reddit-style](https://drive.google.com/file/d/1CUNuPYSCE9y9prf1uCUYhjlMU9K1_WAm/view), [9:01 a.m. tweet](https://drive.google.com/file/d/1XN9CpCFTRhB8AuFq9e_RgGDRfUK5cAIL/view), [advice post](https://drive.google.com/file/d/1a2gAJlOUtpwflgsO99Zex6_nqia_a_CA/view), [8:47 a.m. tweet](https://drive.google.com/file/d/1fAsOH6POqtOg9kaey9DQqxxYqrmyYScE/view) | Response chat reviewed at 11:18 PDT; [response note](kevin-response.md#i-004-response--2026-10-15-1118-pdt). Posts are claims, not confirmed identities or a cause |
-| **I-003 / E-003 — Google sign-in alert screenshot** | [Inject 3](https://drive.google.com/file/d/1iQa1Y2u0vdNfuVin0ejEClH4pdJv0KUL/view) | Evidence desk visually reviewed; [findings and limits](codex-evidence-analyst.md#i-003--e-003--google-sign-in-alert-screenshot); authenticity, authorization and account links unconfirmed |
-| **I-001 / E-001 — distribution dashboard** | [Inject 1](https://drive.google.com/file/d/1AHluXwG8ne_K1KfKtUmcuQq0oamum46p/view) | Analysts visually reviewed; [evidence notes](codex-evidence-analyst.md#i-001--e-001--inject-1-review), [master timeline](team3.md#updated-timeline) |
-| **I-002 / E-002 — recovered SCADA logs screenshot** | [Inject 2](https://drive.google.com/file/d/1MCgSzKr_hXeddiMRyeHfcDiRR4_k9u51/view) | Analysts visually reviewed; cropped screenshot, original text absent from current listing; [detailed findings](codex-evidence-analyst.md#important-findings); [response options](kevin-response.md) |
+| **I-004 — four resident posts** | [Reddit-style](https://drive.google.com/file/d/1CUNuPYSCE9y9prf1uCUYhjlMU9K1_WAm/view), [9:01 a.m. tweet](https://drive.google.com/file/d/1XN9CpCFTRhB8AuFq9e_RgGDRfUK5cAIL/view), [advice post](https://drive.google.com/file/d/1a2gAJlOUtpwflgsO99Zex6_nqia_a_CA/view), [8:47 a.m. tweet](https://drive.google.com/file/d/1fAsOH6POqtOg9kaey9DQqxxYqrmyYScE/view) | Response chat reviewed at 11:18 PDT; [response note](investigation/kevin-response.md#i-004-response--2026-10-15-1118-pdt). Posts are claims, not confirmed identities or a cause |
+| **I-003 / E-003 — Google sign-in alert screenshot** | [Inject 3](https://drive.google.com/file/d/1iQa1Y2u0vdNfuVin0ejEClH4pdJv0KUL/view) | Evidence desk visually reviewed; [findings and limits](investigation/codex-evidence-analyst.md#i-003--e-003--google-sign-in-alert-screenshot); authenticity, authorization and account links unconfirmed |
+| **I-001 / E-001 — distribution dashboard** | [Inject 1](https://drive.google.com/file/d/1AHluXwG8ne_K1KfKtUmcuQq0oamum46p/view) | Analysts visually reviewed; [evidence notes](investigation/codex-evidence-analyst.md#i-001--e-001--inject-1-review), [master timeline](investigation/team3.md#updated-timeline) |
+| **I-002 / E-002 — recovered SCADA logs screenshot** | [Inject 2](https://drive.google.com/file/d/1MCgSzKr_hXeddiMRyeHfcDiRR4_k9u51/view) | Analysts visually reviewed; cropped screenshot, original text absent from current listing; [detailed findings](investigation/codex-evidence-analyst.md#important-findings); [response options](investigation/kevin-response.md) |
 | Instructions | [PDF](https://drive.google.com/file/d/1G-lUTUJ4UZskPRoqscOQGws27nFlLr2W/view) | Evidence desk and lead sync checked extracted text; duplicated characters in extraction |
 | Mission Overview | [PDF](https://drive.google.com/file/d/1DLBUDgcRvDuI3U80JKUTrM3kXnUGv61z/view) | Evidence desk and lead sync checked extracted text; scenario context |
-| Schedule | [PDF](https://drive.google.com/file/d/1WC0S3vKC0HR8sd2lQq1gzcs9qh7fcjSC/view) | Evidence desk visually reviewed the full page at 10:40 PDT; [transcribed schedule and limits](codex-evidence-analyst.md#schedule-visual-review-completed). Response chat OCR agrees. No zone on the page |
+| Schedule | [PDF](https://drive.google.com/file/d/1WC0S3vKC0HR8sd2lQq1gzcs9qh7fcjSC/view) | Evidence desk visually reviewed the full page at 10:40 PDT; [transcribed schedule and limits](investigation/codex-evidence-analyst.md#schedule-visual-review-completed). Response chat OCR agrees. No zone on the page |
 
 No external research is used in this assessment. Download hashes reported by timeline support track its copies; no hash or source authenticity is independently verified by this lead sync. Inject receipt times and inject-specific deadlines were not fully recorded.
 
@@ -202,12 +215,12 @@ Injects / evidence / exact locations:
 <details>
 <summary>Reference and history</summary>
 
-- [Master timeline and timeline leader handoff](team3.md)
-- [Evidence findings, limitations, and evidence leader handoff](codex-evidence-analyst.md)
-- [Incident response options and leader handoff](kevin-response.md)
-- [Presentation draft for leader review](presentation-outline.md)
-- [Analyst work logs](status.md) — some older sections refer to four files / Inject 1; prefer each file's latest dated update.
-- [Pre-reorganization README](docs/history/readme-before-lead-sync.md) — retains initial assessment, earlier register entries, role handoffs, and operating guidance. Historical statements are not current status.
+- [Master timeline and timeline leader handoff](investigation/team3.md)
+- [Evidence findings, limitations, and evidence leader handoff](investigation/codex-evidence-analyst.md)
+- [Incident response options and leader handoff](investigation/kevin-response.md)
+- [Presentation draft for leader review](presentation/presentation-outline.md)
+- [Analyst work logs](archive/status.md) — some older sections refer to four files / Inject 1; prefer each file's latest dated update.
+- [Pre-reorganization README](archive/readme-before-lead-sync.md) — retains initial assessment, earlier register entries, role handoffs, and operating guidance. Historical statements are not current status.
 - [Commit history](https://github.com/notnotnotnoone/hackathons/commits/main/) — inspect alongside signed logs when checking progress.
 
 </details>
@@ -218,15 +231,15 @@ This repository is public. Keep original evidence in Drive and follow official s
 
 ## Kherion timeline handoff — Inject 3
 
-Timeline support downloaded and visually reviewed I-003/E-003. The alert message displays Wed Dec 24 10:12 PM (year/zone unstated), claims a new sign-in for maxwafoone@gmail.com from Mount Crumpit, and does not provide the exact sign-in timestamp or source IP. Weekday versus scenario-year alignment needs clarification; account-name and location similarities do not establish identity or blackout causation. [Full sourced timeline update and six-part assessment](team3.md#inject-3-update--2026-10-15-1101-pdt). Earlier assessments remain preserved; leader reconciliation may supersede them explicitly.
+Timeline support downloaded and visually reviewed I-003/E-003. The alert message displays Wed Dec 24 10:12 PM (year/zone unstated), claims a new sign-in for maxwafoone@gmail.com from Mount Crumpit, and does not provide the exact sign-in timestamp or source IP. Weekday versus scenario-year alignment needs clarification; account-name and location similarities do not establish identity or blackout causation. [Full sourced timeline update and six-part assessment](investigation/team3.md#inject-3-update--2026-10-15-1101-pdt). Earlier assessments remain preserved; leader reconciliation may supersede them explicitly.
 
 ## Kevin response handoff — Inject 3
 
-Response support reviewed the same screenshot at 11:05 PDT. Life safety and the public paragraph stay as written. R-11 asks the contractor contact, out of band, whether `maxwafoone@gmail.com` and the Mount Crumpit sign-in are theirs. Do not click the button in the screenshot and do not reset that Google account from this image. [Response note](kevin-response.md#i-003-response--2026-10-15-1105-pdt). [Presentation addendum](presentation-outline.md#inject-3-addendum--2026-10-15-1105-pdt).
+Response support reviewed the same screenshot at 11:05 PDT. Life safety and the public paragraph stay as written. R-11 asks the contractor contact, out of band, whether `maxwafoone@gmail.com` and the Mount Crumpit sign-in are theirs. Do not click the button in the screenshot and do not reset that Google account from this image. [Response note](investigation/kevin-response.md#i-003-response--2026-10-15-1105-pdt). [Presentation addendum](presentation/presentation-outline.md#inject-3-addendum--2026-10-15-1105-pdt).
 
 ## Gretzky evidence update — Inject 4 — 2026-10-15 11:18 PDT (UTC-07:00)
 
-**Sources:** Four Drive screenshots, grouped as I-004 / E-004a–d: [Reddit thread](https://drive.google.com/file/d/1CUNuPYSCE9y9prf1uCUYhjlMU9K1_WAm/view), [Mayor-branded X post](https://drive.google.com/file/d/1XN9CpCFTRhB8AuFq9e_RgGDRfUK5cAIL/view), [Facebook advice post](https://drive.google.com/file/d/1a2gAJlOUtpwflgsO99Zex6_nqia_a_CA/view), and [X post](https://drive.google.com/file/d/1fAsOH6POqtOg9kaey9DQqxxYqrmyYScE/view). See the [full evidence analysis](codex-evidence-analyst.md#i-004--e-004--community-outage-posts-and-public-advice).
+**Sources:** Four Drive screenshots, grouped as I-004 / E-004a–d: [Reddit thread](https://drive.google.com/file/d/1CUNuPYSCE9y9prf1uCUYhjlMU9K1_WAm/view), [Mayor-branded X post](https://drive.google.com/file/d/1XN9CpCFTRhB8AuFq9e_RgGDRfUK5cAIL/view), [Facebook advice post](https://drive.google.com/file/d/1a2gAJlOUtpwflgsO99Zex6_nqia_a_CA/view), and [X post](https://drive.google.com/file/d/1fAsOH6POqtOg9kaey9DQqxxYqrmyYScE/view). See the [full evidence analysis](investigation/codex-evidence-analyst.md#i-004--e-004--community-outage-posts-and-public-advice).
 
 - The Reddit comments mention outage/heating problems in East Valley, West Ridge, and Riverdale; the post itself asks where else power is out. Its time is relative (“1h”) and the screenshot status bar reads 11:34.
 - The Mayor-branded X screenshot says the poster is cold and asks if power is out; it displays Dec 25, 2026, 9:01 AM. A reply mentions using a neighbor’s generator.
@@ -246,4 +259,4 @@ Response support reviewed the same screenshot at 11:05 PDT. Life safety and the 
 
 ## Kevin response handoff — Inject 4
 
-At 11:18 PDT the Drive folder had four Inject 4 images. They are resident reports of a power and heat outage. West Ridge matches dark feeder FDR-02. Riverdale, east valley, and “central” are not on the feeder table. Timed posts are 8:47 a.m. and 9:01 a.m. on Dec 25, 2026. Do not repost the survival advice. The public paragraph is unchanged; a generator sentence is optional and needs the leader. [Response note](kevin-response.md#i-004-response--2026-10-15-1118-pdt). [Presentation addendum](presentation-outline.md#inject-4-addendum--2026-10-15-1118-pdt).
+At 11:18 PDT the Drive folder had four Inject 4 images. They are resident reports of a power and heat outage. West Ridge matches dark feeder FDR-02. Riverdale, east valley, and “central” are not on the feeder table. Timed posts are 8:47 a.m. and 9:01 a.m. on Dec 25, 2026. Do not repost the survival advice. The public paragraph is unchanged; a generator sentence is optional and needs the leader. [Response note](investigation/kevin-response.md#i-004-response--2026-10-15-1118-pdt). [Presentation addendum](presentation/presentation-outline.md#inject-4-addendum--2026-10-15-1118-pdt).
