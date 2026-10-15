@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "updatedAt": "2026-10-15T10:50:00-07:00",
-  "updatedBy": "Gretzky / evidence",
+  "updatedBy": "Kherion timeline chat / Codex",
   "latestInject": {
     "id": "I-002",
     "title": "Recovered system logs",
@@ -65,12 +65,12 @@
     },
     {
       "id": "timeline",
-      "name": "Timeline support",
+      "name": "Timeline support — Kherion + Codex",
       "status": "Investigating",
-      "updatedAt": "2026-10-15T10:30:00-07:00",
-      "completed": "Combined Inject 1/2 master timeline published.",
-      "next": "Reconcile clocks and source reread against the timeline.",
-      "blocker": "Missing source year/zone and full logs.",
+      "updatedAt": "2026-10-15T10:50:00-07:00",
+      "completed": "Combined Inject 1/2 timeline published; Kherion identity confirmed; original-resolution reread reconciled PID 2189 and backup path without leading slash.",
+      "next": "Obtain clock context and complete logs; prepare concise timeline presentation handoff.",
+      "blocker": "Missing log year/zone, recovery provenance, session linkage, and actual outage onset.",
       "source": "team3.md"
     },
     {
@@ -119,7 +119,7 @@
       "id": "A-006",
       "title": "Reconcile the source reread with timeline transcriptions",
       "owner": "Timeline",
-      "status": "Needs review"
+      "status": "Screenshot spellings reconciled; original text still needed"
     },
     {
       "id": "A-007",
