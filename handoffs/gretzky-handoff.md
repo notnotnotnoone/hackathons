@@ -1,9 +1,9 @@
 # Gretzky Evidence Desk — Handoff
 
 **Prepared:** 2026-10-15 11:39 PDT (UTC-07:00)  
-**Updated:** 2026-10-15 12:05 PDT (UTC-07:00)  
+**Updated:** 2026-10-15 12:39 PDT (UTC-07:00)  
 **Owner:** Gretzky, Member 2 — evidence investigator  
-**Status:** Evidence review complete through Inject 5 (I-005 / E-005); later injects must still be checked before claiming continuing coverage.
+**Status:** Evidence review complete through Inject 6 (I-006 / E-006); supplementary Presentation Criteria image reviewed with scenario-applicability caveat.
 
 ## Shared resources
 
@@ -18,7 +18,7 @@
 
 At the earlier 11:39 PDT check the folder contained ten items: seven inject screenshots (Injects 1–3 and four separate images titled “Inject 4”), plus Instructions, Schedule, and Mission Overview. The new check around 12:02 PDT found **eleven items**, including the single new **Inject 5** PNG. Injects 1–5 have now been visually reviewed by the evidence desk. The four Inject 4 screenshots remain grouped as I-004 / E-004a–d.
 
-**Latest evidence status:** Inject 5 reviewed and recorded in [the evidence log](../investigation/codex-evidence-analyst.md#i-005--e-005--chrome-download-history-screenshot). The source image is [E-005 on Drive](https://drive.google.com/file/d/1MR7QpdHrDBFiORdyDPr1D4jA5iqbZyjy/view). Chrome displays four Dec 24, 2026 downloads but no exact clock times, user, host, source URLs, file contents, or proof of execution. The website was not verified live at the time of this note.
+**Latest evidence status:** Inject 6 reviewed and added to [the evidence log](../investigation/codex-evidence-analyst.md#i-006--e-006--freegamedownloads-browser-screenshot), together with the [new judging-criteria image](../investigation/codex-evidence-analyst.md#supplemental-source-pc-001--presentation-criteriajpg). The Drive folder contains thirteen items at the 12:33 PDT check, including I-006 and Presentation Criteria.jpg. Inject 6 supports a thematic link to the Inject 5 game ZIP but not proven file delivery, execution or intrusion; the rubric's telecom/university terms need organizer clarification.
 
 ## Evidence summary
 
@@ -56,6 +56,40 @@ At the earlier 11:39 PDT check the folder contained ten items: seven inject scre
 > Inject 5 adds a managed-Chrome download-history screenshot grouped under Dec 24, 2026. It lists `Tomodachi Life FREE.zip`, `ryujinxx.exe`, `December Schedule.pdf`, and `Logs.txt`. The executable name resembles Ryujinx with an extra `x`, so origin and execution deserve attention. However, we have no file hashes, source URLs, precise times, user/host attribution, malware detection, or execution proof. No link to Inject 2's SCADA activity, Inject 3's account alert, or the blackout is established. Detailed report: [E-005 evidence desk](../investigation/codex-evidence-analyst.md#i-005--e-005--chrome-download-history-screenshot).
 
 **Handoff:** Evidence review completed through I-005. Preserve uncertainty. Do not open/run evidence downloads or submit anything without leader authorization.
+
+
+## Inject 6 / I-006 / E-006 — Evidence and criteria update
+
+**Evidence check / review time:** October 15, 2026, around 12:33–12:39 PDT (team time). **Source:** [E-006 screenshot](https://drive.google.com/file/d/1pRAe1brGsL_7PGZZ_B4xY-3mKlikQmIw/view). **Complete findings:** [I-006 investigation section](../investigation/codex-evidence-analyst.md#i-006--e-006--freegamedownloads-browser-screenshot). The folder contained **13 items:** Injects 1–6 (nine images, including four I-004 images), three earlier PDFs, and the new criteria JPEG.
+
+### Evidence Summary
+
+Chrome displays a **FreeGameDownloads** page with a game logo for *Tomodachi Life: Living the Dream*, large **Download** heading, and a **Not secure** browser indicator. The address bar visibly reads `5freeedownloads.com/tomodachi/free/c`, **with three e's after "fr"**. Another analyst's independent note records `5freedownloads.com` with two e's; the enlarged screenshot supports the three-e transcription. These are competing readings of **one screenshot**, not evidence of two different visited sites.
+
+### Important Findings
+
+| Finding | Exact source / time | Significance | Status |
+|---|---|---|---|
+| FreeGameDownloads and Tomodachi Life artwork | E-006, page; no screenshot time or zone | Possible gaming-themed download lure | Visible screenshot, intent unverified |
+| Address `5freeedownloads.com/tomodachi/free/c` and Not secure | E-006 address bar; no clock/date | Candidate URL for later provenance checks | Visible string only, maliciousness unproven |
+| `Tomodachi Life FREE.zip` in Chrome downloads | E-005 Dec 24, 2026 group; no exact time or zone | A specific theme matches E-006; file origin unlinked | Correlation/hypothesis |
+| `ryujinxx.exe` also in downloads | E-005 Dec 24, 2026 group | Unusual software name warrants checking if later records reveal execution | Filename visible; source, execution and malware status unknown |
+| New judging-criteria image | [Presentation Criteria.jpg](https://drive.google.com/file/d/1aF2OWNdCtQQq7PKXtBt9cm4pke95WU1h), no displayed issue date | Six headings at **5 points each = 30 points** | Image observation; applicability unconfirmed |
+
+### Suspicious Activity
+
+The strongest new pattern is **thematic alignment** between a game download page and a ZIP recorded in Chrome. Possible chain: download lure → file obtained → program executed → credential or host misuse → SCADA actions. **Only the first themed-page/download-list correlation is visible**; none of the causal arrows are established. Do not classify the page as a verified malicious domain or the executable as proven malware.
+
+### Missing Information and contradictions
+
+Original browsing/download logs, precise source URLs/timestamps, browser user/device, file hashes, execution and detections, account/session mapping, physical SCADA control events, and blackout cause. E-006 lacks a capture or incident clock. E-003's Wed Dec 24 time cannot be reconciled to 2026 from this screenshot. The criteria page uses telecom infrastructure, university integration, LMS content, and student-record examples, whereas Whoville evidence concerns an electrical utility; the organizer/leader must confirm whether the same rubric applies. Duration and submission method remain unknown.
+
+### Message for Team Leader
+
+> Gretzky reviewed Inject 6 and the new Presentation Criteria image. Inject 6 shows a game-download webpage whose Tomodachi theme matches the ZIP on Inject 5's Chrome history. The visible address is `5freeedownloads.com/tomodachi/free/c` (three e's after fr), marked Not secure. Neither download origin nor file execution, compromise, SCADA linkage, or blackout cause is established. The new rubric photo shows six categories worth five points each, but telecom/university examples do not match this utility scenario. Please confirm applicability before finalizing the presentation. Full findings: [Inject 6 analysis](../investigation/codex-evidence-analyst.md#i-006--e-006--freegamedownloads-browser-screenshot).
+
+**Current status:** Evidence desk complete through Inject 6, with separate criteria-image review. Preserve raw screenshots and the transcription discrepancy; await later authorized injects and leader review. No site visited, suspicious software run, utility systems touched, public statements made, or submission sent.
+
 
 ## Next inject workflow
 
