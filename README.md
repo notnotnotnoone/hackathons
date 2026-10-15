@@ -33,7 +33,7 @@ The user of the evidence chat explicitly confirmed presence; recorded in [human-
 
 **Still open:** full source logs/provenance, maintenance/account/IP authorization, session links, reason for logging stop, physical outage/service confirmation, clocks, dashboard logic, requirements/rubric, and presentation preparation/approval.
 
-**Proposed handoffs (not accepted assignments):** timeline support to reconcile PID/script spelling and clocks; response support has drafted options in [kevin-response.md](kevin-response.md), and Medical District service still needs a field check; leader to confirm requirements and review R-01–R-10 before any external message; evidence desk to correlate later injects and evaluate full records when available. Named teammates' personal statuses remain unchanged until they report them. The kevin human-status block is a draft from the response chat.
+**Proposed handoffs (not accepted assignments):** timeline support to reconcile PID/script spelling and clocks; response support has drafted options in [kevin-response.md](kevin-response.md), and Medical District service still needs a field check; leader to confirm requirements and review R-01–R-10 before any external message; evidence desk to correlate later injects and evaluate full records when available. Kevin confirmed the Member 4 status at 10:51 PDT. The leader's personal status is still unreported.
 
 **Assessment:** Access and logging activity are priority leads; cyberattack, actor identity, and blackout causation remain unconfirmed.
 
@@ -86,7 +86,7 @@ Zero MW with nonzero voltage on FDR-03/FDR-07 needs operating context; it is not
 | You — Leader | Lead Cybersecurity Investigator |
 | gretsky — Member 2 | Evidence investigator, suggested |
 | kherion — Member 3 | Timeline analyst, suggested |
-| kevin — Member 4 | Incident response analyst, suggested |
+| kevin — Member 4 | Incident response analyst, confirmed 10:51 PDT |
 
 Members 2–4 confirm their roles in the plaintext file. Shared-account commits do not establish which person used an analyst chat.
 
