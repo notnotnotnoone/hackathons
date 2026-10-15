@@ -307,3 +307,87 @@ Original complete Chrome download database and file-origin URLs; exact UTC/local
 6. **Critical unknowns:** Download source/time, file integrity and execution, host/user mapping, SCADA linkage, outbreak chronology, and blackout cause.
 
 **Evidence-desk status:** Injects 1–5 reviewed to the extent present in shared Drive; no system actions, external communications, or competition submission. The attack hypothesis remains unconfirmed.
+
+
+## I-006 / E-006 — FreeGameDownloads browser screenshot
+
+**Reviewed:** 2026-10-15, 12:33 PDT (UTC-07:00), team analysis time. **Source:** [Inject 6 original screenshot](https://drive.google.com/file/d/1pRAe1brGsL_7PGZZ_B4xY-3mKlikQmIw/view) (single PNG). **Provenance:** Shared Drive folder listed **13 total items**: nine inject images covering I-001–I-006 (four images for I-004), three pre-existing PDFs, plus the new Presentation Criteria JPEG. Drive last-modified/created times are file metadata, **not** incident event times. The displayed webpage has no absolute date, clock time, user, or host identifier.
+
+### Evidence Summary
+
+The screenshot shows a Chrome window on a page whose tab title and large green heading read **FreeGameDownloads**. The address bar visibly displays the string \`5freeedownloads.com/tomodachi/free/c\`, and Chrome shows **Not secure**. The page has a predominantly empty white area, a very large yellow Tomodachi Life / Living the Dream logo, and a lower green area headed **Download**. This is a screenshot of a webpage, not evidence of a specific download transaction or resulting file. The precise page address is transcribed **as displayed** only; it was not visited or linked as an investigative action.
+
+The Tomodachi-branded page **matches the subject** of I-005/E-005's \`Tomodachi Life FREE.zip\` download-history entry. It offers a **more specific website-origin lead** than previously available, but no screenshot proves that the file actually came from that URL or that the separate \`ryujinxx.exe\` download originated there. The odd executable spelling, gaming theme, and untrusted-looking webpage are reasonable candidates for a malicious-download/social-engineering hypothesis; all execution and compromise conclusions remain unproven.
+
+### Important Findings
+
+| Finding | Exact source/time | Why it matters | Fact or hypothesis |
+|---|---|---|---|
+| Chrome displays a FreeGameDownloads tab and matching giant heading | E-006, top tab and large green page banner; screenshot has **no date/time/zone** | Identifies page branding and a potential download lure | Screenshot observation; site authenticity and intent unknown |
+| Address bar displays \`5freeedownloads.com/tomodachi/free/c\` | E-006, top address bar; **no date/time/zone** | Candidate origin for the Tomodachi-themed download; a precise text artifact for later correlation | Visible URL-string observation, **not** proof the browser downloaded from it; external site not visited |
+| Browser marks the page **Not secure** | E-006, left side of address bar | Connection/security indicator deserves scrutiny | Visual fact; not in itself evidence of malware, credential theft, or malicious content |
+| Huge Tomodachi Life / Living the Dream artwork and a Download heading appear on the page | E-006, body/near-bottom of screenshot | Consistent with a game-download landing page; possible lure theme | Visible artwork/text; download destination, button, files, and redirect chain unobserved |
+| I-005 download list contains \`Tomodachi Life FREE.zip\` | E-005, Dec 24, 2026 date group; individual clock time absent | The page/game branding and filename have a **specific thematic match** | Two visible observations; **same origin/browser/session is an unproven inference** |
+| I-005 also contains \`ryujinxx.exe\` | E-005, same Dec 24, 2026 group, no precise time/zone | Candidate companion download, imitation executable or benign unrelated software; spelling resembles Ryujinx with extra \`x\` | Filename observation; shared origin, execution and maliciousness unproven |
+| No timestamp for E-006 and no attributable machine/person | E-006 whole screenshot versus I-005 and I-002/I-003 | Cannot order webpage visit versus download, login, alleged cloud sign-in or outage | Evidence gap, not evidence of causal ordering |
+
+### Cross-Inject Pattern and Structure Matrix
+
+| Possible relationship | Evidence supporting the lead | Missing link / alternative | Assessment |
+|---|---|---|---|
+| **I-006 webpage → I-005 ZIP** | \`/tomodachi/free/c\`, Tomodachi Life artwork and \`Tomodachi Life FREE.zip\` | I-005 does not show a source URL, exact download time, matched browser profile or network transaction | **Stronger topical correlation**, origin not established |
+| **I-006/I-005 → executable execution** | I-005 lists \`ryujinxx.exe\`; an EXE download could be a payload | No file bytes, hash/signature, file-open event, process telemetry, AV/EDR result, persistence, or proof it is associated with the page | **Unproven possible entry/payload hypothesis** |
+| **Download/execution → I-003 Google sign-in alert** | Suspicious-download and sign-in narratives could be linked in a compromise scenario | Separate account/system attribution absent; I-003 authenticity, year/zone and exact sign-in time unknown; no browser-to-account link | **Speculation only** |
+| **Download/execution → I-002 SCADA authentication and rsyslog event** | Both are potential security leads within Dec 24/25 themed evidence | No matched machine, actor, session, IP, process, binary, credentials or reliable common clock; I-002 year/zone absent | **No demonstrated lateral movement or access route** |
+| **SCADA events → I-001 monitoring anomalies/outage and I-004 resident reports** | Combined incident narrative invites comparison | No SCADA change or breaker command linked to account; monitoring table inconsistent; posts unauthenticated and source clocks differ | **No demonstrated blackout causation** |
+| **I-003 weekday/date mismatch** | Alert says Wednesday Dec 24, but E-005's date group explicitly says 2026; Dec 24, 2026 was Thursday | Different screenshot context/year/time zone, template error, or fabrication possible; no authenticated original dates | **Unresolved contradiction; keep raw times separate** |
+
+### Suspicious Activity / Hypothesis Test
+
+A potential **download-lure chain** is: themed website → ZIP/EXE downloaded → executable run → credential/access misuse → operational system interaction → outage. The first two stages are connected **by theme only**; none of the later arrows is evidenced. A second reasonable explanation is ordinary or unrelated browsing/download history on an unspecified device alongside a separate utility incident. The screenshot's **Not secure** warning and unusual \`5freee...\` domain string justify validation, not an asserted malware verdict or attribution. Do **not** call the webpage a confirmed phishing site, an intrusion origin, an IOC validated as malicious, or a known source of the executable.
+
+### Missing Information / Priority Questions
+
+1. Which browser profile, user and endpoint produced E-005 and E-006? Are they the same device/profile/session, and is either host within the utility/SCADA environment?
+2. Original Chrome History/Downloads databases, direct file-source URLs and referrers, exact download times/time zones, and the E-006 webpage visit time.
+3. Hashes, signatures, contents and independent scan results of \`Tomodachi Life FREE.zip\` and \`ryujinxx.exe\`; actual process execution, child processes, network connections and persistence.
+4. Authentication/session maps for \`max.contr.maint\`, \`adminelk\`, cloud-sign-in account, and any download host; original I-002 event year/zone and provenance.
+5. Utility event/relay/switch telemetry proving or disproving a control action, independent physical outage scope, and official outage onset.
+
+**Safety/handling:** Retain original screenshots in Drive. Do not browse the address, click page controls, download software or run the ZIP/EXE. Record hypothetical indicators separately from confirmed events.
+
+### Message for Team Leader
+
+> **Inject 6** is a FreeGameDownloads Chrome screenshot showing \`5freeedownloads.com/tomodachi/free/c\` with a **Not secure** indicator and Tomodachi Life / Living the Dream artwork plus a Download section. This is a specific thematic match to Inject 5's \`Tomodachi Life FREE.zip\` and makes a download-lure hypothesis more worth investigating. **However**, the page has no source time, user or host, and we have no proof that the ZIP or \`ryujinxx.exe\` came from it, was run, compromised an account, reached SCADA, or caused the outage. Correlate exact source URLs, device identity, hashes and execution only if future injects provide them. The cyberattack/blackout cause remains unconfirmed.
+
+### Six-part evidence handoff
+
+1. **Situation:** I-006 adds a possible download-webpage source to the previously observed Chrome download list and the separate SCADA, email, dashboard and public-report evidence.
+2. **New findings:** Screenshot shows FreeGameDownloads branding, the specific URL string, **Not secure** status, Tomodachi Life artwork and a Download heading; I-005 has a matching themed ZIP.
+3. **Leading hypotheses/confidence:** A social-engineering/download-lure path is now a stronger *lead* but not a demonstrated origin or compromise; benign browsing and unrelated incidents remain alternatives.
+4. **Contradictions/uncertainty:** No site-visit clock, user or endpoint, no download-origin proof; year/zone discrepancies in I-002 and I-003 remain.
+5. **Recommended action:** Add this as a conditional origin lead in the briefing. Preserve source originals, and if evidence later arrives, check browser download provenance, hashes, execution and host-to-SCADA linkage. No clicks, downloads, remediation or public claims without approval.
+6. **Critical unknowns:** Original website provenance, exact timing, ZIP/EXE origin and execution, actor/host/account link, actual feeder-state changes, blackout cause.
+
+**Evidence-desk position:** Reviewed through Inject 6 as available in the shared folder. No file execution, suspect-site navigation, system action, external communication, or competition submission.
+
+## Supplemental source PC-001 — Presentation Criteria.jpg
+
+**Source:** [Presentation Criteria JPEG in shared Drive](https://drive.google.com/file/d/1aF2OWNdCtQQq7PKXtBt9cm4pke95WU1h/view). **Reviewed:** 2026-10-15, 12:33 PDT (team work time). It is a phone screenshot with a truncated document-view title **Young Defenders of the North Judging Criteri...** and two slides/images labelled **Criteria**. It shows **six categories worth 5 points each (30 points total)**. The screenshot provides **no publication date, organizer confirmation, presentation duration or submission instructions**.
+
+### Visible rubric categories (direct visual transcription/summary)
+
+| Category | Weight | Displayed evaluation focus |
+|---|---:|---|
+| 1. Technical Analysis & Threat Detection | 5 | Initial breach vectors in **telecom infrastructure**; network anomalies, system/firewall logs; lateral movement and unauthorized access patterns |
+| 2. Incident Response Strategy | 5 | Realistic prioritized containment, isolation, root cause and recurrence prevention |
+| 3. Data Integrity & Risk Assessment | 5 | Exfiltration/tampering/loss; sensitive **academic data** such as LMS content/student records; backdoors/persistence; validated recovery |
+| 4. Security Recommendations & Long-Term Defense | 5 | Segmentation, authentication, auditing; improvements for **telecom-university integration**; scanning/audits and infrastructure hardening |
+| 5. Communication & Reporting | 5 | Structured timeline and affected-systems report; balanced public statement; audience/timing; visuals/briefings |
+| 6. Teamwork, Presentation & Critical Thinking | 5 | Organized role division, evidence-backed choices, adaptive reasoning and judge questions |
+
+**Applicability warning:** Categories 1, 3 and 4 explicitly describe **telecom/university/academic records**, whereas the supplied Mission Overview and Inject 1–6 concern the **Whoville electric/heating utility incident**. This may be a general template, a rubric for another case, or an applicable criterion sheet with mismatched examples. **Do not fabricate telecom, university or student-record compromises** to fit it. Ask leader/organizer to confirm whether this exact rubric governs Whoville. The six category headings and broadly transferable assessment objectives can inform a provisional presentation structure; applicability, submission method and deadlines remain unconfirmed.
+
+### Rubric-related message for leader
+
+> A separate new Drive image, **Presentation Criteria.jpg**, displays **six 5-point categories (30 total)**: technical analysis, incident response, data integrity/risk, security hardening, communication, and teamwork/presentation. **Important mismatch:** its examples refer to telecom infrastructure, telecom-university integration and LMS/student records, while our injects concern electric distribution/SCADA. Please verify this rubric applies before adapting the presentation; do not invent academic-data impacts. The screenshot does not specify a presentation duration or submission deadline.
