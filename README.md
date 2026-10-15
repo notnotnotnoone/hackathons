@@ -27,10 +27,10 @@ docs/              GitHub Pages website and progress data
 |---|---|
 | Latest inject | **Inject 5 — Chrome download history; response reviewed at 12:02 PDT** |
 | Investigation | **Active. Blackout cause and unauthorized activity remain unconfirmed.** |
-| Latest published analyst updates reviewed | Evidence desk through 11:18 PDT; timeline through 11:39 PDT; response through 12:02 PDT, October 15, 2026 |
+| Latest published analyst updates reviewed | Evidence desk through 12:06 PDT; timeline through 11:39 PDT; response through 12:02 PDT, October 15, 2026 |
 | Lead reconciliation | October 15, 2026, 10:34 PDT; reviewed all four existing repository files and the seven commits after initialization. The 10:40 PDT response handoff is linked and not yet folded into the numbered assessment. |
 | Drive coverage | Eleven files at 12:02 PDT: Injects 1–5, including four Inject 4 images, plus Instructions, Schedule, and Mission Overview. |
-| Review coverage | Evidence desk and response chat visually reviewed Inject 4. The lead chat has not independently inspected the images. |
+| Review coverage | Evidence desk and response reviewed Inject 5; the evidence desk, timeline, and response reviewed Inject 4. The lead chat has not independently verified the images. |
 | Remaining intake gaps | Official event date/time zone and explicit deadline, rubric, presentation limits, AI/sharing rules; schedule visual review is complete |
 | Submission | Draft outline updated with an Inject 5 addendum at 12:02 PDT. Not approved and not submitted |
 | Participant presence | User of the evidence chat confirms presence at 10:41 PDT; name/roster mapping not supplied. See human-status.txt. |
@@ -265,3 +265,11 @@ At 11:18 PDT the Drive folder had four Inject 4 images. They are resident report
 ## Kevin response handoff — Inject 5
 
 At 12:02 PDT the folder included a Chrome download-history screenshot. December 24, 2026 lists `Tomodachi Life FREE.zip`, `ryujinxx.exe`, `December Schedule.pdf`, and `Logs.txt`. The page says the browser is managed by an organization. It does not name the user or the computer, and it does not show that a file ran. Do not clear the history and do not run the files. The public paragraph is unchanged. [Response note](investigation/kevin-response.md#i-005-response--2026-10-15-1202-pdt). [Presentation addendum](presentation/presentation-outline.md#inject-5-addendum--2026-10-15-1202-pdt).
+
+## Gretzky evidence handoff — Inject 5 — 2026-10-15 12:06 PDT
+
+**Source:** [I-005 / E-005 Chrome download-history screenshot](https://drive.google.com/file/d/1MR7QpdHrDBFiORdyDPr1D4jA5iqbZyjy/view). **Full evidence report:** [Inject 5 findings, source-time limitations, hypotheses, and leader message](investigation/codex-evidence-analyst.md#i-005--e-005--chrome-download-history-screenshot). **Updated handoff:** [Gretzky](handoffs/gretzky-handoff.md#inject-5--i-005--e-005--new-evidence-handoff).
+
+The screenshot groups `Tomodachi Life FREE.zip`, `ryujinxx.exe`, `December Schedule.pdf`, and `Logs.txt` under **December 24, 2026**. Chrome states that the browser is managed by an organization. The executable name resembles Ryujinx with an extra `x`; this suggests an origin-and-execution check, **not** a demonstrated malicious file. Neither file contents nor exact download times, source URLs, host/user mapping, execution, or SCADA relationships are shown. I-002 and I-003 clocks and account links remain unresolved. No blackout-causation or attacker attribution claim is supported.
+
+**Next:** Timeline may correlate any later source times if exact event records arrive; the leader can use the cautious one-paragraph finding above. Keep the incident assessment and Kevin's public paragraph unmodified pending leader reconciliation and approval. No evidence link/file was opened or run, and no competition submission was made.
