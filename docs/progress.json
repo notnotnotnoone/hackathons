@@ -1,14 +1,14 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-15T13:10:00-07:00",
-  "updatedBy": "Kevin — Response analysis (sync audit)",
+  "updatedAt": "2026-10-15T13:05:00-07:00",
+  "updatedBy": "Gretzky — Evidence desk",
   "latestInject": {
-    "id": "I-007",
-    "title": "Desktop folder with two applications",
-    "state": "Inject 7 reviewed by evidence, timeline and response",
-    "checkedAt": "2026-10-15T12:49:23-07:00",
-    "note": "Response and timeline reviewed the File Explorer folder Tomodachi Life FREE. It lists setup.exe at 2 KB and another application at 82 KB, both dated 8/12/2026 10:39 AM. The middle of the first filename is visually ambiguous. No user, no run, and no zone are shown. The evidence log also has a reading.",
-    "sourceUrl": "https://drive.google.com/file/d/1swqAROKb7An3qeNk3noP8o9pOQ00C63C/view"
+    "id": "I-008",
+    "title": "Hydro Siber simulated grid-operations map",
+    "state": "Inject 8 reviewed by Gretzky evidence desk; other desks' review not assumed",
+    "checkedAt": "2026-10-15T13:02:00-07:00",
+    "note": "15 Drive files checked. At Dec 25, 2026 08:43 AM (dashboard label PDT), map reports 92,430 customers without power, 1,240 MW demand, 12 online / 5 degraded / 6 offline / 3 unverified feeder statuses; hospital partial with backups, water treatment offline. SUB-03 status conflicts with its own notes; SUB-07 telemetry unverified. I-001 FDR and I-008 SUB labels cannot be directly equated. Source is simulated; no cyber cause or breaker command established.",
+    "sourceUrl": "https://drive.google.com/file/d/1-gc6iqIzCkryqRweTdYDUH0TLYf4cuM5/view"
   },
   "assessment": [
     {
@@ -56,12 +56,12 @@
     {
       "id": "evidence",
       "name": "Gretzky — Evidence desk",
-      "status": "Inject 7 reviewed",
-      "updatedAt": "2026-10-15T12:52:00-07:00",
-      "completed": "Reviewed E-007 image and documented the two applications, file metadata and comparisons with earlier game-themed exhibits.",
-      "next": "Compare forthcoming evidence with E-007 and preserve unverified links.",
-      "blocker": "Source files, original device and process history are not provided.",
-      "source": "investigation/codex-evidence-analyst.md#i-007--e-007--new-file-explorer-evidence"
+      "status": "Inject 8 reviewed",
+      "updatedAt": "2026-10-15T13:05:00-07:00",
+      "completed": "Reviewed final I-008/E-008 simulated grid map, documented 92,430 reported outages, 1,240 MW demand, 26 aggregate feeder states, hospital/water/transit impacts, SUB-03 contradictory status and six alert times; correlated all prior injects without asserting cyber causation.",
+      "next": "Brief leader on independently verifying hospital/water and field states; confirm rubric and present the evidence-limited final conclusion.",
+      "blocker": "No authenticated breaker/relay actions, physical ground truth, compatible FDR-to-SUB mapping, unified clock base or proven download-to-SCADA compromise.",
+      "source": "investigation/codex-evidence-analyst.md#i-008--e-008--final-grid-operations-map"
     },
     {
       "id": "timeline",
