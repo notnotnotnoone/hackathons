@@ -1,13 +1,13 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-15T11:39:00-07:00",
-  "updatedBy": "Kherion — Timeline support",
+  "updatedAt": "2026-10-15T12:02:00-07:00",
+  "updatedBy": "Kevin",
   "latestInject": {
-    "id": "I-004",
-    "title": "Community outage posts and public advice",
-    "state": "Inject 4 reviewed by evidence desk and timeline",
-    "checkedAt": "2026-10-15T11:18:00-07:00",
-    "note": "Four Inject 4 screenshots reviewed independently by evidence and timeline. Reddit reports four neighbourhoods, X posts explicitly timestamped Dec 25 at 08:47/09:01 (zone absent); relative posts have unknown dates and exact times. Resident reports do not prove physical feeder status, onset or cyber cause.",
+    "id": "I-005",
+    "title": "Chrome download history",
+    "state": "Inject 5 reviewed by response",
+    "checkedAt": "2026-10-15T12:02:00-07:00",
+    "note": "Response chat listed eleven Drive files at 12:02 PDT. Inject 5 is a managed-browser download history. December 24, 2026 lists an executable and a zip among other files. No user, host, or execution is shown. Other desks have not yet recorded a review.",
     "sourceUrl": "https://drive.google.com/drive/folders/1tpag2T6jptGhCC7E2tKtuZbTXLQ9B-Mj"
   },
   "assessment": [
@@ -33,8 +33,8 @@
     },
     {
       "label": "Recommended action",
-      "text": "Inject 4 resident reports support welfare checks, including places that are not on the feeder table. Do not repost the survival advice. The public paragraph is unchanged and still awaits leader approval. A generator sentence is optional.",
-      "source": "investigation/kevin-response.md#i-004-response--2026-10-15-1118-pdt"
+      "text": "Inject 5 is a download history. Preserve it, do not run the files, and do not announce malware as the cause. Welfare checks and the public paragraph from earlier injects still await leader approval.",
+      "source": "investigation/kevin-response.md#i-005-response--2026-10-15-1202-pdt"
     },
     {
       "label": "Critical unknowns",
@@ -77,10 +77,10 @@
       "id": "response",
       "name": "Kevin — Response analysis",
       "status": "Working",
-      "updatedAt": "2026-10-15T11:18:00-07:00",
-      "completed": "Inject 4 reviewed. West Ridge matches a dark feeder. Unlisted resident place names are added to welfare checks. Survival advice is not for reposting.",
-      "next": "Leader accepts or edits the public paragraph. Optional generator sentence waits on that decision.",
-      "blocker": "Leader approval, and field confirmation of Medical District service.",
+      "updatedAt": "2026-10-15T12:02:00-07:00",
+      "completed": "Inject 5 reviewed. December 24, 2026 downloads include ryujinxx.exe and a zip. History is to be preserved. Execution is not shown.",
+      "next": "Identify the computer. Leader accepts or edits the unchanged public paragraph.",
+      "blocker": "The screenshot does not name the computer. Leader approval is still required for any public line.",
       "source": "investigation/kevin-response.md"
     }
   ],
@@ -125,7 +125,7 @@
       "id": "A-007",
       "title": "Review drafted response options and start presentation",
       "owner": "Response + leader",
-      "status": "Draft updated for Inject 4; leader review still open"
+      "status": "Draft updated for Inject 5; leader review still open"
     }
   ],
   "milestones": [
@@ -147,7 +147,12 @@
     {
       "label": "Inject 4",
       "status": "Reviewed by response",
-      "note": "Evidence and response reviewed four resident posts. Cold and darkness reported. Cause not shown. Timeline review of Inject 4 is not yet recorded."
+      "note": "Evidence, timeline, and response reviewed the resident posts. Cause not shown."
+    },
+    {
+      "label": "Inject 5",
+      "status": "Reviewed by response",
+      "note": "Download history for December 24, 2026. No execution or host name shown. Evidence and timeline reviews not yet recorded."
     },
     {
       "label": "Schedule",
@@ -157,7 +162,7 @@
     {
       "label": "Presentation",
       "status": "Draft",
-      "note": "Outline updated with an Inject 4 addendum at 11:18 PDT. Not approved and not submitted."
+      "note": "Outline updated with an Inject 5 addendum at 12:02 PDT. Not approved and not submitted."
     }
   ]
 }

@@ -117,6 +117,14 @@ Four resident posts. Use them as reports of what people are saying. Do not read 
 
 The public paragraph stays the same unless the leader adds the generator line.
 
+## Inject 5 addendum — 2026-10-15 12:02 PDT
+
+Say this only if asked what the newest screen shows.
+
+It is Chrome download history on a browser the page says is managed by an organization. December 24, 2026 lists `Tomodachi Life FREE.zip`, `ryujinxx.exe`, `December Schedule.pdf`, and `Logs.txt`. Older files are marked deleted. The screen has no user, no computer name, and no sign that a file was opened.
+
+Do not call this the cause. Do not name the executable in a public line. Do not clear the history.
+
 ## Message for Team Leader
 
-> Inject 4 supports the cold-and-dark public line with resident posts at 8:47 and 9:01 a.m. It does not show a cause. Please still accept or edit the public paragraph before anyone says it. An optional added line, only if you accept it, is to keep generators outside and away from doors and windows. Please do not approve reposting the survival advice, a cyberattack claim, a SCADA reboot, or switching from the 17/18 footer.
+> Inject 5 is a download list, not proof of an infection or of a switching command. Please still accept or edit the public paragraph before anyone says it. Please do not approve clearing that history, running the downloaded files, a malware announcement, a SCADA reboot, or switching from the 17/18 footer.

@@ -3,7 +3,7 @@
 **Team member / workstream:** kevin — Member 4, incident response chat. Kevin confirmed this status on 2026-10-15 at 10:51 PDT. The matching block in [human-status.txt](../human-status.txt) is no longer a draft.
 **Role used:** Incident response and crisis communications
 **Status:** Working
-**Updated:** 2026-10-15 11:18 PDT (UTC−07:00). Inject 4 response is below. Drive rechecked at 11:18 PDT: ten files, including four Inject 4 images.
+**Updated:** 2026-10-15 12:02 PDT (UTC−07:00). Inject 5 response is below. Drive rechecked at 12:02 PDT: eleven files, including Inject 5.
 **Sources reviewed by this chat:** I-001, I-002, Instructions, Mission Overview, and a visual/OCR reading of Schedule. Drive listing rechecked at 10:40 PDT: still those five files, no Inject 3.
 
 ```text
@@ -134,8 +134,35 @@ What this changes:
 | R-12 | Add West Ridge, and the resident-named places that are not on the feeder table, to welfare checks | I-004a West Ridge, east valley, Riverdale, and “central”; I-001 FDR-02 is zero voltage | Now, with the checks already recommended | People in an unlisted neighbourhood are not skipped | Sends responders to a name that may not match a feeder | Checks can stop when power is confirmed | Treat posts as reports, not as switching orders | Recommend |
 | R-13 | Leave the survival-style advice post unreposted. If the leader wants one addition, use a generator sentence only | I-004c alarmist wording; I-004b generator reply | Now for what not to say | Avoids a store rush. A generator sentence reduces indoor-exhaust risk | Saying nothing about generators leaves the reported use unaddressed | The sentence can be added later | Leader approval before any public line changes | Do not repost I-004c. Hold the generator sentence for the leader |
 
+## I-005 response — 2026-10-15 12:02 PDT
+
+[Inject 5](https://drive.google.com/file/d/1MR7QpdHrDBFiORdyDPr1D4jA5iqbZyjy/view) is a screenshot of Chrome’s download history at `chrome://downloads`. The page says “Your browser is managed by your organization.” Another tab title begins “nearest pet store.” No user name, computer name, download address, file size, or time of day is shown. This chat did not open or run any file, and it did not click Clear all.
+
+| Date on the page | Visible filename | Mark |
+|---|---|---|
+| December 24, 2026 | Tomodachi Life FREE.zip | Not marked deleted |
+| December 24, 2026 | ryujinxx.exe | Not marked deleted |
+| December 24, 2026 | December Schedule.pdf | Not marked deleted |
+| December 24, 2026 | Logs.txt | Not marked deleted |
+| November 24, 2025 | 5401306_7985166.pdf | Deleted |
+| September 20, 2025 | 589c00bb64b351149f22a01e.png | Deleted |
+| September 20, 2025 | 20250919_091005 (1).jpg | Deleted |
+| September 19, 2025 | No filename is visible under this heading | Heading only |
+
+What this changes:
+
+- **Do not clear the history and do not run the files.** Clear all would remove the record. Opening `ryujinxx.exe` or the zip on a live utility machine is not a containment step.
+- **Find whose browser this is before moving the machine.** The page does not say it is `whoville-scada`. If the machine is not the control host, leave it powered on and keep it off the control network until the four December 24 files are copied by someone authorized to handle them. If it is the control host, do not power it off.
+- **A filename is not an infection and not a breaker command.** December 24, 2026 is the day before the outage morning, and this page states the year. It does not show that any file ran, and it does not order those four downloads inside that day. `Logs.txt` is not identified as the recovered SCADA log.
+- **The public paragraph stays the same.** Do not tell residents a download caused the blackout.
+
+| ID | Option | Evidence | Urgency | Safety benefit | Operational risk | Reversibility | Prerequisites | Position |
+|---|---|---|---|---|---|---|---|---|
+| R-16 | Preserve this browser. Do not click Clear all. Do not open the executable or the zip. Identify the user out of band | I-005 download list for December 24, 2026, including `ryujinxx.exe` and `Tomodachi Life FREE.zip` | Now, for evidence. Not ahead of the Medical District check | Keeps the record. Avoids running an unknown program on a live system | Leaving an unknown machine connected could matter if it is later tied to the control network | A copy can be taken later. A cleared history cannot | Know which computer this screen belongs to | Recommend |
+| R-17 | Announce that malware caused the outage | Filenames only. No run, no host, no breaker line | — | None shown | A false public cause | Hard to walk back | Proof a file ran and changed a feeder | Do not recommend |
+
 ## Message for Team Leader
 
-> Inject 4 is residents saying the power and heat are out. West Ridge matches a dark feeder. Riverdale and east valley are not on the dashboard, so do not assume those names are fine. Two timed posts are 8:47 and 9:01 a.m. on Dec 25. Do not repost the “clock is ticking” advice. The public paragraph can stay, with one optional line if you accept it: keep generators outside and away from doors and windows. This does not show a cause, and it does not change the hold on remote switching.
+> Inject 5 is a managed Chrome download history. On December 24, 2026 it lists a zip named Tomodachi Life FREE, ryujinxx.exe, December Schedule.pdf, and Logs.txt. Do not clear that history and do not run those files. Find whose computer it is before treating it as the SCADA host. This does not show that anything executed, and it does not change the public paragraph or the hold on remote switching.
 
 No utility command and no competition submission was made.
